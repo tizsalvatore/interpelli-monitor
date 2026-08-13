@@ -258,6 +258,21 @@ function nomeDurata(codice) {
   return (stato.dati.durate || {})[codice] || codice;
 }
 
+// Versione corta, per le pillole dei filtri attivi: "Annuale (fino al 31 agosto)"
+// occuperebbe da sola due righe sul telefono.
+const DURATE_BREVI = {
+  annuale_31_agosto: 'fino al 31 ago',
+  fino_30_giugno: 'fino al 30 giu',
+  avente_titolo: 'avente titolo',
+  temporanea: 'temporanea',
+  dieci_giorni: '10 giorni',
+  altro: 'altra durata',
+};
+
+function nomeDurataBreve(codice) {
+  return DURATE_BREVI[codice] || nomeDurata(codice);
+}
+
 const CAMPI_ELENCO = ['stato', 'classi', 'corso', 'tipo', 'durata'];
 
 function stessiFiltri(a, b) {
@@ -589,6 +604,7 @@ function aggiornaIntestazione() {
   const soloElenco = stato.vista === 'info' || stato.vista === 'ricerche';
   elementi.zonaRicerca.hidden = soloElenco;
   elementi.barraFiltri.hidden = soloElenco;
+  elementi.filtriAttivi.hidden = soloElenco;
   elementi.barraRicerche.hidden = soloElenco || stato.vista === 'preferiti';
   elementi.interruttoreVista.hidden = soloElenco;
 }
@@ -610,7 +626,7 @@ function aggiornaBarraFiltri() {
   if (f.classi.length) attivi.push({ campo: 'classi', testo: f.classi.join(', ') });
   if (f.corso.length) attivi.push({ campo: 'corso', testo: f.corso.join(', ') });
   if (f.tipo.length) attivi.push({ campo: 'tipo', testo: f.tipo.join(', ') });
-  if (f.durata.length) attivi.push({ campo: 'durata', testo: f.durata.map(nomeDurata).join(', ') });
+  if (f.durata.length) attivi.push({ campo: 'durata', testo: f.durata.map(nomeDurataBreve).join(', ') });
   if (f.maxMinuti !== null) attivi.push({ campo: 'maxMinuti', testo: `entro ${f.maxMinuti} min` });
 
   elementi.filtriAttivi.replaceChildren(...attivi.map(({ campo, testo }) => {

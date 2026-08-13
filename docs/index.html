@@ -32,7 +32,11 @@
     </div>
     <div class="intestazione__azioni">
       <button class="bottone-tondo" id="bottoneAggiorna" title="Aggiorna i dati" aria-label="Aggiorna i dati">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 0-.6 3M20 5v6h-6"/></svg>
+        <!-- freccia circolare: l'arco piu' la punta, disegnata come un vero verso di rotazione -->
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.5 13a8.5 8.5 0 1 1-2.2-6.4"/>
+          <path d="M20.9 3.8v4.6h-4.6"/>
+        </svg>
       </button>
     </div>
   </div>
@@ -48,12 +52,15 @@
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M7 12h10M11 18h2"/></svg>
       Filtri <span class="pallino" id="contatoreFiltri" hidden></span>
     </button>
-    <div class="barra-filtri__attivi" id="filtriAttivi"></div>
     <div class="interruttore-vista" id="interruttoreVista">
       <button data-modo="elenco" class="attiva">Elenco</button>
       <button data-modo="mappa">Mappa</button>
     </div>
   </div>
+
+  <!-- I filtri attivi stanno su una riga tutta loro: cosi' possono andare
+       a capo e li vedi tutti, invece di sparire fuori dallo schermo. -->
+  <div class="barra-filtri__attivi" id="filtriAttivi"></div>
 
   <div class="barra-ricerche" id="barraRicerche"></div>
 </header>

@@ -158,14 +158,16 @@ main {
 
 /* Barra dei filtri */
 .barra-filtri {
-  display: flex; align-items: center; gap: 8px;
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
   max-width: 780px; margin: 9px auto 2px;
 }
+/* I filtri attivi vanno a capo: meglio un'intestazione un po' piu' alta che
+   filtri nascosti fuori dallo schermo. */
 .barra-filtri__attivi {
-  display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px;
-  scrollbar-width: none;
+  display: flex; flex-wrap: wrap; gap: 6px;
+  max-width: 780px; margin: 7px auto 0;
 }
-.barra-filtri__attivi::-webkit-scrollbar { display: none; }
+.barra-filtri__attivi:empty { display: none; }
 
 .chip {
   display: inline-flex; align-items: center; gap: 6px;
