@@ -1,12 +1,12 @@
 {
- "aggiornato": "2026-08-13T20:05:21+02:00",
+ "aggiornato": "2026-08-13T21:07:54+02:00",
  "aggiornato_sito": "2026-08-13",
  "casa": {
   "etichetta": "Casa",
   "ora_arrivo": "08:00"
  },
  "github": {
-  "repo": null
+  "repo": "tizsalvatore/interpelli-monitor"
  },
  "classi": {
   "A027": "Matematica e Fisica",
@@ -37,7 +37,7 @@
  },
  "diagnostica": {
   "casa_impostata": true,
-  "chiave_google": false
+  "chiave_google": true
  },
  "scuole": {
   "TOIS04700R": {
