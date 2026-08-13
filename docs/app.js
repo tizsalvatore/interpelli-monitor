@@ -231,6 +231,10 @@ function comuneDi(interpello) {
   return (scuola && scuola.sede && scuola.sede.comune) || '';
 }
 
+function nomeClasse(codice) {
+  return (stato.dati.classi || {})[codice] || '';
+}
+
 function stessiFiltri(a, b) {
   return ['stato', 'classi', 'corso', 'tipo'].every(
     (campo) => JSON.stringify(a[campo].slice().sort()) === JSON.stringify(b[campo].slice().sort())
@@ -248,7 +252,13 @@ function contaFiltriAttivi() {
 function descriviFiltri(filtri) {
   const pezzi = [];
   if (filtri.stato.length) pezzi.push(filtri.stato.map(primaMaiuscola).join('/'));
-  if (filtri.classi.length) pezzi.push(filtri.classi.join(', '));
+  if (filtri.classi.length) {
+    // Con una o due classi c'e' spazio per il nome della materia; con di piu'
+    // restiamo ai codici, altrimenti la riga diventa illeggibile.
+    pezzi.push(filtri.classi.length <= 2
+      ? filtri.classi.map((c) => `${c} ${nomeClasse(c)}`).join(', ')
+      : filtri.classi.join(', '));
+  }
   if (filtri.corso.length) pezzi.push(filtri.corso.join('/'));
   if (filtri.tipo.length) pezzi.push(filtri.tipo.join('/'));
   if (filtri.maxMinuti !== null) pezzi.push(`entro ${filtri.maxMinuti} min`);
@@ -723,7 +733,7 @@ function finestrellaMappa(gruppo) {
     const voce = nuovo('button', 'finestrella__voce');
     voce.append(
       nuovo('strong', null, interpello.classe),
-      nuovo('span', null, ` ${interpello.durata || ''}`),
+      nuovo('span', null, `${interpello.classe_nome} · ${interpello.durata || ''}`),
       nuovo('span', `etichetta etichetta--${interpello.stato}`, interpello.stato),
     );
     voce.addEventListener('click', () => {
@@ -922,8 +932,12 @@ function disegnaPannelloFiltri() {
     { valore: 'cancellato', etichetta: 'Cancellati' },
   ], f.stato, 'stato');
 
+  // Le classi le mostriamo con il nome della materia accanto al codice:
+  // "A027" da solo dice poco quando le scegli.
   gruppoDiChip($('filtroClassi'),
-    Object.keys(stato.dati.classi).map((codice) => ({ valore: codice, etichetta: codice })),
+    Object.entries(stato.dati.classi).map(([codice, nome]) => ({
+      valore: codice, etichetta: codice, descrizione: nome,
+    })),
     f.classi, 'classi');
 
   const corsiPresenti = [...new Set(stato.dati.interpelli.map((i) => i.corso))].sort();
@@ -956,9 +970,15 @@ function disegnaPannelloFiltri() {
 
 // Disegna un gruppo di chip. Se "singolo" e' vero se ne puo' scegliere una sola.
 function gruppoDiChip(contenitore, voci, selezione, campo, singolo = false) {
-  contenitore.replaceChildren(...voci.map(({ valore, etichetta }) => {
+  contenitore.replaceChildren(...voci.map(({ valore, etichetta, descrizione }) => {
     const scelto = singolo ? selezione === valore : selezione.includes(valore);
-    const chip = nuovo('button', 'chip' + (scelto ? ' chip--attivo' : ''), etichetta);
+    const chip = nuovo('button', 'chip' + (scelto ? ' chip--attivo' : ''),
+      descrizione ? null : etichetta);
+    if (descrizione) {
+      chip.classList.add('chip--largo');
+      chip.append(nuovo('strong', 'chip__codice', etichetta),
+                  nuovo('span', 'chip__nome', descrizione));
+    }
     chip.addEventListener('click', () => {
       const f = stato.filtriInModifica;
       if (singolo) {

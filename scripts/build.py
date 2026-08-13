@@ -70,6 +70,16 @@ def _casa_da_pubblicare():
         "etichetta": config.CASA_ETICHETTA,
         "ora_arrivo": f"{config.ORA_ARRIVO:02d}:00",
     }
+
+    # Se hai indicato un indirizzo apposta per la mappa, il segnaposto va li',
+    # preciso. L'indirizzo vero non entra comunque mai in questo file.
+    visibile = travel.posizione_visibile()
+    if visibile:
+        pubblico["lat"] = visibile["lat"]
+        pubblico["lng"] = visibile["lng"]
+        pubblico["indirizzo"] = visibile["indirizzo"]
+        return pubblico
+
     modo = config.PRECISIONE_CASA_PUBBLICA
     casa = travel.carica_casa() or {}
 
@@ -127,6 +137,7 @@ def main(usa_cache=False, notifica=True):
 
     print("\n4) Calcolo i tempi di viaggio da casa")
     viaggi = travel.aggiorna_viaggi(indirizzi)
+    travel.dimentica_indirizzi_non_piu_usati(indirizzi)
 
     print("\n5) Scrivo il file per la app")
     scuole_json = {}

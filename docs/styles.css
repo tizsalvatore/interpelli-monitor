@@ -171,6 +171,14 @@ main {
 }
 .chip svg { width: 16px; height: 16px; }
 .chip--filtri { flex: none; font-weight: 600; }
+/* Chip a tutta larghezza, per quando accanto al codice c'e' anche il nome
+   della materia (es. "A027  Matematica e Fisica"). */
+.chip--largo {
+  width: 100%; justify-content: flex-start; gap: 9px;
+  padding: 9px 13px; text-align: left;
+}
+.chip__codice { font-weight: 800; letter-spacing: -.01em; flex: none; }
+.chip__nome { font-weight: 500; font-size: 13px; opacity: .85; }
 .chip--attivo {
   background: var(--accento-tenue); border-color: transparent; color: var(--accento);
 }

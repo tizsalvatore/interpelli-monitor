@@ -28,49 +28,6 @@
    "errore": null,
    "aggiornato": "2026-08-13"
   },
-  "C.So Allamano 130, 10095 Grugliasco, Italia": {
-   "lat": 45.0514026,
-   "lng": 7.6006957,
-   "indirizzo_google": "Corso Canonico Giuseppe Allamano, Grugliasco, Torino, Piemonte, 10095, Italia",
-   "precisione": "OSM_unclassified",
-   "mezzi": null,
-   "auto": null
-  },
-  "C.So Caio Plinio 6, 10127 Torino, Italia": {
-   "lat": 45.0259894,
-   "lng": 7.6552987,
-   "indirizzo_google": "6, Corso Caio Plinio, Lingotto, Circoscrizione 8, Torino, Piemonte, 10127, Italia",
-   "precisione": "OSM_house",
-   "mezzi": null,
-   "auto": null
-  },
-  "C.So Montevecchio 67, 10129 Torino, Italia": {
-   "errore": "indirizzo non trovato su OpenStreetMap: C.So Montevecchio 67, 10129 Torino, Italia"
-  },
-  "C.So San Maurizio 8, 10124 Torino, Italia": {
-   "lat": 45.070821,
-   "lng": 7.6931432,
-   "indirizzo_google": "8t, Corso San Maurizio, Centro, Circoscrizione 1, Torino, Piemonte, 10124, Italia",
-   "precisione": "OSM_house",
-   "mezzi": null,
-   "auto": null
-  },
-  "C.So Tazzoli 209, 10137 Torino, Italia": {
-   "lat": 45.0359854,
-   "lng": 7.6196167,
-   "indirizzo_google": "Istituto Majorana-Sez Tecnica, 209, Corso Enrico Tazzoli, Centro Europa, Mirafiori Nord, Circoscrizione 2, Torino, Piemonte, 10137, Italia",
-   "precisione": "OSM_school",
-   "mezzi": null,
-   "auto": null
-  },
-  "C.So Unione Sovietica 490, 10135 Torino, Italia": {
-   "lat": 45.0194118,
-   "lng": 7.6293548,
-   "indirizzo_google": "Istituto Istruzione Superiore \"Primo Levi\", 490, Corso Unione Sovietica, Borgata Mirafiori, Circoscrizione 2, Torino, Piemonte, 10135, Italia",
-   "precisione": "OSM_school",
-   "mezzi": null,
-   "auto": null
-  },
   "Colle Bellavista, 10015 Ivrea, Italia": {
    "errore": null,
    "lat": 45.46734,
@@ -182,9 +139,6 @@
     "km": 68.5
    },
    "aggiornato": "2026-08-13"
-  },
-  "Corso L. Couvert 21, Non Disponibile Susa, Italia": {
-   "errore": "indirizzo non trovato su OpenStreetMap: Corso L. Couvert 21, Non Disponibile Susa, Italia"
   },
   "Corso Molise 58, 10151 Torino, Italia": {
    "lat": 45.103934,
@@ -582,9 +536,6 @@
    "errore": null,
    "aggiornato": "2026-08-13"
   },
-  "Va M. L King, 10056 Oulx, Italia": {
-   "errore": "indirizzo non trovato su OpenStreetMap: Va M. L King, 10056 Oulx, Italia"
-  },
   "Via Ada Negri 14, 10024 Moncalieri, Italia": {
    "lat": 44.9948375,
    "lng": 7.702513199999999,
@@ -777,9 +728,6 @@
    "errore": null,
    "aggiornato": "2026-08-13"
   },
-  "Via Cav. V. Veneto 5, 10053 Bussoleno, Italia": {
-   "errore": "indirizzo non trovato su OpenStreetMap: Via Cav. V. Veneto 5, 10053 Bussoleno, Italia"
-  },
   "Via Claviere 10, 10044 Pianezza, Italia": {
    "lat": 45.10485509999999,
    "lng": 7.5437309,
@@ -864,12 +812,6 @@
    "errore": null,
    "aggiornato": "2026-08-13"
   },
-  "Via Don Bosco 9, 10073 Cirie', Italia": {
-   "errore": "indirizzo non trovato su OpenStreetMap: Via Don Bosco 9, 10073 Cirie', Italia"
-  },
-  "Via Don Gnocchi 2/A, Non Disponibile Settimo Torinese, Italia": {
-   "errore": "indirizzo non trovato su OpenStreetMap: Via Don Gnocchi 2/A, Non Disponibile Settimo Torinese, Italia"
-  },
   "Via Dora Baltea 3, 10015 Ivrea, Italia": {
    "lat": 45.4634563,
    "lng": 7.8772446,
@@ -925,9 +867,6 @@
    "approssimativo": false,
    "errore": null,
    "aggiornato": "2026-08-13"
-  },
-  "Via F.Lli Rosselli 35, 10043 Orbassano, Italia": {
-   "errore": "indirizzo non trovato su OpenStreetMap: Via F.Lli Rosselli 35, 10043 Orbassano, Italia"
   },
   "Via Figlie Dei Militari 25, 10131 Torino, Italia": {
    "lat": 45.0643513,
@@ -1284,9 +1223,6 @@
    "approssimativo": false,
    "errore": null,
    "aggiornato": "2026-08-13"
-  },
-  "Via Leini 54, Non Disponibile Settimo Torinese, Italia": {
-   "errore": "indirizzo non trovato su OpenStreetMap: Via Leini 54, Non Disponibile Settimo Torinese, Italia"
   },
   "Via M. L. King 10, 10056 Oulx, Italia": {
    "errore": null,
@@ -1667,14 +1603,6 @@
    "errore": null,
    "aggiornato": "2026-08-13"
   },
-  "Via Prever 13, 10073 Cirie', Italia": {
-   "lat": 45.2254521,
-   "lng": 7.6052544,
-   "indirizzo_google": "Via Vittorio Prever, Case sparse Fucina, Ciriè, Torino, Piemonte, 10073, Italia",
-   "precisione": "OSM_residential",
-   "mezzi": null,
-   "auto": null
-  },
   "Via Rovigo 19, 10152 Torino, Italia": {
    "lat": 45.0841702,
    "lng": 7.6781156,
@@ -1702,9 +1630,6 @@
    "approssimativo": false,
    "errore": null,
    "aggiornato": "2026-08-13"
-  },
-  "Via S. Ottavio 9, 10124 Torino, Italia": {
-   "errore": "indirizzo non trovato su OpenStreetMap: Via S. Ottavio 9, 10124 Torino, Italia"
   },
   "Via Salerno 60, 10152 Torino, Italia": {
    "lat": 45.0847884,
@@ -1757,14 +1682,6 @@
    "approssimativo": false,
    "errore": null,
    "aggiornato": "2026-08-13"
-  },
-  "Via San Giovanni Bosco 17, 10073 Cirie', Italia": {
-   "lat": 45.230967,
-   "lng": 7.5973755,
-   "indirizzo_google": "Via San Giovanni Bosco, Località Battitore, Ciriè, Torino, Piemonte, 10073, Italia",
-   "precisione": "OSM_residential",
-   "mezzi": null,
-   "auto": null
   },
   "Via Sostegno 41/10, 10146 Torino, Italia": {
    "lat": 45.0777173,
@@ -1917,49 +1834,6 @@
    "approssimativo": false,
    "errore": null,
    "aggiornato": "2026-08-13"
-  },
-  "Via Xx Settembre 14/A, 10098 Rivoli, Italia": {
-   "lat": 45.0665743,
-   "lng": 7.5300763,
-   "indirizzo_google": "I.I.S. Giulio Natta, 14a, Via Venti Settembre, Cascine Vica, Tetti Neirotti, Rivoli, Torino, Piemonte, 10098, Italia",
-   "precisione": "OSM_school",
-   "mezzi": null,
-   "auto": null
-  },
-  "Via Xxiv Maggio 11, 10082 Cuorgne', Italia": {
-   "lat": 45.3887431,
-   "lng": 7.6474102,
-   "indirizzo_google": "Via Ventiquattro Maggio, Costosa, Ronchi San Bernardo, Salto, Cuorgnè, Torino, Piemonte, 10082, Italia",
-   "precisione": "OSM_secondary",
-   "mezzi": null,
-   "auto": null
-  },
-  "Via Xxiv Maggio 13, 10082 Cuorgne', Italia": {
-   "lat": 45.3887431,
-   "lng": 7.6474102,
-   "indirizzo_google": "Via Ventiquattro Maggio, Costosa, Ronchi San Bernardo, Salto, Cuorgnè, Torino, Piemonte, 10082, Italia",
-   "precisione": "OSM_secondary",
-   "mezzi": null,
-   "auto": null
-  },
-  "Via Xxv Aprile 139, 10042 Nichelino, Italia": {
-   "lat": 45.0014531,
-   "lng": 7.6293178,
-   "indirizzo_google": "Via Venticinque Aprile, Nichelino, Torino, Piemonte, 10042, Italia",
-   "precisione": "OSM_secondary",
-   "mezzi": null,
-   "auto": null
-  },
-  "Via Xxv Aprile 139, Non Disponibile Nichelino, Italia": {
-   "errore": "indirizzo non trovato su OpenStreetMap: Via Xxv Aprile 139, Non Disponibile Nichelino, Italia"
-  },
-  "Via Xxv Aprile 141, 10042 Nichelino, Italia": {
-   "lat": 45.0011374,
-   "lng": 7.6345505,
-   "indirizzo_google": "141, Via Venticinque Aprile, Nichelino, Torino, Piemonte, 10042, Italia",
-   "precisione": "OSM_house",
-   "mezzi": null,
-   "auto": null
   },
   "Viale Della Liberazione 25, 10015 Ivrea, Italia": {
    "lat": 45.4467867,

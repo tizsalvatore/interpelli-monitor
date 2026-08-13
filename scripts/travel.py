@@ -268,6 +268,60 @@ def solo_coordinate(indirizzi):
     return cache["destinazioni"]
 
 
+def dimentica_indirizzi_non_piu_usati(indirizzi_attuali):
+    """
+    Toglie dalla cache le scuole che non servono piu'.
+
+    Succede quando miglioriamo la pulizia degli indirizzi: "C.So Allamano 130"
+    diventa "Corso Allamano 130" e la vecchia voce resta li' a occupare spazio
+    senza che nessuno la guardi piu'.
+    """
+    cache = carica_cache()
+    attuali = set(indirizzi_attuali)
+    da_buttare = [i for i in cache["destinazioni"] if i not in attuali]
+    if not da_buttare:
+        return
+    for indirizzo in da_buttare:
+        del cache["destinazioni"][indirizzo]
+    salva_cache(cache)
+    print(f"   ripulite {len(da_buttare)} voci vecchie dalla cache")
+
+
+def posizione_visibile():
+    """
+    Coordinate del segnaposto "Casa" mostrato sulla mappa.
+
+    E' un indirizzo scelto apposta per essere pubblico (vedi
+    config.CASA_INDIRIZZO_VISIBILE), quindi la sua posizione la possiamo
+    salvare tranquillamente nel progetto: si calcola una volta e basta.
+    """
+    if not config.CASA_INDIRIZZO_VISIBILE:
+        return None
+
+    if config.FILE_CASA_VISIBILE.exists():
+        salvata = json.loads(config.FILE_CASA_VISIBILE.read_text(encoding="utf-8"))
+        if salvata.get("indirizzo") == config.CASA_INDIRIZZO_VISIBILE:
+            return salvata
+
+    chiave = chiave_api()
+    try:
+        if chiave:
+            posizione = geocodifica(config.CASA_INDIRIZZO_VISIBILE, chiave)
+        else:
+            posizione = geocodifica_openstreetmap(config.CASA_INDIRIZZO_VISIBILE)
+    except Exception as errore:
+        print(f"   segnaposto casa: indirizzo non trovato ({errore})")
+        return None
+
+    posizione["indirizzo"] = config.CASA_INDIRIZZO_VISIBILE
+    config.DATA_DIR.mkdir(parents=True, exist_ok=True)
+    config.FILE_CASA_VISIBILE.write_text(
+        json.dumps(posizione, indent=1, ensure_ascii=False), encoding="utf-8"
+    )
+    print(f"   segnaposto casa posizionato su: {config.CASA_INDIRIZZO_VISIBILE}")
+    return posizione
+
+
 def _punto(coordinate):
     return {"location": {"latLng": {"latitude": coordinate["lat"], "longitude": coordinate["lng"]}}}
 

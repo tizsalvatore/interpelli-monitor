@@ -25,6 +25,7 @@ FILE_INTERPELLI_HTML = DATA_DIR / "ultima_pagina.html"      # copia grezza del s
 FILE_ANAGRAFICA_MODELLO = "anagrafica_scuole_{codice}.csv"  # elenco scuole del Ministero
 FILE_CACHE_VIAGGI = DATA_DIR / "cache_viaggi.json"          # tempi gia' calcolati (per non ricalcolarli)
 FILE_CASA_PRIVATA = DATA_DIR / "casa_privata.json"          # coordinate di casa: NON va su GitHub
+FILE_CASA_VISIBILE = DATA_DIR / "casa_visibile.json"        # posizione del segnaposto sulla mappa (pubblica)
 FILE_GIA_NOTIFICATI = DATA_DIR / "gia_notificati.json"      # id degli interpelli gia' segnalati
 FILE_APP_DATI = DOCS_DATA_DIR / "interpelli.json"           # <-- il file che legge la app
 
@@ -71,6 +72,13 @@ def _leggi_indirizzo_casa():
 
 CASA_INDIRIZZO = _leggi_indirizzo_casa()
 CASA_ETICHETTA = "Casa"     # come viene chiamata dentro la app
+
+# Dove mettere il segnaposto "Casa" sulla mappa.
+# ATTENZIONE: questo indirizzo e' PUBBLICO (finisce nel file che legge la app),
+# quindi di solito ci si mette un civico vicino, non il proprio. I calcoli di
+# km e minuti non lo usano: quelli partono sempre da CASA_INDIRIZZO.
+# Lascia "" per non avere il segnaposto e usare invece la regola qui sotto.
+CASA_INDIRIZZO_VISIBILE = "Via Genova 213, 10127 Torino TO, Italia"
 
 # Quanto della posizione di casa finisce nel file pubblicato online:
 #   "nascosta"    -> niente: nessun segnaposto di casa sulla mappa
