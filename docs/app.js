@@ -37,7 +37,7 @@ const FILTRI_VUOTI = {
 // Le due ricerche che ci sono da subito.
 const RICERCHE_INIZIALI = [
   { id: 'desiderati', nome: 'Desiderati', filtri: FILTRI_DI_FABBRICA, notifiche: true },
-  { id: 'tutte', nome: 'Tutte', filtri: FILTRI_VUOTI, notifiche: false },
+  { id: 'tutte', nome: 'Tutti', filtri: FILTRI_VUOTI, notifiche: false },
 ];
 
 const CHIAVI = {
@@ -322,17 +322,24 @@ function caricaRicerche() {
   // supplenze fino al 30 giugno. Se e' rimasta cosi', la riapriamo a tutte le
   // durate. Il numero di versione evita di rifarlo (e di sovrascrivere una
   // scelta che nel frattempo hai fatto tu).
-  if (leggiMemoria(CHIAVI.migrazione, 0) < 2) {
+  const versione = leggiMemoria(CHIAVI.migrazione, 0);
+  if (versione < 2) {
     const desiderati = ricerche.find((r) => r.id === 'desiderati');
     if (desiderati && JSON.stringify(desiderati.filtri.durata) === '["fino_30_giugno"]') {
       desiderati.filtri.durata = [];
     }
-    scriviMemoria(CHIAVI.migrazione, 2);
   }
-  // E "Tutte" deve esserci sempre: e' la via di fuga per vedere l'archivio.
+  // La ricerca dell'archivio si chiamava "Tutte": il nome giusto e' "Tutti"
+  // (gli interpelli). La rinominiamo solo se non l'hai gia' cambiata tu.
+  if (versione < 3) {
+    const archivio = ricerche.find((r) => r.id === 'tutte');
+    if (archivio && archivio.nome === 'Tutte') archivio.nome = 'Tutti';
+  }
+  if (versione < 3) scriviMemoria(CHIAVI.migrazione, 3);
+  // E "Tutti" deve esserci sempre: e' la via di fuga per vedere l'archivio.
   if (!ricerche.some((r) => r.id === 'tutte')) {
     ricerche.push({
-      id: 'tutte', nome: 'Tutte',
+      id: 'tutte', nome: 'Tutti',
       filtri: JSON.parse(JSON.stringify(FILTRI_VUOTI)),
       notifiche: false, creata: new Date().toISOString(),
     });
@@ -1159,7 +1166,8 @@ function disegnaPannelloFiltri() {
     { valore: 30, etichetta: '30 min' },
     { valore: 45, etichetta: '45 min' },
     { valore: 60, etichetta: '1 ora' },
-    { valore: null, etichetta: 'Tutte' },
+    // "Tutti"/"Tutte" qui era ambiguo: questa voce toglie il limite di distanza.
+    { valore: null, etichetta: 'Nessun limite' },
   ], f.maxMinuti, 'maxMinuti', true);
 
   const quanti = interpelliFiltrati(stato.filtriInModifica).length;
