@@ -76,6 +76,8 @@ def _corrisponde(interpello, filtri):
         return False
     if filtri.get("tipo") and interpello["tipo_cattedra"] not in filtri["tipo"]:
         return False
+    if filtri.get("durata") and interpello.get("durata_tipo") not in filtri["durata"]:
+        return False
     limite = filtri.get("maxMinuti")
     minuti = interpello.get("minuti")
     # Se non sappiamo quanto dista, meglio avvisare comunque che perderlo.

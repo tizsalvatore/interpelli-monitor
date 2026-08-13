@@ -108,7 +108,12 @@ main {
   max-width: 780px; margin: 0 auto;
 }
 .intestazione__titolo { flex: 1; min-width: 0; }
-.intestazione__titolo h1 { font-size: 26px; letter-spacing: -.02em; }
+/* Il titolo e' lungo ("Interpelli Provincia di Torino"): su schermo stretto
+   si accorcia da solo invece di andare a capo o essere tagliato. */
+.intestazione__titolo h1 {
+  font-size: clamp(18px, 5.4vw, 24px);
+  letter-spacing: -.02em; line-height: 1.15;
+}
 .intestazione__sottotitolo {
   margin: 1px 0 0; font-size: 12.5px; color: var(--testo-tenue);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
@@ -232,8 +237,10 @@ main {
 /* ---------- 4. RIEPILOGO E LISTA ---------- */
 .riepilogo {
   font-size: 13px; color: var(--testo-tenue);
-  margin: 2px 2px 10px; display: flex; justify-content: space-between; gap: 10px;
+  margin: 2px 2px 10px; display: flex; align-items: center;
+  justify-content: space-between; gap: 10px;
 }
+.interruttore-vista--piccolo button { padding: 4px 10px; font-size: 12.5px; }
 
 .lista { display: flex; flex-direction: column; gap: 10px; }
 
@@ -385,6 +392,12 @@ main {
   border-top: 1px solid var(--bordo); background: var(--sfondo-scheda);
   flex: none;
 }
+/* Piè di pagina su due righe: sopra le azioni sulla ricerca, sotto il pulsante
+   principale. Su telefono tre bottoni in fila sarebbero illeggibili. */
+.pannello__pieDiPagina--colonna { flex-direction: column; gap: 8px; }
+.riga-azioni { display: flex; gap: 8px; }
+.riga-azioni:empty { display: none; }
+.riga-azioni .bottone { flex: 1; }
 
 .bottone {
   flex: 1; padding: 13px 16px; border-radius: 13px;

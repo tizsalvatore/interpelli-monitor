@@ -127,6 +127,32 @@ def _leggi_tipo_cattedra(testo):
     return testo, None
 
 
+def _classifica_durata(testo):
+    """
+    Raggruppa la durata scritta a mano in una delle categorie di config.py.
+
+    Esempi reali:
+        "Fino al 30 giugno"                        -> fino_30_giugno
+        "Annuale fino al 31 agosto"                -> annuale_31_agosto
+        "Supplenza Temporanea fino al 10/06/2026"  -> temporanea
+        "Fino ad avente titolo"                    -> avente_titolo
+    """
+    minuscolo = (testo or "").lower()
+    if not minuscolo:
+        return "altro"
+    if "31 agosto" in minuscolo or minuscolo.startswith("annuale"):
+        return "annuale_31_agosto"
+    if "30 giugno" in minuscolo or "termine delle attivit" in minuscolo:
+        return "fino_30_giugno"
+    if "avente titolo" in minuscolo or "avente diritto" in minuscolo:
+        return "avente_titolo"
+    if "10 giorni" in minuscolo:
+        return "dieci_giorni"
+    if "temporanea" in minuscolo:
+        return "temporanea"
+    return "altro"
+
+
 def _leggi_classe(testo):
     """Da 'A027 - Matematica e Fisica' ricava il codice 'A027'."""
     if not testo:
@@ -198,6 +224,7 @@ def analizza(html):
             "ore_spezzone": ore,
             "corso": valori[COL_CORSO] or "Non indicato",
             "durata": valori[COL_DURATA],
+            "durata_tipo": _classifica_durata(valori[COL_DURATA]),
             "data_interpello": data_interpello,
             "data_interpello_testo": valori[COL_DATA_INTERPELLO],
             "stato": stato,

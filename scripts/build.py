@@ -192,6 +192,7 @@ def main(usa_cache=False, notifica=True):
         # per offrirti il collegamento diretto al file delle ricerche.
         "github": {"repo": os.environ.get("GITHUB_REPOSITORY")},
         "classi": config.CLASSI_DI_CONCORSO,
+        "durate": config.DURATE_SUPPLENZA,
         "grado_per_classe": config.GRADO_PER_CLASSE,
         "conteggi": {
             "totale": len(interpelli),

@@ -111,6 +111,22 @@ CLASSI_DI_CONCORSO = {
     "A060": "Tecnologia nella scuola secondaria di I grado",
 }
 
+# --------------------------------------------------------------------------
+# Tipi di supplenza
+# --------------------------------------------------------------------------
+# Sul sito la durata e' scritta a mano e cambia da scuola a scuola ("Fino al 30
+# giugno", "Supplenza Temporanea fino al 10/06/2026"...). Le raggruppiamo in
+# poche categorie, altrimenti non ci si puo' filtrare sopra.
+# L'ordine e' quello che interessa a un insegnante: prima le piu' lunghe.
+DURATE_SUPPLENZA = {
+    "annuale_31_agosto": "Annuale (fino al 31 agosto)",
+    "fino_30_giugno": "Fino al 30 giugno",
+    "avente_titolo": "Fino ad avente titolo",
+    "temporanea": "Temporanea (con data)",
+    "dieci_giorni": "Fino a 10 giorni",
+    "altro": "Altro",
+}
+
 # In quale tipo di scuola si insegna ogni classe di concorso.
 # Serve per mostrare, nel dettaglio, solo i plessi sensati: per A060 (tecnologia
 # alle medie) non ha senso elencare il liceo, e viceversa.

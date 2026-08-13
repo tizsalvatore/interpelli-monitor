@@ -27,7 +27,7 @@
 <header class="intestazione" id="intestazione">
   <div class="intestazione__riga">
     <div class="intestazione__titolo">
-      <h1 id="titoloVista">Interpelli</h1>
+      <h1 id="titoloVista">Interpelli Provincia di Torino</h1>
       <p class="intestazione__sottotitolo" id="sottotitolo">caricamento…</p>
     </div>
     <div class="intestazione__azioni">
@@ -97,7 +97,7 @@
 <section class="pannello" id="pannelloFiltri" hidden aria-label="Filtri">
   <div class="pannello__maniglia"></div>
   <div class="pannello__testata">
-    <h2>Filtri</h2>
+    <h2 id="titoloFiltri">Filtri</h2>
     <button class="bottone-testo" id="azzeraFiltri">Azzera</button>
   </div>
 
@@ -118,6 +118,11 @@
     </div>
 
     <div class="gruppo">
+      <h3>Durata della supplenza</h3>
+      <div class="chip-gruppo" id="filtroDurata"></div>
+    </div>
+
+    <div class="gruppo">
       <h3>Tipo di cattedra</h3>
       <div class="chip-gruppo" id="filtroTipo"></div>
     </div>
@@ -127,14 +132,10 @@
       <div class="chip-gruppo chip-gruppo--singolo" id="filtroTempo"></div>
     </div>
 
-    <div class="gruppo">
-      <h3>Ordina per</h3>
-      <div class="chip-gruppo chip-gruppo--singolo" id="filtroOrdine"></div>
-    </div>
   </div>
 
-  <div class="pannello__pieDiPagina">
-    <button class="bottone bottone--secondario" id="salvaRicerca">Salva ricerca</button>
+  <div class="pannello__pieDiPagina pannello__pieDiPagina--colonna">
+    <div class="riga-azioni" id="azioniRicerca"></div>
     <button class="bottone bottone--primario" id="applicaFiltri">Mostra <span id="conteggioAnteprima"></span></button>
   </div>
 </section>

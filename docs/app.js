@@ -19,17 +19,26 @@
 
 /* ---------- 1. MEMORIA DELLA APP ---------- */
 
-// I filtri con cui la app si apre la prima volta (e la prima ricerca salvata).
+// I filtri della ricerca "Desiderati": quello che cerchi davvero.
 const FILTRI_DI_FABBRICA = {
   stato: ['aperto'],
   classi: ['A027'],
   corso: ['Diurno'],
-  tipo: [],            // vuoto = tutti
-  maxMinuti: 30,       // null = nessun limite
-  ordine: 'tempo',     // 'tempo' | 'data'
+  tipo: [],                     // vuoto = tutti
+  durata: ['fino_30_giugno'],   // le supplenze lunghe
+  maxMinuti: 30,                // null = nessun limite
+  ordine: 'tempo',              // 'tempo' | 'data'
 };
 
-const FILTRI_VUOTI = { stato: [], classi: [], corso: [], tipo: [], maxMinuti: null, ordine: 'tempo' };
+const FILTRI_VUOTI = {
+  stato: [], classi: [], corso: [], tipo: [], durata: [], maxMinuti: null, ordine: 'tempo',
+};
+
+// Le due ricerche che ci sono da subito.
+const RICERCHE_INIZIALI = [
+  { id: 'desiderati', nome: 'Desiderati', filtri: FILTRI_DI_FABBRICA, notifiche: true },
+  { id: 'tutte', nome: 'Tutte', filtri: FILTRI_VUOTI, notifiche: false },
+];
 
 const CHIAVI = {
   casa: 'interpelli:casa',
@@ -68,7 +77,7 @@ const elementi = {};
  'zonaRicerca', 'barraFiltri', 'bottoneFiltri', 'contatoreFiltri', 'filtriAttivi',
  'barraRicerche', 'interruttoreVista', 'lista', 'statoVuoto', 'riepilogo', 'velo',
  'pannelloFiltri', 'pannelloDettaglio', 'corpoDettaglio', 'chiudiDettaglio',
- 'applicaFiltri', 'azzeraFiltri', 'salvaRicerca', 'conteggioAnteprima',
+ 'applicaFiltri', 'azzeraFiltri', 'azioniRicerca', 'titoloFiltri', 'conteggioAnteprima',
  'conteggioPreferiti', 'conteggioRicerche', 'navBasso', 'brindisi', 'etichettaTempo',
  'contenuto', 'zonaMappa', 'mappa', 'conteggioMappa', 'pannelloNome',
  'campoNomeRicerca', 'notificheRicerca', 'confermaNome', 'annullaNome',
@@ -214,6 +223,7 @@ function interpelliFiltrati(filtri = stato.filtri, testoCercato = stato.ricerca)
     if (filtri.classi.length && !filtri.classi.includes(interpello.classe)) return false;
     if (filtri.corso.length && !filtri.corso.includes(interpello.corso)) return false;
     if (filtri.tipo.length && !filtri.tipo.includes(interpello.tipo_cattedra)) return false;
+    if (filtri.durata.length && !filtri.durata.includes(interpello.durata_tipo)) return false;
     // Il limite di tempo non nasconde mai chi non ha un tempo calcolato:
     // meglio vederlo con un "n.d." che perderselo.
     if (filtri.maxMinuti !== null && interpello.minuti !== null && interpello.minuti > filtri.maxMinuti) return false;
@@ -243,15 +253,22 @@ function nomeClasse(codice) {
   return (stato.dati.classi || {})[codice] || '';
 }
 
+function nomeDurata(codice) {
+  return (stato.dati.durate || {})[codice] || codice;
+}
+
+const CAMPI_ELENCO = ['stato', 'classi', 'corso', 'tipo', 'durata'];
+
 function stessiFiltri(a, b) {
-  return ['stato', 'classi', 'corso', 'tipo'].every(
-    (campo) => JSON.stringify(a[campo].slice().sort()) === JSON.stringify(b[campo].slice().sort())
+  return CAMPI_ELENCO.every(
+    (campo) => JSON.stringify((a[campo] || []).slice().sort())
+             === JSON.stringify((b[campo] || []).slice().sort())
   ) && a.maxMinuti === b.maxMinuti && a.ordine === b.ordine;
 }
 
 function contaFiltriAttivi() {
   let attivi = 0;
-  ['stato', 'classi', 'corso', 'tipo'].forEach((campo) => { if (stato.filtri[campo].length) attivi++; });
+  CAMPI_ELENCO.forEach((campo) => { if (stato.filtri[campo].length) attivi++; });
   if (stato.filtri.maxMinuti !== null) attivi++;
   return attivi;
 }
@@ -269,26 +286,46 @@ function descriviFiltri(filtri) {
   }
   if (filtri.corso.length) pezzi.push(filtri.corso.join('/'));
   if (filtri.tipo.length) pezzi.push(filtri.tipo.join('/'));
+  if (filtri.durata.length) pezzi.push(filtri.durata.map(nomeDurata).join('/'));
   if (filtri.maxMinuti !== null) pezzi.push(`entro ${filtri.maxMinuti} min`);
   return pezzi.length ? pezzi.join(' · ') : 'Tutti gli interpelli';
 }
 
 function caricaRicerche() {
   const salvate = leggiMemoria(CHIAVI.ricerche, null);
-  if (salvate && salvate.length) {
-    // Se una ricerca e' stata salvata da una versione precedente della app,
-    // completiamo i campi mancanti invece di andare in errore.
-    return salvate.map((r) => ({ ...r, filtri: { ...FILTRI_VUOTI, ...(r.filtri || {}) } }));
+
+  if (!salvate || !salvate.length) {
+    // Prima apertura: due ricerche pronte, entrambe modificabili o cancellabili.
+    return RICERCHE_INIZIALI.map((r) => ({
+      ...r,
+      filtri: JSON.parse(JSON.stringify(r.filtri)),
+      creata: new Date().toISOString(),
+    }));
   }
-  // Prima apertura: creiamo una ricerca di partenza, che l'utente puo'
-  // rinominare o cancellare come vuole.
-  return [{
-    id: 'iniziale',
-    nome: 'A027 vicino a casa',
-    filtri: JSON.parse(JSON.stringify(FILTRI_DI_FABBRICA)),
-    notifiche: true,
-    creata: new Date().toISOString(),
-  }];
+
+  // Ricerche gia' sul telefono: completiamo i campi che nelle versioni
+  // precedenti non esistevano, invece di andare in errore.
+  const ricerche = salvate.map((r) => ({
+    ...r,
+    filtri: { ...FILTRI_VUOTI, ...(r.filtri || {}) },
+  }));
+
+  // La vecchia ricerca di partenza diventa "Desiderati" (con la durata inclusa).
+  const vecchia = ricerche.find((r) => r.id === 'iniziale');
+  if (vecchia) {
+    vecchia.id = 'desiderati';
+    vecchia.nome = 'Desiderati';
+    if (!vecchia.filtri.durata.length) vecchia.filtri.durata = ['fino_30_giugno'];
+  }
+  // E "Tutte" deve esserci sempre: e' la via di fuga per vedere l'archivio.
+  if (!ricerche.some((r) => r.id === 'tutte')) {
+    ricerche.push({
+      id: 'tutte', nome: 'Tutte',
+      filtri: JSON.parse(JSON.stringify(FILTRI_VUOTI)),
+      notifiche: false, creata: new Date().toISOString(),
+    });
+  }
+  return ricerche;
 }
 
 function salvaRicerche() {
@@ -338,12 +375,21 @@ function disegnaTutto() {
 function disegnaRiepilogo(elenco) {
   if (elenco.length === 0) { elementi.riepilogo.hidden = true; return; }
   const parola = elenco.length === 1 ? 'interpello' : 'interpelli';
-  const conTempo = elenco.filter((i) => i.minuti !== null);
-  elementi.riepilogo.replaceChildren(
-    nuovo('span', null, `${elenco.length} ${parola}`),
-    nuovo('span', null, conTempo.length && stato.filtri.ordine === 'tempo'
-      ? `dal più vicino (${testoTempo(conTempo[0].minuti)})` : ''),
-  );
+
+  // L'ordinamento sta qui, sempre sotto gli occhi: e' una scelta che si cambia
+  // di continuo, non ha senso nasconderla dentro il pannello dei filtri.
+  const ordina = nuovo('div', 'interruttore-vista interruttore-vista--piccolo');
+  [['tempo', 'Più vicini'], ['data', 'Più recenti']].forEach(([valore, etichetta]) => {
+    const bottone = nuovo('button', stato.filtri.ordine === valore ? 'attiva' : null, etichetta);
+    bottone.addEventListener('click', () => {
+      if (stato.filtri.ordine === valore) return;
+      stato.filtri = { ...stato.filtri, ordine: valore };
+      disegnaTutto();
+    });
+    ordina.appendChild(bottone);
+  });
+
+  elementi.riepilogo.replaceChildren(nuovo('span', null, `${elenco.length} ${parola}`), ordina);
   elementi.riepilogo.hidden = false;
 }
 
@@ -454,6 +500,10 @@ function disegnaStatoVuoto() {
 
   const storico = nuovo('button', 'bottone bottone--primario bottone--piccolo', 'Vedi lo storico completo');
   storico.addEventListener('click', () => {
+    // Se c'e' la ricerca "Tutte" usiamo quella, cosi' resta evidenziata la
+    // pillola giusta invece di ritrovarsi con nessuna ricerca attiva.
+    const tutte = stato.ricerche.find((r) => r.id === 'tutte');
+    if (tutte) return applicaRicerca(tutte);
     stato.filtri = { ...FILTRI_VUOTI, ordine: stato.filtri.ordine };
     stato.ricercaAttiva = null;
     disegnaTutto();
@@ -493,10 +543,15 @@ function disegnaStatoVuoto() {
 }
 
 function aggiornaIntestazione() {
-  const titoli = { lista: 'Interpelli', preferiti: 'Preferiti', info: 'Info', ricerche: 'Ricerche salvate' };
-  const ricercaAttiva = stato.ricerche.find((r) => r.id === stato.ricercaAttiva);
-  elementi.titoloVista.textContent =
-    stato.vista === 'lista' && ricercaAttiva ? ricercaAttiva.nome : titoli[stato.vista];
+  // Il titolo resta sempre lo stesso: quale ricerca e' attiva si vede dalla
+  // pillola evidenziata, non dal titolo che cambia sotto gli occhi.
+  const titoli = {
+    lista: 'Interpelli Provincia di Torino',
+    preferiti: 'Preferiti',
+    info: 'Info',
+    ricerche: 'Ricerche salvate',
+  };
+  elementi.titoloVista.textContent = titoli[stato.vista];
 
   if (!stato.dati) { elementi.sottotitolo.textContent = 'caricamento…'; return; }
 
@@ -536,6 +591,7 @@ function aggiornaBarraFiltri() {
   if (f.classi.length) attivi.push({ campo: 'classi', testo: f.classi.join(', ') });
   if (f.corso.length) attivi.push({ campo: 'corso', testo: f.corso.join(', ') });
   if (f.tipo.length) attivi.push({ campo: 'tipo', testo: f.tipo.join(', ') });
+  if (f.durata.length) attivi.push({ campo: 'durata', testo: f.durata.map(nomeDurata).join(', ') });
   if (f.maxMinuti !== null) attivi.push({ campo: 'maxMinuti', testo: `entro ${f.maxMinuti} min` });
 
   elementi.filtriAttivi.replaceChildren(...attivi.map(({ campo, testo }) => {
@@ -571,8 +627,15 @@ function aggiornaBarraRicerche() {
     return chip;
   });
 
-  const aggiungi = nuovo('button', 'pillola pillola--aggiungi', '+ Salva ricerca');
-  aggiungi.addEventListener('click', () => apriPannelloNome());
+  // "+ Nuova ricerca" apre i filtri: prima si sceglie cosa cercare, poi in
+  // fondo al pannello c'e' il pulsante per salvarla con un nome.
+  const aggiungi = nuovo('button', 'pillola pillola--aggiungi', '+ Nuova ricerca');
+  aggiungi.addEventListener('click', () => {
+    stato.ricercaAttiva = null;
+    stato.filtri = JSON.parse(JSON.stringify(FILTRI_VUOTI));
+    disegnaTutto();
+    apriFiltri();
+  });
   voci.push(aggiungi);
 
   barra.replaceChildren(...voci);
@@ -1065,6 +1128,14 @@ function disegnaPannelloFiltri() {
   const corsiPresenti = [...new Set(stato.dati.interpelli.map((i) => i.corso))].sort();
   gruppoDiChip($('filtroCorso'), corsiPresenti.map((c) => ({ valore: c, etichetta: c })), f.corso, 'corso');
 
+  // Solo le durate che compaiono davvero nei dati: inutile offrire filtri vuoti.
+  const durateUsate = new Set(stato.dati.interpelli.map((i) => i.durata_tipo));
+  gruppoDiChip($('filtroDurata'),
+    Object.entries(stato.dati.durate || {})
+      .filter(([codice]) => durateUsate.has(codice))
+      .map(([codice, nome]) => ({ valore: codice, etichetta: nome })),
+    f.durata, 'durata');
+
   gruppoDiChip($('filtroTipo'), [
     { valore: 'Interna', etichetta: 'Cattedra interna' },
     { valore: 'Esterna', etichetta: 'Cattedra esterna' },
@@ -1079,15 +1150,44 @@ function disegnaPannelloFiltri() {
     { valore: null, etichetta: 'Tutti' },
   ], f.maxMinuti, 'maxMinuti', true);
 
-  gruppoDiChip($('filtroOrdine'), [
-    { valore: 'tempo', etichetta: 'Più vicini' },
-    { valore: 'data', etichetta: 'Più recenti' },
-  ], f.ordine, 'ordine', true);
-
   const quanti = interpelliFiltrati(stato.filtriInModifica).length;
   elementi.conteggioAnteprima.textContent = quanti === 0 ? '(nessuno)' : `(${quanti})`;
   elementi.etichettaTempo.textContent = f.maxMinuti === null
     ? '' : `— mezzi pubblici, arrivo ore ${stato.dati.casa.ora_arrivo}`;
+
+  disegnaAzioniRicerca();
+}
+
+// I due pulsanti in fondo al pannello: aggiornare la ricerca che stai usando,
+// oppure salvarne una nuova. Compaiono solo quando servono davvero.
+function disegnaAzioniRicerca() {
+  const contenitore = elementi.azioniRicerca;
+  const attiva = stato.ricerche.find((r) => r.id === stato.ricercaAttiva);
+  const cambiata = attiva && !stessiFiltri(attiva.filtri, stato.filtriInModifica);
+
+  elementi.titoloFiltri.textContent = attiva ? `Filtri di «${attiva.nome}»` : 'Filtri';
+
+  const azioni = [];
+  if (cambiata) {
+    const aggiorna = nuovo('button', 'bottone bottone--secondario bottone--piccolo',
+      `Aggiorna «${attiva.nome}»`);
+    aggiorna.addEventListener('click', () => {
+      attiva.filtri = JSON.parse(JSON.stringify(stato.filtriInModifica));
+      salvaRicerche();
+      stato.filtri = JSON.parse(JSON.stringify(attiva.filtri));
+      chiudiPannelli();
+      disegnaTutto();
+      mostraMessaggio(`«${attiva.nome}» aggiornata`);
+    });
+    azioni.push(aggiorna);
+  }
+
+  const nuova = nuovo('button', 'bottone bottone--secondario bottone--piccolo',
+    cambiata ? 'Salva come nuova' : 'Salva come nuova ricerca');
+  nuova.addEventListener('click', () => apriPannelloNome());
+  azioni.push(nuova);
+
+  contenitore.replaceChildren(...azioni);
 }
 
 // Disegna un gruppo di chip. Se "singolo" e' vero se ne puo' scegliere una sola.
@@ -1435,8 +1535,6 @@ function collegaEventi() {
     disegnaPannelloFiltri();
   });
 
-  elementi.salvaRicerca.addEventListener('click', () => apriPannelloNome());
-
   elementi.bottoneAggiorna.addEventListener('click', async () => {
     elementi.bottoneAggiorna.classList.add('gira');
     await caricaDati({ forzaRete: true });
@@ -1493,6 +1591,9 @@ function collegaEventi() {
 
 async function avvia() {
   stato.ricerche = caricaRicerche();
+  // caricaRicerche() puo' aver rinominato o aggiunto qualcosa (vedi migrazione):
+  // lo mettiamo subito per iscritto, cosi' la memoria e la app dicono la stessa cosa.
+  scriviMemoria(CHIAVI.ricerche, stato.ricerche);
   stato.casa = leggiMemoria(CHIAVI.casa, null);
   stato.preferiti = new Set(leggiMemoria(CHIAVI.preferiti, []));
   stato.visti = new Set(leggiMemoria(CHIAVI.visti, []));
