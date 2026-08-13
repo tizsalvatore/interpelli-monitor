@@ -32,6 +32,8 @@ const FILTRI_DI_FABBRICA = {
 const FILTRI_VUOTI = { stato: [], classi: [], corso: [], tipo: [], maxMinuti: null, ordine: 'tempo' };
 
 const CHIAVI = {
+  casa: 'interpelli:casa',
+  casaChiesta: 'interpelli:casa-chiesta',
   ricerche: 'interpelli:ricerche',
   preferiti: 'interpelli:preferiti',
   visti: 'interpelli:visti',
@@ -53,7 +55,11 @@ const stato = {
   mappa: null,
   stratoSegnaposti: null,
   stratoTessere: null,
+  segnapostoCasa: null,
   ultimaImpronta: '',
+  casa: null,               // {lat, lng, indirizzo} - vive solo su questo dispositivo
+  casaInAttesa: null,       // scelta fatta nel pannello ma non ancora salvata
+  sceltaSullaMappa: false,  // vero mentre aspettiamo che tocchi la mappa
 };
 
 const $ = (id) => document.getElementById(id);
@@ -66,7 +72,9 @@ const elementi = {};
  'conteggioPreferiti', 'conteggioRicerche', 'navBasso', 'brindisi', 'etichettaTempo',
  'contenuto', 'zonaMappa', 'mappa', 'conteggioMappa', 'pannelloNome',
  'campoNomeRicerca', 'notificheRicerca', 'confermaNome', 'annullaNome',
- 'riassuntoRicerca', 'titoloPannelloNome',
+ 'riassuntoRicerca', 'titoloPannelloNome', 'pannelloCasa', 'campoIndirizzoCasa',
+ 'cercaIndirizzoCasa', 'posizioneAttuale', 'scegliSullaMappa', 'esitoCasa',
+ 'saltaCasa', 'confermaCasa', 'istruzioneMappa', 'annullaSceltaMappa',
 ].forEach((nome) => { elementi[nome] = $(nome); });
 
 
@@ -579,6 +587,102 @@ function misuraIntestazione() {
 }
 
 
+/* ---------- 5-bis. DOVE ABITI (solo su questo dispositivo) ---------- */
+
+// La posizione di casa non arriva dal server: la scegli tu nella app e resta
+// nella memoria del telefono. Serve solo per il segnaposto sulla mappa e per
+// far partire da li' i percorsi di Google Maps. I minuti sono gia' calcolati.
+function casaAttuale() {
+  if (stato.casa && typeof stato.casa.lat === 'number') return stato.casa;
+  const pubblicata = stato.dati && stato.dati.casa;
+  return (pubblicata && typeof pubblicata.lat === 'number') ? pubblicata : null;
+}
+
+function apriPannelloCasa() {
+  stato.casaInAttesa = null;
+  elementi.campoIndirizzoCasa.value = (stato.casa && stato.casa.indirizzo) || '';
+  elementi.esitoCasa.replaceChildren();
+  elementi.velo.hidden = false;
+  elementi.pannelloCasa.hidden = false;
+  scriviMemoria(CHIAVI.casaChiesta, true);   // chiesto una volta, non insistiamo
+}
+
+function mostraEsitoCasa(testo, tipo) {
+  const riga = nuovo('div', tipo === 'errore' ? 'avviso' : 'esito-casa');
+  if (tipo === 'errore') riga.append(icona(ICONE.avviso), nuovo('span', null, testo));
+  else riga.append(nuovo('span', null, '📍'), nuovo('span', null, testo));
+  elementi.esitoCasa.replaceChildren(riga);
+}
+
+// Cerchiamo l'indirizzo con il servizio gratuito di OpenStreetMap: nessuna
+// chiave, nessun costo, e la richiesta parte dal tuo telefono.
+async function cercaIndirizzoCasa() {
+  const testo = elementi.campoIndirizzoCasa.value.trim();
+  if (!testo) return mostraEsitoCasa('Scrivi prima un indirizzo.', 'errore');
+
+  mostraEsitoCasa('Cerco…', 'ok');
+  try {
+    const url = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=it&q='
+      + encodeURIComponent(testo);
+    const risposta = await fetch(url, { headers: { 'Accept-Language': 'it' } });
+    const risultati = await risposta.json();
+    if (!risultati.length) {
+      return mostraEsitoCasa('Non l’ho trovato. Prova ad aggiungere la città, o usa "Scegli sulla mappa".', 'errore');
+    }
+    stato.casaInAttesa = {
+      lat: parseFloat(risultati[0].lat),
+      lng: parseFloat(risultati[0].lon),
+      indirizzo: testo,
+    };
+    mostraEsitoCasa(risultati[0].display_name.split(',').slice(0, 4).join(','), 'ok');
+  } catch (errore) {
+    mostraEsitoCasa('Ricerca non riuscita: sei offline? Puoi usare "Scegli sulla mappa".', 'errore');
+  }
+}
+
+function usaPosizioneAttuale() {
+  if (!navigator.geolocation) {
+    return mostraEsitoCasa('Questo dispositivo non sa dirmi la posizione.', 'errore');
+  }
+  mostraEsitoCasa('Chiedo la posizione al dispositivo…', 'ok');
+  navigator.geolocation.getCurrentPosition(
+    (posizione) => {
+      stato.casaInAttesa = {
+        lat: posizione.coords.latitude,
+        lng: posizione.coords.longitude,
+        indirizzo: '',
+      };
+      mostraEsitoCasa('Posizione presa. Tocca Salva per confermare.', 'ok');
+    },
+    () => mostraEsitoCasa('Permesso negato o posizione non disponibile.', 'errore'),
+    { enableHighAccuracy: true, timeout: 10000 }
+  );
+}
+
+function iniziaSceltaSullaMappa() {
+  chiudiPannelli();
+  stato.sceltaSullaMappa = true;
+  stato.modo = 'mappa';
+  elementi.interruttoreVista.querySelectorAll('button')
+    .forEach((b) => b.classList.toggle('attiva', b.dataset.modo === 'mappa'));
+  elementi.istruzioneMappa.hidden = false;
+  disegnaTutto();
+}
+
+function fineSceltaSullaMappa() {
+  stato.sceltaSullaMappa = false;
+  elementi.istruzioneMappa.hidden = true;
+}
+
+function salvaCasa(casa) {
+  stato.casa = casa;
+  scriviMemoria(CHIAVI.casa, casa);
+  scriviMemoria(CHIAVI.casaChiesta, true);
+  stato.ultimaImpronta = '';        // cosi' la mappa si reinquadra tenendo conto di casa
+  disegnaTutto();
+}
+
+
 /* ---------- 6. MAPPA ---------- */
 
 // Leaflet viene caricato con "defer": aspettiamo che sia pronto.
@@ -610,6 +714,7 @@ async function disegnaMappa(elenco) {
   }
 
   if (!stato.mappa) creaMappa(L);
+  aggiornaSegnapostoCasa(L);
   disegnaSegnaposti(L, elenco);
 
   const parola = elenco.length === 1 ? 'interpello' : 'interpelli';
@@ -636,17 +741,32 @@ function creaMappa(L) {
       .addEventListener('change', () => cambiaTessere(L));
   }
 
-  // Casa: il punto di riferimento di tutti i calcoli. Puo' non esserci, o
-  // essere volutamente approssimata: dipende dalle impostazioni di privacy.
-  const casa = stato.dati.casa;
-  if (casa && casa.lat) {
-    L.marker([casa.lat, casa.lng], {
-      icon: L.divIcon({ className: 'segnaposto-casa', html: '🏠', iconSize: [34, 34], iconAnchor: [17, 17] }),
-      zIndexOffset: 500,
-    }).addTo(stato.mappa).bindPopup(
-      casa.etichetta + (casa.approssimata ? ' (posizione indicativa)' : '')
-    );
+  // Un tocco sulla mappa vale come "casa e' qui", ma solo quando lo hai chiesto.
+  stato.mappa.on('click', (evento) => {
+    if (!stato.sceltaSullaMappa) return;
+    fineSceltaSullaMappa();
+    salvaCasa({ lat: evento.latlng.lat, lng: evento.latlng.lng, indirizzo: '' });
+    mostraMessaggio('Casa impostata 🏠');
+  });
+}
+
+// Il segnaposto di casa puo' cambiare (lo scegli tu), quindi lo ridisegniamo
+// invece di piazzarlo una volta sola alla creazione della mappa.
+function aggiornaSegnapostoCasa(L) {
+  if (stato.segnapostoCasa) {
+    stato.mappa.removeLayer(stato.segnapostoCasa);
+    stato.segnapostoCasa = null;
   }
+  const casa = casaAttuale();
+  if (!casa) return;
+
+  stato.segnapostoCasa = L.marker([casa.lat, casa.lng], {
+    icon: L.divIcon({ className: 'segnaposto-casa', html: '🏠', iconSize: [34, 34], iconAnchor: [17, 17] }),
+    zIndexOffset: 500,
+  }).addTo(stato.mappa);
+
+  const nome = casa.indirizzo || 'Casa';
+  stato.segnapostoCasa.bindPopup(nome + (casa.approssimata ? ' (posizione indicativa)' : ''));
 }
 
 function cambiaTessere(L) {
@@ -707,8 +827,8 @@ function disegnaSegnaposti(L, elenco) {
   // Inquadriamo tutti i risultati (piu' casa) solo quando cambia l'insieme.
   const impronta = punti.length + ':' + [...perScuola.keys()].sort().join(',');
   if (impronta !== stato.ultimaImpronta && punti.length) {
-    const casa = stato.dati.casa;
-    const tutti = casa && casa.lat ? punti.concat([[casa.lat, casa.lng]]) : punti;
+    const casa = casaAttuale();
+    const tutti = casa ? punti.concat([[casa.lat, casa.lng]]) : punti;
     stato.mappa.fitBounds(tutti, { padding: [45, 45], maxZoom: 14 });
     stato.ultimaImpronta = impronta;
   }
@@ -878,14 +998,15 @@ function bloccoSede(sede, principale) {
   }
 
   if (sede.indirizzo) {
-    // Se l'indirizzo di casa non e' pubblicato (scelta di privacy), lasciamo
-    // che sia Google a usare la posizione attuale del telefono come partenza.
-    const casa = stato.dati.casa.indirizzo;
+    // La partenza e' la casa che hai impostato su questo dispositivo. Se non
+    // l'hai impostata, lasciamo che Google usi la posizione attuale.
+    const casa = casaAttuale();
+    const partenza = casa ? (casa.indirizzo || `${casa.lat},${casa.lng}`) : '';
     const url = 'https://www.google.com/maps/dir/?api=1'
-      + (casa ? `&origin=${encodeURIComponent(casa)}` : '')
+      + (partenza ? `&origin=${encodeURIComponent(partenza)}` : '')
       + `&destination=${encodeURIComponent(sede.indirizzo)}&travelmode=transit`;
     const collegamento = collegamentoEsterno(
-      casa ? 'Apri il percorso in Google Maps' : 'Apri la scuola in Google Maps', url);
+      partenza ? 'Apri il percorso in Google Maps' : 'Apri la scuola in Google Maps', url);
     collegamento.style.marginTop = '6px';
     blocco.appendChild(collegamento);
   }
@@ -921,6 +1042,7 @@ function chiudiPannelli() {
   elementi.pannelloFiltri.hidden = true;
   elementi.pannelloDettaglio.hidden = true;
   elementi.pannelloNome.hidden = true;
+  elementi.pannelloCasa.hidden = true;
 }
 
 function disegnaPannelloFiltri() {
@@ -1192,6 +1314,23 @@ function disegnaInfo() {
   comeFunziona.appendChild(testo);
   contenitore.appendChild(comeFunziona);
 
+  // Il segnaposto di casa: impostato qui, salvato solo qui.
+  const casa = nuovo('div', 'riquadro');
+  casa.appendChild(nuovo('h3', null, 'Il tuo segnaposto 🏠'));
+  const attuale = stato.casa;
+  casa.appendChild(nuovo('p', 'info-testo', attuale
+    ? (attuale.indirizzo || `Punto scelto sulla mappa (${attuale.lat.toFixed(4)}, ${attuale.lng.toFixed(4)})`)
+    : 'Non ancora impostato: sulla mappa non c’è il segnaposto di casa.'));
+  casa.appendChild(nuovo('p', 'viaggio__dettagli',
+    'Resta su questo dispositivo e non viene inviato a nessuno. I minuti di viaggio '
+    + 'non dipendono da questa impostazione: sono già calcolati.'));
+  const cambia = nuovo('button', 'bottone bottone--secondario', attuale ? 'Cambia posizione' : 'Imposta ora');
+  cambia.style.width = '100%';
+  cambia.style.marginTop = '10px';
+  cambia.addEventListener('click', apriPannelloCasa);
+  casa.appendChild(cambia);
+  contenitore.appendChild(casa);
+
   const legenda = nuovo('div', 'riquadro');
   legenda.appendChild(nuovo('h3', null, 'Colori'));
   const elencoLegenda = nuovo('div', 'legenda');
@@ -1260,6 +1399,24 @@ function collegaEventi() {
   elementi.chiudiDettaglio.addEventListener('click', chiudiPannelli);
   elementi.annullaNome.addEventListener('click', chiudiPannelli);
   elementi.confermaNome.addEventListener('click', confermaPannelloNome);
+
+  // Pannello "dove abiti"
+  elementi.cercaIndirizzoCasa.addEventListener('click', cercaIndirizzoCasa);
+  elementi.campoIndirizzoCasa.addEventListener('keydown', (evento) => {
+    if (evento.key === 'Enter') { evento.preventDefault(); cercaIndirizzoCasa(); }
+  });
+  elementi.posizioneAttuale.addEventListener('click', usaPosizioneAttuale);
+  elementi.scegliSullaMappa.addEventListener('click', iniziaSceltaSullaMappa);
+  elementi.saltaCasa.addEventListener('click', chiudiPannelli);
+  elementi.annullaSceltaMappa.addEventListener('click', fineSceltaSullaMappa);
+  elementi.confermaCasa.addEventListener('click', () => {
+    if (!stato.casaInAttesa) {
+      return mostraEsitoCasa('Cerca prima l’indirizzo, o usa uno degli altri due modi.', 'errore');
+    }
+    salvaCasa(stato.casaInAttesa);
+    chiudiPannelli();
+    mostraMessaggio('Casa impostata 🏠');
+  });
 
   elementi.campoNomeRicerca.addEventListener('keydown', (evento) => {
     if (evento.key === 'Enter') confermaPannelloNome();
@@ -1336,6 +1493,7 @@ function collegaEventi() {
 
 async function avvia() {
   stato.ricerche = caricaRicerche();
+  stato.casa = leggiMemoria(CHIAVI.casa, null);
   stato.preferiti = new Set(leggiMemoria(CHIAVI.preferiti, []));
   stato.visti = new Set(leggiMemoria(CHIAVI.visti, []));
   stato.modo = leggiMemoria(CHIAVI.ultimaVista, 'elenco');
@@ -1354,6 +1512,12 @@ async function avvia() {
 
   disegnaTutto();
   setTimeout(segnaComeVisti, 4000);   // lasciamo il tempo di vedere le etichette "nuovo"
+
+  // Primo avvio: chiediamo dove abiti, una volta sola. Se rispondi "non adesso"
+  // non te lo richiediamo piu': lo trovi comunque in Info.
+  if (!stato.casa && !leggiMemoria(CHIAVI.casaChiesta, false)) {
+    setTimeout(apriPannelloCasa, 900);
+  }
 
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js').catch(() => { /* pazienza */ });

@@ -596,6 +596,27 @@ body.con-mappa { overflow: hidden; }
 
 .colonna { display: flex; flex-direction: column; gap: 9px; }
 
+.esito-casa {
+  display: flex; gap: 8px; align-items: flex-start;
+  background: var(--verde-tenue); color: var(--verde);
+  border-radius: var(--raggio-piccolo); padding: 10px 12px;
+  font-size: 13px; margin-top: 4px;
+}
+
+/* Striscia che compare mentre aspetti che tocchi la mappa */
+.istruzione-mappa {
+  position: fixed; left: 50%; transform: translateX(-50%);
+  bottom: calc(var(--altezza-nav) + 14px); z-index: 45;
+  display: flex; align-items: center; gap: 12px;
+  background: var(--accento); color: #fff;
+  padding: 10px 12px 10px 18px; border-radius: 999px;
+  font-size: 14px; font-weight: 600; box-shadow: var(--ombra);
+}
+.istruzione-mappa button {
+  color: #fff; background: rgba(255,255,255,.22);
+  padding: 4px 12px; border-radius: 999px; font-size: 13px; font-weight: 600;
+}
+
 /* ---------- 11. MESSAGGINO A COMPARSA ---------- */
 .brindisi {
   position: fixed; left: 50%; transform: translateX(-50%);

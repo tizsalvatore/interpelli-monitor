@@ -170,6 +170,39 @@
   </div>
 </section>
 
+<!-- ===================== DOVE ABITI (primo avvio) ===================== -->
+<section class="pannello" id="pannelloCasa" hidden aria-label="Imposta casa">
+  <div class="pannello__maniglia"></div>
+  <div class="pannello__testata"><h2>Dove abiti?</h2></div>
+  <div class="pannello__corpo">
+    <p class="info-testo" id="spiegazioneCasa">
+      Serve solo a disegnare il segnaposto 🏠 sulla mappa e a farti partire da lì quando apri
+      un percorso. <strong>Resta su questo dispositivo</strong>: non viene inviato a nessuno e
+      non finisce online. I minuti di viaggio sono già calcolati e non cambiano.
+    </p>
+
+    <input class="campo-testo" id="campoIndirizzoCasa" type="text"
+           placeholder="Via, numero civico, città" aria-label="Il tuo indirizzo">
+
+    <div class="ricerca-salvata__azioni">
+      <button class="bottone bottone--primario bottone--piccolo" id="cercaIndirizzoCasa">Cerca</button>
+      <button class="bottone bottone--secondario bottone--piccolo" id="posizioneAttuale">Usa la mia posizione</button>
+      <button class="bottone bottone--secondario bottone--piccolo" id="scegliSullaMappa">Scegli sulla mappa</button>
+    </div>
+
+    <div id="esitoCasa"></div>
+  </div>
+  <div class="pannello__pieDiPagina">
+    <button class="bottone bottone--secondario" id="saltaCasa">Non adesso</button>
+    <button class="bottone bottone--primario" id="confermaCasa">Salva</button>
+  </div>
+</section>
+
+<div class="istruzione-mappa" id="istruzioneMappa" hidden>
+  <span>Tocca sulla mappa il punto dove abiti</span>
+  <button id="annullaSceltaMappa">Annulla</button>
+</div>
+
 <div class="brindisi" id="brindisi" hidden></div>
 
 <script src="./app.js"></script>

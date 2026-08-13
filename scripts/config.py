@@ -73,12 +73,11 @@ def _leggi_indirizzo_casa():
 CASA_INDIRIZZO = _leggi_indirizzo_casa()
 CASA_ETICHETTA = "Casa"     # come viene chiamata dentro la app
 
-# Dove mettere il segnaposto "Casa" sulla mappa.
-# ATTENZIONE: questo indirizzo e' PUBBLICO (finisce nel file che legge la app),
-# quindi di solito ci si mette un civico vicino, non il proprio. I calcoli di
-# km e minuti non lo usano: quelli partono sempre da CASA_INDIRIZZO.
-# Lascia "" per non avere il segnaposto e usare invece la regola qui sotto.
-CASA_INDIRIZZO_VISIBILE = "Via Genova 213, 10127 Torino TO, Italia"
+# Dove mettere il segnaposto "Casa" sulla mappa, per tutti i dispositivi.
+# ATTENZIONE: questo indirizzo sarebbe PUBBLICO (finisce nel file che legge la
+# app). Lo teniamo vuoto: il segnaposto lo scegli tu dentro la app al primo
+# avvio, e resta salvato solo sul tuo telefono.
+CASA_INDIRIZZO_VISIBILE = ""
 
 # Quanto della posizione di casa finisce nel file pubblicato online:
 #   "nascosta"    -> niente: nessun segnaposto di casa sulla mappa
@@ -88,7 +87,10 @@ CASA_INDIRIZZO_VISIBILE = "Via Genova 213, 10127 Torino TO, Italia"
 #
 # In tutti i casi i minuti e i km restano precisi: sono calcolati dal computer
 # di GitHub partendo dall'indirizzo vero, che non viene mai pubblicato.
-PRECISIONE_CASA_PUBBLICA = "approssimata"
+#
+# "nascosta" e' la scelta giusta ora che il segnaposto lo imposti dentro la app:
+# nel file pubblicato non finisce piu' nessuna coordinata di casa.
+PRECISIONE_CASA_PUBBLICA = "nascosta"
 
 # A che ora vuoi ESSERE a scuola. Il tempo di viaggio viene calcolato
 # "a ritroso": Google cerca la corsa che ti fa arrivare entro quest'ora.

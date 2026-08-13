@@ -1,12 +1,9 @@
 {
- "aggiornato": "2026-08-13T16:29:21+02:00",
+ "aggiornato": "2026-08-13T16:55:41+02:00",
  "aggiornato_sito": "2026-08-13",
  "casa": {
   "etichetta": "Casa",
-  "ora_arrivo": "08:00",
-  "lat": 45.0208533,
-  "lng": 7.6648894,
-  "indirizzo": "Via Genova 213, 10127 Torino TO, Italia"
+  "ora_arrivo": "08:00"
  },
  "github": {
   "repo": null

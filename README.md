@@ -186,11 +186,16 @@ quindi **l'indirizzo di casa non è scritto da nessuna parte nel codice**. Funzi
 
 Le coordinate finiscono in `data/casa_privata.json`, anch'esso escluso da GitHub.
 
+**Il segnaposto 🏠 sulla mappa** non arriva dal server: al primo avvio l'app ti chiede dove abiti
+(scrivendo l'indirizzo, usando la posizione del dispositivo, o toccando il punto sulla mappa) e lo
+salva **solo su quel telefono**. Lo cambi quando vuoi da *Info → Il tuo segnaposto*.
+Va impostato su ogni dispositivo dove installi l'app.
+
 **Cosa si vede online**: solo quello che decidi con `PRECISIONE_CASA_PUBBLICA` in `config.py`:
 
-- `"nascosta"` — niente del tutto: sulla mappa non c'è il segnaposto di casa
-- `"approssimata"` *(predefinito)* — coordinate arrotondate a circa un chilometro:
-  il segnaposto indica la zona, non l'indirizzo
+- `"nascosta"` *(predefinito)* — niente del tutto: nel file pubblicato non c'è nessuna coordinata
+- `"approssimata"` — coordinate arrotondate a circa un chilometro: il segnaposto indica la zona,
+  utile se vuoi che l'app parta già con un riferimento su qualsiasi dispositivo
 - `"esatta"` — indirizzo e posizione precisi (usalo solo se rendi il progetto privato)
 
 **I minuti e i km restano sempre esatti**: vengono calcolati sul computer di GitHub partendo
