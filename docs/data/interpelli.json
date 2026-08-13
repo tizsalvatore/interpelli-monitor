@@ -1,0 +1,7146 @@
+{
+ "aggiornato": "2026-08-13T15:41:37+02:00",
+ "aggiornato_sito": "2026-08-13",
+ "casa": {
+  "etichetta": "Casa",
+  "ora_arrivo": "08:00",
+  "lat": 45.02,
+  "lng": 7.66,
+  "approssimata": true
+ },
+ "github": {
+  "repo": null
+ },
+ "classi": {
+  "A027": "Matematica e Fisica",
+  "A020": "Fisica",
+  "A026": "Matematica",
+  "A040": "Scienze e tecnologie elettriche ed elettroniche",
+  "A041": "Scienze e tecnologie informatiche",
+  "A047": "Scienze matematiche applicate",
+  "A060": "Tecnologia nella scuola secondaria di I grado"
+ },
+ "grado_per_classe": {
+  "A060": "I_GRADO",
+  "_default": "II_GRADO"
+ },
+ "conteggi": {
+  "totale": 189,
+  "aperti": 0,
+  "senza_tempo_di_viaggio": 189
+ },
+ "scuole": {
+  "TOIS016005": {
+   "denominazione": "I.I.S. AMALDI - SRAFFA",
+   "sede": {
+    "indirizzo": "Via Fratelli Rosselli 35, 10043 Orbassano, Italia",
+    "comune": "Orbassano",
+    "sito": "www.amaldisraffa.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0014261,
+     "lng": 7.5305625,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "I.I.S. AMALDI - SRAFFA"
+     ],
+     "indirizzo": "Via Fratelli Rosselli 35, 10043 Orbassano, Italia",
+     "comune": "Orbassano",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0014261,
+      "lng": 7.5305625,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "I.I.S. AMALDI - SRAFFA"
+     ],
+     "indirizzo": "Strada Volvera 44, 10043 Orbassano, Italia",
+     "comune": "Orbassano",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 44.991653,
+      "lng": 7.5307178,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOTF14000A": {
+   "denominazione": "C. GRASSI",
+   "sede": {
+    "indirizzo": "Via Veronese 305, 10148 Torino, Italia",
+    "comune": "Torino",
+    "sito": "www.itisgrassi.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.1114181,
+     "lng": 7.6617832,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "C. GRASSI"
+     ],
+     "indirizzo": "Via Veronese 305, 10148 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.1114181,
+      "lng": 7.6617832,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS01300N": {
+   "denominazione": "BODONI - PARAVIA",
+   "sede": {
+    "indirizzo": "Via Ponchielli 56, 10154 Torino, Italia",
+    "comune": "Torino",
+    "sito": "Non Disponibile",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0858601,
+     "lng": 7.7059104,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "BODONI - PARAVIA"
+     ],
+     "indirizzo": "Via Ponchielli 56, 10154 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0858601,
+      "lng": 7.7059104,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS04300D": {
+   "denominazione": "I.I.S. PRIMO LEVI",
+   "sede": {
+    "indirizzo": "Corso Unione Sovietica 490, 10135 Torino, Italia",
+    "comune": "Torino",
+    "sito": "www.istitutoprimolevi.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0194118,
+     "lng": 7.6293548,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "ISTITUTO TECNICO PRIMO LEVI",
+      "LICEO SCIENTIFICO PRIMO LEVI"
+     ],
+     "indirizzo": "Corso Unione Sovietica 490, 10135 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0194118,
+      "lng": 7.6293548,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS06800T": {
+   "denominazione": "RUSSELL - MORO - GUARINI",
+   "sede": {
+    "indirizzo": "Corso Molise 58, 10151 Torino, Italia",
+    "comune": "Torino",
+    "sito": "www,russel-moro-guarini.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.1038839,
+     "lng": 7.6385555,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "G. GUARINI"
+     ],
+     "indirizzo": "Via Salerno 60, 10152 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0847949,
+      "lng": 7.6772577,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "RUSSELL - MORO"
+     ],
+     "indirizzo": "Corso Molise 58, 10151 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.1038839,
+      "lng": 7.6385555,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOPS22000X": {
+   "denominazione": "GIORDANO BRUNO",
+   "sede": {
+    "indirizzo": "Via Marinuzzi 1, 10156 Torino, Italia",
+    "comune": "Torino",
+    "sito": "www.gbruno.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.1190903,
+     "lng": 7.7071249,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "GIORDANO BRUNO"
+     ],
+     "indirizzo": "Via Marinuzzi 1, 10156 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.1190903,
+      "lng": 7.7071249,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOPS04000B": {
+   "denominazione": "G. FERRARIS",
+   "sede": {
+    "indirizzo": "Corso Montevecchio 67, 10129 Torino, Italia",
+    "comune": "Torino",
+    "sito": "www.liceogalfer.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0639701,
+     "lng": 7.6622584,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "G. FERRARIS"
+     ],
+     "indirizzo": "Corso Montevecchio 67, 10129 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0639701,
+      "lng": 7.6622584,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS066006": {
+   "denominazione": "A. GOBETTI MARCHESINI - CASALE - ARDUINO",
+   "sede": {
+    "indirizzo": "Via Figlie Militari 25, 10131 Torino, Italia",
+    "comune": "Torino",
+    "sito": "www.gmca.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0642876,
+     "lng": 7.7096695,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "ARDUINO"
+     ],
+     "indirizzo": "Via Figlie Dei Militari 25, 10131 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0642876,
+      "lng": 7.7096695,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "L. CASALE"
+     ],
+     "indirizzo": "Via Rovigo 19, 10152 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0840798,
+      "lng": 7.6781764,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "A. GOBETTI MARCHESINI"
+     ],
+     "indirizzo": "Via Figlie Militari 27, 10131 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0639153,
+      "lng": 7.709876,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIC816001": {
+   "denominazione": "I.C. KING/MILA - TO",
+   "sede": {
+    "indirizzo": "Via Germonio 12, 10142 Torino, Italia",
+    "comune": "Torino",
+    "sito": "www.icking-to.edu.it/",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0729218,
+     "lng": 7.6109273,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "I.C. KING - MILA"
+     ],
+     "indirizzo": "Via Germonio 12, 10142 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "I_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0729218,
+      "lng": 7.6109273,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS008006": {
+   "denominazione": "I.I.S. BALDESSANO-ROCCATI",
+   "sede": {
+    "indirizzo": "Viale Garibaldi 7, 10022 Carmagnola, Italia",
+    "comune": "Carmagnola",
+    "sito": "baldessano.roccati.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 44.8489638,
+     "lng": 7.716721,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "BALDESSANO-ROCCATI"
+     ],
+     "indirizzo": "Viale Garibaldi 7, 10022 Carmagnola, Italia",
+     "comune": "Carmagnola",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 44.8489638,
+      "lng": 7.716721,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "BALDESSANO-ROCCATI"
+     ],
+     "indirizzo": "Via San Francesco Di Sales 190, 10022 Carmagnola, Italia",
+     "comune": "Carmagnola",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 44.8463463,
+      "lng": 7.7106914,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS03600A": {
+   "denominazione": "I.I.S. E. DA ROTTERDAM",
+   "sede": {
+    "indirizzo": "Via XXV Aprile 139, 10042 Nichelino, Italia",
+    "comune": "Nichelino",
+    "sito": "www.erasmonichelino.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0020626,
+     "lng": 7.6273025,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "ERASMO DA ROTTERDAM",
+      "I.T.G. ERASMO DA ROTTERDAM"
+     ],
+     "indirizzo": "Via XXV Aprile 139, 10042 Nichelino, Italia",
+     "comune": "Nichelino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0020626,
+      "lng": 7.6273025,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "LS ERASMO DA ROTTERDAM"
+     ],
+     "indirizzo": "Via XXV Aprile 139, Nichelino, Italia",
+     "comune": "Nichelino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0021995,
+      "lng": 7.626608,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS02700G": {
+   "denominazione": "I.I.S. EUROPA UNITA",
+   "sede": {
+    "indirizzo": "Via Marconi 6, 10034 Chivasso, Italia",
+    "comune": "Chivasso",
+    "sito": "www.istitutoeuropaunita.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.1865665,
+     "lng": 7.8882081,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "EUROPA UNITA"
+     ],
+     "indirizzo": "Viale Marconi 6, 10034 Chivasso, Italia",
+     "comune": "Chivasso",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.1898322,
+      "lng": 7.8860277,
+      "approssimativo": true
+     }
+    },
+    {
+     "nomi": [
+      "EUROPA UNITA"
+     ],
+     "indirizzo": "Via Marconi 6, 10034 Chivasso, Italia",
+     "comune": "Chivasso",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.1865665,
+      "lng": 7.8882081,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS06900N": {
+   "denominazione": "G. PLANA",
+   "sede": {
+    "indirizzo": "Piazza Di Robilant 5, 10141 Torino, Italia",
+    "comune": "Torino",
+    "sito": "www.plana.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0677551,
+     "lng": 7.6824892,
+     "approssimativo": true
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "G. PLANA"
+     ],
+     "indirizzo": "Piazza Robilant 5, 10141 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0608184,
+      "lng": 7.645763,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "CASA CIRCONDARIALE LO RUSSO E COTUGNO"
+     ],
+     "indirizzo": "Via Pianezza 100, 10100 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.094611,
+      "lng": 7.649762,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "G. PLANA"
+     ],
+     "indirizzo": "Piazza Di Robilant 5, 10141 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0677551,
+      "lng": 7.6824892,
+      "approssimativo": true
+     }
+    }
+   ]
+  },
+  "TOTF04000D": {
+   "denominazione": "G.B.PININFARINA",
+   "sede": {
+    "indirizzo": "Via Ponchielli 16, 10024 Moncalieri, Italia",
+    "comune": "Moncalieri",
+    "sito": "www.itispininfarina.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0133303,
+     "lng": 7.6615007,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "G.B.PININFARINA"
+     ],
+     "indirizzo": "Via Ponchielli 16, 10024 Moncalieri, Italia",
+     "comune": "Moncalieri",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0133303,
+      "lng": 7.6615007,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS01200T": {
+   "denominazione": "I.I.S. OLIVETTI",
+   "sede": {
+    "indirizzo": "Viale Della Liberazione 25, 10015 Ivrea, Italia",
+    "comune": "Ivrea",
+    "sito": "www.istitutoolivetti.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.4482295,
+     "lng": 7.875653,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "C. OLIVETTI",
+      "I.P.I.A. M. OLIVETTI",
+      "I.P.S.COMM. M. OLIVETTI"
+     ],
+     "indirizzo": "Colle Bellavista, 10015 Ivrea, Italia",
+     "comune": "Ivrea",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.451803,
+      "lng": 7.8932496,
+      "approssimativo": true
+     }
+    }
+   ]
+  },
+  "TOIS003003": {
+   "denominazione": "I.I.S. E. MAJORANA",
+   "sede": {
+    "indirizzo": "Via Frattini 11, 10137 Torino, Italia",
+    "comune": "Torino",
+    "sito": "www.majoranatorino.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0356664,
+     "lng": 7.6288925,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "E. FERRARI"
+     ],
+     "indirizzo": "Via Gaidano 126, 10137 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0420598,
+      "lng": 7.6217741,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "E. MAJORANA"
+     ],
+     "indirizzo": "Corso Tazzoli 209, 10137 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0359854,
+      "lng": 7.6196167,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "E. MAJORANA"
+     ],
+     "indirizzo": "Via Frattini 11, 10137 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0356664,
+      "lng": 7.6288925,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOTF10000X": {
+   "denominazione": "E. MAJORANA",
+   "sede": {
+    "indirizzo": "Via Francesco Baracca 80, 10095 Grugliasco, Italia",
+    "comune": "Grugliasco",
+    "sito": "www.itismajo.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0676518,
+     "lng": 7.5857453,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "E. MAJORANA"
+     ],
+     "indirizzo": "Via Francesco Baracca 80, 10095 Grugliasco, Italia",
+     "comune": "Grugliasco",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0676518,
+      "lng": 7.5857453,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS061003": {
+   "denominazione": "I.I.S. G. PEANO",
+   "sede": {
+    "indirizzo": "Corso Venezia 29, 10147 Torino, Italia",
+    "comune": "Torino",
+    "sito": "www.iispeano.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0941523,
+     "lng": 7.6808887,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "G. PEANO"
+     ],
+     "indirizzo": "Corso Venezia 29, 10147 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0941523,
+      "lng": 7.6808887,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOPM050003": {
+   "denominazione": "REGINA MARGHERITA",
+   "sede": {
+    "indirizzo": "Via Valperga Caluso 12, 10125 Torino, Italia",
+    "comune": "Torino",
+    "sito": "https//www.liceoreginamargheritatorino.edu.it/",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0533886,
+     "lng": 7.6774881,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "REGINA MARGHERITA"
+     ],
+     "indirizzo": "Via Valperga Caluso 12, 10125 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0533886,
+      "lng": 7.6774881,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS04800L": {
+   "denominazione": "I.I.S. R. ZERBONI",
+   "sede": {
+    "indirizzo": "Via P. Della Cella 3, 10148 Torino, Italia",
+    "comune": "Torino",
+    "sito": "Non Disponibile",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0677551,
+     "lng": 7.6824892,
+     "approssimativo": true
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "R. ZERBONI"
+     ],
+     "indirizzo": "Via P. Della Cella 3, 10148 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0677551,
+      "lng": 7.6824892,
+      "approssimativo": true
+     }
+    }
+   ]
+  },
+  "TOTD05000T": {
+   "denominazione": "G. GALILEI",
+   "sede": {
+    "indirizzo": "Via G.B.Nicol 35, 10051 Avigliana, Italia",
+    "comune": "Avigliana",
+    "sito": "www.itcgalilei.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0779435,
+     "lng": 7.3983904,
+     "approssimativo": true
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "G. GALILEI"
+     ],
+     "indirizzo": "Via G.B.Nicol 35, 10051 Avigliana, Italia",
+     "comune": "Avigliana",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0779435,
+      "lng": 7.3983904,
+      "approssimativo": true
+     }
+    }
+   ]
+  },
+  "TOPS020006": {
+   "denominazione": "A. VOLTA",
+   "sede": {
+    "indirizzo": "Via Juvarra 14, 10122 Torino, Italia",
+    "comune": "Torino",
+    "sito": "www.liceovolta.eu",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0743419,
+     "lng": 7.6718949,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "A. VOLTA"
+     ],
+     "indirizzo": "Via Juvarra 14, 10122 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0743419,
+      "lng": 7.6718949,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOPS190009": {
+   "denominazione": "I. NEWTON",
+   "sede": {
+    "indirizzo": "Via Paleologi 22, 10034 Chivasso, Italia",
+    "comune": "Chivasso",
+    "sito": "www.liceonewton.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.1921413,
+     "lng": 7.8839544,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "I. NEWTON"
+     ],
+     "indirizzo": "Via Paleologi 22, 10034 Chivasso, Italia",
+     "comune": "Chivasso",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.1921413,
+      "lng": 7.8839544,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS07100N": {
+   "denominazione": "I.I.S. SETTIMO TORINESE",
+   "sede": {
+    "indirizzo": "Via Leini 54, 10036 Settimo Torinese, Italia",
+    "comune": "Settimo Torinese",
+    "sito": "www.iis-settimotorinese.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.1402178,
+     "lng": 7.7616094,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "LICEO SCIENTIFICO SETTIMO T.SE",
+      "ISTITUTO PROFESSIONALE SETTIMO T.SE"
+     ],
+     "indirizzo": "Via Leini 54, Settimo Torinese, Italia",
+     "comune": "Settimo Torinese",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.1410243,
+      "lng": 7.7589577,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "ISTITUTO TECNICO SETTIMO T.SE"
+     ],
+     "indirizzo": "Via Leini 54, 10036 Settimo Torinese, Italia",
+     "comune": "Settimo Torinese",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.1402178,
+      "lng": 7.7616094,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "ISTITUTO PROFESSIONALE SETTIMO T.SE"
+     ],
+     "indirizzo": "Via Don Gnocchi 2/A, Settimo Torinese, Italia",
+     "comune": "Settimo Torinese",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.1407587,
+      "lng": 7.7600577,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOPC090009": {
+   "denominazione": "V. GIOBERTI",
+   "sede": {
+    "indirizzo": "Via San Ottavio 9, 10124 Torino, Italia",
+    "comune": "Torino",
+    "sito": "https//www.liceogioberti.edu.it/",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0677551,
+     "lng": 7.6824892,
+     "approssimativo": true
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "V. GIOBERTI"
+     ],
+     "indirizzo": "Via San Ottavio 9, 10124 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0677551,
+      "lng": 7.6824892,
+      "approssimativo": true
+     }
+    }
+   ]
+  },
+  "TOIS029007": {
+   "denominazione": "IIS J. B. BECCARI",
+   "sede": {
+    "indirizzo": "Via Paganini 22, 10154 Torino, Italia",
+    "comune": "Torino",
+    "sito": "www.istitutobeccari.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0856101,
+     "lng": 7.7047572,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "I.I.S. J. B. BECCARI"
+     ],
+     "indirizzo": "Via Paganini 22, 10154 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0856101,
+      "lng": 7.7047572,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS06400E": {
+   "denominazione": "IIS COPERNICO-LUXEMBURG",
+   "sede": {
+    "indirizzo": "Corso Caio Plinio 2, 10127 Torino, Italia",
+    "comune": "Torino",
+    "sito": "www.coplux.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0267334,
+     "lng": 7.6542805,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "ROSA LUXEMBURG"
+     ],
+     "indirizzo": "Corso Caio Plinio 6, 10127 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0259894,
+      "lng": 7.6552987,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "N. COPERNICO"
+     ],
+     "indirizzo": "Corso Caio Plinio 2, 10127 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0267334,
+      "lng": 7.6542805,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOPC06000D": {
+   "denominazione": "G.F. PORPORATO",
+   "sede": {
+    "indirizzo": "Via Brignone 2, 10064 Pinerolo, Italia",
+    "comune": "Pinerolo",
+    "sito": "www.liceoporporato.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 44.8864097,
+     "lng": 7.3358358,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "G.F. PORPORATO"
+     ],
+     "indirizzo": "Via Brignone 2, 10064 Pinerolo, Italia",
+     "comune": "Pinerolo",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 44.8864097,
+      "lng": 7.3358358,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS059003": {
+   "denominazione": "I.I.S. G. NATTA",
+   "sede": {
+    "indirizzo": "Via XX Settembre 14/A, 10098 Rivoli, Italia",
+    "comune": "Rivoli",
+    "sito": "https//www.itisgiulionatta.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0665743,
+     "lng": 7.5300763,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "GIULIO NATTA"
+     ],
+     "indirizzo": "Via XX Settembre 14/A, 10098 Rivoli, Italia",
+     "comune": "Rivoli",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0665743,
+      "lng": 7.5300763,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS067002": {
+   "denominazione": "I.I.S. CURIE - LEVI",
+   "sede": {
+    "indirizzo": "Via Torino 9, 10093 Collegno, Italia",
+    "comune": "Collegno",
+    "sito": "Non Disponibile",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0737753,
+     "lng": 7.5876445,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "LICEO M. CURIE"
+     ],
+     "indirizzo": "Via Torino 9, 10093 Collegno, Italia",
+     "comune": "Collegno",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0737753,
+      "lng": 7.5876445,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "LICEO M. CURIE"
+     ],
+     "indirizzo": "Corso Torino 9, 10093 Collegno, Italia",
+     "comune": "Collegno",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0754763,
+      "lng": 7.5872981,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "I.T.S.S.E. \"C.LEVI\""
+     ],
+     "indirizzo": "Via Madonna De La Salette 29, 10146 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0677551,
+      "lng": 7.6824892,
+      "approssimativo": true
+     }
+    }
+   ]
+  },
+  "TOIS03400P": {
+   "denominazione": "I.I.S. CURIE - VITTORINI",
+   "sede": {
+    "indirizzo": "Corso Allamano 130, 10095 Grugliasco, Italia",
+    "comune": "Grugliasco",
+    "sito": "www.iiscurievittorini.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0524165,
+     "lng": 7.5822373,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "I.I.S CURIE-VITTORINI"
+     ],
+     "indirizzo": "Corso Allamano 130, 10095 Grugliasco, Italia",
+     "comune": "Grugliasco",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0524165,
+      "lng": 7.5822373,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "I.I.S CURIE-VITTORINI"
+     ],
+     "indirizzo": "C. Allamano 130 Grugliasco (To), 10095 Grugliasco, Italia",
+     "comune": "Grugliasco",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0524165,
+      "lng": 7.5822373,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOPS18000P": {
+   "denominazione": "A. MONTI",
+   "sede": {
+    "indirizzo": "Via Montessori 2, 10023 Chieri, Italia",
+    "comune": "Chieri",
+    "sito": "www.liceomonti.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0125115,
+     "lng": 7.8371169,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "A. MONTI"
+     ],
+     "indirizzo": "Via Montessori 2, 10023 Chieri, Italia",
+     "comune": "Chieri",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0125115,
+      "lng": 7.8371169,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TORH010009": {
+   "denominazione": "RH G. COLOMBATTO",
+   "sede": {
+    "indirizzo": "Via Gorizia 7, 10136 Torino, Italia",
+    "comune": "Torino",
+    "sito": "www.ipcolombatto.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0530638,
+     "lng": 7.6419335,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "RH G. COLOMBATTO"
+     ],
+     "indirizzo": "Via Gorizia 7, 10136 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0530638,
+      "lng": 7.6419335,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS01400D": {
+   "denominazione": "I.I.S. I. PORRO",
+   "sede": {
+    "indirizzo": "Viale Kennedy 30, 10064 Pinerolo, Italia",
+    "comune": "Pinerolo",
+    "sito": "https//www.porropinerolo.edu.it/",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 44.8893682,
+     "lng": 7.3443637,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "I. PORRO"
+     ],
+     "indirizzo": "Viale Kennedy 30, 10064 Pinerolo, Italia",
+     "comune": "Pinerolo",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 44.8893682,
+      "lng": 7.3443637,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS00600E": {
+   "denominazione": "I.I.S. C. UBERTINI",
+   "sede": {
+    "indirizzo": "Piazza Mazzini 4, 10014 Caluso, Italia",
+    "comune": "Caluso",
+    "sito": "Non Disponibile",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.3050429,
+     "lng": 7.8890897,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "UBERTINI",
+      "C. UBERTINI"
+     ],
+     "indirizzo": "Piazza Mazzini 4, 10014 Caluso, Italia",
+     "comune": "Caluso",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.3050429,
+      "lng": 7.8890897,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "IIS C. UBERTINI SEZ TECNICA"
+     ],
+     "indirizzo": "Piazza Mazzini 5, 10014 Caluso, Italia",
+     "comune": "Caluso",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.3050429,
+      "lng": 7.8890897,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "UBERTINI"
+     ],
+     "indirizzo": "Via Ajma 12, 10034 Chivasso, Italia",
+     "comune": "Chivasso",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.1931104,
+      "lng": 7.9076145,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS038002": {
+   "denominazione": "I.I.S. MICHELE BUNIVA",
+   "sede": {
+    "indirizzo": "Via Dei Rochis 25, 10064 Pinerolo, Italia",
+    "comune": "Pinerolo",
+    "sito": "www.buniva.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 44.8890344,
+     "lng": 7.3462188,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "M. BUNIVA",
+      "LICEO ARTISTICO BUNIVA"
+     ],
+     "indirizzo": "Via Dei Rochis 25, 10064 Pinerolo, Italia",
+     "comune": "Pinerolo",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 44.8890344,
+      "lng": 7.3462188,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS00400V": {
+   "denominazione": "I.I.S. A. MORO",
+   "sede": {
+    "indirizzo": "Via Gallo Pecca 4/6, 10086 Rivarolo Canavese, Italia",
+    "comune": "Rivarolo Canavese",
+    "sito": "www.istitutomoro.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.3320235,
+     "lng": 7.7230498,
+     "approssimativo": true
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "A. MORO"
+     ],
+     "indirizzo": "Via Gallo Pecca 4/6, 10086 Rivarolo Canavese, Italia",
+     "comune": "Rivarolo Canavese",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.3320235,
+      "lng": 7.7230498,
+      "approssimativo": true
+     }
+    },
+    {
+     "nomi": [
+      "A. MORO"
+     ],
+     "indirizzo": "Viale Losego N.2, 10086 Rivarolo Canavese, Italia",
+     "comune": "Rivarolo Canavese",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.329327,
+      "lng": 7.7196912,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS024004": {
+   "denominazione": "I.I.S. G. CENA",
+   "sede": {
+    "indirizzo": "Via Dora Baltea 3, 10015 Ivrea, Italia",
+    "comune": "Ivrea",
+    "sito": "www.iiscena.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.461675,
+     "lng": 7.878777,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "G. CENA"
+     ],
+     "indirizzo": "Via Dora Baltea 3, 10015 Ivrea, Italia",
+     "comune": "Ivrea",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.461675,
+      "lng": 7.878777,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "G. CENA"
+     ],
+     "indirizzo": "Via Dora Baltea N. 3, 10015 Ivrea, Italia",
+     "comune": "Ivrea",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.461675,
+      "lng": 7.878777,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS03300V": {
+   "denominazione": "NORBERTO BOBBIO",
+   "sede": {
+    "indirizzo": "Via Valdocco 23, 10041 Carignano, Italia",
+    "comune": "Carignano",
+    "sito": "www.iisbobbio.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 44.9106887,
+     "lng": 7.6759298,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "NORBERTO BOBBIO"
+     ],
+     "indirizzo": "Via Porta Mercatoria 4/B, 10041 Carignano, Italia",
+     "comune": "Carignano",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 44.9090772,
+      "lng": 7.6763162,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "LICEO SCIENTIFICO"
+     ],
+     "indirizzo": "Via Valdocco 23, 10041 Carignano, Italia",
+     "comune": "Carignano",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 44.9106887,
+      "lng": 7.6759298,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS05100C": {
+   "denominazione": "I.I.S. A. AVOGADRO",
+   "sede": {
+    "indirizzo": "Corso San Maurizio 8, 10124 Torino, Italia",
+    "comune": "Torino",
+    "sito": "https//www.itisavogadro.edu.it/",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0712755,
+     "lng": 7.6926852,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "A.AVOGADRO",
+      "L.S. A. AVOGADRO"
+     ],
+     "indirizzo": "Corso San Maurizio 8, 10124 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0712755,
+      "lng": 7.6926852,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOVC01000Q": {
+   "denominazione": "UMBERTO I",
+   "sede": {
+    "indirizzo": "Via Bligny 1 Bis, 10122 Torino, Italia",
+    "comune": "Torino",
+    "sito": "https//www.cnuto.edu.it/",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0748161,
+     "lng": 7.6761052,
+     "approssimativo": false
+    }
+   },
+   "plessi": []
+  },
+  "TOIS03900T": {
+   "denominazione": "I.I.S. P. MARTINETTI",
+   "sede": {
+    "indirizzo": "Via Montello N.29, 10014 Caluso, Italia",
+    "comune": "Caluso",
+    "sito": "www.iismartinetti.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.3034486,
+     "lng": 7.8874909,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "MARTINETTI-TURISMO-CHIMICO MAT BIOTECN"
+     ],
+     "indirizzo": "Via Montello 29, 10014 Caluso, Italia",
+     "comune": "Caluso",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.3029897,
+      "lng": 7.885951,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "MARTINETTI-LING-SCIENT-SCIENZE APPL-ART"
+     ],
+     "indirizzo": "Via Montello N.29, 10014 Caluso, Italia",
+     "comune": "Caluso",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.3034486,
+      "lng": 7.8874909,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS04900C": {
+   "denominazione": "FERMI-GALILEI",
+   "sede": {
+    "indirizzo": "Via San Giovanni Bosco 17, 10073 Ciriè, Italia",
+    "comune": "Cirie'",
+    "sito": "https//www.iisfermigalileicirie.edu.it/",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.2297103,
+     "lng": 7.5999804,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "I.I.S. \"FERMI-GALILEI\" - CIRIE' (TO)"
+     ],
+     "indirizzo": "Via San Giovanni Bosco 17, 10073 Ciriè, Italia",
+     "comune": "Cirie'",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.2297103,
+      "lng": 7.5999804,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "I.I.S. \"FERMI-GALILEI\" - CIRIE' (TO)"
+     ],
+     "indirizzo": "Via Don Bosco 9, 10073 Ciriè, Italia",
+     "comune": "Cirie'",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.2203576,
+      "lng": 7.5940875,
+      "approssimativo": true
+     }
+    }
+   ]
+  },
+  "TOIS032003": {
+   "denominazione": "I.I.S. E. MAJORANA",
+   "sede": {
+    "indirizzo": "Via Ada Negri 14, 10024 Moncalieri, Italia",
+    "comune": "Moncalieri",
+    "sito": "www.iismajoranamoncalieri.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 44.9948223,
+     "lng": 7.7026843,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "A. MARRO"
+     ],
+     "indirizzo": "Strada Torino 32, 10024 Moncalieri, Italia",
+     "comune": "Moncalieri",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0110574,
+      "lng": 7.6863964,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "E. MAJORANA"
+     ],
+     "indirizzo": "Via Ada Negri 14, 10024 Moncalieri, Italia",
+     "comune": "Moncalieri",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 44.9948223,
+      "lng": 7.7026843,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS04100T": {
+   "denominazione": "I.I.S. J.C. MAXWELL",
+   "sede": {
+    "indirizzo": "Via XXV Aprile 141, 10042 Nichelino, Italia",
+    "comune": "Nichelino",
+    "sito": "www.jcmaxwell.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0011374,
+     "lng": 7.6345505,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "J.C. MAXWELL"
+     ],
+     "indirizzo": "Via XXV Aprile 141, 10042 Nichelino, Italia",
+     "comune": "Nichelino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0011374,
+      "lng": 7.6345505,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIC82500Q": {
+   "denominazione": "I.C. CONDOVE E SANT'AMBROGIO",
+   "sede": {
+    "indirizzo": "Via De Amicis 1, 10055 Condove, Italia",
+    "comune": "Condove",
+    "sito": "www.icscondove.gov.it/",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.1134503,
+     "lng": 7.3088623,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "I.C. CONDOVE -SANT'AMBROGIO"
+     ],
+     "indirizzo": "Via I Maggio 13, 10057 Sant'Ambrogio Di Torino, Italia",
+     "comune": "Sant'Ambrogio Di Torino",
+     "gradi": [
+      "I_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.1011817,
+      "lng": 7.3573443,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "I.C. CONDOVE - G.F. RE"
+     ],
+     "indirizzo": "Via De Amicis 1, 10055 Condove, Italia",
+     "comune": "Condove",
+     "gradi": [
+      "I_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.1134503,
+      "lng": 7.3088623,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOPS120003": {
+   "denominazione": "C. CATTANEO",
+   "sede": {
+    "indirizzo": "Via Sostegno 41/10, 10146 Torino, Italia",
+    "comune": "Torino",
+    "sito": "www.liceocattaneotorino.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0790037,
+     "lng": 7.6195665,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "C. CATTANEO"
+     ],
+     "indirizzo": "Via Sostegno 41/10, 10146 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0790037,
+      "lng": 7.6195665,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS00100B": {
+   "denominazione": "I.I.S. L. DES AMBROIS",
+   "sede": {
+    "indirizzo": "Via M. L. King 10, 10056 Oulx, Italia",
+    "comune": "Oulx",
+    "sito": "www.desambrois.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0330519,
+     "lng": 6.83251,
+     "approssimativo": true
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "L. DES AMBROIS"
+     ],
+     "indirizzo": "Via M.L. King 10, 10056 Oulx, Italia",
+     "comune": "Oulx",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0330519,
+      "lng": 6.83251,
+      "approssimativo": true
+     }
+    },
+    {
+     "nomi": [
+      "L. DES AMBROIS"
+     ],
+     "indirizzo": "Via M. L King, 10056 Oulx, Italia",
+     "comune": "Oulx",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0330519,
+      "lng": 6.83251,
+      "approssimativo": true
+     }
+    }
+   ]
+  },
+  "TOPC08000P": {
+   "denominazione": "N. ROSA",
+   "sede": {
+    "indirizzo": "Piazza Savoia 19, 10059 Susa, Italia",
+    "comune": "Susa",
+    "sito": "www.liceonorbertorosa.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.1374807,
+     "lng": 7.0441557,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "N. ROSA"
+     ],
+     "indirizzo": "Via Cavaliere Via Veneto 5, 10053 Bussoleno, Italia",
+     "comune": "Bussoleno",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.1392706,
+      "lng": 7.1477166,
+      "approssimativo": true
+     }
+    },
+    {
+     "nomi": [
+      "N. ROSA"
+     ],
+     "indirizzo": "Piazza Savoia 19, 10059 Susa, Italia",
+     "comune": "Susa",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.1374807,
+      "lng": 7.0441557,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS07200D": {
+   "denominazione": "I.I.S. ALBE STEINER",
+   "sede": {
+    "indirizzo": "Lungo Dora Agrigento 20/A, 10152 Torino, Italia",
+    "comune": "Torino",
+    "sito": "Non Disponibile",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0813096,
+     "lng": 7.6854241,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "ALBE STEINER",
+      "LICEO ARTISTICO ALBE STEINER"
+     ],
+     "indirizzo": "Lungo Dora Agrigento 20/A, 10152 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0813096,
+      "lng": 7.6854241,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS06300P": {
+   "denominazione": "I.I.S. G. DALMASSO",
+   "sede": {
+    "indirizzo": "Via Claviere 10, 10044 Pianezza, Italia",
+    "comune": "Pianezza",
+    "sito": "www.iisdalmasso.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.1054963,
+     "lng": 7.5437931,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "G. DALMASSO",
+      "L.S. DALMASSO - SCIENZE APPLICATE"
+     ],
+     "indirizzo": "Via Claviere 10, 10044 Pianezza, Italia",
+     "comune": "Pianezza",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.1054963,
+      "lng": 7.5437931,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOSL020003": {
+   "denominazione": "\"R.COTTINI\"LICEO ARTISTICO STATALE",
+   "sede": {
+    "indirizzo": "Via Castelgomberto 2O, 10136 Torino, Italia",
+    "comune": "Torino",
+    "sito": "www.liceocottini.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0508502,
+     "lng": 7.6321282,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "\"R.COTTINI\"LICEO ARTISTICO STATALE"
+     ],
+     "indirizzo": "Via Castelgomberto 2O, 10136 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0508502,
+      "lng": 7.6321282,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TORI04000L": {
+   "denominazione": "IPSIA DALMAZIO BIRAGO",
+   "sede": {
+    "indirizzo": "Corso Novara 65, 10154 Torino, Italia",
+    "comune": "Torino",
+    "sito": "WWW.IPSIABIRAGO.IT",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0839792,
+     "lng": 7.6971735,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "IPSIA DALMAZIO BIRAGO"
+     ],
+     "indirizzo": "Corso Novara 65, 10154 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0839792,
+      "lng": 7.6971735,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS00700A": {
+   "denominazione": "I.I.S. T. D'ORIA",
+   "sede": {
+    "indirizzo": "Via Prever 13, 10073 Ciriè, Italia",
+    "comune": "Cirie'",
+    "sito": "www.iisdoria.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.2254521,
+     "lng": 7.6052544,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "T. D'ORIA"
+     ],
+     "indirizzo": "Via Prever 13, 10073 Ciriè, Italia",
+     "comune": "Cirie'",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.2254521,
+      "lng": 7.6052544,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS04700R": {
+   "denominazione": "I.I.S. GALILEI - FERRARI",
+   "sede": {
+    "indirizzo": "Via Lavagna 8, 10126 Torino, Italia",
+    "comune": "Torino",
+    "sito": "www.galileiferrari.it/",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.0334158,
+     "lng": 7.6686147,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "E. FERRARI",
+      "GALILEI - FERRARI"
+     ],
+     "indirizzo": "Via Gaidano 126, 10137 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0420598,
+      "lng": 7.6217741,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "G. GALILEI"
+     ],
+     "indirizzo": "Via Lavagna 8, 10126 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.0334158,
+      "lng": 7.6686147,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS02600Q": {
+   "denominazione": "I.I.S. 25 APRILE - FACCIO",
+   "sede": {
+    "indirizzo": "Via XXIV Maggio 13, 10082 Cuorgnè, Italia",
+    "comune": "Cuorgne'",
+    "sito": "Non Disponibile",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.3887431,
+     "lng": 7.6474102,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "25 APRILE",
+      "I.I.S. 25 APRILE - FACCIO"
+     ],
+     "indirizzo": "Via XXIV Maggio 13, 10082 Cuorgnè, Italia",
+     "comune": "Cuorgne'",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.3887431,
+      "lng": 7.6474102,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "LICEO ARTISTICO FELICE FACCIO"
+     ],
+     "indirizzo": "Via Ammiraglio Pullino 24, 10081 Castellamonte, Italia",
+     "comune": "Castellamonte",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.381955,
+      "lng": 7.712117,
+      "approssimativo": true
+     }
+    },
+    {
+     "nomi": [
+      "25 APRILE"
+     ],
+     "indirizzo": "Via XXIV Maggio 11, 10082 Cuorgnè, Italia",
+     "comune": "Cuorgne'",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.3887431,
+      "lng": 7.6474102,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS017001": {
+   "denominazione": "I.I.S. E. FERRARI",
+   "sede": {
+    "indirizzo": "Corso L. Couvert 21, 10059 Susa, Italia",
+    "comune": "Susa",
+    "sito": "https//www.ferrarisusa.edu.it/",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.1383808,
+     "lng": 7.0493387,
+     "approssimativo": true
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "E. FERRARI"
+     ],
+     "indirizzo": "Corso L. Couvert 21, Susa, Italia",
+     "comune": "Susa",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.1383808,
+      "lng": 7.0493387,
+      "approssimativo": true
+     }
+    },
+    {
+     "nomi": [
+      "E. FERRARI"
+     ],
+     "indirizzo": "Corso L. Couvert 21, 10059 Susa, Italia",
+     "comune": "Susa",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.1383808,
+      "lng": 7.0493387,
+      "approssimativo": true
+     }
+    }
+   ]
+  },
+  "TOPS01000G": {
+   "denominazione": "A. GRAMSCI",
+   "sede": {
+    "indirizzo": "Via Alberton 10 A, 10015 Ivrea, Italia",
+    "comune": "Ivrea",
+    "sito": "www.lsgramsci.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.451803,
+     "lng": 7.8932496,
+     "approssimativo": true
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "A. GRAMSCI"
+     ],
+     "indirizzo": "Via Alberton 10 A, 10015 Ivrea, Italia",
+     "comune": "Ivrea",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.451803,
+      "lng": 7.8932496,
+      "approssimativo": true
+     }
+    }
+   ]
+  },
+  "TOIS023008": {
+   "denominazione": "I.I.S. F. ALBERT",
+   "sede": {
+    "indirizzo": "Via Tesso 7, 10074 Lanzo Torinese, Italia",
+    "comune": "Lanzo Torinese",
+    "sito": "www.iisalbert.edu.it",
+    "viaggio": {
+     "minuti": null,
+     "km": null,
+     "km_strada": null,
+     "cambi": null,
+     "linee": [],
+     "auto_minuti": null,
+     "lat": 45.276438,
+     "lng": 7.4776501,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "IIS F. ALBERT",
+      "F. ALBERT"
+     ],
+     "indirizzo": "Via Tesso 7, 10074 Lanzo Torinese, Italia",
+     "comune": "Lanzo Torinese",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": null,
+      "km": null,
+      "km_strada": null,
+      "cambi": null,
+      "linee": [],
+      "auto_minuti": null,
+      "lat": 45.276438,
+      "lng": 7.4776501,
+      "approssimativo": false
+     }
+    }
+   ]
+  }
+ },
+ "interpelli": [
+  {
+   "id": "180742daaced",
+   "codice_scuola": "TOIS01200T",
+   "scuola": "IIS OLIVETTI",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "data_interpello": null,
+   "data_interpello_testo": "05/'9/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-09",
+   "data_scadenza_testo": "09/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "2b8844c5c442",
+   "codice_scuola": "TOIS01200T",
+   "scuola": "IIS OLIVETTI",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "17",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-05",
+   "data_interpello_testo": "05/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-09",
+   "data_scadenza_testo": "09/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "a674fd11da26",
+   "codice_scuola": "TOIS01200T",
+   "scuola": "IIS OLIVETTI",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "data_interpello": "2025-09-05",
+   "data_interpello_testo": "05/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-09",
+   "data_scadenza_testo": "09/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "a674fd11da26-2",
+   "codice_scuola": "TOIS01200T",
+   "scuola": "IIS OLIVETTI",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "data_interpello": "2025-09-05",
+   "data_interpello_testo": "05/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-09",
+   "data_scadenza_testo": "09/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "84cc97d5a21a",
+   "codice_scuola": "TOIS01200T",
+   "scuola": "IIS OLIVETTI",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "13",
+   "corso": "Serale",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-05",
+   "data_interpello_testo": "05/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-09",
+   "data_scadenza_testo": "09/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "85bfafbfb5b0",
+   "codice_scuola": "TOIS01200T",
+   "scuola": "IIS OLIVETTI",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-05",
+   "data_interpello_testo": "05/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-09",
+   "data_scadenza_testo": "09/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "039fb69ffe7d",
+   "codice_scuola": "TOIS07100N",
+   "scuola": "IIS SETTIMO TORINESE",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 20/11/2025",
+   "data_interpello": "2025-09-08",
+   "data_interpello_testo": "08/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-09",
+   "data_scadenza_testo": "09/09/2025 ore 14:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "066aac075385",
+   "codice_scuola": "TOIS07100N",
+   "scuola": "IIS SETTIMO TORINESE",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "6 ore",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-08",
+   "data_interpello_testo": "08/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-09",
+   "data_scadenza_testo": "09/09/2025 ore 14:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "802cf41abdea",
+   "codice_scuola": "TOIS07100N",
+   "scuola": "IIS SETTIMO TORINESE",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-08",
+   "data_interpello_testo": "08/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-09",
+   "data_scadenza_testo": "09/09/2025 ore 14:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "787e679563d0",
+   "codice_scuola": "TOIS023008",
+   "scuola": "I.I.S. FEDERICO ALBERT",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "13",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-10",
+   "data_interpello_testo": "10/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-11",
+   "data_scadenza_testo": "11/09/2025 ore 14",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "556527f0433d",
+   "codice_scuola": "TOPS04000B",
+   "scuola": "L.S.S. GALILEO FERRARIS",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "8",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 31/12/2025",
+   "data_interpello": "2025-09-11",
+   "data_interpello_testo": "11/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-12",
+   "data_scadenza_testo": "12/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "8706f0f90330",
+   "codice_scuola": "TOPS04000B",
+   "scuola": "L.S.S. GALILEO FERRARIS",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "8",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 31/12/2025",
+   "data_interpello": "2025-09-11",
+   "data_interpello_testo": "11/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": null,
+   "data_scadenza_testo": "11:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "aae66f1152b8",
+   "codice_scuola": "TOPS01000G",
+   "scuola": "A. GRAMSCI",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino ad avente titolo",
+   "data_interpello": "2025-09-11",
+   "data_interpello_testo": "11/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-12",
+   "data_scadenza_testo": "12/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "0d83249ce6fa",
+   "codice_scuola": "TOIS038002",
+   "scuola": "I.I.S. BUNIVA",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "10",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-12",
+   "data_interpello_testo": "12/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-17",
+   "data_scadenza_testo": "17/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "94f31e506dad",
+   "codice_scuola": "TOIS03900T",
+   "scuola": "IIS PIERO MARTINETTI",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "12",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-13",
+   "data_interpello_testo": "13/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-16",
+   "data_scadenza_testo": "16/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "1165712da78c",
+   "codice_scuola": "TOIS04300D",
+   "scuola": "IIS PRIMO LEVI",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "08",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-16",
+   "data_interpello_testo": "16/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-17",
+   "data_scadenza_testo": "17/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "ca6e11158017",
+   "codice_scuola": "TOTF04000D",
+   "scuola": "ITIS PININFARINA",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 28/02/2026",
+   "data_interpello": "2025-09-16",
+   "data_interpello_testo": "16/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-17",
+   "data_scadenza_testo": "17/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "7059e5caa36a",
+   "codice_scuola": "TOTF04000D",
+   "scuola": "ITIS PININFARINA",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "9",
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 05/10/2025",
+   "data_interpello": "2025-09-16",
+   "data_interpello_testo": "16/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-17",
+   "data_scadenza_testo": "17/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "122a752f9756",
+   "codice_scuola": "TOTF04000D",
+   "scuola": "ITIS PININFARINA",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-16",
+   "data_interpello_testo": "16/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-17",
+   "data_scadenza_testo": "17/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "122a752f9756-2",
+   "codice_scuola": "TOTF04000D",
+   "scuola": "ITIS PININFARINA",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-16",
+   "data_interpello_testo": "16/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-17",
+   "data_scadenza_testo": "17/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "b329bf263b69",
+   "codice_scuola": "TOIS02600Q",
+   "scuola": "IIS 25APRILE-FACCIO",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino ad avente titolo",
+   "data_interpello": "2025-09-16",
+   "data_interpello_testo": "16/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-17",
+   "data_scadenza_testo": "17/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "b329bf263b69-2",
+   "codice_scuola": "TOIS02600Q",
+   "scuola": "IIS 25APRILE-FACCIO",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino ad avente titolo",
+   "data_interpello": "2025-09-16",
+   "data_interpello_testo": "16/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-17",
+   "data_scadenza_testo": "17/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "c42f16d2c99f",
+   "codice_scuola": "TOIS061003",
+   "scuola": "IIS PEANO",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2025-09-16",
+   "data_interpello_testo": "16/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-17",
+   "data_scadenza_testo": "17/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "d8435818f330",
+   "codice_scuola": "TOIS00600E",
+   "scuola": "IIS C. UBERTINI",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 30/09/2025",
+   "data_interpello": "2025-09-17",
+   "data_interpello_testo": "17/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-19",
+   "data_scadenza_testo": "19/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "3cc3989344d3",
+   "codice_scuola": "TOIS017001",
+   "scuola": "I.I.S. ENZO FERRARI",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "11",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-17",
+   "data_interpello_testo": "17/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-18",
+   "data_scadenza_testo": "18/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "51e247cde632",
+   "codice_scuola": "TOIS017001",
+   "scuola": "I.I.S. ENZO FERRARI",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-17",
+   "data_interpello_testo": "17/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-18",
+   "data_scadenza_testo": "18/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "29305dd06037",
+   "codice_scuola": "TOIS017001",
+   "scuola": "I.I.S. ENZO FERRARI",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "data_interpello": "2025-09-17",
+   "data_interpello_testo": "17/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-18",
+   "data_scadenza_testo": "18/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "3a4a4e3a607e",
+   "codice_scuola": "TOIS017001",
+   "scuola": "I.I.S. ENZO FERRARI",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "data_interpello": "2025-09-17",
+   "data_interpello_testo": "17/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-18",
+   "data_scadenza_testo": "18/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "0fc989a5b867",
+   "codice_scuola": "TORI04000L",
+   "scuola": "IPSIA BIRAGO",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "data_interpello": "2025-09-17",
+   "data_interpello_testo": "17/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-18",
+   "data_scadenza_testo": "18/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "38bb27b64aef",
+   "codice_scuola": "TOIS07100N",
+   "scuola": "IIS SETTIMO TORINESE",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "12",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-18",
+   "data_interpello_testo": "18/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-19",
+   "data_scadenza_testo": "19/09/2025 ore 14:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "c4047bccc1de",
+   "codice_scuola": "TOIS02600Q",
+   "scuola": "IIS 25APRILE-FACCIO",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "7",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-18",
+   "data_interpello_testo": "18/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-19",
+   "data_scadenza_testo": "19/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "d68b09d14acc",
+   "codice_scuola": "TOPC06000D",
+   "scuola": "Liceo Classico Statale G.F. Porporato , Pinerolo (TO)",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 31/10/2025",
+   "data_interpello": "2025-09-18",
+   "data_interpello_testo": "18/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-19",
+   "data_scadenza_testo": "19/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "b23be196172a",
+   "codice_scuola": "TOPC06000D",
+   "scuola": "Liceo Classico Statale G.F. Porporato , Pinerolo (TO)",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 14/10/2025",
+   "data_interpello": "2025-09-18",
+   "data_interpello_testo": "18/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-19",
+   "data_scadenza_testo": "19/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "b9059402d106",
+   "codice_scuola": "TOPS22000X",
+   "scuola": "LICEO GIORDANO BRUNO",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "6",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-19",
+   "data_interpello_testo": "19/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-20",
+   "data_scadenza_testo": "20/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "fc50832336d6",
+   "codice_scuola": "TOPS22000X",
+   "scuola": "LICEO GIORDANO BRUNO",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 03/10/2025",
+   "data_interpello": "2025-09-19",
+   "data_interpello_testo": "19/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-20",
+   "data_scadenza_testo": "20/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "fc50832336d6-2",
+   "codice_scuola": "TOPS22000X",
+   "scuola": "LICEO GIORDANO BRUNO",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 03/10/2025",
+   "data_interpello": "2025-09-19",
+   "data_interpello_testo": "19/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-20",
+   "data_scadenza_testo": "20/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "79f489f9876a",
+   "codice_scuola": "TOIS067002",
+   "scuola": "IIS Curie Levi",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 19/12/2025",
+   "data_interpello": "2025-09-19",
+   "data_interpello_testo": "19.09.2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-23",
+   "data_scadenza_testo": "23/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "5723262f50c7",
+   "codice_scuola": "TOIS07100N",
+   "scuola": "IIS SETTIMO TORINESE",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino ad avente titolo",
+   "data_interpello": "2025-09-22",
+   "data_interpello_testo": "22/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-23",
+   "data_scadenza_testo": "23/09/2025 ore 14:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "e3f41521c509",
+   "codice_scuola": "TOIS01200T",
+   "scuola": "IIS OLIVETTI",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "17",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-22",
+   "data_interpello_testo": "22/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-25",
+   "data_scadenza_testo": "25/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "17a28298b678",
+   "codice_scuola": "TOTF10000X",
+   "scuola": "ITI E. MAJORANA",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Serale",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-22",
+   "data_interpello_testo": "22/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-23",
+   "data_scadenza_testo": "23/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "17a28298b678-2",
+   "codice_scuola": "TOTF10000X",
+   "scuola": "ITI E. MAJORANA",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Serale",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-22",
+   "data_interpello_testo": "22/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-23",
+   "data_scadenza_testo": "23/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "cac7644a25a1",
+   "codice_scuola": "TOIS04700R",
+   "scuola": "IIS. GALILEI-FERRARI",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "data_interpello": "2025-09-22",
+   "data_interpello_testo": "22/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-23",
+   "data_scadenza_testo": "23/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "b0472a25ae5a",
+   "codice_scuola": "TOIS06800T",
+   "scuola": "tois06800t",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "data_interpello": "2025-09-23",
+   "data_interpello_testo": "23/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-26",
+   "data_scadenza_testo": "26/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "a573ce3d53b2",
+   "codice_scuola": "TOIS06800T",
+   "scuola": "tois06800t",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-23",
+   "data_interpello_testo": "23/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-26",
+   "data_scadenza_testo": "26/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "4a27725cd0bf",
+   "codice_scuola": "TOIS00700A",
+   "scuola": "IIS TOMMASO D ORIA",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "5",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-23",
+   "data_interpello_testo": "23/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-26",
+   "data_scadenza_testo": "26/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "fda6ce04b993",
+   "codice_scuola": "TOIS06800T",
+   "scuola": "tois06800t",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "8+9 Totale n.17 ore",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-23",
+   "data_interpello_testo": "23/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-26",
+   "data_scadenza_testo": "26/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "a573ce3d53b2-2",
+   "codice_scuola": "TOIS06800T",
+   "scuola": "tois06800t",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-23",
+   "data_interpello_testo": "23/09/2025",
+   "stato": "cancellato",
+   "data_scadenza": "2025-09-26",
+   "data_scadenza_testo": "26/09/2025",
+   "note_cancellazione": "link errato",
+   "data_cancellazione": "2025-09-24",
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "b0472a25ae5a-2",
+   "codice_scuola": "TOIS06800T",
+   "scuola": "tois06800t",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "data_interpello": "2025-09-23",
+   "data_interpello_testo": "23/09/2025",
+   "stato": "cancellato",
+   "data_scadenza": "2025-09-26",
+   "data_scadenza_testo": "26/09/2025",
+   "note_cancellazione": "link errato",
+   "data_cancellazione": "2025-09-24",
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "9b9ed922cf86",
+   "codice_scuola": "TOPS190009",
+   "scuola": "Liceo Classico Scientifico e Musicale Isaac Newton",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 24/10/2025",
+   "data_interpello": "2025-09-23",
+   "data_interpello_testo": "23/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-24",
+   "data_scadenza_testo": "24/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "8087b73a5f97",
+   "codice_scuola": "TOIS00400V",
+   "scuola": "IIS A. MORO",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "12",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 20/12/2025",
+   "data_interpello": "2025-09-23",
+   "data_interpello_testo": "23/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-24",
+   "data_scadenza_testo": "24/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "0e39a424ef4b",
+   "codice_scuola": "TOPS190009",
+   "scuola": "Liceo Classico Scientifico e Musicale Isaac Newton",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 31/10/2025",
+   "data_interpello": "2025-09-23",
+   "data_interpello_testo": "23/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-24",
+   "data_scadenza_testo": "24/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "29e46e867327",
+   "codice_scuola": "TOIS061003",
+   "scuola": "IIS PEANO",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "10 ORE SETTIMANALI",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-26",
+   "data_interpello_testo": "26/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-29",
+   "data_scadenza_testo": "29/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "f697f1683191",
+   "codice_scuola": "TORI04000L",
+   "scuola": "IPSIA BIRAGO",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 31/03/2026",
+   "data_interpello": "2025-09-27",
+   "data_interpello_testo": "27/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-01",
+   "data_scadenza_testo": "01/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "7e3b544431f2",
+   "codice_scuola": "TOIS04900C",
+   "scuola": "IIS FERMI GALILEI",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 19/12/2025",
+   "data_interpello": "2025-09-27",
+   "data_interpello_testo": "27/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-01",
+   "data_scadenza_testo": "01/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "f2e8d2f0aab9",
+   "codice_scuola": "TOIS029007",
+   "scuola": "IIS J. B. Beccari",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "13",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-29",
+   "data_interpello_testo": "29/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-01",
+   "data_scadenza_testo": "01/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "3dd6c23dea3a",
+   "codice_scuola": "TOIS04900C",
+   "scuola": "IIS FERMI GALILEI",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 19/12/2025",
+   "data_interpello": "2025-09-29",
+   "data_interpello_testo": "29/09/2025",
+   "stato": "cancellato",
+   "data_scadenza": "2025-10-01",
+   "data_scadenza_testo": "01/10/2025",
+   "note_cancellazione": "Duplicato",
+   "data_cancellazione": "2025-09-29",
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "933c4cd5b482",
+   "codice_scuola": "TOIS04800L",
+   "scuola": "IIS ZERBONI",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "data_interpello": "2025-09-29",
+   "data_interpello_testo": "29/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-01",
+   "data_scadenza_testo": "01/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "2b074758cba1",
+   "codice_scuola": "TOIS067002",
+   "scuola": "IIS Curie Levi",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/10/2025",
+   "data_interpello": "2025-09-29",
+   "data_interpello_testo": "29/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-30",
+   "data_scadenza_testo": "30/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "af1b36c596be",
+   "codice_scuola": "TOIS03900T",
+   "scuola": "IIS PIERO MARTINETTI",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino ad avente titolo",
+   "data_interpello": "2025-09-30",
+   "data_interpello_testo": "30/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-03",
+   "data_scadenza_testo": "03/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "d0da9a10db58",
+   "codice_scuola": "TOIS07100N",
+   "scuola": "IIS SETTIMO TORINESE",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "6",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 31/10/2025",
+   "data_interpello": "2025-09-30",
+   "data_interpello_testo": "30/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-01",
+   "data_scadenza_testo": "01/10/2025 ore 10:30",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "c4f7e2aff67b",
+   "codice_scuola": "TOIS07100N",
+   "scuola": "IIS SETTIMO TORINESE",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "15",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 07/04/2026",
+   "data_interpello": "2025-09-30",
+   "data_interpello_testo": "30/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-01",
+   "data_scadenza_testo": "01/10/2025 ore 10:30",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "d307a9aa0365",
+   "codice_scuola": "TOSL020003",
+   "scuola": "LICEO ARTISTICO RENATO COTTINI",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "11",
+   "corso": "Serale",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-09-30",
+   "data_interpello_testo": "30/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-02",
+   "data_scadenza_testo": "02/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "09394b4371ac",
+   "codice_scuola": "TOIS06300P",
+   "scuola": "IIS DALMASSO",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino ad avente titolo",
+   "data_interpello": "2025-10-01",
+   "data_interpello_testo": "01/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-03",
+   "data_scadenza_testo": "03/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "72080d48ecbf",
+   "codice_scuola": "TOIS02700G",
+   "scuola": "IIS Europa Unita",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-10-01",
+   "data_interpello_testo": "01/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-02",
+   "data_scadenza_testo": "02/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "5898f9c611de",
+   "codice_scuola": "TOIS02700G",
+   "scuola": "IIS Europa Unita",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "data_interpello": "2025-10-01",
+   "data_interpello_testo": "01/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-02",
+   "data_scadenza_testo": "02/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "613cb46d7f3c",
+   "codice_scuola": "TOIS029007",
+   "scuola": "IIS J. B. Beccari",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 31/10/2025",
+   "data_interpello": "2025-10-01",
+   "data_interpello_testo": "01/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-02",
+   "data_scadenza_testo": "02/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "145157516c14",
+   "codice_scuola": "TOIS07200D",
+   "scuola": "IIS Albe Steiner",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-10-02",
+   "data_interpello_testo": "02/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-03",
+   "data_scadenza_testo": "03/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "48b5f32c7aa2",
+   "codice_scuola": "TOTF10000X",
+   "scuola": "ITI E. MAJORANA",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Serale",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-10-02",
+   "data_interpello_testo": "02/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-03",
+   "data_scadenza_testo": "03/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "e2223d62b121",
+   "codice_scuola": "TOIS04100T",
+   "scuola": "J.C.MAXWELL",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/10/2025",
+   "data_interpello": "2025-10-02",
+   "data_interpello_testo": "02/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-02",
+   "data_scadenza_testo": "02/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "e2223d62b121-2",
+   "codice_scuola": "TOIS04100T",
+   "scuola": "J.C.MAXWELL",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/10/2025",
+   "data_interpello": "2025-10-02",
+   "data_interpello_testo": "02/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-02",
+   "data_scadenza_testo": "02/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "240d6ca6c051",
+   "codice_scuola": "TOIS01200T",
+   "scuola": "IIS OLIVETTI",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "9",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-10-05",
+   "data_interpello_testo": "05/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-05",
+   "data_scadenza_testo": "05/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "a46f5015145e",
+   "codice_scuola": "TOIS03300V",
+   "scuola": "I.I.S. NORBERTO BOBBIO",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 19/10/2025",
+   "data_interpello": "2025-10-06",
+   "data_interpello_testo": "06/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-07",
+   "data_scadenza_testo": "07/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "fdb6e353bd4a",
+   "codice_scuola": "TOIS03300V",
+   "scuola": "I.I.S. NORBERTO BOBBIO",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino ad avente titolo",
+   "data_interpello": "2025-10-06",
+   "data_interpello_testo": "06/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-07",
+   "data_scadenza_testo": "07/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "5c9c7bcd5803",
+   "codice_scuola": "TOIS03300V",
+   "scuola": "I.I.S. NORBERTO BOBBIO",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2025-10-06",
+   "data_interpello_testo": "06/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-07",
+   "data_scadenza_testo": "07/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "773a3c7ccf95",
+   "codice_scuola": "TOIS008006",
+   "scuola": "IIS BALDESSANO-ROCCATI",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2025-10-06",
+   "data_interpello_testo": "06/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-10",
+   "data_scadenza_testo": "10/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "e1d41570e3c9",
+   "codice_scuola": "TOIS008006",
+   "scuola": "IIS BALDESSANO-ROCCATI",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 24/10/2025",
+   "data_interpello": "2025-10-06",
+   "data_interpello_testo": "06/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-08",
+   "data_scadenza_testo": "08/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "77a69d9f6f27",
+   "codice_scuola": "TOTF14000A",
+   "scuola": "ITTS C.Grassi Torino",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "data_interpello": "2025-10-06",
+   "data_interpello_testo": "06/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-11",
+   "data_scadenza_testo": "11/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "c43950de59a2",
+   "codice_scuola": "TOIS07100N",
+   "scuola": "IIS SETTIMO TORINESE",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "17",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 29/11/2025",
+   "data_interpello": "2025-10-07",
+   "data_interpello_testo": "07/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-08",
+   "data_scadenza_testo": "08/10/2025 ore 10:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "9cc347d03e20",
+   "codice_scuola": "TOIS07100N",
+   "scuola": "IIS SETTIMO TORINESE",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 13/10/2025 presumibi",
+   "data_interpello": "2025-10-08",
+   "data_interpello_testo": "08/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-09",
+   "data_scadenza_testo": "09/10/2025 ore 10:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "f10003c2fc36",
+   "codice_scuola": "TOIS008006",
+   "scuola": "IIS BALDESSANO-ROCCATI",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 24/10/2025",
+   "data_interpello": "2025-10-09",
+   "data_interpello_testo": "09/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-10",
+   "data_scadenza_testo": "10/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "5b682b0b1cf5",
+   "codice_scuola": "TOIS05100C",
+   "scuola": "I.I.S. A. AVOGADRO",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 30/10/2025",
+   "data_interpello": "2025-10-10",
+   "data_interpello_testo": "10/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-13",
+   "data_scadenza_testo": "13/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "8ff26c373bb3",
+   "codice_scuola": "TOIS05100C",
+   "scuola": "I.I.S. A. AVOGADRO",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2025-10-10",
+   "data_interpello_testo": "10/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-13",
+   "data_scadenza_testo": "13/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "83498285d493",
+   "codice_scuola": "TOIS03400P",
+   "scuola": "I.I.S. CURIE-VITTORINI",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-10-14",
+   "data_interpello_testo": "14/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-17",
+   "data_scadenza_testo": "17/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "bcd4f69ef1fc",
+   "codice_scuola": "TORH010009",
+   "scuola": "TORH010009 IPSSEOA COLOMBATTO",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 25/11/2025",
+   "data_interpello": "2025-10-14",
+   "data_interpello_testo": "14/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-16",
+   "data_scadenza_testo": "16/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "3a4d05de224b",
+   "codice_scuola": "TOIS01400D",
+   "scuola": "I.I.S. PORRO",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "8",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-10-15",
+   "data_interpello_testo": "15/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-16",
+   "data_scadenza_testo": "16/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "f7f9e1714e0d",
+   "codice_scuola": "TOIS07200D",
+   "scuola": "IIS Albe Steiner",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "6",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-10-15",
+   "data_interpello_testo": "15/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-16",
+   "data_scadenza_testo": "16/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "41329d6b45b4",
+   "codice_scuola": "TOTF10000X",
+   "scuola": "ITI E. MAJORANA",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 31/10/2025",
+   "data_interpello": "2025-10-15",
+   "data_interpello_testo": "15/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-16",
+   "data_scadenza_testo": "16/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "9ff6be01e0c5",
+   "codice_scuola": "TOPC08000P",
+   "scuola": "Liceo Norberto Rosa",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino ad avente titolo",
+   "data_interpello": "2025-10-17",
+   "data_interpello_testo": "17/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-20",
+   "data_scadenza_testo": "20/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "b0f511667550",
+   "codice_scuola": "TOIS03300V",
+   "scuola": "I.I.S. NORBERTO BOBBIO",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "4",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-10-21",
+   "data_interpello_testo": "21/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-22",
+   "data_scadenza_testo": "22/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "7931ea0d4dc7",
+   "codice_scuola": "TOIS00100B",
+   "scuola": "IIS DES AMBROIS",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "data_interpello": "2025-10-21",
+   "data_interpello_testo": "21/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-23",
+   "data_scadenza_testo": "23/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "618ef37146e5",
+   "codice_scuola": "TOIS00100B",
+   "scuola": "IIS DES AMBROIS",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "data_interpello": "2025-10-21",
+   "data_interpello_testo": "21/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-23",
+   "data_scadenza_testo": "23/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "411f4307d594",
+   "codice_scuola": "TOIC82500Q",
+   "scuola": "IC CONDOVE E S.AMBROGIO",
+   "classe": "A060",
+   "classe_nome": "Tecnologia nella scuola secondaria di I grado",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 07/11/2025",
+   "data_interpello": "2025-10-22",
+   "data_interpello_testo": "22/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-23",
+   "data_scadenza_testo": "23/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "77bf61fa0cee",
+   "codice_scuola": "TOPS120003",
+   "scuola": "Liceo Scientifico di Stato Carlo Cattaneo",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "16",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-10-22",
+   "data_interpello_testo": "22/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-23",
+   "data_scadenza_testo": "23/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "0c7b0b9ac3c0",
+   "codice_scuola": "TOIS03400P",
+   "scuola": "I.I.S. CURIE-VITTORINI",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "11",
+   "corso": "Serale",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-10-24",
+   "data_interpello_testo": "24/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-27",
+   "data_scadenza_testo": "27/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "35e6be48059f",
+   "codice_scuola": "TORH010009",
+   "scuola": "TORH010009 IPSSEOA COLOMBATTO",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 30/04/2026",
+   "data_interpello": "2025-10-28",
+   "data_interpello_testo": "28/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-29",
+   "data_scadenza_testo": "29/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "22dd6e156a6b",
+   "codice_scuola": "TOIS024004",
+   "scuola": "IIS G.CENA",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 07/11/2025",
+   "data_interpello": "2025-10-28",
+   "data_interpello_testo": "28/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-29",
+   "data_scadenza_testo": "29/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "7504d9471851",
+   "codice_scuola": "TOTF04000D",
+   "scuola": "ITIS PININFARINA",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "12",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-10-29",
+   "data_interpello_testo": "29/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-30",
+   "data_scadenza_testo": "30/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "9fd00a773341",
+   "codice_scuola": "TOPS04000B",
+   "scuola": "LICEO SCIENTIFICO STATALE GALILEO FERRARIS",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "14",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 14/01/2026",
+   "data_interpello": "2025-11-03",
+   "data_interpello_testo": "03/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-04",
+   "data_scadenza_testo": "04/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "9071a87576b9",
+   "codice_scuola": "TOIS06900N",
+   "scuola": "IIS G.PLANA",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 28/11/2025",
+   "data_interpello": "2025-11-03",
+   "data_interpello_testo": "3/11/2025",
+   "stato": "cancellato",
+   "data_scadenza": "2025-11-05",
+   "data_scadenza_testo": "05/11/2025",
+   "note_cancellazione": "Rettifica data termine interpello a seguito di certificazione trasmessa",
+   "data_cancellazione": "2025-11-03",
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "ba579b57af81",
+   "codice_scuola": "TOIS01400D",
+   "scuola": "I.I.S. IGNAZIO PORRO",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 19/12/2025",
+   "data_interpello": "2025-11-03",
+   "data_interpello_testo": "03/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-04",
+   "data_scadenza_testo": "04/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "e66d417ea8ef",
+   "codice_scuola": "TOTF04000D",
+   "scuola": "ITIS PININFARINA",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-11-05",
+   "data_interpello_testo": "05/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-06",
+   "data_scadenza_testo": "06/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "a59432fbdd84",
+   "codice_scuola": "TOIS06900N",
+   "scuola": "IIS G.PLANA",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 14/11/2025",
+   "data_interpello": "2025-11-05",
+   "data_interpello_testo": "05/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-05",
+   "data_scadenza_testo": "05/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "3617995b74c2",
+   "codice_scuola": "TOIS04100T",
+   "scuola": "J.C.MAXWELL",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 28/11/2025",
+   "data_interpello": "2025-11-10",
+   "data_interpello_testo": "10/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-11",
+   "data_scadenza_testo": "11/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "1bbb984561db",
+   "codice_scuola": "TOIS04900C",
+   "scuola": "IIS FERMI GALILEI",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "data_interpello": "2025-11-11",
+   "data_interpello_testo": "11/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-13",
+   "data_scadenza_testo": "13/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "134bf952f22c",
+   "codice_scuola": "TOIS032003",
+   "scuola": "IIS MAJORANA MONCALIERI",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "6",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 13/03/2026",
+   "data_interpello": "2025-11-11",
+   "data_interpello_testo": "11/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-14",
+   "data_scadenza_testo": "14/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "ac6cb67316a5",
+   "codice_scuola": "TOPS190009",
+   "scuola": "Liceo Classico Scientifico e Musicale Isaac Newton",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 28/11/2025",
+   "data_interpello": "2025-11-13",
+   "data_interpello_testo": "13/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-14",
+   "data_scadenza_testo": "14/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "bcb9796c622f",
+   "codice_scuola": "TOIS07100N",
+   "scuola": "IIS SETTIMO TORINESE",
+   "classe": "A020",
+   "classe_nome": "Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "data_interpello": "2025-11-13",
+   "data_interpello_testo": "13/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-14",
+   "data_scadenza_testo": "14/11/2025 ore 10:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "2b33e133e331",
+   "codice_scuola": "TOPM050003",
+   "scuola": "Liceo Regina Margherita",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 28/11/2025",
+   "data_interpello": "2025-11-13",
+   "data_interpello_testo": "13/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-14",
+   "data_scadenza_testo": "14/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "af416e6040b0",
+   "codice_scuola": "TOPM050003",
+   "scuola": "Liceo Regina Margherita",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-11-13",
+   "data_interpello_testo": "13/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-14",
+   "data_scadenza_testo": "14/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "a46b0253b7b5",
+   "codice_scuola": "TOIS02700G",
+   "scuola": "IIS EUROPA UNITA",
+   "classe": "A020",
+   "classe_nome": "Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-11-14",
+   "data_interpello_testo": "14/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-15",
+   "data_scadenza_testo": "15/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "f0a972116e80",
+   "codice_scuola": "TOIS066006",
+   "scuola": "IIS Gobetti Marchesini Casale Arduino Torino",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "16",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-11-18",
+   "data_interpello_testo": "18/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-20",
+   "data_scadenza_testo": "20/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "5095e6d9c9ac",
+   "codice_scuola": "TOIS03900T",
+   "scuola": "IIS PIERO MARTINETTI",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "12",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-11-19",
+   "data_interpello_testo": "19/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-21",
+   "data_scadenza_testo": "21/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "d8048a8a94d3",
+   "codice_scuola": "TOPS18000P",
+   "scuola": "LICEO STATALE AUGUSTO MONTI",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 19/12/2025",
+   "data_interpello": "2025-11-19",
+   "data_interpello_testo": "19/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-20",
+   "data_scadenza_testo": "20/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "dcb7c8416e77",
+   "codice_scuola": "TOIS02700G",
+   "scuola": "IIS EUROPA UNITA",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2025-11-21",
+   "data_interpello_testo": "21/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-23",
+   "data_scadenza_testo": "23/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "717983700ace",
+   "codice_scuola": "TOIS016005",
+   "scuola": "IIS Amaldi Sraffa",
+   "classe": "A020",
+   "classe_nome": "Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 28/11/2025",
+   "data_interpello": "2025-11-24",
+   "data_interpello_testo": "24/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-25",
+   "data_scadenza_testo": "25/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "138d99b3e7b6",
+   "codice_scuola": "TOVC01000Q",
+   "scuola": "C. N. Umberto I",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 05/12/2025",
+   "data_interpello": "2025-11-28",
+   "data_interpello_testo": "28/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-29",
+   "data_scadenza_testo": "29/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "fc9d8fbb82ad",
+   "codice_scuola": "TOIS00600E",
+   "scuola": "IIS C. UBERTINI",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 19/12/2025",
+   "data_interpello": "2025-12-01",
+   "data_interpello_testo": "01/12/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-12-03",
+   "data_scadenza_testo": "03/12/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "524d3bbe759a",
+   "codice_scuola": "TOIS05100C",
+   "scuola": "I.I.S. A. AVOGADRO",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 18/02/2026",
+   "data_interpello": "2025-12-02",
+   "data_interpello_testo": "02/12/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-12-03",
+   "data_scadenza_testo": "03/12/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "75db75076999",
+   "codice_scuola": "TOPS190009",
+   "scuola": "LICEO ISAAC NEWTON",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "15",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 19/12/2025",
+   "data_interpello": "2025-12-09",
+   "data_interpello_testo": "09/12/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-12-10",
+   "data_scadenza_testo": "10/12/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "eec6b4ae29c5",
+   "codice_scuola": "TOIS03300V",
+   "scuola": "I.I.S. NORBERTO BOBBIO",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 19/12/2025",
+   "data_interpello": "2025-12-09",
+   "data_interpello_testo": "09/12/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-12-10",
+   "data_scadenza_testo": "10/12/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "b7631f2f32f4",
+   "codice_scuola": "TOIS024004",
+   "scuola": "IIS G. CENA",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 19/12/2025",
+   "data_interpello": "2025-12-10",
+   "data_interpello_testo": "10/12/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-12-12",
+   "data_scadenza_testo": "12/12/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "3e9955020681",
+   "codice_scuola": "TOIS00400V",
+   "scuola": "IIS A. MORO",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "16",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 28/01/2026",
+   "data_interpello": "2025-12-29",
+   "data_interpello_testo": "29/12/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-12-30",
+   "data_scadenza_testo": "30/12/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "54b42d17e669",
+   "codice_scuola": "TOIS00600E",
+   "scuola": "IIS C. UBERTINI",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 02/02/2026",
+   "data_interpello": "2026-01-02",
+   "data_interpello_testo": "02/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-05",
+   "data_scadenza_testo": "05/01/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "d543ec53edd4",
+   "codice_scuola": "TOIS038002",
+   "scuola": "I.I.S. BUNIVA",
+   "classe": "A020",
+   "classe_nome": "Fisica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "14",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 29/05/2026",
+   "data_interpello": "2026-01-02",
+   "data_interpello_testo": "02/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-08",
+   "data_scadenza_testo": "08/01/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "a78dee5e5201",
+   "codice_scuola": "TOIS01400D",
+   "scuola": "IIS IGNAZIO PORRO",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "8",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "data_interpello": "2026-01-09",
+   "data_interpello_testo": "09/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-11",
+   "data_scadenza_testo": "11/01/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "fcc585776a44",
+   "codice_scuola": "TOTF14000A",
+   "scuola": "ITTS C. GRASSI",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 26/01/2026",
+   "data_interpello": "2026-01-12",
+   "data_interpello_testo": "12/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-13",
+   "data_scadenza_testo": "13/01/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "df9581e411ee",
+   "codice_scuola": "TOIS01400D",
+   "scuola": "IIS IGNAZIO PORRO",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-01-13",
+   "data_interpello_testo": "13/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-14",
+   "data_scadenza_testo": "14/01/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "0f83aab595a1",
+   "codice_scuola": "TOIS07100N",
+   "scuola": "IIS SETTIMO TORINESE",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 01/02/2026 presumibi",
+   "data_interpello": "2026-01-13",
+   "data_interpello_testo": "13/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-14",
+   "data_scadenza_testo": "14/01/2026 ore 12:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "13814d8abd6e",
+   "codice_scuola": "TORH010009",
+   "scuola": "TORH010009 IPSSEOA COLOMBATTO",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "3",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-01-14",
+   "data_interpello_testo": "14/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-15",
+   "data_scadenza_testo": "15/01/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "9069f8fbab4b",
+   "codice_scuola": "TOIS003003",
+   "scuola": "IIS MAJORANA",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 23/01/2026",
+   "data_interpello": "2026-01-14",
+   "data_interpello_testo": "14/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-15",
+   "data_scadenza_testo": "15/01/2026 ore 15:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "c83b05b7b66e",
+   "codice_scuola": "TOIS03400P",
+   "scuola": "I.I.S. CURIE-VITTORINI",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "11",
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 25/01/2026",
+   "data_interpello": "2026-01-15",
+   "data_interpello_testo": "15/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-16",
+   "data_scadenza_testo": "16/01/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "562f5e0d6378",
+   "codice_scuola": "TOPS18000P",
+   "scuola": "LICEO STATALE AUGUSTO MONTI",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "9",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 05/06/2026",
+   "data_interpello": "2026-01-15",
+   "data_interpello_testo": "15/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-16",
+   "data_scadenza_testo": "16/01/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "6ec7bbf9c66d",
+   "codice_scuola": "TOIS02700G",
+   "scuola": "IIS Europa Unita",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-01-22",
+   "data_interpello_testo": "22/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-24",
+   "data_scadenza_testo": "24/01/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "277c1bb8168c",
+   "codice_scuola": "TOIS067002",
+   "scuola": "IIS Curie Levi",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 17/02/2026",
+   "data_interpello": "2026-01-23",
+   "data_interpello_testo": "23/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-26",
+   "data_scadenza_testo": "26/01/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "b90c9aa23284",
+   "codice_scuola": "TOPS04000B",
+   "scuola": "LICEO SCIENTIFICO STATALE GALILEO FERRARIS",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 01/04/2026",
+   "data_interpello": "2026-01-27",
+   "data_interpello_testo": "27/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-28",
+   "data_scadenza_testo": "28/01/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "d9feec0cc684",
+   "codice_scuola": "TOIS059003",
+   "scuola": "IIS GIULIO NATTA",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "9",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-01-27",
+   "data_interpello_testo": "27/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-29",
+   "data_scadenza_testo": "29/01/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "9432e14c1a79",
+   "codice_scuola": "TOPC06000D",
+   "scuola": "Liceo Classico Statale G.F. Porporato , Pinerolo (TO)",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-01-28",
+   "data_interpello_testo": "28/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-29",
+   "data_scadenza_testo": "29/01/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "0af5778491c2",
+   "codice_scuola": "TOTD05000T",
+   "scuola": "I.T.C.G. GALILEI",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 20/02/2026",
+   "data_interpello": "2026-01-29",
+   "data_interpello_testo": "29/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-02-01",
+   "data_scadenza_testo": "01/02/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "ffa07c57bc30",
+   "codice_scuola": "TOIS02700G",
+   "scuola": "IIS Europa Unita",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-01-30",
+   "data_interpello_testo": "30/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-02-01",
+   "data_scadenza_testo": "01/02/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "a38c47ca3fa4",
+   "codice_scuola": "TOTF14000A",
+   "scuola": "ITTS C. GRASSI",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 13/02/2026",
+   "data_interpello": "2026-01-30",
+   "data_interpello_testo": "30/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-02-01",
+   "data_scadenza_testo": "01/02/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "f96143a65cad",
+   "codice_scuola": "TOTD05000T",
+   "scuola": "I.T.C.G. GALILEI",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 20/02/2026",
+   "data_interpello": "2026-02-02",
+   "data_interpello_testo": "02/02/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-02-05",
+   "data_scadenza_testo": "05/02/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "421506d33f24",
+   "codice_scuola": "TOIS061003",
+   "scuola": "IIS PEANO",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 29/05/2026",
+   "data_interpello": "2026-02-02",
+   "data_interpello_testo": "02/02/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-02-03",
+   "data_scadenza_testo": "03/02/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "8c8137bb61f4",
+   "codice_scuola": "TOIS003003",
+   "scuola": "IIS MAJORANA",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 09/03/2026",
+   "data_interpello": "2026-02-03",
+   "data_interpello_testo": "03/02/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-02-04",
+   "data_scadenza_testo": "04/02/2026 ore 16:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "8c8137bb61f4-2",
+   "codice_scuola": "TOIS003003",
+   "scuola": "IIS MAJORANA",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 09/03/2026",
+   "data_interpello": "2026-02-03",
+   "data_interpello_testo": "03/02/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-02-04",
+   "data_scadenza_testo": "04/02/2026 ore 16:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "b74665e2d210",
+   "codice_scuola": "TOIS06400E",
+   "scuola": "I.I.S. COPERNICO-LUXEMBURG",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-02-10",
+   "data_interpello_testo": "10/02/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-02-17",
+   "data_scadenza_testo": "17/02/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "47f53a531e22",
+   "codice_scuola": "TOIS01200T",
+   "scuola": "IIS OLIVETTI",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-02-11",
+   "data_interpello_testo": "11/02/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-03-01",
+   "data_scadenza_testo": "01/03/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "dcc92efe1eae",
+   "codice_scuola": "TOPS190009",
+   "scuola": "Liceo Classico Scientifico e Musicale Isaac Newton",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 20/02/2026",
+   "data_interpello": "2026-02-11",
+   "data_interpello_testo": "11/02/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-02-12",
+   "data_scadenza_testo": "12/02/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "14396e6710eb",
+   "codice_scuola": "TOIS02700G",
+   "scuola": "IIS Europa Unita",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-02-13",
+   "data_interpello_testo": "13/02/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-02-16",
+   "data_scadenza_testo": "16/02/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "a42a1c408e7c",
+   "codice_scuola": "TOPS22000X",
+   "scuola": "LICEO GIORDANO BRUNO",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 28/02/2026",
+   "data_interpello": "2026-02-13",
+   "data_interpello_testo": "13/02/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-02-14",
+   "data_scadenza_testo": "14/02/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "fdcf021d0ab7",
+   "codice_scuola": "TOIS029007",
+   "scuola": "I.I.S. J. B. BECCARI",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 26/05/2026",
+   "data_interpello": "2026-02-13",
+   "data_interpello_testo": "13/02/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-02-16",
+   "data_scadenza_testo": "16/02/2026 ore 12,00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "82693fa5af8e",
+   "codice_scuola": "TOPC090009",
+   "scuola": "LICEO STATALE CLASSICO E LINGUISTICO VINCENZO GIOBERT",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 23/03/2026",
+   "data_interpello": "2026-02-18",
+   "data_interpello_testo": "18/02/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-02-19",
+   "data_scadenza_testo": "19/02/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "505762a6dafa",
+   "codice_scuola": "TOIS07100N",
+   "scuola": "IIS SETTIMO TORINESE",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 08/03/2026 presumibi",
+   "data_interpello": "2026-02-20",
+   "data_interpello_testo": "20/02/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-02-21",
+   "data_scadenza_testo": "21/02/2026 ore 08:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "040e5c2e9686",
+   "codice_scuola": "TOIS008006",
+   "scuola": "IIS BALDESSANO-ROCCATI",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 06/03/2026",
+   "data_interpello": "2026-02-20",
+   "data_interpello_testo": "20/02/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-02-23",
+   "data_scadenza_testo": "23/02/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "11a36aa3b126",
+   "codice_scuola": "TOPS020006",
+   "scuola": "L.S.S. A. VOLTA",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "5",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 08/06/2026",
+   "data_interpello": "2026-02-25",
+   "data_interpello_testo": "25/02/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-02-26",
+   "data_scadenza_testo": "26/02/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "60001b69238f",
+   "codice_scuola": "TOPS190009",
+   "scuola": "Liceo Classico Scientifico e Musicale Isaac Newton",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 13/03/2026",
+   "data_interpello": "2026-02-25",
+   "data_interpello_testo": "25/02/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-02-26",
+   "data_scadenza_testo": "26/02/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "15cd21a615c3",
+   "codice_scuola": "TOIS07100N",
+   "scuola": "IIS SETTIMO TORINESE",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 08/03/2026 presumibi",
+   "data_interpello": "2026-02-25",
+   "data_interpello_testo": "25/02/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-02-26",
+   "data_scadenza_testo": "26/02/2026 ore 12:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "71ef4c97a048",
+   "codice_scuola": "TOPM050003",
+   "scuola": "Liceo Statale Regina Margherita",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-02-26",
+   "data_interpello_testo": "26/02/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-03-02",
+   "data_scadenza_testo": "02/03/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "71ef4c97a048-2",
+   "codice_scuola": "TOPM050003",
+   "scuola": "Liceo Statale Regina Margherita",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-02-26",
+   "data_interpello_testo": "26/02/2026",
+   "stato": "cancellato",
+   "data_scadenza": "2026-03-02",
+   "data_scadenza_testo": "02/03/2026",
+   "note_cancellazione": "Mancanza informazioni",
+   "data_cancellazione": "2026-02-26",
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "566f418fc611",
+   "codice_scuola": "TOTF04000D",
+   "scuola": "ITIS PININFARINA",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "12",
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 26/03/2026",
+   "data_interpello": "2026-03-02",
+   "data_interpello_testo": "02/03/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-03-03",
+   "data_scadenza_testo": "03/03/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "b1093c3c44e6",
+   "codice_scuola": "TOIS003003",
+   "scuola": "IIS MAJORANA",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 01/04/2026",
+   "data_interpello": "2026-03-04",
+   "data_interpello_testo": "04/03/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-03-05",
+   "data_scadenza_testo": "05/03/2026 ORE 10:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "92b08a74a710",
+   "codice_scuola": "TOTD05000T",
+   "scuola": "I.T.C.G. GALILEI",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 06/04/2026",
+   "data_interpello": "2026-03-04",
+   "data_interpello_testo": "04/03/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-03-08",
+   "data_scadenza_testo": "08/03/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "d0edccbe3740",
+   "codice_scuola": "TOTF10000X",
+   "scuola": "ITI E. MAJORANA",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 22/04/2026",
+   "data_interpello": "2026-03-06",
+   "data_interpello_testo": "06/03/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-03-10",
+   "data_scadenza_testo": "10/03/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "8eed8f7ec368",
+   "codice_scuola": "TOTF10000X",
+   "scuola": "ITI E. MAJORANA",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-03-06",
+   "data_interpello_testo": "06/03/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-03-12",
+   "data_scadenza_testo": "12/03/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "97adc5dfc111",
+   "codice_scuola": "TOIS04800L",
+   "scuola": "I.I.S. Romolo Zerboni",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-03-11",
+   "data_interpello_testo": "11/03/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-03-13",
+   "data_scadenza_testo": "13/03/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "c11afbd4a49c",
+   "codice_scuola": "TOIS003003",
+   "scuola": "IIS MAJORANA",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 05/06/2026",
+   "data_interpello": "2026-03-19",
+   "data_interpello_testo": "19/03/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-03-23",
+   "data_scadenza_testo": "23/03/2026 ore 15:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "a7586abfca62",
+   "codice_scuola": "TOPM050003",
+   "scuola": "Liceo Statale Regina Margherita",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 15/04/2026",
+   "data_interpello": "2026-03-25",
+   "data_interpello_testo": "25/03/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-03-30",
+   "data_scadenza_testo": "30/03/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "ab742474874f",
+   "codice_scuola": "TOIS061003",
+   "scuola": "IIS PEANO",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-04-01",
+   "data_interpello_testo": "01/04/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-04-02",
+   "data_scadenza_testo": "02/04/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "d65b7b826163",
+   "codice_scuola": "TOIS003003",
+   "scuola": "IIS MAJORANA",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/04/2026",
+   "data_interpello": "2026-04-02",
+   "data_interpello_testo": "02/04/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-04-07",
+   "data_scadenza_testo": "07/04/2026 ORE 09:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "9fd49f16510a",
+   "codice_scuola": "TOTF04000D",
+   "scuola": "ITIS PININFARINA",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "9",
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 09/04/2026",
+   "data_interpello": "2026-04-02",
+   "data_interpello_testo": "02/04/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-04-03",
+   "data_scadenza_testo": "03/04/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "b5d4950595fb",
+   "codice_scuola": "TOTF10000X",
+   "scuola": "ITI E. MAJORANA",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-04-08",
+   "data_interpello_testo": "08/04/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-04-09",
+   "data_scadenza_testo": "09/04/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "8bcb8f608140",
+   "codice_scuola": "TOIS003003",
+   "scuola": "IIS MAJORANA",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 22/04/2026",
+   "data_interpello": "2026-04-09",
+   "data_interpello_testo": "09/04/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-04-10",
+   "data_scadenza_testo": "10/04/2026 ORE 12:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "b13b80d76103",
+   "codice_scuola": "TOTF04000D",
+   "scuola": "ITIS PININFARINA",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "12",
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 31/05/2026",
+   "data_interpello": "2026-04-13",
+   "data_interpello_testo": "13/04/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-04-14",
+   "data_scadenza_testo": "14/04/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "f4dab00bc27c",
+   "codice_scuola": "TOIS01200T",
+   "scuola": "IIS OLIVETTI",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 30/04/2026",
+   "data_interpello": "2026-04-13",
+   "data_interpello_testo": "13/04/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-04-17",
+   "data_scadenza_testo": "17/04/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "48eb87316b35",
+   "codice_scuola": "TOIS008006",
+   "scuola": "IIS BALDESSANO-ROCCATI",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "17",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 05/06/2026",
+   "data_interpello": "2026-04-15",
+   "data_interpello_testo": "15/04/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-04-17",
+   "data_scadenza_testo": "17/04/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "e3bd1f53bca2",
+   "codice_scuola": "TOIS03600A",
+   "scuola": "Erasmo da Rotterdam",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 05/06/2026",
+   "data_interpello": "2026-04-15",
+   "data_interpello_testo": "15/04/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-04-16",
+   "data_scadenza_testo": "16/04/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "0d189c4991f9",
+   "codice_scuola": "TOIS02700G",
+   "scuola": "IIS EUROPA UNITA",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 22/05/2026",
+   "data_interpello": "2026-04-15",
+   "data_interpello_testo": "15/04/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-04-17",
+   "data_scadenza_testo": "17/04/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "cbd21fa6843c",
+   "codice_scuola": "TOIS06900N",
+   "scuola": "IIS G.PLANA",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 11/06/2026",
+   "data_interpello": "2026-04-15",
+   "data_interpello_testo": "15/04/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-04-16",
+   "data_scadenza_testo": "16/04/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "5c50f74afee7",
+   "codice_scuola": "TOIC816001",
+   "scuola": "Istituto Comprensivo King Mila",
+   "classe": "A060",
+   "classe_nome": "Tecnologia nella scuola secondaria di I grado",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "12",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-04-21",
+   "data_interpello_testo": "21/04/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-04-22",
+   "data_scadenza_testo": "22/04/2026 ore 15:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "42197bcc89a5",
+   "codice_scuola": "TOIS066006",
+   "scuola": "IIS Gobetti Marchesini Casale Arduino Torino",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "16",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-04-22",
+   "data_interpello_testo": "22/04/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-04-24",
+   "data_scadenza_testo": "24/04/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "ed75835783b2",
+   "codice_scuola": "TOPS22000X",
+   "scuola": "Liceo Giordano Bruno",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 13/05/2026",
+   "data_interpello": "2026-04-27",
+   "data_interpello_testo": "27/04/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-04-28",
+   "data_scadenza_testo": "28/04/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "4b4bec449321",
+   "codice_scuola": "TOPS04000B",
+   "scuola": "LICEO SCIENTIFICO STATALE GALILEO FERRARIS",
+   "classe": "A027",
+   "classe_nome": "Matematica e Fisica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "14",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 15/05/2026",
+   "data_interpello": "2026-04-27",
+   "data_interpello_testo": "27/04/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-04-28",
+   "data_scadenza_testo": "28/04/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "49d75a79791b",
+   "codice_scuola": "TOIS06800T",
+   "scuola": "IIS RUSSELL-MORO-GUARINI",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "7",
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-05-04",
+   "data_interpello_testo": "04/05/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-05-11",
+   "data_scadenza_testo": "11/05/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "b06cfd438763",
+   "codice_scuola": "TOIS06800T",
+   "scuola": "IIS RUSSELL-MORO-GUARINI",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "7",
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-05-04",
+   "data_interpello_testo": "04/05/2026",
+   "stato": "cancellato",
+   "data_scadenza": "2026-05-09",
+   "data_scadenza_testo": "09/05/2026",
+   "note_cancellazione": "inserita nuova versione con orario",
+   "data_cancellazione": "2026-05-04",
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "63be949d399c",
+   "codice_scuola": "TOIS04300D",
+   "scuola": "I.I.S. PRIMO LEVI",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 28/05/2026",
+   "data_interpello": "2026-05-05",
+   "data_interpello_testo": "05/05/2026",
+   "stato": "cancellato",
+   "data_scadenza": "2026-05-06",
+   "data_scadenza_testo": "06/05/2026",
+   "note_cancellazione": "TERMINE",
+   "data_cancellazione": "2026-05-06",
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "cee93ee8afc5",
+   "codice_scuola": "TOIS01300N",
+   "scuola": "I.I.S. BODONI-PARAVIA",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-05-11",
+   "data_interpello_testo": "11/05/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-05-13",
+   "data_scadenza_testo": "13/05/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "cee93ee8afc5-2",
+   "codice_scuola": "TOIS01300N",
+   "scuola": "I.I.S. BODONI-PARAVIA",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-05-11",
+   "data_interpello_testo": "11/05/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-05-13",
+   "data_scadenza_testo": "13/05/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "078834f977dc",
+   "codice_scuola": "TOTF14000A",
+   "scuola": "ITTS C.Grassi Torino",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "data_interpello": "2026-05-12",
+   "data_interpello_testo": "12/05/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-05-13",
+   "data_scadenza_testo": "13/05/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "71787e74b9f4",
+   "codice_scuola": "TOIS016005",
+   "scuola": "IIS Amaldi Sraffa",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 22/05/2026",
+   "data_interpello": "2026-05-13",
+   "data_interpello_testo": "13/05/2026",
+   "stato": "cancellato",
+   "data_scadenza": "2026-05-15",
+   "data_scadenza_testo": "15/05/2026",
+   "note_cancellazione": "Inserito due volte",
+   "data_cancellazione": "2026-05-13",
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  },
+  {
+   "id": "71787e74b9f4-2",
+   "codice_scuola": "TOIS016005",
+   "scuola": "IIS Amaldi Sraffa",
+   "classe": "A026",
+   "classe_nome": "Matematica",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 22/05/2026",
+   "data_interpello": "2026-05-13",
+   "data_interpello_testo": "13/05/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-05-15",
+   "data_scadenza_testo": "15/05/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": null,
+   "km": null
+  }
+ ]
+}

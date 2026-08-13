@@ -1,0 +1,16 @@
+{
+ "_come_si_usa": "Questo file dice al robot delle notifiche quali interpelli devono avvisarti. Non modificarlo a mano: aprilo nella app, sezione Ricerche, tocca Copia e incolla qui dentro (sostituendo tutto).",
+ "ricerche": [
+  {
+   "nome": "A027 vicino a casa",
+   "notifiche": true,
+   "filtri": {
+    "stato": ["aperto"],
+    "classi": ["A027"],
+    "corso": ["Diurno"],
+    "tipo": [],
+    "maxMinuti": 30
+   }
+  }
+ ]
+}

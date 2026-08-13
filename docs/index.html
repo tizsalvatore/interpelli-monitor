@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Interpelli Torino</title>
+<meta name="description" content="Gli interpelli della provincia di Torino su mappa ed elenco, ordinati per quanto sono vicini a casa.">
+<meta name="theme-color" content="#1e293b">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icons/icon-192.png">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Interpelli">
+
+<!-- Leaflet: la libreria (gratuita) che disegna la mappa -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<!-- ===================== BARRA IN ALTO ===================== -->
+<header class="intestazione" id="intestazione">
+  <div class="intestazione__riga">
+    <div class="intestazione__titolo">
+      <h1 id="titoloVista">Interpelli</h1>
+      <p class="intestazione__sottotitolo" id="sottotitolo">caricamento…</p>
+    </div>
+    <div class="intestazione__azioni">
+      <button class="bottone-tondo" id="bottoneAggiorna" title="Aggiorna i dati" aria-label="Aggiorna i dati">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 0-.6 3M20 5v6h-6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="ricerca" id="zonaRicerca">
+    <svg class="ricerca__lente" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+    <input id="campoRicerca" type="search" inputmode="search" placeholder="Cerca scuola o comune…" aria-label="Cerca scuola o comune">
+    <button class="ricerca__pulisci" id="pulisciRicerca" hidden aria-label="Cancella ricerca">&times;</button>
+  </div>
+
+  <div class="barra-filtri" id="barraFiltri">
+    <button class="chip chip--filtri" id="bottoneFiltri">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M7 12h10M11 18h2"/></svg>
+      Filtri <span class="pallino" id="contatoreFiltri" hidden></span>
+    </button>
+    <div class="barra-filtri__attivi" id="filtriAttivi"></div>
+    <div class="interruttore-vista" id="interruttoreVista">
+      <button data-modo="elenco" class="attiva">Elenco</button>
+      <button data-modo="mappa">Mappa</button>
+    </div>
+  </div>
+
+  <div class="barra-ricerche" id="barraRicerche"></div>
+</header>
+
+<!-- ===================== CONTENUTO ===================== -->
+<main id="contenuto">
+  <div id="riepilogo" class="riepilogo" hidden></div>
+  <div id="lista" class="lista"></div>
+  <div id="statoVuoto" class="stato-vuoto" hidden></div>
+</main>
+
+<!-- La mappa vive fuori da <main> perche' occupa tutto lo schermo -->
+<div class="zona-mappa" id="zonaMappa" hidden>
+  <div id="mappa"></div>
+  <div class="mappa__conteggio" id="conteggioMappa"></div>
+</div>
+
+<!-- ===================== NAVIGAZIONE IN BASSO ===================== -->
+<nav class="nav-basso" id="navBasso">
+  <button class="nav-basso__voce attiva" data-vista="lista">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+    <span>Interpelli</span>
+  </button>
+  <button class="nav-basso__voce" data-vista="ricerche">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/><path d="M8.5 11h5M11 8.5v5"/></svg>
+    <span>Ricerche <em class="nav-basso__conteggio" id="conteggioRicerche" hidden></em></span>
+  </button>
+  <button class="nav-basso__voce" data-vista="preferiti">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.8l5.9-.9z"/></svg>
+    <span>Preferiti <em class="nav-basso__conteggio" id="conteggioPreferiti" hidden></em></span>
+  </button>
+  <button class="nav-basso__voce" data-vista="info">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6v.6"/></svg>
+    <span>Info</span>
+  </button>
+</nav>
+
+<!-- ===================== PANNELLO FILTRI ===================== -->
+<div class="velo" id="velo" hidden></div>
+
+<section class="pannello" id="pannelloFiltri" hidden aria-label="Filtri">
+  <div class="pannello__maniglia"></div>
+  <div class="pannello__testata">
+    <h2>Filtri</h2>
+    <button class="bottone-testo" id="azzeraFiltri">Azzera</button>
+  </div>
+
+  <div class="pannello__corpo">
+    <div class="gruppo">
+      <h3>Stato</h3>
+      <div class="chip-gruppo" id="filtroStato"></div>
+    </div>
+
+    <div class="gruppo">
+      <h3>Classe di concorso</h3>
+      <div class="chip-gruppo" id="filtroClassi"></div>
+    </div>
+
+    <div class="gruppo">
+      <h3>Corso</h3>
+      <div class="chip-gruppo" id="filtroCorso"></div>
+    </div>
+
+    <div class="gruppo">
+      <h3>Tipo di cattedra</h3>
+      <div class="chip-gruppo" id="filtroTipo"></div>
+    </div>
+
+    <div class="gruppo">
+      <h3>Tempo massimo da casa <span class="gruppo__nota" id="etichettaTempo"></span></h3>
+      <div class="chip-gruppo chip-gruppo--singolo" id="filtroTempo"></div>
+    </div>
+
+    <div class="gruppo">
+      <h3>Ordina per</h3>
+      <div class="chip-gruppo chip-gruppo--singolo" id="filtroOrdine"></div>
+    </div>
+  </div>
+
+  <div class="pannello__pieDiPagina">
+    <button class="bottone bottone--secondario" id="salvaRicerca">Salva ricerca</button>
+    <button class="bottone bottone--primario" id="applicaFiltri">Mostra <span id="conteggioAnteprima"></span></button>
+  </div>
+</section>
+
+<!-- ===================== SCHEDA DETTAGLIO ===================== -->
+<section class="pannello pannello--alto" id="pannelloDettaglio" hidden aria-label="Dettaglio interpello">
+  <div class="pannello__maniglia"></div>
+  <div class="pannello__corpo" id="corpoDettaglio"></div>
+  <div class="pannello__pieDiPagina">
+    <button class="bottone bottone--secondario" id="chiudiDettaglio">Chiudi</button>
+  </div>
+</section>
+
+<!-- ===================== FINESTRA "DAI UN NOME" ===================== -->
+<section class="pannello" id="pannelloNome" hidden aria-label="Salva ricerca">
+  <div class="pannello__maniglia"></div>
+  <div class="pannello__testata"><h2 id="titoloPannelloNome">Salva questa ricerca</h2></div>
+  <div class="pannello__corpo">
+    <p class="info-testo" id="riassuntoRicerca"></p>
+    <input class="campo-testo" id="campoNomeRicerca" type="text" maxlength="40"
+           placeholder="Es. A027 vicino a casa" aria-label="Nome della ricerca">
+    <label class="riga-interruttore">
+      <span>
+        <strong>Avvisami dei nuovi interpelli</strong>
+        <em>Telegram, per questa ricerca</em>
+      </span>
+      <input type="checkbox" id="notificheRicerca" checked>
+    </label>
+  </div>
+  <div class="pannello__pieDiPagina">
+    <button class="bottone bottone--secondario" id="annullaNome">Annulla</button>
+    <button class="bottone bottone--primario" id="confermaNome">Salva</button>
+  </div>
+</section>
+
+<div class="brindisi" id="brindisi" hidden></div>
+
+<script src="./app.js"></script>
+</body>
+</html>

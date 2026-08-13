@@ -1,0 +1,6 @@
+requests>=2.31
+beautifulsoup4>=4.12
+lxml>=5.0
+# Su Windows Python non ha il database dei fusi orari: questo pacchetto lo aggiunge
+# (serve per calcolare "le 8:00 ora italiana").
+tzdata>=2024.1

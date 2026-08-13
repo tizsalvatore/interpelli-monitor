@@ -1,0 +1,76 @@
+# =============================================================================
+# Il "robot" che tiene aggiornata la app.
+#
+# Gira sui computer di GitHub (gratis), anche a PC spento:
+#   - ogni 30 minuti rilegge il sito degli interpelli
+#   - ricalcola i tempi di viaggio delle scuole nuove
+#   - salva i dati aggiornati e li pubblica
+#   - ti manda la notifica Telegram se c'e' qualcosa di nuovo
+#
+# Puoi anche lanciarlo a mano: scheda "Actions" -> "Aggiorna interpelli" ->
+# "Run workflow".
+# =============================================================================
+
+name: Aggiorna interpelli
+
+on:
+  schedule:
+    # Ogni 30 minuti. ATTENZIONE: gli orari di GitHub sono in UTC, ma qui non
+    # importa perche' controlliamo tutto il giorno.
+    - cron: "*/30 * * * *"
+  workflow_dispatch:        # il bottone "Run workflow" a mano
+  push:
+    branches: [main]
+    paths:
+      - "docs/data/ricerche.json"   # hai cambiato le ricerche: ricontrolliamo subito
+
+# Servono per poter salvare i dati aggiornati nel progetto.
+permissions:
+  contents: write
+
+# Se un giro e' ancora in corso, non ne partono altri sopra.
+concurrency:
+  group: aggiorna-interpelli
+  cancel-in-progress: false
+
+jobs:
+  aggiorna:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Scarica il progetto
+        uses: actions/checkout@v4
+
+      - name: Prepara Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installa le librerie
+        run: pip install -r requirements.txt
+
+      - name: Aggiorna i dati e manda le notifiche
+        env:
+          CASA_INDIRIZZO: ${{ secrets.CASA_INDIRIZZO }}
+          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          EMAIL_SMTP_HOST: ${{ secrets.EMAIL_SMTP_HOST }}
+          EMAIL_SMTP_PORT: ${{ secrets.EMAIL_SMTP_PORT }}
+          EMAIL_UTENTE: ${{ secrets.EMAIL_UTENTE }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_DESTINATARIO: ${{ secrets.EMAIL_DESTINATARIO }}
+          URL_APP: ${{ vars.URL_APP }}
+        run: python scripts/build.py
+
+      - name: Salva i dati aggiornati
+        run: |
+          git config user.name "Robot Interpelli"
+          git config user.email "actions@github.com"
+          # -A aggiunge quello che c'e' senza lamentarsi se un file manca
+          # (i file grossi e temporanei sono esclusi da .gitignore).
+          git add -A docs/data data
+          # "git commit" fallisce se non e' cambiato niente: in quel caso va bene cosi'.
+          git diff --staged --quiet || git commit -m "Aggiornamento interpelli $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push

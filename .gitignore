@@ -1,0 +1,23 @@
+# Ambiente Python locale
+.venv/
+__pycache__/
+*.pyc
+
+# File grossi che si riscaricano da soli (non vanno su GitHub):
+# sono circa 25 MB di anagrafiche e la copia grezza della pagina.
+data/ultima_pagina.html
+data/anagrafica_scuole_*.csv
+
+# Roba privata: NON deve mai finire online
+.env
+chiavi.txt
+# ATTENZIONE: qui i commenti vanno SOLO su righe a parte. Se li scrivi in fondo
+# a una riga, git li considera parte del nome del file e non esclude piu' niente.
+# l'indirizzo di casa
+casa.txt
+# le coordinate di casa
+data/casa_privata.json
+
+# ATTENZIONE: data/cache_viaggi.json e data/gia_notificati.json invece SI'
+# devono salvare su GitHub: sono la memoria del progetto (tempi gia' calcolati
+# e interpelli gia' notificati). Non aggiungerli qui.
