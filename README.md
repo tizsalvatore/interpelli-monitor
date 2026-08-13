@@ -3,7 +3,7 @@
 App per telefono (Android e iPhone) che mostra gli **interpelli della provincia di Torino**
 su **elenco e mappa**, ordinati per **quanto sono vicini a casa** con i mezzi pubblici.
 
-- Classi seguite: **A027, A020, A026, A040, A041, A047, A060**
+- Classi seguite: **A027, A020, A026, A040, A041, A042, A047, A060**
 - I minuti sono calcolati da casa, per arrivare a scuola **entro le 8:00** di un giorno feriale
   (l'indirizzo di casa resta privato: vedi §6)
 - Ricerche salvabili con nome, preferiti a stellina, notifiche Telegram per i nuovi interpelli

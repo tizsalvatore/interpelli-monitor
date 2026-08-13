@@ -1,12 +1,12 @@
 {
- "aggiornato": "2026-08-13T18:38:46+02:00",
+ "aggiornato": "2026-08-13T20:03:47+02:00",
  "aggiornato_sito": "2026-08-13",
  "casa": {
   "etichetta": "Casa",
   "ora_arrivo": "08:00"
  },
  "github": {
-  "repo": "tizsalvatore/interpelli-monitor"
+  "repo": null
  },
  "classi": {
   "A027": "Matematica e Fisica",
@@ -14,6 +14,7 @@
   "A026": "Matematica",
   "A040": "Scienze e tecnologie elettriche ed elettroniche",
   "A041": "Scienze e tecnologie informatiche",
+  "A042": "Scienze e tecnologie meccaniche",
   "A047": "Scienze matematiche applicate",
   "A060": "Tecnologia nella scuola secondaria di I grado"
  },
@@ -30,15 +31,172 @@
   "_default": "II_GRADO"
  },
  "conteggi": {
-  "totale": 189,
+  "totale": 218,
   "aperti": 0,
   "senza_tempo_di_viaggio": 0
  },
  "diagnostica": {
   "casa_impostata": true,
-  "chiave_google": true
+  "chiave_google": false
  },
  "scuole": {
+  "TOIS04700R": {
+   "denominazione": "I.I.S. GALILEI - FERRARI",
+   "sede": {
+    "indirizzo": "Via Lavagna 8, 10126 Torino, Italia",
+    "comune": "Torino",
+    "sito": "www.galileiferrari.it/",
+    "viaggio": {
+     "minuti": 10,
+     "km": 1.9,
+     "km_strada": 1.5,
+     "cambi": 0,
+     "linee": [
+      {
+       "nome": "34",
+       "tipo": "BUS"
+      }
+     ],
+     "auto_minuti": 4,
+     "lat": 45.0332817,
+     "lng": 7.669012599999999,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "G. GALILEI"
+     ],
+     "indirizzo": "Via Lavagna 8, 10126 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": 10,
+      "km": 1.9,
+      "km_strada": 1.5,
+      "cambi": 0,
+      "linee": [
+       {
+        "nome": "34",
+        "tipo": "BUS"
+       }
+      ],
+      "auto_minuti": 4,
+      "lat": 45.0332817,
+      "lng": 7.669012599999999,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "E. FERRARI",
+      "GALILEI - FERRARI"
+     ],
+     "indirizzo": "Via Gaidano 126, 10137 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": 35,
+      "km": 6.9,
+      "km_strada": 5.7,
+      "cambi": 0,
+      "linee": [
+       {
+        "nome": "74",
+        "tipo": "BUS"
+       }
+      ],
+      "auto_minuti": 13,
+      "lat": 45.0425691,
+      "lng": 7.6222692,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS02700G": {
+   "denominazione": "I.I.S. EUROPA UNITA",
+   "sede": {
+    "indirizzo": "Via Marconi 6, 10034 Chivasso, Italia",
+    "comune": "Chivasso",
+    "sito": "www.istitutoeuropaunita.it",
+    "viaggio": {
+     "minuti": 50,
+     "km": 31.0,
+     "km_strada": 59.0,
+     "cambi": 0,
+     "linee": [
+      {
+       "nome": "RV",
+       "tipo": "HEAVY_RAIL"
+      }
+     ],
+     "auto_minuti": 43,
+     "lat": 45.1921641,
+     "lng": 7.884906099999999,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "EUROPA UNITA"
+     ],
+     "indirizzo": "Viale Marconi 6, 10034 Chivasso, Italia",
+     "comune": "Chivasso",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": 50,
+      "km": 31.0,
+      "km_strada": 59.0,
+      "cambi": 0,
+      "linee": [
+       {
+        "nome": "RV",
+        "tipo": "HEAVY_RAIL"
+       }
+      ],
+      "auto_minuti": 43,
+      "lat": 45.1921641,
+      "lng": 7.884906099999999,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "EUROPA UNITA"
+     ],
+     "indirizzo": "Via Marconi 6, 10034 Chivasso, Italia",
+     "comune": "Chivasso",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": 50,
+      "km": 31.0,
+      "km_strada": 59.0,
+      "cambi": 0,
+      "linee": [
+       {
+        "nome": "RV",
+        "tipo": "HEAVY_RAIL"
+       }
+      ],
+      "auto_minuti": 43,
+      "lat": 45.1921641,
+      "lng": 7.884906099999999,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
   "TOIS016005": {
    "denominazione": "I.I.S. AMALDI - SRAFFA",
    "sede": {
@@ -837,84 +995,6 @@
     }
    ]
   },
-  "TOIS02700G": {
-   "denominazione": "I.I.S. EUROPA UNITA",
-   "sede": {
-    "indirizzo": "Via Marconi 6, 10034 Chivasso, Italia",
-    "comune": "Chivasso",
-    "sito": "www.istitutoeuropaunita.it",
-    "viaggio": {
-     "minuti": 50,
-     "km": 31.0,
-     "km_strada": 59.0,
-     "cambi": 0,
-     "linee": [
-      {
-       "nome": "RV",
-       "tipo": "HEAVY_RAIL"
-      }
-     ],
-     "auto_minuti": 43,
-     "lat": 45.1921641,
-     "lng": 7.884906099999999,
-     "approssimativo": false
-    }
-   },
-   "plessi": [
-    {
-     "nomi": [
-      "EUROPA UNITA"
-     ],
-     "indirizzo": "Viale Marconi 6, 10034 Chivasso, Italia",
-     "comune": "Chivasso",
-     "gradi": [
-      "II_GRADO"
-     ],
-     "viaggio": {
-      "minuti": 50,
-      "km": 31.0,
-      "km_strada": 59.0,
-      "cambi": 0,
-      "linee": [
-       {
-        "nome": "RV",
-        "tipo": "HEAVY_RAIL"
-       }
-      ],
-      "auto_minuti": 43,
-      "lat": 45.1921641,
-      "lng": 7.884906099999999,
-      "approssimativo": false
-     }
-    },
-    {
-     "nomi": [
-      "EUROPA UNITA"
-     ],
-     "indirizzo": "Via Marconi 6, 10034 Chivasso, Italia",
-     "comune": "Chivasso",
-     "gradi": [
-      "II_GRADO"
-     ],
-     "viaggio": {
-      "minuti": 50,
-      "km": 31.0,
-      "km_strada": 59.0,
-      "cambi": 0,
-      "linee": [
-       {
-        "nome": "RV",
-        "tipo": "HEAVY_RAIL"
-       }
-      ],
-      "auto_minuti": 43,
-      "lat": 45.1921641,
-      "lng": 7.884906099999999,
-      "approssimativo": false
-     }
-    }
-   ]
-  },
   "TOIS06900N": {
    "denominazione": "G. PLANA",
    "sede": {
@@ -1427,6 +1507,111 @@
     }
    ]
   },
+  "TOIS07100N": {
+   "denominazione": "I.I.S. SETTIMO TORINESE",
+   "sede": {
+    "indirizzo": "Via Leini 54, 10036 Settimo Torinese, Italia",
+    "comune": "Settimo Torinese",
+    "sito": "www.iis-settimotorinese.edu.it",
+    "viaggio": {
+     "minuti": 49,
+     "km": 19.9,
+     "km_strada": 46.6,
+     "cambi": 0,
+     "linee": [
+      {
+       "nome": "SFM",
+       "tipo": "HEAVY_RAIL"
+      }
+     ],
+     "auto_minuti": 33,
+     "lat": 45.1408019,
+     "lng": 7.759032400000001,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "ISTITUTO PROFESSIONALE SETTIMO T.SE"
+     ],
+     "indirizzo": "Via Don Gnocchi 2/A, Settimo Torinese, Italia",
+     "comune": "Settimo Torinese",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": 48,
+      "km": 19.8,
+      "km_strada": 46.7,
+      "cambi": 0,
+      "linee": [
+       {
+        "nome": "SFM",
+        "tipo": "HEAVY_RAIL"
+       }
+      ],
+      "auto_minuti": 33,
+      "lat": 45.1407317,
+      "lng": 7.7608247,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "LICEO SCIENTIFICO SETTIMO T.SE",
+      "ISTITUTO PROFESSIONALE SETTIMO T.SE"
+     ],
+     "indirizzo": "Via Leini 54, Settimo Torinese, Italia",
+     "comune": "Settimo Torinese",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": 49,
+      "km": 19.9,
+      "km_strada": 46.6,
+      "cambi": 0,
+      "linee": [
+       {
+        "nome": "SFM",
+        "tipo": "HEAVY_RAIL"
+       }
+      ],
+      "auto_minuti": 33,
+      "lat": 45.1408019,
+      "lng": 7.759032400000001,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "ISTITUTO TECNICO SETTIMO T.SE"
+     ],
+     "indirizzo": "Via Leini 54, 10036 Settimo Torinese, Italia",
+     "comune": "Settimo Torinese",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": 49,
+      "km": 19.9,
+      "km_strada": 46.6,
+      "cambi": 0,
+      "linee": [
+       {
+        "nome": "SFM",
+        "tipo": "HEAVY_RAIL"
+       }
+      ],
+      "auto_minuti": 33,
+      "lat": 45.1408019,
+      "lng": 7.759032400000001,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
   "TOIS04800L": {
    "denominazione": "I.I.S. R. ZERBONI",
    "sede": {
@@ -1638,111 +1823,6 @@
       "auto_minuti": 43,
       "lat": 45.1921641,
       "lng": 7.884906099999999,
-      "approssimativo": false
-     }
-    }
-   ]
-  },
-  "TOIS07100N": {
-   "denominazione": "I.I.S. SETTIMO TORINESE",
-   "sede": {
-    "indirizzo": "Via Leini 54, 10036 Settimo Torinese, Italia",
-    "comune": "Settimo Torinese",
-    "sito": "www.iis-settimotorinese.edu.it",
-    "viaggio": {
-     "minuti": 49,
-     "km": 19.9,
-     "km_strada": 46.6,
-     "cambi": 0,
-     "linee": [
-      {
-       "nome": "SFM",
-       "tipo": "HEAVY_RAIL"
-      }
-     ],
-     "auto_minuti": 33,
-     "lat": 45.1408019,
-     "lng": 7.759032400000001,
-     "approssimativo": false
-    }
-   },
-   "plessi": [
-    {
-     "nomi": [
-      "ISTITUTO PROFESSIONALE SETTIMO T.SE"
-     ],
-     "indirizzo": "Via Don Gnocchi 2/A, Settimo Torinese, Italia",
-     "comune": "Settimo Torinese",
-     "gradi": [
-      "II_GRADO"
-     ],
-     "viaggio": {
-      "minuti": 48,
-      "km": 19.8,
-      "km_strada": 46.7,
-      "cambi": 0,
-      "linee": [
-       {
-        "nome": "SFM",
-        "tipo": "HEAVY_RAIL"
-       }
-      ],
-      "auto_minuti": 33,
-      "lat": 45.1407317,
-      "lng": 7.7608247,
-      "approssimativo": false
-     }
-    },
-    {
-     "nomi": [
-      "LICEO SCIENTIFICO SETTIMO T.SE",
-      "ISTITUTO PROFESSIONALE SETTIMO T.SE"
-     ],
-     "indirizzo": "Via Leini 54, Settimo Torinese, Italia",
-     "comune": "Settimo Torinese",
-     "gradi": [
-      "II_GRADO"
-     ],
-     "viaggio": {
-      "minuti": 49,
-      "km": 19.9,
-      "km_strada": 46.6,
-      "cambi": 0,
-      "linee": [
-       {
-        "nome": "SFM",
-        "tipo": "HEAVY_RAIL"
-       }
-      ],
-      "auto_minuti": 33,
-      "lat": 45.1408019,
-      "lng": 7.759032400000001,
-      "approssimativo": false
-     }
-    },
-    {
-     "nomi": [
-      "ISTITUTO TECNICO SETTIMO T.SE"
-     ],
-     "indirizzo": "Via Leini 54, 10036 Settimo Torinese, Italia",
-     "comune": "Settimo Torinese",
-     "gradi": [
-      "II_GRADO"
-     ],
-     "viaggio": {
-      "minuti": 49,
-      "km": 19.9,
-      "km_strada": 46.6,
-      "cambi": 0,
-      "linee": [
-       {
-        "nome": "SFM",
-        "tipo": "HEAVY_RAIL"
-       }
-      ],
-      "auto_minuti": 33,
-      "lat": 45.1408019,
-      "lng": 7.759032400000001,
       "approssimativo": false
      }
     }
@@ -2161,6 +2241,58 @@
       "auto_minuti": 24,
       "lat": 45.0660257,
       "lng": 7.580262899999999,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TORI04000L": {
+   "denominazione": "IPSIA DALMAZIO BIRAGO",
+   "sede": {
+    "indirizzo": "Corso Novara 65, 10154 Torino, Italia",
+    "comune": "Torino",
+    "sito": "WWW.IPSIABIRAGO.IT",
+    "viaggio": {
+     "minuti": 43,
+     "km": 8.6,
+     "km_strada": 9.4,
+     "cambi": 0,
+     "linee": [
+      {
+       "nome": "18",
+       "tipo": "BUS"
+      }
+     ],
+     "auto_minuti": 24,
+     "lat": 45.084015,
+     "lng": 7.6971263,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "IPSIA DALMAZIO BIRAGO"
+     ],
+     "indirizzo": "Corso Novara 65, 10154 Torino, Italia",
+     "comune": "Torino",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": 43,
+      "km": 8.6,
+      "km_strada": 9.4,
+      "cambi": 0,
+      "linee": [
+       {
+        "nome": "18",
+        "tipo": "BUS"
+       }
+      ],
+      "auto_minuti": 24,
+      "lat": 45.084015,
+      "lng": 7.6971263,
       "approssimativo": false
      }
     }
@@ -3748,58 +3880,6 @@
     }
    ]
   },
-  "TORI04000L": {
-   "denominazione": "IPSIA DALMAZIO BIRAGO",
-   "sede": {
-    "indirizzo": "Corso Novara 65, 10154 Torino, Italia",
-    "comune": "Torino",
-    "sito": "WWW.IPSIABIRAGO.IT",
-    "viaggio": {
-     "minuti": 43,
-     "km": 8.6,
-     "km_strada": 9.4,
-     "cambi": 0,
-     "linee": [
-      {
-       "nome": "18",
-       "tipo": "BUS"
-      }
-     ],
-     "auto_minuti": 24,
-     "lat": 45.084015,
-     "lng": 7.6971263,
-     "approssimativo": false
-    }
-   },
-   "plessi": [
-    {
-     "nomi": [
-      "IPSIA DALMAZIO BIRAGO"
-     ],
-     "indirizzo": "Corso Novara 65, 10154 Torino, Italia",
-     "comune": "Torino",
-     "gradi": [
-      "II_GRADO"
-     ],
-     "viaggio": {
-      "minuti": 43,
-      "km": 8.6,
-      "km_strada": 9.4,
-      "cambi": 0,
-      "linee": [
-       {
-        "nome": "18",
-        "tipo": "BUS"
-       }
-      ],
-      "auto_minuti": 24,
-      "lat": 45.084015,
-      "lng": 7.6971263,
-      "approssimativo": false
-     }
-    }
-   ]
-  },
   "TOIS00700A": {
    "denominazione": "I.I.S. T. D'ORIA",
    "sede": {
@@ -3847,85 +3927,6 @@
       "auto_minuti": 41,
       "lat": 45.2239083,
       "lng": 7.605263300000001,
-      "approssimativo": false
-     }
-    }
-   ]
-  },
-  "TOIS04700R": {
-   "denominazione": "I.I.S. GALILEI - FERRARI",
-   "sede": {
-    "indirizzo": "Via Lavagna 8, 10126 Torino, Italia",
-    "comune": "Torino",
-    "sito": "www.galileiferrari.it/",
-    "viaggio": {
-     "minuti": 10,
-     "km": 1.9,
-     "km_strada": 1.5,
-     "cambi": 0,
-     "linee": [
-      {
-       "nome": "34",
-       "tipo": "BUS"
-      }
-     ],
-     "auto_minuti": 4,
-     "lat": 45.0332817,
-     "lng": 7.669012599999999,
-     "approssimativo": false
-    }
-   },
-   "plessi": [
-    {
-     "nomi": [
-      "G. GALILEI"
-     ],
-     "indirizzo": "Via Lavagna 8, 10126 Torino, Italia",
-     "comune": "Torino",
-     "gradi": [
-      "II_GRADO"
-     ],
-     "viaggio": {
-      "minuti": 10,
-      "km": 1.9,
-      "km_strada": 1.5,
-      "cambi": 0,
-      "linee": [
-       {
-        "nome": "34",
-        "tipo": "BUS"
-       }
-      ],
-      "auto_minuti": 4,
-      "lat": 45.0332817,
-      "lng": 7.669012599999999,
-      "approssimativo": false
-     }
-    },
-    {
-     "nomi": [
-      "E. FERRARI",
-      "GALILEI - FERRARI"
-     ],
-     "indirizzo": "Via Gaidano 126, 10137 Torino, Italia",
-     "comune": "Torino",
-     "gradi": [
-      "II_GRADO"
-     ],
-     "viaggio": {
-      "minuti": 35,
-      "km": 6.9,
-      "km_strada": 5.7,
-      "cambi": 0,
-      "linee": [
-       {
-        "nome": "74",
-        "tipo": "BUS"
-       }
-      ],
-      "auto_minuti": 13,
-      "lat": 45.0425691,
-      "lng": 7.6222692,
       "approssimativo": false
      }
     }
@@ -4344,6 +4345,50 @@
    "km": 1.5
   },
   {
+   "id": "c3e4f0874bb2",
+   "codice_scuola": "TOIS04700R",
+   "scuola": "IIS. GALILEI-FERRARI",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "16",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 30/10/2025",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2025-10-21",
+   "data_interpello_testo": "21/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-22",
+   "data_scadenza_testo": "22/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 10,
+   "km": 1.5
+  },
+  {
+   "id": "878addc9ee1f",
+   "codice_scuola": "TOIS04700R",
+   "scuola": "IIS. GALILEI-FERRARI",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "16",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 30/10/2025",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2025-10-22",
+   "data_interpello_testo": "22/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-24",
+   "data_scadenza_testo": "24/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 10,
+   "km": 1.5
+  },
+  {
    "id": "b74665e2d210",
    "codice_scuola": "TOIS06400E",
    "scuola": "I.I.S. COPERNICO-LUXEMBURG",
@@ -4359,6 +4404,50 @@
    "stato": "chiuso",
    "data_scadenza": "2026-02-17",
    "data_scadenza_testo": "17/02/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 10,
+   "km": 1.5
+  },
+  {
+   "id": "5b93c189c64a",
+   "codice_scuola": "TOIS04700R",
+   "scuola": "IIS. GALILEI-FERRARI",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 24/05/2026",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-05-20",
+   "data_interpello_testo": "20/05/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-05-21",
+   "data_scadenza_testo": "21/05/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 10,
+   "km": 1.5
+  },
+  {
+   "id": "c13250381354",
+   "codice_scuola": "TOIS04700R",
+   "scuola": "IIS. GALILEI-FERRARI",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 03/06/2026",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-05-25",
+   "data_interpello_testo": "25/05/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-05-27",
+   "data_scadenza_testo": "27/05/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false,
@@ -5070,6 +5159,28 @@
    "km": 6.7
   },
   {
+   "id": "18c0ea5be2b1",
+   "codice_scuola": "TOIS05100C",
+   "scuola": "I.I.S. A. AVOGADRO",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "7",
+   "corso": "Serale",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2025-10-10",
+   "data_interpello_testo": "10/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-13",
+   "data_scadenza_testo": "13/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 31,
+   "km": 6.7
+  },
+  {
    "id": "524d3bbe759a",
    "codice_scuola": "TOIS05100C",
    "scuola": "I.I.S. A. AVOGADRO",
@@ -5620,6 +5731,72 @@
    "km": 8.9
   },
   {
+   "id": "662c1bfb7c1d",
+   "codice_scuola": "TORI04000L",
+   "scuola": "IPSIA BIRAGO",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 13/02/2026",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-01-14",
+   "data_interpello_testo": "14/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-15",
+   "data_scadenza_testo": "15/01/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 43,
+   "km": 9.4
+  },
+  {
+   "id": "6721709f7ec7",
+   "codice_scuola": "TORI04000L",
+   "scuola": "IPSIA BIRAGO",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 13/02/2026",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-01-15",
+   "data_interpello_testo": "15/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-16",
+   "data_scadenza_testo": "16/01/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 43,
+   "km": 9.4
+  },
+  {
+   "id": "b0bae2f9662d",
+   "codice_scuola": "TORI04000L",
+   "scuola": "IPSIA BIRAGO",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 13/02/2026",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-01-16",
+   "data_interpello_testo": "16/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-16",
+   "data_scadenza_testo": "16/01/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 43,
+   "km": 9.4
+  },
+  {
    "id": "5c50f74afee7",
    "codice_scuola": "TOIC816001",
    "scuola": "Istituto Comprensivo King Mila",
@@ -5708,6 +5885,94 @@
    "km": 12.5
   },
   {
+   "id": "3aa50875e623",
+   "codice_scuola": "TOTF14000A",
+   "scuola": "ITTS C.Grassi Torino",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 10/06/2025",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2025-10-06",
+   "data_interpello_testo": "06/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-13",
+   "data_scadenza_testo": "13/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 47,
+   "km": 12.5
+  },
+  {
+   "id": "12f043c4aa97",
+   "codice_scuola": "TOTF14000A",
+   "scuola": "ITTS C.Grassi Torino",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 02/01/2026",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2025-10-06",
+   "data_interpello_testo": "06/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-13",
+   "data_scadenza_testo": "13/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 47,
+   "km": 12.5
+  },
+  {
+   "id": "e646ae3dccea",
+   "codice_scuola": "TOTF14000A",
+   "scuola": "ITTS C. GRASSI",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 11/11/2025",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2025-10-31",
+   "data_interpello_testo": "31/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-01",
+   "data_scadenza_testo": "01/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 47,
+   "km": 12.5
+  },
+  {
+   "id": "58479f53c510",
+   "codice_scuola": "TOTF14000A",
+   "scuola": "ITTS C. GRASSI",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 19/12/2025",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2025-11-27",
+   "data_interpello_testo": "27/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-28",
+   "data_scadenza_testo": "28/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 47,
+   "km": 12.5
+  },
+  {
    "id": "fcc585776a44",
    "codice_scuola": "TOTF14000A",
    "scuola": "ITTS C. GRASSI",
@@ -5730,6 +5995,72 @@
    "km": 12.5
   },
   {
+   "id": "b6f261588b34",
+   "codice_scuola": "TOTF14000A",
+   "scuola": "ITTS C. GRASSI",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 02/03/2026",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-01-12",
+   "data_interpello_testo": "12/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-13",
+   "data_scadenza_testo": "13/01/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 47,
+   "km": 12.5
+  },
+  {
+   "id": "c0f426242a29",
+   "codice_scuola": "TOTF14000A",
+   "scuola": "ITTS C. GRASSI",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 12/02/2026",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-01-12",
+   "data_interpello_testo": "12/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-13",
+   "data_scadenza_testo": "13/01/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 47,
+   "km": 12.5
+  },
+  {
+   "id": "173e3bfda089",
+   "codice_scuola": "TOTF14000A",
+   "scuola": "GRASSI",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 12/02/2026",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-01-21",
+   "data_interpello_testo": "21/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-22",
+   "data_scadenza_testo": "22/01/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 47,
+   "km": 12.5
+  },
+  {
    "id": "a38c47ca3fa4",
    "codice_scuola": "TOTF14000A",
    "scuola": "ITTS C. GRASSI",
@@ -5745,6 +6076,50 @@
    "stato": "chiuso",
    "data_scadenza": "2026-02-01",
    "data_scadenza_testo": "01/02/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 47,
+   "km": 12.5
+  },
+  {
+   "id": "5c75f3ff42ae",
+   "codice_scuola": "TOTF14000A",
+   "scuola": "ITTS C. GRASSI",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 02/06/2026",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-04-07",
+   "data_interpello_testo": "07/04/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-04-10",
+   "data_scadenza_testo": "10/04/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 47,
+   "km": 12.5
+  },
+  {
+   "id": "1dc7b5018737",
+   "codice_scuola": "TOTF14000A",
+   "scuola": "ITTS C. GRASSI",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 21/05/2026",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-04-07",
+   "data_interpello_testo": "07/04/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-04-10",
+   "data_scadenza_testo": "10/04/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false,
@@ -5928,6 +6303,72 @@
    "km": 46.6
   },
   {
+   "id": "acaac99e362e",
+   "codice_scuola": "TOIS07100N",
+   "scuola": "IIS SETTIMO TORINESE",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "10 ore",
+   "corso": "Serale",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2025-09-22",
+   "data_interpello_testo": "22/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-23",
+   "data_scadenza_testo": "23/09/2025 ore 14:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 49,
+   "km": 46.6
+  },
+  {
+   "id": "05a36676c59c",
+   "codice_scuola": "TOIS07100N",
+   "scuola": "IIS SETTIMO TORINESE",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "durata_tipo": "annuale_31_agosto",
+   "data_interpello": "2025-09-22",
+   "data_interpello_testo": "22/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-23",
+   "data_scadenza_testo": "23/09/2025 ore 14:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 49,
+   "km": 46.6
+  },
+  {
+   "id": "b59c63ba5709",
+   "codice_scuola": "TOIS07100N",
+   "scuola": "IIS SETTIMO TORINSE",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Serale",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2025-09-29",
+   "data_interpello_testo": "29/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-30",
+   "data_scadenza_testo": "30/09/2025 ore 10:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 49,
+   "km": 46.6
+  },
+  {
    "id": "d0da9a10db58",
    "codice_scuola": "TOIS07100N",
    "scuola": "IIS SETTIMO TORINESE",
@@ -6097,6 +6538,28 @@
    "stato": "chiuso",
    "data_scadenza": "2026-02-26",
    "data_scadenza_testo": "26/02/2026 ore 12:00",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 49,
+   "km": 46.6
+  },
+  {
+   "id": "48c7a6a1afce",
+   "codice_scuola": "TOIS07100N",
+   "scuola": "IIS SETTIMO TORINESE",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "10",
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 10/06/2026",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-03-11",
+   "data_interpello_testo": "11/03/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-03-12",
+   "data_scadenza_testo": "12/03/2026 ore 12:00",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false,
@@ -6390,6 +6853,28 @@
    "km": 59.0
   },
   {
+   "id": "90d319a38c58",
+   "codice_scuola": "TOIS02700G",
+   "scuola": "IIS EUROPA UNITA",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 01/04/2026",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-03-13",
+   "data_interpello_testo": "13/03/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-03-16",
+   "data_scadenza_testo": "16/03/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 50,
+   "km": 59.0
+  },
+  {
    "id": "0d189c4991f9",
    "codice_scuola": "TOIS02700G",
    "scuola": "IIS EUROPA UNITA",
@@ -6405,6 +6890,50 @@
    "stato": "chiuso",
    "data_scadenza": "2026-04-17",
    "data_scadenza_testo": "17/04/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 50,
+   "km": 59.0
+  },
+  {
+   "id": "20c4db2857da",
+   "codice_scuola": "TOIS02700G",
+   "scuola": "IIS Europa Unita",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 13/05/2026",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-04-30",
+   "data_interpello_testo": "30/04/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-05-02",
+   "data_scadenza_testo": "02/05/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 50,
+   "km": 59.0
+  },
+  {
+   "id": "0b17b3e6f740",
+   "codice_scuola": "TOIS02700G",
+   "scuola": "IIS EUROPA UNITA",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 09/06/2026",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-05-19",
+   "data_interpello_testo": "19/05/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-05-20",
+   "data_scadenza_testo": "20/05/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false,
@@ -7160,6 +7689,50 @@
    "km": 36.4
   },
   {
+   "id": "c82294117e2f",
+   "codice_scuola": "TOIS01400D",
+   "scuola": "I.I.S. PORRO",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "15",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2025-10-15",
+   "data_interpello_testo": "15/10/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-10-16",
+   "data_scadenza_testo": "16/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 59,
+   "km": 36.4
+  },
+  {
+   "id": "423c4494d7ef",
+   "codice_scuola": "TOIS01400D",
+   "scuola": "I.I.S. IGNAZIO PORRO",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 25/11/2025",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2025-11-03",
+   "data_interpello_testo": "03/11/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-11-04",
+   "data_scadenza_testo": "04/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 59,
+   "km": 36.4
+  },
+  {
    "id": "ba579b57af81",
    "codice_scuola": "TOIS01400D",
    "scuola": "I.I.S. IGNAZIO PORRO",
@@ -7175,6 +7748,28 @@
    "stato": "chiuso",
    "data_scadenza": "2025-11-04",
    "data_scadenza_testo": "04/11/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 59,
+   "km": 36.4
+  },
+  {
+   "id": "6505bd617889",
+   "codice_scuola": "TOIS01400D",
+   "scuola": "IIS IGNAZIO PORRO",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "8",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 26/02/2026",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-01-09",
+   "data_interpello_testo": "09/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-11",
+   "data_scadenza_testo": "11/01/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false,
@@ -7930,6 +8525,28 @@
    "km": 68.5
   },
   {
+   "id": "6728e9378a6b",
+   "codice_scuola": "TOIS017001",
+   "scuola": "I.I.S. ENZO FERRARI",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Serale",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2025-09-17",
+   "data_interpello_testo": "17/09/2025",
+   "stato": "chiuso",
+   "data_scadenza": "2025-09-18",
+   "data_scadenza_testo": "18/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 95,
+   "km": 68.5
+  },
+  {
    "id": "29305dd06037",
    "codice_scuola": "TOIS017001",
    "scuola": "I.I.S. ENZO FERRARI",
@@ -8363,6 +8980,28 @@
    "stato": "chiuso",
    "data_scadenza": "2025-10-05",
    "data_scadenza_testo": "05/10/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "minuti": 128,
+   "km": 82.6
+  },
+  {
+   "id": "a311d8227195",
+   "codice_scuola": "TOIS01200T",
+   "scuola": "IIS OLIVETTI",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Serale",
+   "durata": "Supplenza Temporanea fino al 08/02/2026",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-01-13",
+   "data_interpello_testo": "13/01/2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-01-15",
+   "data_scadenza_testo": "15/01/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false,

@@ -107,6 +107,7 @@ CLASSI_DI_CONCORSO = {
     "A026": "Matematica",
     "A040": "Scienze e tecnologie elettriche ed elettroniche",
     "A041": "Scienze e tecnologie informatiche",
+    "A042": "Scienze e tecnologie meccaniche",
     "A047": "Scienze matematiche applicate",
     "A060": "Tecnologia nella scuola secondaria di I grado",
 }
