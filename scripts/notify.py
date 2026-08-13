@@ -252,6 +252,49 @@ def avvisa_se_ci_sono_novita(dati_app):
     return list(identificativi_nuovi)
 
 
-if __name__ == "__main__":
+def manda_messaggio_di_prova():
+    """
+    Manda un finto avviso, per controllare che Telegram (o l'email) funzionino
+    senza dover aspettare che esca un interpello vero.
+
+    Usa un interpello a caso dell'archivio, cosi' vedi anche come sara' fatto
+    il messaggio quando arrivera' quello buono.
+    """
     dati = json.loads(config.FILE_APP_DATI.read_text(encoding="utf-8"))
-    avvisa_se_ci_sono_novita(dati)
+    esempio = next((i for i in dati["interpelli"] if i.get("minuti") is not None),
+                   dati["interpelli"][0])
+
+    testo = "\n".join([
+        "🧪 <b>Messaggio di prova</b>",
+        "Se lo stai leggendo, le notifiche funzionano.",
+        "",
+        "Quando uscira' un interpello vero riceverai una cosa cosi':",
+        "",
+        _riga_messaggio(esempio),
+        "",
+        f"<i>(questo e' un esempio preso dall'archivio, non un interpello aperto)</i>",
+    ])
+
+    ricerche = carica_ricerche()
+    print(f"   ricerche che ti avviseranno: {[r['nome'] for r in ricerche]}")
+
+    inviato = _manda_telegram(testo)
+    inviato = _manda_email("Prova notifiche - Interpelli Monitor", testo) or inviato
+
+    if not inviato:
+        print("   NESSUN CANALE CONFIGURATO.")
+        print("   Servono i segreti TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID")
+        print("   (oppure quelli EMAIL_*). Controlla che i nomi siano scritti giusti.")
+        return False
+
+    print("   messaggio di prova inviato: controlla il telefono")
+    return True
+
+
+if __name__ == "__main__":
+    import sys
+    if "--prova" in sys.argv:
+        manda_messaggio_di_prova()
+    else:
+        dati = json.loads(config.FILE_APP_DATI.read_text(encoding="utf-8"))
+        avvisa_se_ci_sono_novita(dati)

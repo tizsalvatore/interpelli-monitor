@@ -19,6 +19,11 @@ on:
     # importa perche' controlliamo tutto il giorno.
     - cron: "*/30 * * * *"
   workflow_dispatch:        # il bottone "Run workflow" a mano
+    inputs:
+      prova_notifica:
+        description: "Manda anche un messaggio di prova su Telegram/email"
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -63,6 +68,18 @@ jobs:
           EMAIL_DESTINATARIO: ${{ secrets.EMAIL_DESTINATARIO }}
           URL_APP: ${{ vars.URL_APP }}
         run: python scripts/build.py
+
+      - name: Messaggio di prova (solo se lo hai chiesto)
+        if: inputs.prova_notifica
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          EMAIL_SMTP_HOST: ${{ secrets.EMAIL_SMTP_HOST }}
+          EMAIL_SMTP_PORT: ${{ secrets.EMAIL_SMTP_PORT }}
+          EMAIL_UTENTE: ${{ secrets.EMAIL_UTENTE }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_DESTINATARIO: ${{ secrets.EMAIL_DESTINATARIO }}
+        run: python scripts/notify.py --prova
 
       - name: Salva i dati aggiornati
         run: |

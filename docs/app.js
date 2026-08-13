@@ -24,9 +24,9 @@ const FILTRI_DI_FABBRICA = {
   stato: ['aperto'],
   classi: ['A027'],
   corso: ['Diurno'],
-  tipo: [],                     // vuoto = tutti
-  durata: ['fino_30_giugno'],   // le supplenze lunghe
-  maxMinuti: 30,                // null = nessun limite
+  tipo: [],            // vuoto = tutti
+  durata: [],          // vuoto = qualsiasi durata, dalle brevi alle annuali
+  maxMinuti: 30,       // null = nessun limite
   ordine: 'tempo',              // 'tempo' | 'data'
 };
 
@@ -41,6 +41,7 @@ const RICERCHE_INIZIALI = [
 ];
 
 const CHIAVI = {
+  migrazione: 'interpelli:versione-migrazione',
   casa: 'interpelli:casa',
   casaChiesta: 'interpelli:casa-chiesta',
   ricerche: 'interpelli:ricerche',
@@ -310,12 +311,23 @@ function caricaRicerche() {
     filtri: { ...FILTRI_VUOTI, ...(r.filtri || {}) },
   }));
 
-  // La vecchia ricerca di partenza diventa "Desiderati" (con la durata inclusa).
+  // La vecchia ricerca di partenza diventa "Desiderati".
   const vecchia = ricerche.find((r) => r.id === 'iniziale');
   if (vecchia) {
     vecchia.id = 'desiderati';
     vecchia.nome = 'Desiderati';
-    if (!vecchia.filtri.durata.length) vecchia.filtri.durata = ['fino_30_giugno'];
+  }
+
+  // Correzione una tantum: per poche ore "Desiderati" era limitata alle sole
+  // supplenze fino al 30 giugno. Se e' rimasta cosi', la riapriamo a tutte le
+  // durate. Il numero di versione evita di rifarlo (e di sovrascrivere una
+  // scelta che nel frattempo hai fatto tu).
+  if (leggiMemoria(CHIAVI.migrazione, 0) < 2) {
+    const desiderati = ricerche.find((r) => r.id === 'desiderati');
+    if (desiderati && JSON.stringify(desiderati.filtri.durata) === '["fino_30_giugno"]') {
+      desiderati.filtri.durata = [];
+    }
+    scriviMemoria(CHIAVI.migrazione, 2);
   }
   // E "Tutte" deve esserci sempre: e' la via di fuga per vedere l'archivio.
   if (!ricerche.some((r) => r.id === 'tutte')) {
@@ -1147,7 +1159,7 @@ function disegnaPannelloFiltri() {
     { valore: 30, etichetta: '30 min' },
     { valore: 45, etichetta: '45 min' },
     { valore: 60, etichetta: '1 ora' },
-    { valore: null, etichetta: 'Tutti' },
+    { valore: null, etichetta: 'Tutte' },
   ], f.maxMinuti, 'maxMinuti', true);
 
   const quanti = interpelliFiltrati(stato.filtriInModifica).length;
