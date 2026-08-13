@@ -131,31 +131,6 @@ main {
 .bottone-tondo.gira svg { animation: gira 1s linear infinite; }
 @keyframes gira { to { transform: rotate(360deg); } }
 
-/* Ricerca */
-.ricerca {
-  position: relative;
-  max-width: 780px; margin: 10px auto 0;
-  display: flex; align-items: center;
-}
-.ricerca__lente {
-  position: absolute; left: 11px; color: var(--testo-tenue);
-  width: 18px; height: 18px; pointer-events: none;
-}
-.ricerca input {
-  width: 100%; padding: 10px 34px 10px 36px;
-  border-radius: 12px; border: 1px solid var(--bordo);
-  background: var(--sfondo-scheda); color: var(--testo);
-  font-size: 15px; outline: none;
-  -webkit-appearance: none;
-}
-.ricerca input:focus { border-color: var(--accento); }
-.ricerca input::-webkit-search-cancel-button { display: none; }
-.ricerca__pulisci {
-  position: absolute; right: 8px; width: 24px; height: 24px;
-  border-radius: 50%; font-size: 18px; line-height: 1;
-  color: var(--testo-tenue); background: var(--sfondo-morbido);
-}
-
 /* Barra dei filtri */
 .barra-filtri {
   display: flex; align-items: center; justify-content: space-between; gap: 8px;

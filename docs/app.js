@@ -34,10 +34,11 @@ const FILTRI_VUOTI = {
   stato: [], classi: [], corso: [], tipo: [], durata: [], maxMinuti: null, ordine: 'tempo',
 };
 
-// Le due ricerche che ci sono da subito.
+// Le tre ricerche che ci sono da subito.
 const RICERCHE_INIZIALI = [
   { id: 'desiderati', nome: 'Desiderati', filtri: FILTRI_DI_FABBRICA, notifiche: true },
-  { id: 'tutte', nome: 'Tutti', filtri: FILTRI_VUOTI, notifiche: false },
+  { id: 'aperte', nome: 'Tutti (aperte)', filtri: { ...FILTRI_VUOTI, stato: ['aperto'] }, notifiche: false },
+  { id: 'tutte', nome: 'Tutti (storico)', filtri: FILTRI_VUOTI, notifiche: false },
 ];
 
 const CHIAVI = {
@@ -59,7 +60,6 @@ const stato = {
   ricercaAttiva: null,      // id della ricerca salvata attualmente applicata
   preferiti: new Set(),
   visti: new Set(),
-  ricerca: '',
   vista: 'lista',           // 'lista' | 'ricerche' | 'preferiti' | 'info'
   modo: 'elenco',           // 'elenco' | 'mappa'
   mappa: null,
@@ -74,8 +74,8 @@ const stato = {
 
 const $ = (id) => document.getElementById(id);
 const elementi = {};
-['titoloVista', 'sottotitolo', 'bottoneAggiorna', 'campoRicerca', 'pulisciRicerca',
- 'zonaRicerca', 'barraFiltri', 'bottoneFiltri', 'contatoreFiltri', 'filtriAttivi',
+['titoloVista', 'sottotitolo', 'bottoneAggiorna',
+ 'barraFiltri', 'bottoneFiltri', 'contatoreFiltri', 'filtriAttivi',
  'barraRicerche', 'interruttoreVista', 'lista', 'statoVuoto', 'riepilogo', 'velo',
  'pannelloFiltri', 'pannelloDettaglio', 'corpoDettaglio', 'chiudiDettaglio',
  'applicaFiltri', 'azzeraFiltri', 'azioniRicerca', 'titoloFiltri', 'conteggioAnteprima',
@@ -215,7 +215,7 @@ function mostraScheletri() {
 
 /* ---------- 4. FILTRI E RICERCHE SALVATE ---------- */
 
-function interpelliFiltrati(filtri = stato.filtri, testoCercato = stato.ricerca) {
+function interpelliFiltrati(filtri = stato.filtri, testoCercato = '') {
   if (!stato.dati) return [];
   const cerca = (testoCercato || '').trim().toLowerCase();
 
@@ -344,21 +344,33 @@ function caricaRicerche() {
       desiderati.filtri.durata = [];
     }
   }
-  // La ricerca dell'archivio si chiamava "Tutte": il nome giusto e' "Tutti"
-  // (gli interpelli). La rinominiamo solo se non l'hai gia' cambiata tu.
-  if (versione < 3) {
+  // La ricerca dell'archivio ha cambiato nome due volte: "Tutte", poi "Tutti",
+  // ora "Tutti (storico)" per distinguerla da "Tutti (aperte)". Rinominiamo
+  // solo finche' e' rimasta con uno dei nomi che le abbiamo dato noi.
+  if (versione < 4) {
     const archivio = ricerche.find((r) => r.id === 'tutte');
-    if (archivio && archivio.nome === 'Tutte') archivio.nome = 'Tutti';
+    if (archivio && ['Tutte', 'Tutti'].includes(archivio.nome)) {
+      archivio.nome = 'Tutti (storico)';
+    }
+    scriviMemoria(CHIAVI.migrazione, 4);
   }
-  if (versione < 3) scriviMemoria(CHIAVI.migrazione, 3);
-  // E "Tutti" deve esserci sempre: e' la via di fuga per vedere l'archivio.
-  if (!ricerche.some((r) => r.id === 'tutte')) {
-    ricerche.push({
-      id: 'tutte', nome: 'Tutti',
-      filtri: JSON.parse(JSON.stringify(FILTRI_VUOTI)),
-      notifiche: false, creata: new Date().toISOString(),
-    });
-  }
+  // Le due ricerche "di servizio" devono esserci sempre: sono la via di fuga
+  // per vedere cosa c'e' di aperto adesso e tutto l'archivio.
+  RICERCHE_INIZIALI.filter((base) => base.id !== 'desiderati').forEach((base) => {
+    if (!ricerche.some((r) => r.id === base.id)) {
+      ricerche.push({
+        ...base,
+        filtri: JSON.parse(JSON.stringify(base.filtri)),
+        creata: new Date().toISOString(),
+      });
+    }
+  });
+
+  // Le tue ricerche prima, le due di servizio sempre in fondo e in quest'ordine:
+  // prima quello che c'e' adesso, poi tutto l'archivio.
+  const posizione = (r) => (r.id === 'aperte' ? 1 : r.id === 'tutte' ? 2 : 0);
+  ricerche.sort((a, b) => posizione(a) - posizione(b));
+
   return ricerche;
 }
 
@@ -602,7 +614,6 @@ function aggiornaIntestazione() {
   }
 
   const soloElenco = stato.vista === 'info' || stato.vista === 'ricerche';
-  elementi.zonaRicerca.hidden = soloElenco;
   elementi.barraFiltri.hidden = soloElenco;
   elementi.filtriAttivi.hidden = soloElenco;
   elementi.barraRicerche.hidden = soloElenco || stato.vista === 'preferiti';
@@ -1577,19 +1588,6 @@ function collegaEventi() {
     elementi.bottoneAggiorna.classList.remove('gira');
     disegnaTutto();
     mostraMessaggio('Dati aggiornati');
-  });
-
-  elementi.campoRicerca.addEventListener('input', (evento) => {
-    stato.ricerca = evento.target.value;
-    elementi.pulisciRicerca.hidden = !stato.ricerca;
-    disegnaTutto();
-  });
-
-  elementi.pulisciRicerca.addEventListener('click', () => {
-    elementi.campoRicerca.value = '';
-    stato.ricerca = '';
-    elementi.pulisciRicerca.hidden = true;
-    disegnaTutto();
   });
 
   elementi.interruttoreVista.querySelectorAll('button').forEach((bottone) => {
