@@ -187,6 +187,13 @@ def main(usa_cache=False, notifica=True):
             "aperti": sum(1 for i in interpelli if i["stato"] == "aperto"),
             "senza_tempo_di_viaggio": senza_tempo,
         },
+        # Serve alla app per spiegarti PERCHE' mancano i tempi di viaggio,
+        # invece di mostrare "n.d." e basta. Non contiene nessun dato sensibile:
+        # dice solo se le due impostazioni ci sono, non quali sono.
+        "diagnostica": {
+            "casa_impostata": bool(config.CASA_INDIRIZZO),
+            "chiave_google": bool(travel.chiave_api()),
+        },
         "scuole": scuole_json,
         "interpelli": interpelli,
     }

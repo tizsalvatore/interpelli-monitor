@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-08-13T15:41:37+02:00",
+ "aggiornato": "2026-08-13T16:04:55+02:00",
  "aggiornato_sito": "2026-08-13",
  "casa": {
   "etichetta": "Casa",
@@ -28,6 +28,10 @@
   "totale": 189,
   "aperti": 0,
   "senza_tempo_di_viaggio": 189
+ },
+ "diagnostica": {
+  "casa_impostata": true,
+  "chiave_google": false
  },
  "scuole": {
   "TOIS016005": {

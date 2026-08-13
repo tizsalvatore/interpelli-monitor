@@ -411,7 +411,15 @@ def aggiorna_viaggi(indirizzi):
     for numero, indirizzo in enumerate(da_calcolare, start=1):
         voce = dict(cache["destinazioni"].get(indirizzo) or {})
         try:
-            if "lat" not in voce:
+            # Rifacciamo la ricerca della posizione se non ce l'abbiamo, oppure
+            # se era stata trovata con OpenStreetMap (meno preciso) o ripiegando
+            # sul centro del comune: Google se la cava molto meglio.
+            posizione_da_rifare = (
+                "lat" not in voce
+                or voce.get("approssimativo")
+                or str(voce.get("precisione", "")).startswith("OSM")
+            )
+            if posizione_da_rifare:
                 voce.update(_geocodifica_con_ripiego(
                     indirizzo, lambda posto: geocodifica(posto, chiave)))
             voce["mezzi"] = percorso_mezzi(casa, voce, chiave, arrivo)

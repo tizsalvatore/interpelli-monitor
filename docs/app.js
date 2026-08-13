@@ -310,6 +310,8 @@ function disegnaTutto() {
   if (mostraMappa) return disegnaMappa(elenco);
 
   elementi.lista.replaceChildren(...elenco.map(creaScheda));
+  const avviso = avvisoConfigurazione();
+  if (avviso) elementi.lista.prepend(avviso);
   disegnaRiepilogo(elenco);
   if (elenco.length === 0) disegnaStatoVuoto();
   else elementi.statoVuoto.hidden = true;
@@ -389,6 +391,31 @@ function creaStella(interpello, classe) {
     stella.classList.toggle('attiva');
   });
   return stella;
+}
+
+// Se i tempi di viaggio mancano per tutti, la app dice a voce alta cosa manca
+// invece di lasciare "n.d." dappertutto senza spiegazioni.
+function avvisoConfigurazione() {
+  const d = stato.dati.diagnostica;
+  const conteggi = stato.dati.conteggi;
+  if (!d || conteggi.totale === 0) return null;
+  if (conteggi.senza_tempo_di_viaggio < conteggi.totale) return null;   // qualcosa si calcola: tutto ok
+
+  const manca = [];
+  if (!d.casa_impostata) manca.push('il segreto CASA_INDIRIZZO (l’indirizzo di partenza)');
+  if (!d.chiave_google) manca.push('il segreto GOOGLE_MAPS_API_KEY (la chiave di Google)');
+  if (!manca.length) return null;   // c'e' tutto ma i tempi mancano: sara' il prossimo giro
+
+  const avviso = nuovo('div', 'avviso');
+  const testo = nuovo('div');
+  testo.append(
+    nuovo('strong', null, 'Tempi di viaggio non calcolati. '),
+    document.createTextNode(`Su GitHub manca ${manca.join(' e ')}. `),
+    document.createTextNode('Aggiungilo in Settings → Secrets and variables → Actions, poi lancia '
+      + 'l’aggiornamento da Actions → Aggiorna interpelli → Run workflow.'),
+  );
+  avviso.append(icona(ICONE.avviso), testo);
+  return avviso;
 }
 
 function disegnaStatoVuoto() {
