@@ -161,22 +161,42 @@ def _componi_messaggio(per_ricerca, quanti_totali):
 # --------------------------------------------------------------------------
 # Invio
 # --------------------------------------------------------------------------
+def _destinatari_telegram():
+    """
+    Legge i chat id da avvisare.
+
+    Puoi metterne piu' di uno nel segreto TELEGRAM_CHAT_ID, separati da virgola:
+        123456789,987654321
+    Cosi' lo stesso avviso arriva a te e a chi vuoi tu.
+    """
+    grezzo = os.environ.get("TELEGRAM_CHAT_ID", "")
+    return [pezzo.strip() for pezzo in grezzo.replace(";", ",").split(",") if pezzo.strip()]
+
+
 def _manda_telegram(testo):
     token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
-    chat = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
-    if not token or not chat:
+    destinatari = _destinatari_telegram()
+    if not token or not destinatari:
         return False
-    risposta = requests.post(
-        f"https://api.telegram.org/bot{token}/sendMessage",
-        json={"chat_id": chat, "text": testo, "parse_mode": "HTML",
-              "disable_web_page_preview": True},
-        timeout=30,
-    )
-    if not risposta.ok:
-        print(f"   Telegram ha risposto {risposta.status_code}: {risposta.text[:150]}")
-        return False
-    print("   notifica Telegram inviata")
-    return True
+
+    riusciti = 0
+    for chat in destinatari:
+        risposta = requests.post(
+            f"https://api.telegram.org/bot{token}/sendMessage",
+            json={"chat_id": chat, "text": testo, "parse_mode": "HTML",
+                  "disable_web_page_preview": True},
+            timeout=30,
+        )
+        if risposta.ok:
+            riusciti += 1
+        else:
+            # Un destinatario che non funziona non deve impedire agli altri di
+            # ricevere l'avviso: segnaliamo e andiamo avanti.
+            print(f"   Telegram, chat {chat}: {risposta.status_code} {risposta.text[:120]}")
+
+    if riusciti:
+        print(f"   notifica Telegram inviata a {riusciti} destinatario/i su {len(destinatari)}")
+    return riusciti > 0
 
 
 def _manda_email(oggetto, testo_html):

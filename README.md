@@ -138,6 +138,10 @@ Al giro successivo i tempi compaiono ovunque (e restano salvati: non si ricalcol
 4. Su GitHub aggiungi due secret (come sopra):
    - `TELEGRAM_BOT_TOKEN` = il token
    - `TELEGRAM_CHAT_ID` = il numero
+
+   Per avvisare **più persone**, metti i loro chat id separati da virgola:
+   `123456789,987654321`. Ognuna deve prima scrivere al bot almeno una volta,
+   altrimenti Telegram non le fa ricevere niente.
 5. Facoltativo: **Settings → Secrets and variables → Actions → Variables** → `URL_APP`
    con l'indirizzo della tua app, così il messaggio contiene il link.
 
