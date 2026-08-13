@@ -37,7 +37,7 @@ const FILTRI_VUOTI = {
 // Le tre ricerche che ci sono da subito.
 const RICERCHE_INIZIALI = [
   { id: 'desiderati', nome: 'Desiderati', filtri: FILTRI_DI_FABBRICA, notifiche: true },
-  { id: 'aperte', nome: 'Tutti (aperte)', filtri: { ...FILTRI_VUOTI, stato: ['aperto'] }, notifiche: false },
+  { id: 'aperte', nome: 'Tutti (aperti)', filtri: { ...FILTRI_VUOTI, stato: ['aperto'] }, notifiche: false },
   { id: 'tutte', nome: 'Tutti (storico)', filtri: FILTRI_VUOTI, notifiche: false },
 ];
 
@@ -60,6 +60,7 @@ const stato = {
   ricercaAttiva: null,      // id della ricerca salvata attualmente applicata
   preferiti: new Set(),
   visti: new Set(),
+  ricerca: '',              // testo cercato: sta nel pannello dei filtri
   vista: 'lista',           // 'lista' | 'ricerche' | 'preferiti' | 'info'
   modo: 'elenco',           // 'elenco' | 'mappa'
   mappa: null,
@@ -79,6 +80,7 @@ const elementi = {};
  'barraRicerche', 'interruttoreVista', 'lista', 'statoVuoto', 'riepilogo', 'velo',
  'pannelloFiltri', 'pannelloDettaglio', 'corpoDettaglio', 'chiudiDettaglio',
  'applicaFiltri', 'azzeraFiltri', 'azioniRicerca', 'titoloFiltri', 'conteggioAnteprima',
+ 'campoRicerca',
  'conteggioPreferiti', 'conteggioRicerche', 'navBasso', 'brindisi', 'etichettaTempo',
  'contenuto', 'zonaMappa', 'mappa', 'conteggioMappa', 'pannelloNome',
  'campoNomeRicerca', 'notificheRicerca', 'confermaNome', 'annullaNome',
@@ -215,7 +217,10 @@ function mostraScheletri() {
 
 /* ---------- 4. FILTRI E RICERCHE SALVATE ---------- */
 
-function interpelliFiltrati(filtri = stato.filtri, testoCercato = '') {
+// Nota: il testo cercato NON fa parte dei filtri salvati. E' un setaccio
+// temporaneo per trovare una scuola; le ricerche salvate (e le notifiche)
+// restano definite solo dai filtri veri.
+function interpelliFiltrati(filtri = stato.filtri, testoCercato = stato.ricerca) {
   if (!stato.dati) return [];
   const cerca = (testoCercato || '').trim().toLowerCase();
 
@@ -286,6 +291,7 @@ function contaFiltriAttivi() {
   let attivi = 0;
   CAMPI_ELENCO.forEach((campo) => { if (stato.filtri[campo].length) attivi++; });
   if (stato.filtri.maxMinuti !== null) attivi++;
+  if (stato.ricerca.trim()) attivi++;
   return attivi;
 }
 
@@ -353,6 +359,12 @@ function caricaRicerche() {
       archivio.nome = 'Tutti (storico)';
     }
     scriviMemoria(CHIAVI.migrazione, 4);
+  }
+  // "aperte" -> "aperti": interpelli e' maschile.
+  if (versione < 5) {
+    const aperti = ricerche.find((r) => r.id === 'aperte');
+    if (aperti && aperti.nome === 'Tutti (aperte)') aperti.nome = 'Tutti (aperti)';
+    scriviMemoria(CHIAVI.migrazione, 5);
   }
   // Le due ricerche "di servizio" devono esserci sempre: sono la via di fuga
   // per vedere cosa c'e' di aperto adesso e tutto l'archivio.
@@ -640,7 +652,7 @@ function aggiornaBarraFiltri() {
   if (f.durata.length) attivi.push({ campo: 'durata', testo: f.durata.map(nomeDurataBreve).join(', ') });
   if (f.maxMinuti !== null) attivi.push({ campo: 'maxMinuti', testo: `entro ${f.maxMinuti} min` });
 
-  elementi.filtriAttivi.replaceChildren(...attivi.map(({ campo, testo }) => {
+  const pillole = attivi.map(({ campo, testo }) => {
     const chip = nuovo('button', 'chip chip--attivo chip--rimuovi', testo);
     chip.addEventListener('click', () => {
       stato.filtri = { ...stato.filtri, [campo]: campo === 'maxMinuti' ? null : [] };
@@ -648,7 +660,22 @@ function aggiornaBarraFiltri() {
       disegnaTutto();
     });
     return chip;
-  }));
+  });
+
+  // Il testo cercato ha una pillola tutta sua: e' l'unico modo per accorgersi
+  // che la lista e' filtrata anche da quello, visto che il campo e' nascosto
+  // dentro il pannello.
+  if (stato.ricerca.trim()) {
+    const chip = nuovo('button', 'chip chip--attivo chip--rimuovi', `“${stato.ricerca.trim()}”`);
+    chip.addEventListener('click', () => {
+      stato.ricerca = '';
+      if (elementi.campoRicerca) elementi.campoRicerca.value = '';
+      disegnaTutto();
+    });
+    pillole.push(chip);
+  }
+
+  elementi.filtriAttivi.replaceChildren(...pillole);
 
   const quanti = contaFiltriAttivi();
   elementi.contatoreFiltri.hidden = quanti === 0;
@@ -1141,6 +1168,7 @@ function sistemaIndirizzoWeb(sito) {
 
 function apriFiltri() {
   stato.filtriInModifica = JSON.parse(JSON.stringify(stato.filtri));
+  if (elementi.campoRicerca) elementi.campoRicerca.value = stato.ricerca;
   disegnaPannelloFiltri();
   elementi.velo.hidden = false;
   elementi.pannelloFiltri.hidden = false;
@@ -1579,6 +1607,15 @@ function collegaEventi() {
 
   elementi.azzeraFiltri.addEventListener('click', () => {
     stato.filtriInModifica = JSON.parse(JSON.stringify(FILTRI_VUOTI));
+    stato.ricerca = '';
+    elementi.campoRicerca.value = '';
+    disegnaPannelloFiltri();
+  });
+
+  // Il testo si applica mentre scrivi: il conteggio in fondo al pannello
+  // ti dice subito quanti risultati restano.
+  elementi.campoRicerca.addEventListener('input', (evento) => {
+    stato.ricerca = evento.target.value;
     disegnaPannelloFiltri();
   });
 
