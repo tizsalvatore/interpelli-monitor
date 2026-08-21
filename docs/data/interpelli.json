@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-08-21T21:51:34+02:00",
+ "aggiornato": "2026-08-21T22:30:54+02:00",
  "aggiornato_sito": "2026-08-21",
  "casa": {
   "etichetta": "Casa",
@@ -425,8 +425,8 @@
    "plessi": [
     {
      "nomi": [
-      "ISTITUTO TECNICO PRIMO LEVI",
-      "LICEO SCIENTIFICO PRIMO LEVI"
+      "LICEO SCIENTIFICO PRIMO LEVI",
+      "ISTITUTO TECNICO PRIMO LEVI"
      ],
      "indirizzo": "Corso Unione Sovietica 490, 10135 Torino, Italia",
      "comune": "Torino",
@@ -1203,9 +1203,9 @@
    "plessi": [
     {
      "nomi": [
-      "C. OLIVETTI",
+      "I.P.S.COMM. M. OLIVETTI",
       "I.P.I.A. M. OLIVETTI",
-      "I.P.S.COMM. M. OLIVETTI"
+      "C. OLIVETTI"
      ],
      "indirizzo": "Colle Bellavista, 10015 Ivrea, Italia",
      "comune": "Ivrea",
@@ -1312,32 +1312,6 @@
       "auto_minuti": 14,
       "lat": 45.0363397,
       "lng": 7.619732699999998,
-      "approssimativo": false
-     }
-    },
-    {
-     "nomi": [
-      "E. FERRARI"
-     ],
-     "indirizzo": "Via Gaidano 126, 10137 Torino, Italia",
-     "comune": "Torino",
-     "gradi": [
-      "II_GRADO"
-     ],
-     "viaggio": {
-      "minuti": 35,
-      "km": 6.9,
-      "km_strada": 5.7,
-      "cambi": 0,
-      "linee": [
-       {
-        "nome": "74",
-        "tipo": "BUS"
-       }
-      ],
-      "auto_minuti": 13,
-      "lat": 45.0425691,
-      "lng": 7.6222692,
       "approssimativo": false
      }
     }
@@ -2719,8 +2693,8 @@
    "plessi": [
     {
      "nomi": [
-      "M. BUNIVA",
-      "LICEO ARTISTICO BUNIVA"
+      "LICEO ARTISTICO BUNIVA",
+      "M. BUNIVA"
      ],
      "indirizzo": "Via Dei Rochis 25, 10064 Pinerolo, Italia",
      "comune": "Pinerolo",
@@ -2860,7 +2834,7 @@
      "nomi": [
       "G. CENA"
      ],
-     "indirizzo": "Via Dora Baltea 3, 10015 Ivrea, Italia",
+     "indirizzo": "Via Dora Baltea N. 3, 10015 Ivrea, Italia",
      "comune": "Ivrea",
      "gradi": [
       "II_GRADO"
@@ -2890,7 +2864,7 @@
      "nomi": [
       "G. CENA"
      ],
-     "indirizzo": "Via Dora Baltea N. 3, 10015 Ivrea, Italia",
+     "indirizzo": "Via Dora Baltea 3, 10015 Ivrea, Italia",
      "comune": "Ivrea",
      "gradi": [
       "II_GRADO"
@@ -3022,8 +2996,8 @@
    "plessi": [
     {
      "nomi": [
-      "A.AVOGADRO",
-      "L.S. A. AVOGADRO"
+      "L.S. A. AVOGADRO",
+      "A.AVOGADRO"
      ],
      "indirizzo": "Corso San Maurizio 8, 10124 Torino, Italia",
      "comune": "Torino",
@@ -4149,7 +4123,7 @@
      "nomi": [
       "E. FERRARI"
      ],
-     "indirizzo": "Corso L. Couvert 21, Susa, Italia",
+     "indirizzo": "Corso L. Couvert 21, 10059 Susa, Italia",
      "comune": "Susa",
      "gradi": [
       "II_GRADO"
@@ -4179,7 +4153,7 @@
      "nomi": [
       "E. FERRARI"
      ],
-     "indirizzo": "Corso L. Couvert 21, 10059 Susa, Italia",
+     "indirizzo": "Corso L. Couvert 21, Susa, Italia",
      "comune": "Susa",
      "gradi": [
       "II_GRADO"
