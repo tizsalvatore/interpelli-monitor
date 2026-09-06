@@ -11,7 +11,7 @@
    scarichera' la nuova versione invece di riusare la vecchia.
    ========================================================================= */
 
-const VERSIONE = 'interpelli-v14';
+const VERSIONE = 'interpelli-v15';
 const CONTENITORE_APP = `${VERSIONE}-app`;
 const CONTENITORE_DATI = `${VERSIONE}-dati`;
 
