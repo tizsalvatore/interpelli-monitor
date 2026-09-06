@@ -2,21 +2,25 @@
 # Il "robot" che tiene aggiornata la app.
 #
 # Gira sui computer di GitHub (gratis), anche a PC spento:
-#   - ogni 30 minuti rilegge il sito degli interpelli
+#   - rilegge il sito degli interpelli
 #   - ricalcola i tempi di viaggio delle scuole nuove
 #   - salva i dati aggiornati e li pubblica
 #   - ti manda la notifica Telegram se c'e' qualcosa di nuovo
 #
+# NOTA IMPORTANTE sul "ogni 30 minuti": GitHub mette in coda i lavori
+# programmati gratuiti e li fa partire quando ha risorse libere. Nella pratica
+# passavano 2-5 ore fra un giro e l'altro. Per questo ogni esecuzione, invece
+# di controllare una volta sola, ripete il controllo piu' volte al suo interno
+# aspettando qualche minuto fra l'uno e l'altro (vedi GIRI e PAUSA).
+#
 # Puoi anche lanciarlo a mano: scheda "Actions" -> "Aggiorna interpelli" ->
-# "Run workflow".
+# "Run workflow". In quel caso fa un solo controllo, cosi' risponde subito.
 # =============================================================================
 
 name: Aggiorna interpelli
 
 on:
   schedule:
-    # Ogni 30 minuti. ATTENZIONE: gli orari di GitHub sono in UTC, ma qui non
-    # importa perche' controlliamo tutto il giorno.
     - cron: "*/30 * * * *"
   workflow_dispatch:        # il bottone "Run workflow" a mano
     inputs:
@@ -29,11 +33,10 @@ on:
     paths:
       - "docs/data/ricerche.json"   # hai cambiato le ricerche: ricontrolliamo subito
 
-# Servono per poter salvare i dati aggiornati nel progetto.
 permissions:
   contents: write
 
-# Se un giro e' ancora in corso, non ne partono altri sopra.
+# Se un giro e' ancora in corso, il successivo aspetta il suo turno.
 concurrency:
   group: aggiorna-interpelli
   cancel-in-progress: false
@@ -41,6 +44,7 @@ concurrency:
 jobs:
   aggiorna:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
 
     steps:
       - name: Scarica il progetto
@@ -55,7 +59,12 @@ jobs:
       - name: Installa le librerie
         run: pip install -r requirements.txt
 
-      - name: Aggiorna i dati e manda le notifiche
+      - name: Preparo git per i salvataggi
+        run: |
+          git config user.name "Robot Interpelli"
+          git config user.email "actions@github.com"
+
+      - name: Controlla, aggiorna e notifica
         env:
           CASA_INDIRIZZO: ${{ secrets.CASA_INDIRIZZO }}
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
@@ -67,7 +76,35 @@ jobs:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_DESTINATARIO: ${{ secrets.EMAIL_DESTINATARIO }}
           URL_APP: ${{ vars.URL_APP }}
-        run: python scripts/build.py
+          # A mano: un solo controllo (vuoi vedere subito il risultato).
+          # In automatico: 5 controlli a 10 minuti di distanza, cioe' circa
+          # 40 minuti di sorveglianza continua a ogni esecuzione.
+          GIRI: ${{ github.event_name == 'workflow_dispatch' && '1' || '5' }}
+          PAUSA: "600"
+        run: |
+          for giro in $(seq 1 "$GIRI"); do
+            echo "::group::Controllo $giro di $GIRI"
+            python scripts/build.py
+
+            # Salviamo dopo OGNI controllo: cosi' la app si aggiorna subito,
+            # senza aspettare la fine di tutta l'esecuzione.
+            git add -A docs/data data
+            if git diff --staged --quiet; then
+              echo "niente di nuovo da salvare"
+            else
+              git commit -m "Aggiornamento interpelli $(date -u '+%Y-%m-%d %H:%M UTC')"
+              # Nel frattempo potrebbe aver spinto qualcun altro (tu, o un altro
+              # giro): ci riallineiamo prima di spingere.
+              git pull --rebase --autostash || true
+              git push || echo "push non riuscito: riprovo al prossimo controllo"
+            fi
+            echo "::endgroup::"
+
+            if [ "$giro" -lt "$GIRI" ]; then
+              echo "aspetto $PAUSA secondi prima del prossimo controllo"
+              sleep "$PAUSA"
+            fi
+          done
 
       - name: Messaggio di prova (solo se lo hai chiesto)
         if: inputs.prova_notifica
@@ -80,14 +117,3 @@ jobs:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_DESTINATARIO: ${{ secrets.EMAIL_DESTINATARIO }}
         run: python scripts/notify.py --prova
-
-      - name: Salva i dati aggiornati
-        run: |
-          git config user.name "Robot Interpelli"
-          git config user.email "actions@github.com"
-          # -A aggiunge quello che c'e' senza lamentarsi se un file manca
-          # (i file grossi e temporanei sono esclusi da .gitignore).
-          git add -A docs/data data
-          # "git commit" fallisce se non e' cambiato niente: in quel caso va bene cosi'.
-          git diff --staged --quiet || git commit -m "Aggiornamento interpelli $(date -u '+%Y-%m-%d %H:%M UTC')"
-          git push
