@@ -593,7 +593,8 @@ function disegnaStatoVuoto() {
     nuovo('div', 'stato-vuoto__icona', aperti === 0 ? '🌤️' : '🔍'),
     nuovo('h2', null, aperti === 0 ? 'Nessun interpello aperto' : 'Nessun risultato'),
     nuovo('p', null, aperti === 0
-      ? 'In questo momento non c’è nessun interpello aperto in provincia di Torino per le tue classi. Di solito ricompaiono da settembre.'
+      ? 'In questo momento non c’è nessun interpello aperto in provincia di Torino per le tue classi. '
+        + 'L’app ricontrolla il sito ogni mezz’ora: appena ne esce uno lo trovi qui, e ti arriva su Telegram.'
       : 'Nessun interpello corrisponde ai filtri impostati.'),
     azioni,
   );
@@ -1072,8 +1073,10 @@ function apriDettaglio(interpello) {
   if (scuola && scuola.sede && scuola.sede.sito) {
     elenco.appendChild(collegamentoEsterno('Sito della scuola', sistemaIndirizzoWeb(scuola.sede.sito)));
   }
+  // L'indirizzo del sito cambia a ogni anno scolastico: usiamo quello da cui
+  // sono arrivati davvero i dati, non uno scritto qui una volta per sempre.
   elenco.appendChild(collegamentoEsterno('Pagina ufficiale degli interpelli',
-    'https://servizi.istruzionepiemonte.it/interpello2025/ric_interpello_ambito_to.php'));
+    stato.dati.fonte_url || 'https://servizi.istruzionepiemonte.it/interpello2025/ric_interpello_ambito_to.php'));
   collegamenti.appendChild(elenco);
   corpo.appendChild(collegamenti);
 

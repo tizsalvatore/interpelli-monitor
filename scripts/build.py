@@ -192,6 +192,9 @@ def main(usa_cache=False, notifica=True):
     dati_app = {
         "aggiornato": adesso.isoformat(timespec="seconds"),
         "aggiornato_sito": data_sito,
+        # Da quale indirizzo abbiamo letto: cambia a ogni anno scolastico,
+        # e la app lo usa per il collegamento "pagina ufficiale".
+        "fonte_url": scrape.URL_USATO,
         "casa": _casa_da_pubblicare(),
         # Quando gira su GitHub sappiamo il nome del progetto: serve alla app
         # per offrirti il collegamento diretto al file delle ricerche.

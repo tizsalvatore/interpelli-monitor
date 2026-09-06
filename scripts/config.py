@@ -33,7 +33,12 @@ FILE_APP_DATI = DOCS_DATA_DIR / "interpelli.json"           # <-- il file che le
 # --------------------------------------------------------------------------
 # Sorgenti dei dati
 # --------------------------------------------------------------------------
-INTERPELLI_URL = "https://servizi.istruzionepiemonte.it/interpello2025/ric_interpello_ambito_to.php"
+# La cartella cambia a ogni anno scolastico ("interpello2025", "interpello2026"...).
+# Non sappiamo in anticipo quando passeranno alla successiva, quindi le proviamo
+# tutte e teniamo quella che ha davvero delle righe: cosi' il giorno del cambio
+# l'app non smette di vedere niente senza dirlo a nessuno.
+INTERPELLI_URL_MODELLO = "https://servizi.istruzionepiemonte.it/interpello{anno}/ric_interpello_ambito_to.php"
+INTERPELLI_URL = INTERPELLI_URL_MODELLO.format(anno=2025)   # indirizzo di partenza
 
 # Anagrafica scuole statali del Ministero (serve per avere gli INDIRIZZI, che il
 # sito degli interpelli non fornisce). Il nome del file cambia ogni anno

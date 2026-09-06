@@ -37,30 +37,85 @@ COL_DATA_CANCELLAZIONE = 11
 NUM_COLONNE = 12
 
 
+# Indirizzo da cui e' arrivata l'ultima pagina letta: lo mettiamo poi nel file
+# della app, cosi' il collegamento "pagina ufficiale" punta sempre a quello giusto.
+URL_USATO = config.INTERPELLI_URL
+
+
+def _indirizzi_da_provare():
+    """
+    Gli indirizzi possibili, dal piu' probabile.
+
+    La cartella sul sito porta l'anno scolastico: a settembre 2026 gli
+    interpelli possono stare ancora in "interpello2025" oppure gia' in
+    "interpello2026". Proviamo l'anno in corso, il precedente e il successivo.
+    """
+    oggi = date.today()
+    anno = oggi.year if oggi.month >= 9 else oggi.year - 1
+    indirizzi = []
+    for candidato in (anno, anno - 1, anno + 1):
+        url = config.INTERPELLI_URL_MODELLO.format(anno=candidato)
+        if url not in indirizzi:
+            indirizzi.append(url)
+    return indirizzi
+
+
+def _righe_di_dati(html):
+    """Quante righe ha la tabella, senza contare l'intestazione."""
+    return max(len(re.findall(r"<tr", html, re.IGNORECASE)) - 1, 0)
+
+
+def _scarica(url):
+    risposta = requests.get(url, headers={"User-Agent": config.USER_AGENT}, timeout=90)
+    risposta.raise_for_status()
+    # Il sito dichiara una codifica ma ne usa un'altra: proviamo prima UTF-8,
+    # e se fallisce ripieghiamo sulla vecchia ISO-8859-1 (che non fallisce mai).
+    try:
+        return risposta.content.decode("utf-8")
+    except UnicodeDecodeError:
+        return risposta.content.decode("iso-8859-1")
+
+
 def scarica_pagina(usa_cache=False):
-    """Scarica la pagina degli interpelli e restituisce il testo HTML."""
+    """
+    Scarica la pagina degli interpelli e restituisce il testo HTML.
+
+    Se l'indirizzo principale risponde con una tabella vuota, proviamo gli
+    altri anni: e' il caso in cui il sito ha appena cambiato cartella.
+    """
+    global URL_USATO
+
     if usa_cache and config.FILE_INTERPELLI_HTML.exists():
         print("   (uso la copia locale gia' scaricata)")
         return config.FILE_INTERPELLI_HTML.read_text(encoding="utf-8", errors="replace")
 
-    print(f"   scarico {config.INTERPELLI_URL}")
-    risposta = requests.get(
-        config.INTERPELLI_URL,
-        headers={"User-Agent": config.USER_AGENT},
-        timeout=90,
-    )
-    risposta.raise_for_status()
+    indirizzi = _indirizzi_da_provare()
+    ripiego = None
 
-    # Il sito dichiara una codifica ma ne usa un'altra: proviamo prima UTF-8,
-    # e se fallisce ripieghiamo sulla vecchia ISO-8859-1 (che non fallisce mai).
-    try:
-        testo = risposta.content.decode("utf-8")
-    except UnicodeDecodeError:
-        testo = risposta.content.decode("iso-8859-1")
+    for url in indirizzi:
+        try:
+            testo = _scarica(url)
+        except requests.RequestException as errore:
+            print(f"   {url}: non raggiungibile ({errore})")
+            continue
 
+        righe = _righe_di_dati(testo)
+        print(f"   {url}: {righe} righe")
+        if righe:
+            URL_USATO = url
+            config.DATA_DIR.mkdir(parents=True, exist_ok=True)
+            config.FILE_INTERPELLI_HTML.write_text(testo, encoding="utf-8")
+            return testo
+        if ripiego is None:
+            ripiego = (url, testo)
+
+    if ripiego is None:
+        raise RuntimeError("Nessun indirizzo degli interpelli e' raggiungibile")
+
+    # Tutte vuote: teniamo la prima (il sito e' semplicemente senza interpelli).
+    URL_USATO, testo = ripiego
     config.DATA_DIR.mkdir(parents=True, exist_ok=True)
     config.FILE_INTERPELLI_HTML.write_text(testo, encoding="utf-8")
-    print(f"   scaricati {len(testo):,} caratteri")
     return testo
 
 
