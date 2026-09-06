@@ -229,9 +229,20 @@ Interpelli Monitor/
 │   └── data/
 │       ├── interpelli.json   i dati che la app legge
 │       └── ricerche.json     le ricerche che fanno scattare le notifiche
-├── data/               file di lavoro e memoria (cache dei tempi, già notificati)
+├── data/               memoria del progetto
+│   ├── archivio_interpelli.json  lo storico completo, che il sito cancella ogni anno
+│   ├── cache_viaggi.json         km e minuti già calcolati (per non ripagarli)
+│   └── gia_notificati.json       cosa ti è già stato segnalato
 └── .github/workflows/  il robot che aggiorna tutto ogni 30 minuti
 ```
+
+**L'archivio storico**
+
+Il sito ufficiale tiene gli interpelli di un anno scolastico e poi **azzera tutto**: il 28 agosto 2026
+la tabella e' passata da circa 4000 righe a zero. Per questo il progetto tiene una sua memoria in
+`data/archivio_interpelli.json`: ogni interpello visto almeno una volta resta li' per sempre, e la app
+mostra l'unione fra quello che c'e' adesso sul sito e tutto lo storico. Gli interpelli spariti dal sito
+sono segnalati nel dettaglio con un avviso.
 
 **Da dove arrivano i dati**
 

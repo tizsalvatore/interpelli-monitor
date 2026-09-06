@@ -23,6 +23,7 @@ DOCS_DATA_DIR = DOCS_DIR / "data"  # i dati che la app legge
 # File usati dagli script
 FILE_INTERPELLI_HTML = DATA_DIR / "ultima_pagina.html"      # copia grezza del sito
 FILE_ANAGRAFICA_MODELLO = "anagrafica_scuole_{codice}.csv"  # elenco scuole del Ministero
+FILE_ARCHIVIO = DATA_DIR / "archivio_interpelli.json"     # memoria storica: vedi archivio.py
 FILE_CACHE_VIAGGI = DATA_DIR / "cache_viaggi.json"          # tempi gia' calcolati (per non ricalcolarli)
 FILE_CASA_PRIVATA = DATA_DIR / "casa_privata.json"          # coordinate di casa: NON va su GitHub
 FILE_CASA_VISIBILE = DATA_DIR / "casa_visibile.json"        # posizione del segnaposto sulla mappa (pubblica)

@@ -278,7 +278,22 @@ def dimentica_indirizzi_non_piu_usati(indirizzi_attuali):
     """
     cache = carica_cache()
     attuali = set(indirizzi_attuali)
+
+    # PARACADUTE: se non ci sono indirizzi (il sito e' vuoto, o la lettura e'
+    # andata male) non buttiamo via niente. E' successo davvero: il 28 agosto
+    # 2026 il sito ha azzerato la tabella e questa funzione, senza controlli,
+    # ha cancellato tutti i percorsi gia' pagati a Google.
+    if not attuali:
+        print("   nessun indirizzo da controllare: la cache resta com'e'")
+        return
+
     da_buttare = [i for i in cache["destinazioni"] if i not in attuali]
+    # Secondo paracadute: una pulizia che cancella quasi tutto e' sospetta.
+    if len(da_buttare) > len(cache["destinazioni"]) * 0.5:
+        print(f"   {len(da_buttare)} voci su {len(cache['destinazioni'])} sarebbero da buttare:"
+              " sembra un errore, non tocco niente")
+        return
+
     if not da_buttare:
         return
     for indirizzo in da_buttare:

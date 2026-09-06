@@ -1021,6 +1021,14 @@ function apriDettaglio(interpello) {
   if (interpello.scaduto) etichette.appendChild(nuovo('span', 'etichetta etichetta--scaduto', 'termine già passato'));
   corpo.appendChild(etichette);
 
+  if (interpello.archiviato) {
+    const nota = nuovo('div', 'avviso');
+    nota.append(icona(ICONE.avviso), nuovo('span', null,
+      'Non è più pubblicato sul sito ufficiale: il sito azzera l’elenco a ogni anno '
+      + 'scolastico. Questo dato viene conservato dall’archivio della app.'));
+    corpo.appendChild(nota);
+  }
+
   if (interpello.stato === 'cancellato' && interpello.note_cancellazione) {
     const avviso = nuovo('div', 'avviso');
     avviso.append(icona(ICONE.avviso), nuovo('span', null, `Cancellato: ${interpello.note_cancellazione}`));
@@ -1480,6 +1488,7 @@ function disegnaInfo() {
     ['Cosa vedi', `Solo le ${Object.keys(d.classi).length} classi di concorso che ti interessano: ${Object.keys(d.classi).join(', ')}.`],
     ['I minuti', `Percorso con i mezzi pubblici da ${d.casa.etichetta}, calcolato per arrivare a scuola entro le ${d.casa.ora_arrivo} di un giorno feriale.`],
     ['I chilometri', 'Sono i km di strada (percorso in auto), non la distanza in linea d’aria.'],
+    ['L’archivio', 'Il sito ufficiale azzera l’elenco a ogni anno scolastico (è successo il 28 agosto 2026). La app conserva tutto quello che ha visto, così lo storico non si perde.'],
     ['Le sedi', 'Il segnaposto e i minuti si riferiscono alla sede centrale: nel dettaglio trovi tutte le altre sedi dell’istituto con i rispettivi tempi.'],
   ].forEach(([titolo, corpo]) => {
     const p = nuovo('p');
@@ -1527,6 +1536,8 @@ function disegnaInfo() {
   numeri.appendChild(nuovo('h3', null, 'Situazione'));
   [
     ['Interpelli in archivio', String(d.conteggi.totale)],
+    ['Attualmente sul sito', String(d.conteggi.sul_sito ?? '—')],
+    ['Conservati solo dalla app', String(d.conteggi.archiviati ?? '—')],
     ['Aperti in questo momento', String(d.conteggi.aperti)],
     ['Ultimo aggiornamento', new Date(d.aggiornato).toLocaleString('it-IT')],
     ['Dato del sito aggiornato al', d.aggiornato_sito ? dataBreve(d.aggiornato_sito) : '—'],

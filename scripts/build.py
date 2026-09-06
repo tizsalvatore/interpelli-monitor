@@ -21,6 +21,7 @@ import sys
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
+import archivio
 import config
 import schools
 import scrape
@@ -99,8 +100,12 @@ def _casa_da_pubblicare():
 def main(usa_cache=False, notifica=True):
     print("\n1) Leggo la pagina degli interpelli")
     html = scrape.scarica_pagina(usa_cache=usa_cache)
-    interpelli = scrape.analizza(html)
+    interpelli_sito = scrape.analizza(html)
     data_sito = scrape.data_aggiornamento_sito(html)
+
+    # Il sito cancella tutto a inizio anno scolastico: uniamo quello che c'e'
+    # adesso con tutto quello che abbiamo gia' visto (vedi archivio.py).
+    interpelli = archivio.unisci(interpelli_sito)
 
     print("\n2) Carico l'anagrafica delle scuole")
     anagrafica = schools.carica_scuole()
@@ -196,6 +201,8 @@ def main(usa_cache=False, notifica=True):
         "grado_per_classe": config.GRADO_PER_CLASSE,
         "conteggi": {
             "totale": len(interpelli),
+            "sul_sito": len(interpelli_sito),
+            "archiviati": sum(1 for i in interpelli if i.get("archiviato")),
             "aperti": sum(1 for i in interpelli if i["stato"] == "aperto"),
             "senza_tempo_di_viaggio": senza_tempo,
         },
