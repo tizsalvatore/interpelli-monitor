@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-09-06T11:58:50+02:00",
+ "aggiornato": "2026-09-06T12:09:52+02:00",
  "aggiornato_sito": "2026-09-06",
  "fonte_url": "https://servizi.istruzionepiemonte.it/interpello2026/ric_interpello_ambito_to.php",
  "casa": {
@@ -7,7 +7,7 @@
   "ora_arrivo": "08:00"
  },
  "github": {
-  "repo": null
+  "repo": "tizsalvatore/interpelli-monitor"
  },
  "classi": {
   "A027": "Matematica e Fisica",
@@ -40,7 +40,7 @@
  },
  "diagnostica": {
   "casa_impostata": true,
-  "chiave_google": false
+  "chiave_google": true
  },
  "scuole": {
   "TOIS04700R": {
