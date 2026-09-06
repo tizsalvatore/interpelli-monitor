@@ -480,6 +480,7 @@ main {
   z-index: 5;
 }
 #mappa { position: absolute; inset: 0; background: var(--sfondo-morbido); }
+
 body.con-mappa { overflow: hidden; }
 
 .leaflet-container { font: inherit; background: var(--sfondo-morbido); }

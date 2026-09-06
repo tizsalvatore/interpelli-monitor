@@ -11,7 +11,7 @@
    scarichera' la nuova versione invece di riusare la vecchia.
    ========================================================================= */
 
-const VERSIONE = 'interpelli-v13';
+const VERSIONE = 'interpelli-v14';
 const CONTENITORE_APP = `${VERSIONE}-app`;
 const CONTENITORE_DATI = `${VERSIONE}-dati`;
 
@@ -70,6 +70,14 @@ self.addEventListener('fetch', (evento) => {
     );
     return;
   }
+
+  // I tasselli della mappa (e qualsiasi altra cosa non nostra) NON si salvano:
+  // sono migliaia di immaginette e riempirebbero la memoria del telefono senza
+  // mai servire davvero. Eccezione: i file di Leaflet, che sono nell'elenco
+  // qui sopra e servono per aprire la app anche offline.
+  const eNostro = indirizzo.origin === self.location.origin;
+  const eNellElenco = FILE_DELLA_APP.some((file) => file === richiesta.url);
+  if (!eNostro && !eNellElenco) return;   // se ne occupa il browser, come sempre
 
   // Tutto il resto: prima la copia salvata, e intanto la aggiorniamo.
   evento.respondWith(

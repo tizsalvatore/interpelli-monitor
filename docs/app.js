@@ -833,10 +833,6 @@ function attendiLeaflet() {
   });
 }
 
-function temaScuro() {
-  return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-}
-
 async function disegnaMappa(elenco) {
   let L;
   try {
@@ -871,12 +867,6 @@ function creaMappa(L) {
   cambiaTessere(L);
   stato.stratoSegnaposti = L.layerGroup().addTo(stato.mappa);
 
-  // Se il telefono passa da tema chiaro a scuro, cambiamo anche le mappe.
-  if (window.matchMedia) {
-    window.matchMedia('(prefers-color-scheme: dark)')
-      .addEventListener('change', () => cambiaTessere(L));
-  }
-
   // Un tocco sulla mappa vale come "casa e' qui", ma solo quando lo hai chiesto.
   stato.mappa.on('click', (evento) => {
     if (!stato.sceltaSullaMappa) return;
@@ -906,17 +896,19 @@ function aggiornaSegnapostoCasa(L) {
 }
 
 function cambiaTessere(L) {
-  if (stato.stratoTessere) stato.mappa.removeLayer(stato.stratoTessere);
-  const stile = temaScuro() ? 'dark_all' : 'voyager';
-  stato.stratoTessere = L.tileLayer(
-    `https://{s}.basemaps.cartocdn.com/rastertiles/${stile}/{z}/{x}/{y}{r}.png`,
-    {
+  // Lo sfondo della mappa arriva da OpenStreetMap: gratuito e senza chiave.
+  // (Prima usavamo CARTO, che da settembre 2026 stampa "API KEY REQUIRED"
+  // dentro ogni tassello se non paghi.)
+  // La mappa resta sempre chiara, anche col telefono in tema scuro: e' una
+  // scelta, si legge meglio.
+  if (!stato.stratoTessere) {
+    stato.stratoTessere = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
-      attribution: '&copy; OpenStreetMap &copy; CARTO',
-      subdomains: 'abcd',
-    }
-  ).addTo(stato.mappa);
-  stato.stratoTessere.bringToBack();
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(stato.mappa);
+    stato.stratoTessere.bringToBack();
+  }
+
 }
 
 function disegnaSegnaposti(L, elenco) {
