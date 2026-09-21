@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-09-21T16:27:58+02:00",
+ "aggiornato": "2026-09-21T16:38:03+02:00",
  "aggiornato_sito": "2026-09-21",
  "fonte_url": "https://servizi.istruzionepiemonte.it/interpello2026/ric_interpello_ambito_to.php",
  "casa": {
@@ -43,6 +43,68 @@
   "chiave_google": true
  },
  "scuole": {
+  "TOIS01200T": {
+   "denominazione": "I.I.S. OLIVETTI",
+   "sede": {
+    "indirizzo": "Viale Della Liberazione 25, 10015 Ivrea, Italia",
+    "comune": "Ivrea",
+    "sito": "www.istitutoolivetti.it",
+    "viaggio": {
+     "minuti": 119,
+     "km": 79.3,
+     "km_strada": 82.7,
+     "cambi": 1,
+     "linee": [
+      {
+       "nome": "2",
+       "tipo": "BUS"
+      },
+      {
+       "nome": "265",
+       "tipo": "BUS"
+      }
+     ],
+     "auto_minuti": 58,
+     "lat": 45.4467867,
+     "lng": 7.8763883,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "C. OLIVETTI",
+      "I.P.I.A. M. OLIVETTI",
+      "I.P.S.COMM. M. OLIVETTI"
+     ],
+     "indirizzo": "Colle Bellavista, 10015 Ivrea, Italia",
+     "comune": "Ivrea",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": 122,
+      "km": 82.1,
+      "km_strada": 84.7,
+      "cambi": 1,
+      "linee": [
+       {
+        "nome": "2",
+        "tipo": "BUS"
+       },
+       {
+        "nome": "265",
+        "tipo": "BUS"
+       }
+      ],
+      "auto_minuti": 58,
+      "lat": 45.46734,
+      "lng": 7.8806568,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
   "TOIS04700R": {
    "denominazione": "I.I.S. GALILEI - FERRARI",
    "sede": {
@@ -1177,68 +1239,6 @@
       "auto_minuti": 5,
       "lat": 45.0136839,
       "lng": 7.6618816,
-      "approssimativo": false
-     }
-    }
-   ]
-  },
-  "TOIS01200T": {
-   "denominazione": "I.I.S. OLIVETTI",
-   "sede": {
-    "indirizzo": "Viale Della Liberazione 25, 10015 Ivrea, Italia",
-    "comune": "Ivrea",
-    "sito": "www.istitutoolivetti.it",
-    "viaggio": {
-     "minuti": 119,
-     "km": 79.3,
-     "km_strada": 82.7,
-     "cambi": 1,
-     "linee": [
-      {
-       "nome": "2",
-       "tipo": "BUS"
-      },
-      {
-       "nome": "265",
-       "tipo": "BUS"
-      }
-     ],
-     "auto_minuti": 58,
-     "lat": 45.4467867,
-     "lng": 7.8763883,
-     "approssimativo": false
-    }
-   },
-   "plessi": [
-    {
-     "nomi": [
-      "C. OLIVETTI",
-      "I.P.I.A. M. OLIVETTI",
-      "I.P.S.COMM. M. OLIVETTI"
-     ],
-     "indirizzo": "Colle Bellavista, 10015 Ivrea, Italia",
-     "comune": "Ivrea",
-     "gradi": [
-      "II_GRADO"
-     ],
-     "viaggio": {
-      "minuti": 122,
-      "km": 82.1,
-      "km_strada": 84.7,
-      "cambi": 1,
-      "linee": [
-       {
-        "nome": "2",
-        "tipo": "BUS"
-       },
-       {
-        "nome": "265",
-        "tipo": "BUS"
-       }
-      ],
-      "auto_minuti": 58,
-      "lat": 45.46734,
-      "lng": 7.8806568,
       "approssimativo": false
      }
     }
