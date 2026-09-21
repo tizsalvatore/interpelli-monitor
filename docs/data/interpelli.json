@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-09-21T09:43:19+02:00",
+ "aggiornato": "2026-09-21T16:27:58+02:00",
  "aggiornato_sito": "2026-09-21",
  "fonte_url": "https://servizi.istruzionepiemonte.it/interpello2026/ric_interpello_ambito_to.php",
  "casa": {
@@ -32,10 +32,10 @@
   "_default": "II_GRADO"
  },
  "conteggi": {
-  "totale": 218,
-  "sul_sito": 0,
+  "totale": 219,
+  "sul_sito": 1,
   "archiviati": 218,
-  "aperti": 0,
+  "aperti": 1,
   "senza_tempo_di_viaggio": 0
  },
  "diagnostica": {
@@ -9164,6 +9164,29 @@
    "data_cancellazione": null,
    "scaduto": false,
    "archiviato": true,
+   "minuti": 119,
+   "km": 82.7
+  },
+  {
+   "id": "09af80bc1b5a",
+   "codice_scuola": "TOIS01200T",
+   "scuola": "IIS OLIVETTI",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "durata_tipo": "annuale_31_agosto",
+   "data_interpello": "2026-09-21",
+   "data_interpello_testo": "21/09/2026",
+   "stato": "aperto",
+   "data_scadenza": "2025-09-26",
+   "data_scadenza_testo": "2026-09-25",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": true,
+   "archiviato": false,
    "minuti": 119,
    "km": 82.7
   },

@@ -1,8 +1,28 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-09-21T09:43:17+02:00",
- "quanti": 218,
+ "aggiornato": "2026-09-21T16:27:25+02:00",
+ "quanti": 219,
  "interpelli": [
+  {
+   "id": "09af80bc1b5a",
+   "codice_scuola": "TOIS01200T",
+   "scuola": "IIS OLIVETTI",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "durata_tipo": "annuale_31_agosto",
+   "data_interpello": "2026-09-21",
+   "data_interpello_testo": "21/09/2026",
+   "stato": "aperto",
+   "data_scadenza": "2025-09-26",
+   "data_scadenza_testo": "2026-09-25",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": true
+  },
   {
    "id": "c13250381354",
    "codice_scuola": "TOIS04700R",
