@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-09-22T10:11:51+02:00",
+ "aggiornato": "2026-09-22T15:15:08+02:00",
  "aggiornato_sito": "2026-09-22",
  "fonte_url": "https://servizi.istruzionepiemonte.it/interpello2026/ric_interpello_ambito_to.php",
  "casa": {
@@ -32,10 +32,10 @@
   "_default": "II_GRADO"
  },
  "conteggi": {
-  "totale": 219,
-  "sul_sito": 1,
+  "totale": 220,
+  "sul_sito": 2,
   "archiviati": 218,
-  "aperti": 1,
+  "aperti": 2,
   "senza_tempo_di_viaggio": 0
  },
  "diagnostica": {
@@ -7441,6 +7441,29 @@
    "archiviato": true,
    "minuti": 57,
    "km": 12.5
+  },
+  {
+   "id": "3d1aafa3964e",
+   "codice_scuola": "TOIS01400D",
+   "scuola": "I.I.S. PORRO",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "15 Spezzone",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2026-09-22",
+   "data_interpello_testo": "22/09/2026",
+   "stato": "aperto",
+   "data_scadenza": "2024-09-26",
+   "data_scadenza_testo": "2026-09-24",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": true,
+   "archiviato": false,
+   "minuti": 57,
+   "km": 36.4
   },
   {
    "id": "d8048a8a94d3",

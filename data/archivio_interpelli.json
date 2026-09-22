@@ -1,8 +1,28 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-09-22T10:11:50+02:00",
- "quanti": 219,
+ "aggiornato": "2026-09-22T15:14:42+02:00",
+ "quanti": 220,
  "interpelli": [
+  {
+   "id": "3d1aafa3964e",
+   "codice_scuola": "TOIS01400D",
+   "scuola": "I.I.S. PORRO",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "15 Spezzone",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2026-09-22",
+   "data_interpello_testo": "22/09/2026",
+   "stato": "aperto",
+   "data_scadenza": "2024-09-26",
+   "data_scadenza_testo": "2026-09-24",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": true
+  },
   {
    "id": "09af80bc1b5a",
    "codice_scuola": "TOIS01200T",
