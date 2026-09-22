@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-09-22T15:15:08+02:00",
+ "aggiornato": "2026-09-22T15:25:13+02:00",
  "aggiornato_sito": "2026-09-22",
  "fonte_url": "https://servizi.istruzionepiemonte.it/interpello2026/ric_interpello_ambito_to.php",
  "casa": {
@@ -43,6 +43,66 @@
   "chiave_google": true
  },
  "scuole": {
+  "TOIS01400D": {
+   "denominazione": "I.I.S. I. PORRO",
+   "sede": {
+    "indirizzo": "Viale Kennedy 30, 10064 Pinerolo, Italia",
+    "comune": "Pinerolo",
+    "sito": "https//www.porropinerolo.edu.it/",
+    "viaggio": {
+     "minuti": 57,
+     "km": 33.8,
+     "km_strada": 36.4,
+     "cambi": 1,
+     "linee": [
+      {
+       "nome": "18",
+       "tipo": "BUS"
+      },
+      {
+       "nome": "SFM",
+       "tipo": "HEAVY_RAIL"
+      }
+     ],
+     "auto_minuti": 35,
+     "lat": 44.8893904,
+     "lng": 7.344228999999999,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "I. PORRO"
+     ],
+     "indirizzo": "Viale Kennedy 30, 10064 Pinerolo, Italia",
+     "comune": "Pinerolo",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": 57,
+      "km": 33.8,
+      "km_strada": 36.4,
+      "cambi": 1,
+      "linee": [
+       {
+        "nome": "18",
+        "tipo": "BUS"
+       },
+       {
+        "nome": "SFM",
+        "tipo": "HEAVY_RAIL"
+       }
+      ],
+      "auto_minuti": 35,
+      "lat": 44.8893904,
+      "lng": 7.344228999999999,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
   "TOIS01200T": {
    "denominazione": "I.I.S. OLIVETTI",
    "sede": {
@@ -2492,66 +2552,6 @@
       "auto_minuti": 13,
       "lat": 45.0530342,
       "lng": 7.6419232,
-      "approssimativo": false
-     }
-    }
-   ]
-  },
-  "TOIS01400D": {
-   "denominazione": "I.I.S. I. PORRO",
-   "sede": {
-    "indirizzo": "Viale Kennedy 30, 10064 Pinerolo, Italia",
-    "comune": "Pinerolo",
-    "sito": "https//www.porropinerolo.edu.it/",
-    "viaggio": {
-     "minuti": 57,
-     "km": 33.8,
-     "km_strada": 36.4,
-     "cambi": 1,
-     "linee": [
-      {
-       "nome": "18",
-       "tipo": "BUS"
-      },
-      {
-       "nome": "SFM",
-       "tipo": "HEAVY_RAIL"
-      }
-     ],
-     "auto_minuti": 35,
-     "lat": 44.8893904,
-     "lng": 7.344228999999999,
-     "approssimativo": false
-    }
-   },
-   "plessi": [
-    {
-     "nomi": [
-      "I. PORRO"
-     ],
-     "indirizzo": "Viale Kennedy 30, 10064 Pinerolo, Italia",
-     "comune": "Pinerolo",
-     "gradi": [
-      "II_GRADO"
-     ],
-     "viaggio": {
-      "minuti": 57,
-      "km": 33.8,
-      "km_strada": 36.4,
-      "cambi": 1,
-      "linee": [
-       {
-        "nome": "18",
-        "tipo": "BUS"
-       },
-       {
-        "nome": "SFM",
-        "tipo": "HEAVY_RAIL"
-       }
-      ],
-      "auto_minuti": 35,
-      "lat": 44.8893904,
-      "lng": 7.344228999999999,
       "approssimativo": false
      }
     }
