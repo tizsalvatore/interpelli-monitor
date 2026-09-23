@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-09-23T16:21:51+02:00",
+ "aggiornato": "2026-09-23T16:31:57+02:00",
  "aggiornato_sito": "2026-09-23",
  "fonte_url": "https://servizi.istruzionepiemonte.it/interpello2026/ric_interpello_ambito_to.php",
  "casa": {
@@ -43,6 +43,131 @@
   "chiave_google": true
  },
  "scuole": {
+  "TOIS02600Q": {
+   "denominazione": "I.I.S. 25 APRILE - FACCIO",
+   "sede": {
+    "indirizzo": "Via XXIV Maggio 13, 10082 Cuorgnè, Italia",
+    "comune": "Cuorgne'",
+    "sito": "Non Disponibile",
+    "viaggio": {
+     "minuti": 111,
+     "km": 53.8,
+     "km_strada": 83.3,
+     "cambi": 1,
+     "linee": [
+      {
+       "nome": "SFM",
+       "tipo": "HEAVY_RAIL"
+      },
+      {
+       "nome": "5137",
+       "tipo": "BUS"
+      }
+     ],
+     "auto_minuti": 61,
+     "lat": 45.38800639999999,
+     "lng": 7.6475937,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "25 APRILE",
+      "I.I.S. 25 APRILE - FACCIO"
+     ],
+     "indirizzo": "Via XXIV Maggio 13, 10082 Cuorgnè, Italia",
+     "comune": "Cuorgne'",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": 111,
+      "km": 53.8,
+      "km_strada": 83.3,
+      "cambi": 1,
+      "linee": [
+       {
+        "nome": "SFM",
+        "tipo": "HEAVY_RAIL"
+       },
+       {
+        "nome": "5137",
+        "tipo": "BUS"
+       }
+      ],
+      "auto_minuti": 61,
+      "lat": 45.38800639999999,
+      "lng": 7.6475937,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "25 APRILE"
+     ],
+     "indirizzo": "Via XXIV Maggio 11, 10082 Cuorgnè, Italia",
+     "comune": "Cuorgne'",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": 111,
+      "km": 53.8,
+      "km_strada": 82.6,
+      "cambi": 1,
+      "linee": [
+       {
+        "nome": "SFM",
+        "tipo": "HEAVY_RAIL"
+       },
+       {
+        "nome": "5137",
+        "tipo": "BUS"
+       }
+      ],
+      "auto_minuti": 62,
+      "lat": 45.3885456,
+      "lng": 7.647345599999999,
+      "approssimativo": false
+     }
+    },
+    {
+     "nomi": [
+      "LICEO ARTISTICO FELICE FACCIO"
+     ],
+     "indirizzo": "Via Ammiraglio Pullino 24, 10081 Castellamonte, Italia",
+     "comune": "Castellamonte",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": 218,
+      "km": 50.2,
+      "km_strada": 77.0,
+      "cambi": 2,
+      "linee": [
+       {
+        "nome": "18",
+        "tipo": "BUS"
+       },
+       {
+        "nome": "SFM",
+        "tipo": "HEAVY_RAIL"
+       },
+       {
+        "nome": "3132",
+        "tipo": "BUS"
+       }
+      ],
+      "auto_minuti": 55,
+      "lat": 45.3820602,
+      "lng": 7.715316099999999,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
   "TOIS01400D": {
    "denominazione": "I.I.S. I. PORRO",
    "sede": {
@@ -3956,131 +4081,6 @@
       "auto_minuti": 41,
       "lat": 45.2239083,
       "lng": 7.605263300000001,
-      "approssimativo": false
-     }
-    }
-   ]
-  },
-  "TOIS02600Q": {
-   "denominazione": "I.I.S. 25 APRILE - FACCIO",
-   "sede": {
-    "indirizzo": "Via XXIV Maggio 13, 10082 Cuorgnè, Italia",
-    "comune": "Cuorgne'",
-    "sito": "Non Disponibile",
-    "viaggio": {
-     "minuti": 111,
-     "km": 53.8,
-     "km_strada": 83.3,
-     "cambi": 1,
-     "linee": [
-      {
-       "nome": "SFM",
-       "tipo": "HEAVY_RAIL"
-      },
-      {
-       "nome": "5137",
-       "tipo": "BUS"
-      }
-     ],
-     "auto_minuti": 61,
-     "lat": 45.38800639999999,
-     "lng": 7.6475937,
-     "approssimativo": false
-    }
-   },
-   "plessi": [
-    {
-     "nomi": [
-      "25 APRILE",
-      "I.I.S. 25 APRILE - FACCIO"
-     ],
-     "indirizzo": "Via XXIV Maggio 13, 10082 Cuorgnè, Italia",
-     "comune": "Cuorgne'",
-     "gradi": [
-      "II_GRADO"
-     ],
-     "viaggio": {
-      "minuti": 111,
-      "km": 53.8,
-      "km_strada": 83.3,
-      "cambi": 1,
-      "linee": [
-       {
-        "nome": "SFM",
-        "tipo": "HEAVY_RAIL"
-       },
-       {
-        "nome": "5137",
-        "tipo": "BUS"
-       }
-      ],
-      "auto_minuti": 61,
-      "lat": 45.38800639999999,
-      "lng": 7.6475937,
-      "approssimativo": false
-     }
-    },
-    {
-     "nomi": [
-      "25 APRILE"
-     ],
-     "indirizzo": "Via XXIV Maggio 11, 10082 Cuorgnè, Italia",
-     "comune": "Cuorgne'",
-     "gradi": [
-      "II_GRADO"
-     ],
-     "viaggio": {
-      "minuti": 111,
-      "km": 53.8,
-      "km_strada": 82.6,
-      "cambi": 1,
-      "linee": [
-       {
-        "nome": "SFM",
-        "tipo": "HEAVY_RAIL"
-       },
-       {
-        "nome": "5137",
-        "tipo": "BUS"
-       }
-      ],
-      "auto_minuti": 62,
-      "lat": 45.3885456,
-      "lng": 7.647345599999999,
-      "approssimativo": false
-     }
-    },
-    {
-     "nomi": [
-      "LICEO ARTISTICO FELICE FACCIO"
-     ],
-     "indirizzo": "Via Ammiraglio Pullino 24, 10081 Castellamonte, Italia",
-     "comune": "Castellamonte",
-     "gradi": [
-      "II_GRADO"
-     ],
-     "viaggio": {
-      "minuti": 218,
-      "km": 50.2,
-      "km_strada": 77.0,
-      "cambi": 2,
-      "linee": [
-       {
-        "nome": "18",
-        "tipo": "BUS"
-       },
-       {
-        "nome": "SFM",
-        "tipo": "HEAVY_RAIL"
-       },
-       {
-        "nome": "3132",
-        "tipo": "BUS"
-       }
-      ],
-      "auto_minuti": 55,
-      "lat": 45.3820602,
-      "lng": 7.715316099999999,
       "approssimativo": false
      }
     }
