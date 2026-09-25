@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-09-25T14:54:33+02:00",
+ "aggiornato": "2026-09-25T15:04:39+02:00",
  "aggiornato_sito": "2026-09-25",
  "fonte_url": "https://servizi.istruzionepiemonte.it/interpello2026/ric_interpello_ambito_to.php",
  "casa": {
@@ -43,6 +43,118 @@
   "chiave_google": true
  },
  "scuole": {
+  "TOTF10000X": {
+   "denominazione": "E. MAJORANA",
+   "sede": {
+    "indirizzo": "Via Francesco Baracca 80, 10095 Grugliasco, Italia",
+    "comune": "Grugliasco",
+    "sito": "www.itismajo.it",
+    "viaggio": {
+     "minuti": 57,
+     "km": 14.7,
+     "km_strada": 9.8,
+     "cambi": 0,
+     "linee": [
+      {
+       "nome": "M1",
+       "tipo": "SUBWAY"
+      }
+     ],
+     "auto_minuti": 20,
+     "lat": 45.0673093,
+     "lng": 7.5863161,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "E. MAJORANA"
+     ],
+     "indirizzo": "Via Francesco Baracca 80, 10095 Grugliasco, Italia",
+     "comune": "Grugliasco",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": 57,
+      "km": 14.7,
+      "km_strada": 9.8,
+      "cambi": 0,
+      "linee": [
+       {
+        "nome": "M1",
+        "tipo": "SUBWAY"
+       }
+      ],
+      "auto_minuti": 20,
+      "lat": 45.0673093,
+      "lng": 7.5863161,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
+  "TOIS01400D": {
+   "denominazione": "I.I.S. I. PORRO",
+   "sede": {
+    "indirizzo": "Viale Kennedy 30, 10064 Pinerolo, Italia",
+    "comune": "Pinerolo",
+    "sito": "https//www.porropinerolo.edu.it/",
+    "viaggio": {
+     "minuti": 57,
+     "km": 33.8,
+     "km_strada": 36.4,
+     "cambi": 1,
+     "linee": [
+      {
+       "nome": "18",
+       "tipo": "BUS"
+      },
+      {
+       "nome": "SFM",
+       "tipo": "HEAVY_RAIL"
+      }
+     ],
+     "auto_minuti": 35,
+     "lat": 44.8893904,
+     "lng": 7.344228999999999,
+     "approssimativo": false
+    }
+   },
+   "plessi": [
+    {
+     "nomi": [
+      "I. PORRO"
+     ],
+     "indirizzo": "Viale Kennedy 30, 10064 Pinerolo, Italia",
+     "comune": "Pinerolo",
+     "gradi": [
+      "II_GRADO"
+     ],
+     "viaggio": {
+      "minuti": 57,
+      "km": 33.8,
+      "km_strada": 36.4,
+      "cambi": 1,
+      "linee": [
+       {
+        "nome": "18",
+        "tipo": "BUS"
+       },
+       {
+        "nome": "SFM",
+        "tipo": "HEAVY_RAIL"
+       }
+      ],
+      "auto_minuti": 35,
+      "lat": 44.8893904,
+      "lng": 7.344228999999999,
+      "approssimativo": false
+     }
+    }
+   ]
+  },
   "TOIS02600Q": {
    "denominazione": "I.I.S. 25 APRILE - FACCIO",
    "sede": {
@@ -163,66 +275,6 @@
       "auto_minuti": 55,
       "lat": 45.3820602,
       "lng": 7.715316099999999,
-      "approssimativo": false
-     }
-    }
-   ]
-  },
-  "TOIS01400D": {
-   "denominazione": "I.I.S. I. PORRO",
-   "sede": {
-    "indirizzo": "Viale Kennedy 30, 10064 Pinerolo, Italia",
-    "comune": "Pinerolo",
-    "sito": "https//www.porropinerolo.edu.it/",
-    "viaggio": {
-     "minuti": 57,
-     "km": 33.8,
-     "km_strada": 36.4,
-     "cambi": 1,
-     "linee": [
-      {
-       "nome": "18",
-       "tipo": "BUS"
-      },
-      {
-       "nome": "SFM",
-       "tipo": "HEAVY_RAIL"
-      }
-     ],
-     "auto_minuti": 35,
-     "lat": 44.8893904,
-     "lng": 7.344228999999999,
-     "approssimativo": false
-    }
-   },
-   "plessi": [
-    {
-     "nomi": [
-      "I. PORRO"
-     ],
-     "indirizzo": "Viale Kennedy 30, 10064 Pinerolo, Italia",
-     "comune": "Pinerolo",
-     "gradi": [
-      "II_GRADO"
-     ],
-     "viaggio": {
-      "minuti": 57,
-      "km": 33.8,
-      "km_strada": 36.4,
-      "cambi": 1,
-      "linee": [
-       {
-        "nome": "18",
-        "tipo": "BUS"
-       },
-       {
-        "nome": "SFM",
-        "tipo": "HEAVY_RAIL"
-       }
-      ],
-      "auto_minuti": 35,
-      "lat": 44.8893904,
-      "lng": 7.344228999999999,
       "approssimativo": false
      }
     }
@@ -1528,58 +1580,6 @@
       "auto_minuti": 13,
       "lat": 45.0425691,
       "lng": 7.6222692,
-      "approssimativo": false
-     }
-    }
-   ]
-  },
-  "TOTF10000X": {
-   "denominazione": "E. MAJORANA",
-   "sede": {
-    "indirizzo": "Via Francesco Baracca 80, 10095 Grugliasco, Italia",
-    "comune": "Grugliasco",
-    "sito": "www.itismajo.it",
-    "viaggio": {
-     "minuti": 57,
-     "km": 14.7,
-     "km_strada": 9.8,
-     "cambi": 0,
-     "linee": [
-      {
-       "nome": "M1",
-       "tipo": "SUBWAY"
-      }
-     ],
-     "auto_minuti": 20,
-     "lat": 45.0673093,
-     "lng": 7.5863161,
-     "approssimativo": false
-    }
-   },
-   "plessi": [
-    {
-     "nomi": [
-      "E. MAJORANA"
-     ],
-     "indirizzo": "Via Francesco Baracca 80, 10095 Grugliasco, Italia",
-     "comune": "Grugliasco",
-     "gradi": [
-      "II_GRADO"
-     ],
-     "viaggio": {
-      "minuti": 57,
-      "km": 14.7,
-      "km_strada": 9.8,
-      "cambi": 0,
-      "linee": [
-       {
-        "nome": "M1",
-        "tipo": "SUBWAY"
-       }
-      ],
-      "auto_minuti": 20,
-      "lat": 45.0673093,
-      "lng": 7.5863161,
       "approssimativo": false
      }
     }
