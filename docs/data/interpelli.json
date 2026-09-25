@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-09-25T10:05:16+02:00",
+ "aggiornato": "2026-09-25T14:54:33+02:00",
  "aggiornato_sito": "2026-09-25",
  "fonte_url": "https://servizi.istruzionepiemonte.it/interpello2026/ric_interpello_ambito_to.php",
  "casa": {
@@ -32,10 +32,10 @@
   "_default": "II_GRADO"
  },
  "conteggi": {
-  "totale": 224,
-  "sul_sito": 6,
+  "totale": 226,
+  "sul_sito": 8,
   "archiviati": 218,
-  "aperti": 6,
+  "aperti": 8,
   "senza_tempo_di_viaggio": 0
  },
  "diagnostica": {
@@ -7507,6 +7507,52 @@
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": true,
+   "archiviato": false,
+   "minuti": 57,
+   "km": 36.4
+  },
+  {
+   "id": "5ffe635a60c8",
+   "codice_scuola": "TOTF10000X",
+   "scuola": "ITI E. MAJORANA",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "tipo_cattedra": "Interna Interna",
+   "ore_spezzone": null,
+   "corso": "Serale",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2026-09-25",
+   "data_interpello_testo": "25/09/2026",
+   "stato": "aperto",
+   "data_scadenza": "2028-09-26",
+   "data_scadenza_testo": "2026-09-28",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
+   "archiviato": false,
+   "minuti": 57,
+   "km": 9.8
+  },
+  {
+   "id": "1c1892092185",
+   "codice_scuola": "TOIS01400D",
+   "scuola": "I.I.S. PORRO",
+   "classe": "A042",
+   "classe_nome": "Scienze e tecnologie meccaniche",
+   "tipo_cattedra": "Interna Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 2027-06-14",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-09-25",
+   "data_interpello_testo": "25/09/2026",
+   "stato": "aperto",
+   "data_scadenza": "2027-09-26",
+   "data_scadenza_testo": "2026-09-27",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false,
    "archiviato": false,
    "minuti": 57,
    "km": 36.4
