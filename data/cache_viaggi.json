@@ -16009,6 +16009,3432 @@
    },
    "errore": null,
    "aggiornato": "2026-09-26"
+  },
+  "Via Finalmarina 5, 10126 Torino, Italia": {
+   "lat": 45.0327218,
+   "lng": 7.669025100000001,
+   "indirizzo_google": "Via Finalmarina, 5, 10126 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 12,
+    "km": 1.4,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "267",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 6,
+    "km": 2.0
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Fiochetto 29, 10152 Torino, Italia": {
+   "lat": 45.07587540000001,
+   "lng": 7.6891463,
+   "indirizzo_google": "Via Gianfrancesco Fiochetto, 29, 10152 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 39,
+    "km": 7.0,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 20,
+    "km": 7.8
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Fiume 18, 10036 Settimo Torinese, Italia": {
+   "lat": 45.1406182,
+   "lng": 7.765275699999999,
+   "indirizzo_google": "Via Fiume, 18, 10036 Settimo Torinese TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 44,
+    "km": 19.6,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 36,
+    "km": 47.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Fiume 19, 10036 Settimo Torinese, Italia": {
+   "lat": 45.1406759,
+   "lng": 7.7654617,
+   "indirizzo_google": "Via Fiume, 19, 10036 Settimo Torinese TO, Italia",
+   "precisione": "RANGE_INTERPOLATED",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 43,
+    "km": 19.5,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 36,
+    "km": 47.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Flecchia 10, 10135 Torino, Italia": {
+   "lat": 45.02321,
+   "lng": 7.65499,
+   "indirizzo_google": "Via Giovanni Flecchia, 10, 10127 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 9,
+    "km": 1.2,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "299T",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 4,
+    "km": 1.5
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Folis 8, 10025 Pino Torinese, Italia": {
+   "lat": 45.0431716,
+   "lng": 7.770983200000001,
+   "indirizzo_google": "V. Domenico Folis, 8, 10025 Pino Torinese TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 70,
+    "km": 15.2,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "61",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "30",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 28,
+    "km": 15.4
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Fonte Blancio, 10062 Luserna San Giovanni, Italia": {
+   "lat": 44.8082316,
+   "lng": 7.2402746,
+   "indirizzo_google": "Str. Fonte Blancio, 10062 Luserna San Giovanni TO, Italia",
+   "precisione": "GEOMETRIC_CENTER",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 117,
+    "km": 53.2,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "43",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "284",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "284",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 49,
+    "km": 50.1
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Forneris 25, 10080 Pertusio, Italia": {
+   "lat": 45.3532204,
+   "lng": 7.639772600000001,
+   "indirizzo_google": "Via Forneris, 25, 10082 Pertusio TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 134,
+    "km": 47.2,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "3092",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "5134",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 59,
+    "km": 72.0
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Fossano 16, 10144 Torino, Italia": {
+   "lat": 45.0856346,
+   "lng": 7.6610478,
+   "indirizzo_google": "Via Fossano, 16, 10144 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 46,
+    "km": 9.6,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 25,
+    "km": 9.9
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Fossano 7, 10040 Rivalta Di Torino, Italia": {
+   "lat": 44.9974814,
+   "lng": 7.514229,
+   "indirizzo_google": "Via Fossano, 7, 10040 Gerbole TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 48,
+    "km": 16.9,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "1085",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 23,
+    "km": 16.3
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Fossano 8, 10144 Torino, Italia": {
+   "lat": 45.0854065,
+   "lng": 7.661773600000001,
+   "indirizzo_google": "Via Fossano, 8, 10144 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 46,
+    "km": 9.0,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 25,
+    "km": 9.9
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Frandina 6, 10015 Ivrea, Italia": {
+   "lat": 45.45002299999999,
+   "lng": 7.913143000000001,
+   "indirizzo_google": "Via Frandina, 6, 10015 Ivrea TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 126,
+    "km": 69.0,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "265",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "4154",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 60,
+    "km": 89.8
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Fratelli Cervi 1, 10023 Chieri, Italia": {
+   "lat": 44.99677459999999,
+   "lng": 7.806777899999999,
+   "indirizzo_google": "Via Fratelli Cervi, 1, 10023 Chieri TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 51,
+    "km": 20.7,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "1C",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 20,
+    "km": 21.0
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Frejus 67, 10043 Orbassano, Italia": {
+   "lat": 45.007902,
+   "lng": 7.525773399999999,
+   "indirizzo_google": "Via Frejus, 67, 10043 Orbassano TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 56,
+    "km": 13.1,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "43",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "5",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 24,
+    "km": 14.4
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Frejus 69, 10043 Orbassano, Italia": {
+   "lat": 45.0082683,
+   "lng": 7.5259335,
+   "indirizzo_google": "Via Frejus, 69, 10043 Orbassano TO, Italia",
+   "precisione": "RANGE_INTERPOLATED",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 55,
+    "km": 13.3,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "43",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "5",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 24,
+    "km": 14.3
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via G. B. Rossano 9, 10090 Rivoli, Italia": {
+   "lat": 45.0522213,
+   "lng": 7.5368827,
+   "indirizzo_google": "Via G. B. Rossano, 9, 10098 Tetti Neirotti TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 93,
+    "km": 20.0,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "2014",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "17",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "36 navetta",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 20,
+    "km": 26.9
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via G. B. Rossano 9, 10098 Rivoli, Italia": {
+   "lat": 45.0522213,
+   "lng": 7.5368827,
+   "indirizzo_google": "Via G. B. Rossano, 9, 10098 Tetti Neirotti TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 93,
+    "km": 20.0,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "2014",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "17",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "36 navetta",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 20,
+    "km": 26.9
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via G. Bobba 33, 10050 Borgone Susa, Italia": {
+   "lat": 45.1196303,
+   "lng": 7.2412801,
+   "indirizzo_google": "Via Bobba Guido, 33, 10050 Borgone Susa TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 81,
+    "km": 43.8,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 43,
+    "km": 56.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via G. Dalla Chiesa 24, 10079 Mappano, Italia": {
+   "lat": 45.1344767,
+   "lng": 7.7735727,
+   "indirizzo_google": "Via Generale Carlo Alberto dalla Chiesa, 24, 10036 Settimo Torinese TO, Italia",
+   "precisione": "RANGE_INTERPOLATED",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 49,
+    "km": 20.0,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 36,
+    "km": 50.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via G. Leopardi 16, 10093 Collegno, Italia": {
+   "lat": 45.0757844,
+   "lng": 7.6043767,
+   "indirizzo_google": "Via Giacomo Leopardi, 16, 10093 Collegno TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 44,
+    "km": 13.0,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 23,
+    "km": 10.5
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via G. Leopardi 20, 10093 Collegno, Italia": {
+   "lat": 45.0760855,
+   "lng": 7.6047989,
+   "indirizzo_google": "Via Giacomo Leopardi, 20, 10093 Collegno TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 44,
+    "km": 13.0,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 23,
+    "km": 10.5
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via G. Lisa 18, 10020 Arignano, Italia": {
+   "lat": 45.0438366,
+   "lng": 7.9023711,
+   "indirizzo_google": "Via Gino Lisa, 18, 10020 Arignano TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 91,
+    "km": 32.4,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "170TO",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 34,
+    "km": 30.9
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via G. Marconi 23Bis, 10085 Pont-Canavese, Italia": {
+   "lat": 45.42118989999999,
+   "lng": 7.5925647,
+   "indirizzo_google": "V. Guglielmo Marconi, 23BIS, 10085 Pont Canavese TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 193,
+    "km": 92.4,
+    "cambi": 4,
+    "linee": [
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "RV",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "REG",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "5143",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "5137",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 68,
+    "km": 88.0
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via G. Marconi, 10080 Val Di Chy, Italia": {
+   "lat": 45.4606698,
+   "lng": 7.777088,
+   "indirizzo_google": "Via Guglielmo Marconi, 10039 Alice Superiore TO, Italia",
+   "precisione": "GEOMETRIC_CENTER",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 147,
+    "km": 90.1,
+    "cambi": 3,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "RV",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "REG",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "4512",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 67,
+    "km": 91.8
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via G. Matteotti 3, 10020 Riva Presso Chieri, Italia": {
+   "lat": 44.9802318,
+   "lng": 7.8742296,
+   "indirizzo_google": "Via Giacomo Matteotti, 3, 10020 Riva presso Chieri TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 79,
+    "km": 35.5,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "048AT",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "046AT",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 26,
+    "km": 32.0
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via G. Matteotti, 10016 Montalto Dora, Italia": {
+   "lat": 45.48879,
+   "lng": 7.8644406,
+   "indirizzo_google": "Via Giacomo Matteotti, 10016 Montalto Dora TO, Italia",
+   "precisione": "GEOMETRIC_CENTER",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 127,
+    "km": 68.7,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "265",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "265",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 62,
+    "km": 87.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via G. Ratti 1, 10090 Trana, Italia": {
+   "lat": 45.0363721,
+   "lng": 7.397816199999999,
+   "indirizzo_google": "Via G. Ratti, 1, 10090 San Bernardino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 74,
+    "km": 26.2,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "260",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "1511",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 38,
+    "km": 40.3
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via G. Rossini, 10015 Ivrea, Italia": {
+   "lat": 45.4493897,
+   "lng": 7.8805924,
+   "indirizzo_google": "Via Gioacchino Rossini, 10015 Ivrea TO, Italia",
+   "precisione": "GEOMETRIC_CENTER",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 113,
+    "km": 79.0,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "2",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "265",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 58,
+    "km": 82.4
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via G.Marconi 23Bis, 10085 Pont-Canavese, Italia": {
+   "lat": 45.42118989999999,
+   "lng": 7.5925647,
+   "indirizzo_google": "V. Guglielmo Marconi, 23BIS, 10085 Pont Canavese TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 193,
+    "km": 92.4,
+    "cambi": 4,
+    "linee": [
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "RV",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "REG",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "5143",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "5137",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 68,
+    "km": 88.0
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Galimberti 5, 10024 Moncalieri, Italia": {
+   "lat": 45.0075888,
+   "lng": 7.67123,
+   "indirizzo_google": "Via Galimberti, 5, 10024 Moncalieri TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 14,
+    "km": 1.8,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "259S",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 5,
+    "km": 2.2
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Galimberti 7, 10024 Moncalieri, Italia": {
+   "lat": 45.0076916,
+   "lng": 7.670640000000001,
+   "indirizzo_google": "Via Galimberti, 7, 10024 Moncalieri TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 14,
+    "km": 1.8,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "259S",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 5,
+    "km": 2.3
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Gallo 5, 10080 Colleretto Castelnuovo, Italia": {
+   "lat": 45.4237498,
+   "lng": 7.677575099999999,
+   "indirizzo_google": "Via P. e A. Gallo, 5, 10080 Colleretto Castelnuovo TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 646,
+    "km": 64.9,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "5137",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "5150",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 65,
+    "km": 84.5
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Galvani 3, 10060 San Pietro Val Lemina, Italia": {
+   "lat": 44.9072045,
+   "lng": 7.308889400000001,
+   "indirizzo_google": "Via Galvani, 3, 10060 San Pietro Val Lemina TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 92,
+    "km": 39.0,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "701",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 41,
+    "km": 43.2
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Galvani 3, 10064 San Pietro Val Lemina, Italia": {
+   "lat": 44.9072045,
+   "lng": 7.308889400000001,
+   "indirizzo_google": "Via Galvani, 3, 10060 San Pietro Val Lemina TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 92,
+    "km": 39.0,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "701",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 41,
+    "km": 43.2
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Garessio 24/5, 10126 Torino, Italia": {
+   "lat": 45.0307413,
+   "lng": 7.670219299999999,
+   "indirizzo_google": "Via Garessio, 24/5, 10126 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 11,
+    "km": 1.3,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "267",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 3,
+    "km": 1.3
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Garibaldi 1, 10040 Volvera, Italia": {
+   "lat": 44.9524365,
+   "lng": 7.5088255,
+   "indirizzo_google": "Via Giuseppe Garibaldi, 1, 10040 Volvera TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 48,
+    "km": 21.1,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "260",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "1432",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 23,
+    "km": 20.4
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Garibaldi 1, 10057 Sant'Ambrogio Di Torino, Italia": {
+   "lat": 45.0976863,
+   "lng": 7.363117199999999,
+   "indirizzo_google": "Via Giuseppe Garibaldi, 1, 10057 Sant'Ambrogio di Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 67,
+    "km": 33.5,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 32,
+    "km": 43.3
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Garibaldi 12, 10022 Carmagnola, Italia": {
+   "lat": 44.8482858,
+   "lng": 7.716968499999999,
+   "indirizzo_google": "Viale Giuseppe Garibaldi, 12, 10022 Carmagnola TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 60,
+    "km": 24.5,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "259",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 21,
+    "km": 24.2
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Garibaldi 28/1, 10080 Vistrorio, Italia": {
+   "lat": 45.4423389,
+   "lng": 7.7698338,
+   "indirizzo_google": "Via Garibaldi, 28/1, 10080 Vistrorio TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 204,
+    "km": 77.1,
+    "cambi": 3,
+    "linee": [
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "RV",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "REG",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "5143",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 63,
+    "km": 88.6
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Garibaldi 3/B, 10048 Vinovo, Italia": {
+   "lat": 44.9511639,
+   "lng": 7.635768,
+   "indirizzo_google": "Via Giuseppe Garibaldi, 3b, 10048 Vinovo TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 35,
+    "km": 10.4,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "267",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 15,
+    "km": 14.6
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Garibaldi 4, 10071 Borgaro Torinese, Italia": {
+   "lat": 45.1479045,
+   "lng": 7.657607499999999,
+   "indirizzo_google": "Via Giuseppe Garibaldi, 4, 10071 Borgaro Torinese TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 67,
+    "km": 17.6,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "Arriva-268",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 30,
+    "km": 40.1
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Garibaldi 7, 10057 Sant'Ambrogio Di Torino, Italia": {
+   "lat": 45.0985879,
+   "lng": 7.363986100000001,
+   "indirizzo_google": "Via Giuseppe Garibaldi, 7, 10057 Sant'Ambrogio di Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 65,
+    "km": 33.3,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 33,
+    "km": 43.5
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Garibaldi, 10045 Piossasco, Italia": {
+   "lat": 44.9889411,
+   "lng": 7.467648,
+   "indirizzo_google": "Via Garibaldi, 10045 Piossasco TO, Italia",
+   "precisione": "GEOMETRIC_CENTER",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 65,
+    "km": 23.3,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "74",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "1085",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 27,
+    "km": 23.5
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Gassino 13, 10132 Torino, Italia": {
+   "lat": 45.0667671,
+   "lng": 7.716774399999999,
+   "indirizzo_google": "Via Gassino, 13, 10132 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 49,
+    "km": 9.3,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "61",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 19,
+    "km": 8.0
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Gatti 18, 10098 Rivoli, Italia": {
+   "lat": 45.06669400000001,
+   "lng": 7.523060399999999,
+   "indirizzo_google": "Via Luigi Gatti, 18, 10098 Rivoli TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 70,
+    "km": 23.0,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "1432",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 24,
+    "km": 27.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Gauthier 23 (B.Ta Revigliasco), 10024 Moncalieri, Italia": {
+   "lat": 45.0183183,
+   "lng": 7.7376891,
+   "indirizzo_google": "Via Gauthier T., 10024 Revigliasco TO, Italia",
+   "precisione": "GEOMETRIC_CENTER",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 40,
+    "km": 11.7,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "45",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "70",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 19,
+    "km": 11.8
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Gen. C. Alberto Dalla Chiesa N. 3, 10085 Pont-Canavese, Italia": {
+   "lat": 45.42140149999999,
+   "lng": 7.593547499999999,
+   "indirizzo_google": "10085 Pont Canavese TO, Italia",
+   "precisione": "APPROXIMATE",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 192,
+    "km": 92.3,
+    "cambi": 4,
+    "linee": [
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "RV",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "REG",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "5143",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "5137",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 67,
+    "km": 87.9
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Gen. Perotti 85, 10095 Grugliasco, Italia": {
+   "lat": 45.0598041,
+   "lng": 7.576996100000001,
+   "indirizzo_google": "Via Generale Giuseppe Perotti, 85, 10095 Grugliasco TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 57,
+    "km": 11.9,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "38",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 20,
+    "km": 9.9
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via General Cabrera 10, 10077 San Maurizio Canavese, Italia": {
+   "lat": 45.2113242,
+   "lng": 7.627904,
+   "indirizzo_google": "Via General Cabrera, 10, 10077 San Maurizio Canavese TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 78,
+    "km": 28.4,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 37,
+    "km": 52.5
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via General Cabrera 12, 10077 San Maurizio Canavese, Italia": {
+   "lat": 45.2113664,
+   "lng": 7.627763499999999,
+   "indirizzo_google": "Via General Cabrera, 12, 10077 San Maurizio Canavese TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 78,
+    "km": 28.4,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 37,
+    "km": 52.4
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Generale Colombini 31, 10060 San Secondo Di Pinerolo, Italia": {
+   "lat": 44.8665439,
+   "lng": 7.2985341,
+   "indirizzo_google": "Via Generale Colombini, 31, 10060 San Secondo di Pinerolo TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 114,
+    "km": 50.1,
+    "cambi": 3,
+    "linee": [
+     {
+      "nome": "43",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "284",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "284",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "284",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 38,
+    "km": 41.4
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Genolino 77, 10094 Giaveno, Italia": {
+   "lat": 45.03959469999999,
+   "lng": 7.340193900000001,
+   "indirizzo_google": "Via Genolino, 77, 10094 Giaveno TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 87,
+    "km": 34.6,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "299T",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "1511",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 44,
+    "km": 49.2
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Genova 7, 10076 Nole, Italia": {
+   "lat": 45.2423645,
+   "lng": 7.571518199999999,
+   "indirizzo_google": "Via Genova, 7, 10076 Nole TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 89,
+    "km": 34.5,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "3971",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 47,
+    "km": 59.4
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Gerbole 6, 10040 Volvera, Italia": {
+   "lat": 44.9791705,
+   "lng": 7.5239939,
+   "indirizzo_google": "Via Gerbole, 6, 10040 Gerbole-Zucche TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 59,
+    "km": 25.2,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "260",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "1432",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 20,
+    "km": 16.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Germonio 4, 10142 Torino, Italia": {
+   "lat": 45.0737205,
+   "lng": 7.610776400000001,
+   "indirizzo_google": "Via Anastasio Germonio, 4, 10142 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 41,
+    "km": 11.9,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 22,
+    "km": 9.2
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Gerolamo Tiraboschi 33, 10149 Torino, Italia": {
+   "lat": 45.0974732,
+   "lng": 7.659329,
+   "indirizzo_google": "Via Gerolamo Tiraboschi, 33, 10149 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 59,
+    "km": 11.4,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "2",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 27,
+    "km": 10.9
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Ghautier 23 (B.Ta Revigliasco), 10024 Moncalieri, Italia": {
+   "lat": 45.0183183,
+   "lng": 7.7376891,
+   "indirizzo_google": "Via Gauthier T., 10024 Revigliasco TO, Italia",
+   "precisione": "GEOMETRIC_CENTER",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 40,
+    "km": 11.7,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "45",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "70",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 19,
+    "km": 11.8
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Ghetto 30, 10059 Novalesa, Italia": {
+   "lat": 45.192697,
+   "lng": 7.013793,
+   "indirizzo_google": "Via Ghetto, 30, 10050 Novalesa TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 126,
+    "km": 66.5,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "274",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 59,
+    "km": 76.8
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Gino 20, 10090 Sangano, Italia": {
+   "lat": 45.0287045,
+   "lng": 7.4548681,
+   "indirizzo_google": "Via Gino Giovanni, 20, 10090 Sangano TO, Italia",
+   "precisione": "RANGE_INTERPOLATED",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 71,
+    "km": 20.8,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "260",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "1511",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 32,
+    "km": 35.4
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Giolitti 8, 10078 Venaria Reale, Italia": {
+   "lat": 45.1275101,
+   "lng": 7.6271622,
+   "indirizzo_google": "Via Giovanni Giolitti, 10078 Venaria Reale TO, Italia",
+   "precisione": "GEOMETRIC_CENTER",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 53,
+    "km": 17.2,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 28,
+    "km": 37.0
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Giotto 40, 10090 Trana, Italia": {
+   "lat": 45.0348816,
+   "lng": 7.3953261,
+   "indirizzo_google": "Via Giotto, 40, 10090 Trana TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 77,
+    "km": 26.4,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "260",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "1511",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 38,
+    "km": 40.5
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Giovanni Falcone N. 2, 10040 San Gillio, Italia": {
+   "lat": 45.1375582,
+   "lng": 7.5381552,
+   "indirizzo_google": "Via Giovanni Falcone, 2, 10040 San Gillio TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 106,
+    "km": 25.5,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "2",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "59",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "159",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 30,
+    "km": 36.8
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Giovanni XXIII 19, 10064 Pinerolo, Italia": {
+   "lat": 44.8933694,
+   "lng": 7.3406074,
+   "indirizzo_google": "Via Papa Giovanni XXIII, 19, 10064 Pinerolo TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 64,
+    "km": 34.3,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 36,
+    "km": 37.9
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Giovanni XXIII 19, Pinerolo, Italia": {
+   "lat": 44.8933694,
+   "lng": 7.3406074,
+   "indirizzo_google": "Via Papa Giovanni XXIII, 19, 10064 Pinerolo TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 64,
+    "km": 34.3,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 36,
+    "km": 37.9
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Giovanni XXIII, 10064 Pinerolo, Italia": {
+   "lat": 44.8930247,
+   "lng": 7.3413301,
+   "indirizzo_google": "Via Papa Giovanni XXIII, 10064 Pinerolo TO, Italia",
+   "precisione": "GEOMETRIC_CENTER",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 60,
+    "km": 34.0,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 35,
+    "km": 37.6
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Giraudo 15, 10081 Castellamonte, Italia": {
+   "lat": 45.3830878,
+   "lng": 7.715921699999999,
+   "indirizzo_google": "Via G. Battista Giraudo, 15, 10081 Castellamonte TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 130,
+    "km": 74.0,
+    "cambi": 3,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "3316",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "4108",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 55,
+    "km": 76.9
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Giugliano 1, 10098 Rivoli, Italia": {
+   "lat": 45.07046080000001,
+   "lng": 7.5198702,
+   "indirizzo_google": "10098 Rivoli TO, Italia",
+   "precisione": "APPROXIMATE",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 75,
+    "km": 19.1,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "36",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 23,
+    "km": 27.3
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Giulia Di Barolo 8, 10124 Torino, Italia": {
+   "lat": 45.0667284,
+   "lng": 7.6960029,
+   "indirizzo_google": "Via Giulia di Barolo, 8, 10124 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 37,
+    "km": 6.4,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 18,
+    "km": 7.0
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Giuseppe Piazzi 57, 10129 Torino, Italia": {
+   "lat": 45.0517079,
+   "lng": 7.658498,
+   "indirizzo_google": "Via Giuseppe Piazzi, 57, 10129 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 29,
+    "km": 4.9,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "259",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 13,
+    "km": 5.3
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Givoletto 2, 10040 Val Della Torre, Italia": {
+   "lat": 45.1349576,
+   "lng": 7.481988599999998,
+   "indirizzo_google": "Via Givoletto, 2, 10040 Brione TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": null,
+   "auto": {
+    "minuti": 33,
+    "km": 40.6
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Gnavi 1, 10014 Caluso, Italia": {
+   "lat": 45.3065285,
+   "lng": 7.8845212,
+   "indirizzo_google": "Via G. Gnavi, 1, 10014 Caluso TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 83,
+    "km": 61.3,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "2",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "265",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 47,
+    "km": 70.4
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Gorresio 13, 10151 Torino, Italia": {
+   "lat": 45.0998603,
+   "lng": 7.6572,
+   "indirizzo_google": "Via Gaspare Gorresio, 13, 10149 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 61,
+    "km": 12.0,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "2",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 27,
+    "km": 11.5
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Goytre 4, 10061 Cavour, Italia": {
+   "lat": 44.7860766,
+   "lng": 7.373735000000001,
+   "indirizzo_google": "Via Goitre, 4, 10061 Cavour TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 494,
+    "km": 67.6,
+    "cambi": 3,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "282",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "299T",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "112",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 45,
+    "km": 47.6
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Gramsci 12, 10043 Orbassano, Italia": {
+   "lat": 45.0051267,
+   "lng": 7.5286648,
+   "indirizzo_google": "Via Antonio Gramsci, 12, 10043 Orbassano TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 58,
+    "km": 14.1,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "43",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "5",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 24,
+    "km": 14.3
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Grange 24, 10044 Pianezza, Italia": {
+   "lat": 45.1234895,
+   "lng": 7.5451758,
+   "indirizzo_google": "Via Grange, 24, 10044 Pianezza TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 82,
+    "km": 23.7,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "CP1",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 27,
+    "km": 35.2
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Grazia Deledda 10, 10028 Trofarello, Italia": {
+   "lat": 44.9819439,
+   "lng": 7.747632800000001,
+   "indirizzo_google": "Via Grazia Deledda, 10, 10028 Trofarello TO, Italia",
+   "precisione": "RANGE_INTERPOLATED",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 35,
+    "km": 9.6,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "45",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 14,
+    "km": 10.9
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Gromis 3, 10080 Lusigliè, Italia": {
+   "lat": 45.31777049999999,
+   "lng": 7.7674849,
+   "indirizzo_google": "Via Gromis, 3, 10080 Lusigliè TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 83,
+    "km": 40.9,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "5145",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 49,
+    "km": 65.6
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Gromis 8, 10080 Lusigliè, Italia": {
+   "lat": 45.317357,
+   "lng": 7.768063,
+   "indirizzo_google": "Via Gromis, 8, 10080 Lusigliè TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 84,
+    "km": 41.0,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "5145",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 49,
+    "km": 65.6
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Guarini 19, 10078 Venaria Reale, Italia": {
+   "lat": 45.1224987,
+   "lng": 7.6313629,
+   "indirizzo_google": "Via Guarino Guarini, 19, 10078 Venaria Reale TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 72,
+    "km": 20.9,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "VE1",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 26,
+    "km": 36.3
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Guido Gozzano 6, 10026 Santena, Italia": {
+   "lat": 44.9448044,
+   "lng": 7.7676017,
+   "indirizzo_google": "Via Guido Gozzano, 6, 10026 Santena TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 57,
+    "km": 17.4,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "45",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 17,
+    "km": 17.6
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Guido Rossa 12, 10013 Borgofranco D'Ivrea, Italia": {
+   "lat": 45.51459999999999,
+   "lng": 7.860316999999999,
+   "indirizzo_google": "Via Guido Rossa, 12, 10013 Borgofranco d'Ivrea TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 141,
+    "km": 76.4,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "RV",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "265",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 67,
+    "km": 90.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via IV Novembre 14, 10073 Ciriè, Italia": {
+   "lat": 45.2276842,
+   "lng": 7.6018747,
+   "indirizzo_google": "Via IV Novembre, 14, 10073 Ciriè TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 75,
+    "km": 30.3,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 41,
+    "km": 55.0
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via IV Novembre 2, 10069 Villar Perosa, Italia": {
+   "lat": 44.9207458,
+   "lng": 7.2490196,
+   "indirizzo_google": "Via IV Novembre, 2, 10069 Villar Perosa TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 96,
+    "km": 48.8,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "43",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "284",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "275",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 45,
+    "km": 49.3
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via IV Novembre 33, 10060 Buriasco, Italia": {
+   "lat": 44.87541179999999,
+   "lng": 7.4116559,
+   "indirizzo_google": "Via IV Novembre, 33, 10060 Buriasco TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 76,
+    "km": 35.7,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "260",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "281",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "278",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 34,
+    "km": 34.8
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via IV Novembre, 10034 Chivasso, Italia": {
+   "lat": 45.1948301,
+   "lng": 7.8916991,
+   "indirizzo_google": "Via IV Novembre, 10034 Chivasso TO, Italia",
+   "precisione": "GEOMETRIC_CENTER",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 54,
+    "km": 30.6,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "RV",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 42,
+    "km": 60.2
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Ischia 6, 10098 Rivoli, Italia": {
+   "lat": 45.06281,
+   "lng": 7.520125299999999,
+   "indirizzo_google": "Via Ischia, 6, 10098 Rivoli TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 86,
+    "km": 19.9,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "24",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "17",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 25,
+    "km": 28.6
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Ivrea 1, 10010 Samone, Italia": {
+   "lat": 45.4511652,
+   "lng": 7.847124799999999,
+   "indirizzo_google": "Via Ivrea, 1, 10010 Samone TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 111,
+    "km": 62.4,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "265",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 55,
+    "km": 82.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Ivrea 101, 10016 Montalto Dora, Italia": {
+   "lat": 45.4824429,
+   "lng": 7.864074,
+   "indirizzo_google": "Via Ivrea, 101, 10016 Montalto Dora TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 123,
+    "km": 67.1,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "265",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "4157",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 60,
+    "km": 86.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Ivrea 6, 10010 Loranzè, Italia": {
+   "lat": 45.4405375,
+   "lng": 7.8120066,
+   "indirizzo_google": "Via Ivrea, 6, 10010 Loranzè TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 127,
+    "km": 60.3,
+    "cambi": 3,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "5145",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "5143",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 54,
+    "km": 82.8
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Ivrea 67, 10010 Candia Canavese, Italia": {
+   "lat": 45.33218340000001,
+   "lng": 7.888260699999999,
+   "indirizzo_google": "Via Ivrea, 67, 10010 Candia Canavese TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 88,
+    "km": 50.7,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "RV",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "REG",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 50,
+    "km": 73.6
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Ivrea 69, 10010 Candia Canavese, Italia": {
+   "lat": 45.33127160000001,
+   "lng": 7.887976500000001,
+   "indirizzo_google": "Via Ivrea, 69, 10010 Candia Canavese TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 86,
+    "km": 50.6,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "RV",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "REG",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 50,
+    "km": 73.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via L. Da Vinci 135, 10095 Grugliasco, Italia": {
+   "lat": 45.066774,
+   "lng": 7.5879846,
+   "indirizzo_google": "Via Leonardo Da Vinci, 135, 10095 Grugliasco TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 63,
+    "km": 12.6,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "74",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "44",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 20,
+    "km": 9.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via L. Lanfranco 2 (Ex Via Filadelfia), 10137 Torino, Italia": {
+   "lat": 45.0416841,
+   "lng": 7.645208500000001,
+   "indirizzo_google": "Via Leo Lanfranco, 2, 10137 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 26,
+    "km": 4.7,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "2",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "62",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 10,
+    "km": 4.1
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Lago S.Michele 9/E, 10015 Ivrea, Italia": {
+   "lat": 45.4736291,
+   "lng": 7.8896045,
+   "indirizzo_google": "Via Lago S. Michele, 9, 10015 Ivrea TO, Italia",
+   "precisione": "GEOMETRIC_CENTER",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 112,
+    "km": 66.4,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "265",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 59,
+    "km": 85.4
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Lancia 140, 10141 Torino, Italia": {
+   "lat": 45.0631972,
+   "lng": 7.628576,
+   "indirizzo_google": "Via Vincenzo Lancia, 140, 10141 Torino TO, Italia",
+   "precisione": "GEOMETRIC_CENTER",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 45,
+    "km": 7.6,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "2",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 17,
+    "km": 7.1
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Lanzo 28, 10148 Torino, Italia": {
+   "lat": 45.1091963,
+   "lng": 7.6618683,
+   "indirizzo_google": "Via Lanzo, 28, 10148 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 53,
+    "km": 12.5,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "226",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 29,
+    "km": 12.2
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Lanzo, 10022 Carmagnola, Italia": {
+   "lat": 44.8547965,
+   "lng": 7.7233818,
+   "indirizzo_google": "Via Lanzo, 10022 Carmagnola TO, Italia",
+   "precisione": "GEOMETRIC_CENTER",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 49,
+    "km": 23.2,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "259A",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 20,
+    "km": 23.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Lazzaretti 12, 10023 Chieri, Italia": {
+   "lat": 45.0080621,
+   "lng": 7.815705800000001,
+   "indirizzo_google": "Via Lazzaretti, 12, 10023 Chieri TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 49,
+    "km": 19.3,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 22,
+    "km": 21.6
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Le Chiuse 80, 10144 Torino, Italia": {
+   "lat": 45.0810713,
+   "lng": 7.659787400000001,
+   "indirizzo_google": "Via le Chiuse, 80, 10144 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 38,
+    "km": 8.4,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 24,
+    "km": 8.9
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Le Maire 20, 10086 Rivarolo Canavese, Italia": {
+   "lat": 45.3276189,
+   "lng": 7.717298599999999,
+   "indirizzo_google": "Via Francesco le Maire, 20, 10086 Rivarolo Canavese TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 96,
+    "km": 42.1,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 52,
+    "km": 67.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Le Maire N. 24, 10086 Rivarolo Canavese, Italia": {
+   "lat": 45.3287196,
+   "lng": 7.7185716,
+   "indirizzo_google": "Via Francesco le Maire, 24, 10086 Rivarolo Canavese TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 92,
+    "km": 41.8,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 52,
+    "km": 67.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Lemie 48, 10149 Torino, Italia": {
+   "lat": 45.0961401,
+   "lng": 7.666374299999999,
+   "indirizzo_google": "Via Lemie, 48, 10149 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 53,
+    "km": 11.5,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "72/",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 28,
+    "km": 11.1
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Leonardo Da Vinci 135, 10095 Grugliasco, Italia": {
+   "lat": 45.066774,
+   "lng": 7.5879846,
+   "indirizzo_google": "Via Leonardo Da Vinci, 135, 10095 Grugliasco TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 63,
+    "km": 12.6,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "74",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "44",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 20,
+    "km": 9.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Leoncavallo 61/2, 10154 Torino, Italia": {
+   "lat": 45.0883446,
+   "lng": 7.703087699999999,
+   "indirizzo_google": "Via Ruggero Leoncavallo, 61/2, 10154 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 52,
+    "km": 9.4,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "3166",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 26,
+    "km": 10.2
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Leopardi 8, 10040 Rivalta Di Torino, Italia": {
+   "lat": 45.0103483,
+   "lng": 7.551332599999999,
+   "indirizzo_google": "Via Giacomo Leopardi, 8, 10040 Pasta TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 49,
+    "km": 11.3,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "2",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "95/",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "5",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 19,
+    "km": 12.4
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Lincoln 1, 10098 Rivoli, Italia": {
+   "lat": 45.0803285,
+   "lng": 7.5148419,
+   "indirizzo_google": "Via A. Lincoln, 1, 10098 Rivoli TO, Italia",
+   "precisione": "RANGE_INTERPOLATED",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 68,
+    "km": 21.6,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "1432",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 25,
+    "km": 28.6
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Locana 41, 10080 Sparone, Italia": {
+   "lat": 45.4137152,
+   "lng": 7.543961599999999,
+   "indirizzo_google": "Via Locana, 41, 10080 Sparone TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 673,
+    "km": 65.6,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "5137",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "5137",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 70,
+    "km": 92.1
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Lombardore 10, 10088 Volpiano, Italia": {
+   "lat": 45.2050469,
+   "lng": 7.775168499999999,
+   "indirizzo_google": "Via Lombardore, 10, 10088 Volpiano TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 59,
+    "km": 26.8,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 40,
+    "km": 53.1
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Lombroso, 10093 Collegno, Italia": {
+   "lat": 45.0724897,
+   "lng": 7.5877931,
+   "indirizzo_google": "Via Cesare Lombroso, 10093 Collegno TO, Italia",
+   "precisione": "GEOMETRIC_CENTER",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 49,
+    "km": 14.1,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 23,
+    "km": 10.8
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Lorenzini 4, 10147 Torino, Italia": {
+   "lat": 45.0998329,
+   "lng": 7.6779006,
+   "indirizzo_google": "Via Carlo Lorenzini, 4, 10147 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 36,
+    "km": 11.7,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 29,
+    "km": 11.3
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Losa 32, 10070 Robassomero, Italia": {
+   "lat": 45.19887320000001,
+   "lng": 7.569800499999999,
+   "indirizzo_google": "Via Giovanni Losa, 32, 10070 Robassomero TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 71,
+    "km": 29.0,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "226",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 38,
+    "km": 49.8
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Lossani 13, 10060 Porte, Italia": {
+   "lat": 44.8879695,
+   "lng": 7.2671192,
+   "indirizzo_google": "Via M. Lossani, 13, 10060 Porte TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 89,
+    "km": 43.4,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "43",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "284",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "275",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 38,
+    "km": 43.1
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Luserna Di Rora' 14, 10139 Torino, Italia": {
+   "lat": 45.0674302,
+   "lng": 7.647778399999999,
+   "indirizzo_google": "Via Emanuele Luserna Di Rorà, 14, 10139 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 41,
+    "km": 8.5,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "33",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 19,
+    "km": 7.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Luserna Di Rora' N. 14, 10139 Torino, Italia": {
+   "lat": 45.0674302,
+   "lng": 7.647778399999999,
+   "indirizzo_google": "Via Emanuele Luserna Di Rorà, 14, 10139 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 41,
+    "km": 8.5,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "33",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 19,
+    "km": 7.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Lussimpiccolo 36/A, 10141 Torino, Italia": {
+   "lat": 45.05615419999999,
+   "lng": 7.6458178,
+   "indirizzo_google": "Via Lussimpiccolo, 36/a, 10141 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 39,
+    "km": 6.3,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "2014",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "66",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 14,
+    "km": 6.3
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via M. Anglesio 17, 10156 Torino, Italia": {
+   "lat": 45.10444890000001,
+   "lng": 7.7309673,
+   "indirizzo_google": "Via Martino Anglesio, 17, 10156 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 77,
+    "km": 14.1,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "27",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 30,
+    "km": 13.9
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Madama Cristina 102, 10126 Torino, Italia": {
+   "lat": 45.0473709,
+   "lng": 7.6754416,
+   "indirizzo_google": "Via Madama Cristina, 102, 10126 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 18,
+    "km": 3.4,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 9,
+    "km": 3.1
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Madonna Del Rosario 25, 10019 Strambino, Italia": {
+   "lat": 45.3798294,
+   "lng": 7.8821532,
+   "indirizzo_google": "Via Madonna del Rosario, 25, 10019 Strambino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 105,
+    "km": 71.0,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "2",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "265",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 49,
+    "km": 75.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Madonna Della Neve 1, 10070 Rocca Canavese, Italia": {
+   "lat": 45.30920829999999,
+   "lng": 7.579007599999999,
+   "indirizzo_google": "Via Madonna della Neve, 1, 10070 Rocca Canavese TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 101,
+    "km": 41.1,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "437",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 54,
+    "km": 66.6
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
+  },
+  "Via Madonna Della Neve 30, 10077 San Maurizio Canavese, Italia": {
+   "lat": 45.2128558,
+   "lng": 7.6288315,
+   "indirizzo_google": "Via Madonna della Neve, 30, 10077 San Maurizio Canavese TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 68,
+    "km": 27.7,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 37,
+    "km": 52.5
+   },
+   "errore": null,
+   "aggiornato": "2026-09-26"
   }
  }
 }
