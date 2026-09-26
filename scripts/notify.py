@@ -70,6 +70,8 @@ def _corrisponde(interpello, filtri):
     """Dice se un interpello rientra in una ricerca salvata."""
     if interpello["stato"] != "aperto" or interpello.get("scaduto"):
         return False
+    if filtri.get("settore") and interpello.get("settore") not in filtri["settore"]:
+        return False
     if filtri.get("classi") and interpello["classe"] not in filtri["classi"]:
         return False
     if filtri.get("corso") and interpello["corso"] not in filtri["corso"]:
@@ -123,17 +125,25 @@ def _salva_gia_notificati(memoria):
 # Come si presenta il messaggio
 # --------------------------------------------------------------------------
 def _riga_messaggio(interpello):
-    pezzi = [f"<b>{interpello['classe']} - {interpello['classe_nome']}</b>",
-             interpello["scuola"]]
+    # Attenzione: il file pubblicato e' alleggerito e alcuni campi possono
+    # mancare (il nome della classe, per esempio, la app lo ricava da sola).
+    # Qui li ricostruiamo invece di darli per scontati.
+    classe = interpello["classe"]
+    nome_classe = interpello.get("classe_nome") or config.CLASSI_DI_CONCORSO.get(classe, "")
+    pezzi = [f"<b>{classe} - {nome_classe}</b>", interpello.get("scuola", "")]
     if interpello.get("minuti") is not None:
         # In italiano i decimali si scrivono con la virgola: 8,1 km
         km = f" · {str(interpello['km']).replace('.', ',')} km" if interpello.get("km") else ""
         pezzi.append(f"🚌 {interpello['minuti']} min da casa{km}")
     else:
         pezzi.append("🚌 distanza non disponibile")
-    pezzi.append(f"📅 dal {interpello['data_interpello_testo']}"
-                 f" · scade il {interpello['data_scadenza_testo'] or 'n.d.'}")
-    dettagli = [interpello["durata"], interpello["corso"], interpello["tipo_cattedra"]]
+    dal = interpello.get("data_interpello_testo") or interpello.get("data_interpello") or "n.d."
+    scade = interpello.get("data_scadenza_testo") or interpello.get("data_scadenza") or "n.d."
+    pezzi.append(f"📅 dal {dal} · scade il {scade}")
+    dettagli = [interpello.get("durata"), interpello.get("corso"),
+                interpello.get("tipo_cattedra")]
+    if interpello.get("sostegno"):
+        dettagli.insert(0, "SOSTEGNO")
     if interpello.get("ore_spezzone"):
         dettagli.append(f"{interpello['ore_spezzone']} ore")
     pezzi.append("📄 " + " · ".join(d for d in dettagli if d))

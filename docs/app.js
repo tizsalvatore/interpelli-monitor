@@ -21,25 +21,46 @@
 
 // I filtri della ricerca "Desiderati": quello che cerchi davvero.
 const FILTRI_DI_FABBRICA = {
+  settore: [],         // vuoto = qualsiasi ordine di scuola
   stato: ['aperto'],
   classi: ['A027'],
   corso: ['Diurno'],
   tipo: [],            // vuoto = tutti
   durata: [],          // vuoto = qualsiasi durata, dalle brevi alle annuali
-  maxMinuti: 30,       // null = nessun limite
-  ordine: 'tempo',              // 'tempo' | 'data'
+  maxMinuti: 45,       // null = nessun limite
+  ordine: 'tempo',     // 'tempo' | 'data'
 };
 
 const FILTRI_VUOTI = {
-  stato: [], classi: [], corso: [], tipo: [], durata: [], maxMinuti: null, ordine: 'tempo',
+  settore: [], stato: [], classi: [], corso: [], tipo: [], durata: [],
+  maxMinuti: null, ordine: 'tempo',
 };
 
-// Le tre ricerche che ci sono da subito.
+const SOLO_PRIMARIA = { ...FILTRI_VUOTI, settore: ['infanzia_primaria'] };
+const SOLO_SECONDARIA = { ...FILTRI_VUOTI, settore: ['secondaria'] };
+
+// Le cinque ricerche che ci sono da subito: la tua, e poi le quattro "di
+// servizio" che dividono il mondo in primaria e superiori, aperti e storico.
 const RICERCHE_INIZIALI = [
   { id: 'desiderati', nome: 'Desiderati', filtri: FILTRI_DI_FABBRICA, notifiche: true },
-  { id: 'aperte', nome: 'Tutti (aperti)', filtri: { ...FILTRI_VUOTI, stato: ['aperto'] }, notifiche: false },
-  { id: 'tutte', nome: 'Tutti (storico)', filtri: FILTRI_VUOTI, notifiche: false },
+  { id: 'primaria_aperti', nome: 'Primaria aperti',
+    filtri: { ...SOLO_PRIMARIA, stato: ['aperto'] }, notifiche: false },
+  { id: 'primaria_storico', nome: 'Primaria storico',
+    filtri: SOLO_PRIMARIA, notifiche: false },
+  { id: 'aperte', nome: 'Superiori aperti',
+    filtri: { ...SOLO_SECONDARIA, stato: ['aperto'] }, notifiche: false },
+  { id: 'tutte', nome: 'Superiori storico',
+    filtri: SOLO_SECONDARIA, notifiche: false },
 ];
+
+// In che ordine stanno in fondo alla striscia le pillole "di servizio".
+const ORDINE_DI_SERVIZIO = ['primaria_aperti', 'primaria_storico', 'aperte', 'tutte'];
+
+// Quante schede disegnare per volta. Con primaria e infanzia una ricerca puo'
+// restituire migliaia di risultati: costruirli tutti insieme significa decine
+// di migliaia di elementi nella pagina, e il telefono si pianta per qualche
+// secondo. Meglio un blocco alla volta, con un pulsante per allungare.
+const SCHEDE_PER_BLOCCO = 60;
 
 const CHIAVI = {
   migrazione: 'interpelli:versione-migrazione',
@@ -68,6 +89,8 @@ const stato = {
   stratoTessere: null,
   segnapostoCasa: null,
   ultimaImpronta: '',
+  quanteSchede: SCHEDE_PER_BLOCCO,   // quante ne stiamo mostrando adesso
+  ultimaChiaveElenco: '',            // per accorgerci che i filtri sono cambiati
   casa: null,               // {lat, lng, indirizzo} - vive solo su questo dispositivo
   casaInAttesa: null,       // scelta fatta nel pannello ma non ancora salvata
   sceltaSullaMappa: false,  // vero mentre aspettiamo che tocchi la mappa
@@ -225,6 +248,7 @@ function interpelliFiltrati(filtri = stato.filtri, testoCercato = stato.ricerca)
   const cerca = (testoCercato || '').trim().toLowerCase();
 
   let elenco = stato.dati.interpelli.filter((interpello) => {
+    if (filtri.settore.length && !filtri.settore.includes(interpello.settore)) return false;
     if (filtri.stato.length && !filtri.stato.includes(interpello.stato)) return false;
     if (filtri.classi.length && !filtri.classi.includes(interpello.classe)) return false;
     if (filtri.corso.length && !filtri.corso.includes(interpello.corso)) return false;
@@ -234,7 +258,7 @@ function interpelliFiltrati(filtri = stato.filtri, testoCercato = stato.ricerca)
     // meglio vederlo con un "n.d." che perderselo.
     if (filtri.maxMinuti !== null && interpello.minuti !== null && interpello.minuti > filtri.maxMinuti) return false;
     if (cerca) {
-      const testo = `${interpello.scuola} ${interpello.classe} ${interpello.classe_nome} ${comuneDi(interpello)}`;
+      const testo = `${interpello.scuola} ${interpello.classe} ${nomeClasse(interpello.classe)} ${comuneDi(interpello)}`;
       if (!testo.toLowerCase().includes(cerca)) return false;
     }
     return true;
@@ -259,6 +283,15 @@ function nomeClasse(codice) {
   return (stato.dati.classi || {})[codice] || '';
 }
 
+function nomeSettore(codice) {
+  return (stato.dati.settori || {})[codice] || codice;
+}
+
+// A quale ordine di scuola appartiene una classe di concorso.
+function settoreDiClasse(codice) {
+  return (stato.dati.settore_per_classe || {})[codice] || 'secondaria';
+}
+
 function nomeDurata(codice) {
   return (stato.dati.durate || {})[codice] || codice;
 }
@@ -278,7 +311,7 @@ function nomeDurataBreve(codice) {
   return DURATE_BREVI[codice] || nomeDurata(codice);
 }
 
-const CAMPI_ELENCO = ['stato', 'classi', 'corso', 'tipo', 'durata'];
+const CAMPI_ELENCO = ['settore', 'stato', 'classi', 'corso', 'tipo', 'durata'];
 
 function stessiFiltri(a, b) {
   return CAMPI_ELENCO.every(
@@ -298,6 +331,7 @@ function contaFiltriAttivi() {
 // Descrive una ricerca a parole: "Aperti · A027 · Diurno · entro 30 min"
 function descriviFiltri(filtri) {
   const pezzi = [];
+  if (filtri.settore.length) pezzi.push(filtri.settore.map(nomeSettore).join('/'));
   if (filtri.stato.length) pezzi.push(filtri.stato.map(primaMaiuscola).join('/'));
   if (filtri.classi.length) {
     // Con una o due classi c'e' spazio per il nome della materia; con di piu'
@@ -364,10 +398,31 @@ function caricaRicerche() {
   if (versione < 5) {
     const aperti = ricerche.find((r) => r.id === 'aperte');
     if (aperti && aperti.nome === 'Tutti (aperte)') aperti.nome = 'Tutti (aperti)';
-    scriviMemoria(CHIAVI.migrazione, 5);
   }
-  // Le due ricerche "di servizio" devono esserci sempre: sono la via di fuga
-  // per vedere cosa c'e' di aperto adesso e tutto l'archivio.
+
+  // Con l'arrivo di primaria e infanzia le due ricerche "Tutti" non vogliono
+  // piu' dire niente: diventano "Superiori", limitate alle secondarie, e si
+  // affiancano alle due nuove di primaria. Tocchiamo solo i nomi che avevamo
+  // dato noi: se li hai cambiati tu, restano come li hai messi.
+  if (versione < 6) {
+    const rinomina = {
+      aperte: { vecchi: ['Tutti (aperti)', 'Tutti (aperte)'], nuovo: 'Superiori aperti' },
+      tutte: { vecchi: ['Tutti (storico)'], nuovo: 'Superiori storico' },
+    };
+    Object.entries(rinomina).forEach(([identificativo, come]) => {
+      const ricerca = ricerche.find((r) => r.id === identificativo);
+      if (ricerca && come.vecchi.includes(ricerca.nome)) {
+        ricerca.nome = come.nuovo;
+        ricerca.filtri.settore = ['secondaria'];
+      }
+    });
+    // E "Desiderati" passa da 30 a 45 minuti, se era rimasta quella di fabbrica.
+    const desiderati = ricerche.find((r) => r.id === 'desiderati');
+    if (desiderati && desiderati.filtri.maxMinuti === 30) desiderati.filtri.maxMinuti = 45;
+    scriviMemoria(CHIAVI.migrazione, 6);
+  }
+  // Le ricerche "di servizio" devono esserci sempre: sono la via di fuga per
+  // vedere cosa c'e' di aperto adesso e tutto l'archivio, nei due ordini di scuola.
   RICERCHE_INIZIALI.filter((base) => base.id !== 'desiderati').forEach((base) => {
     if (!ricerche.some((r) => r.id === base.id)) {
       ricerche.push({
@@ -378,9 +433,12 @@ function caricaRicerche() {
     }
   });
 
-  // Le tue ricerche prima, le due di servizio sempre in fondo e in quest'ordine:
-  // prima quello che c'e' adesso, poi tutto l'archivio.
-  const posizione = (r) => (r.id === 'aperte' ? 1 : r.id === 'tutte' ? 2 : 0);
+  // Le tue ricerche prima, quelle di servizio sempre in fondo e sempre
+  // nello stesso ordine: prima la primaria, poi le superiori.
+  const posizione = (r) => {
+    const posto = ORDINE_DI_SERVIZIO.indexOf(r.id);
+    return posto === -1 ? 0 : posto + 1;
+  };
   ricerche.sort((a, b) => posizione(a) - posizione(b));
 
   return ricerche;
@@ -422,17 +480,42 @@ function disegnaTutto() {
 
   if (mostraMappa) return disegnaMappa(elenco);
 
-  elementi.lista.replaceChildren(...elenco.map(creaScheda));
+  // Se i filtri sono cambiati ripartiamo dal primo blocco, altrimenti
+  // restiamo dove eravamo (e' il caso del pulsante "mostra altri").
+  const chiave = JSON.stringify([stato.filtri, stato.ricerca, stato.vista]);
+  if (chiave !== stato.ultimaChiaveElenco) {
+    stato.ultimaChiaveElenco = chiave;
+    stato.quanteSchede = SCHEDE_PER_BLOCCO;
+    window.scrollTo({ top: 0 });
+  }
+
+  const visibili = elenco.slice(0, stato.quanteSchede);
+  elementi.lista.replaceChildren(...visibili.map(creaScheda));
+
+  if (elenco.length > visibili.length) {
+    const restanti = elenco.length - visibili.length;
+    const altri = nuovo('button', 'bottone bottone--secondario mostra-altri',
+      `Mostra altri ${Math.min(restanti, SCHEDE_PER_BLOCCO)} (ne restano ${restanti})`);
+    altri.addEventListener('click', () => {
+      stato.quanteSchede += SCHEDE_PER_BLOCCO;
+      disegnaTutto();
+    });
+    elementi.lista.appendChild(altri);
+  }
+
   const avviso = avvisoConfigurazione();
   if (avviso) elementi.lista.prepend(avviso);
-  disegnaRiepilogo(elenco);
+  disegnaRiepilogo(elenco, visibili.length);
   if (elenco.length === 0) disegnaStatoVuoto();
   else elementi.statoVuoto.hidden = true;
 }
 
-function disegnaRiepilogo(elenco) {
+function disegnaRiepilogo(elenco, mostrati = elenco.length) {
   if (elenco.length === 0) { elementi.riepilogo.hidden = true; return; }
   const parola = elenco.length === 1 ? 'interpello' : 'interpelli';
+  const conteggio = mostrati < elenco.length
+    ? `${mostrati} di ${elenco.length} ${parola}`
+    : `${elenco.length} ${parola}`;
 
   // L'ordinamento sta qui, sempre sotto gli occhi: e' una scelta che si cambia
   // di continuo, non ha senso nasconderla dentro il pannello dei filtri.
@@ -447,7 +530,7 @@ function disegnaRiepilogo(elenco) {
     ordina.appendChild(bottone);
   });
 
-  elementi.riepilogo.replaceChildren(nuovo('span', null, `${elenco.length} ${parola}`), ordina);
+  elementi.riepilogo.replaceChildren(nuovo('span', null, conteggio), ordina);
   elementi.riepilogo.hidden = false;
 }
 
@@ -460,7 +543,7 @@ function creaScheda(interpello) {
   const classe = nuovo('div', 'scheda__classe');
   classe.append(
     nuovo('span', 'scheda__codice', interpello.classe),
-    nuovo('span', 'scheda__materia', interpello.classe_nome),
+    nuovo('span', 'scheda__materia', nomeClasse(interpello.classe)),
   );
   alto.append(classe, creaStella(interpello, 'scheda__stella'));
 
@@ -482,6 +565,7 @@ function creaScheda(interpello) {
     etichette.appendChild(nuovo('span', 'etichetta etichetta--nuovo', 'nuovo'));
   }
   etichette.appendChild(nuovo('span', `etichetta etichetta--${interpello.stato}`, interpello.stato));
+  if (interpello.sostegno) etichette.appendChild(nuovo('span', 'etichetta etichetta--sostegno', 'sostegno'));
   if (interpello.scaduto) etichette.appendChild(nuovo('span', 'etichetta etichetta--scaduto', 'termine passato'));
   if (interpello.corso && interpello.corso !== 'Diurno') {
     etichette.appendChild(nuovo('span', 'etichetta etichetta--neutra', interpello.corso));
@@ -646,6 +730,7 @@ function aggiornaNavigazione() {
 function aggiornaBarraFiltri() {
   const f = stato.filtri;
   const attivi = [];
+  if (f.settore.length) attivi.push({ campo: 'settore', testo: f.settore.map(nomeSettore).join(', ') });
   if (f.stato.length) attivi.push({ campo: 'stato', testo: f.stato.map(primaMaiuscola).join(', ') });
   if (f.classi.length) attivi.push({ campo: 'classi', testo: f.classi.join(', ') });
   if (f.corso.length) attivi.push({ campo: 'corso', testo: f.corso.join(', ') });
@@ -982,7 +1067,7 @@ function finestrellaMappa(gruppo) {
     const voce = nuovo('button', 'finestrella__voce');
     voce.append(
       nuovo('strong', null, interpello.classe),
-      nuovo('span', null, `${interpello.classe_nome} · ${interpello.durata || ''}`),
+      nuovo('span', null, `${nomeClasse(interpello.classe)} · ${interpello.durata || ''}`),
       nuovo('span', `etichetta etichetta--${interpello.stato}`, interpello.stato),
     );
     voce.addEventListener('click', () => {
@@ -1006,7 +1091,7 @@ function apriDettaglio(interpello) {
   corpo.replaceChildren();
 
   corpo.appendChild(nuovo('h2', 'dettaglio__titolo', interpello.scuola));
-  corpo.appendChild(nuovo('p', 'dettaglio__sottotitolo', `${interpello.classe} · ${interpello.classe_nome}`));
+  corpo.appendChild(nuovo('p', 'dettaglio__sottotitolo', `${interpello.classe} · ${nomeClasse(interpello.classe)}`));
 
   const etichette = nuovo('div', 'etichette');
   etichette.style.marginBottom = '12px';
@@ -1188,6 +1273,12 @@ function chiudiPannelli() {
 function disegnaPannelloFiltri() {
   const f = stato.filtriInModifica;
 
+  gruppoDiChip($('filtroSettore'),
+    Object.entries(stato.dati.settori || {}).map(([codice, nome]) => ({
+      valore: codice, etichetta: nome,
+    })),
+    f.settore, 'settore');
+
   gruppoDiChip($('filtroStato'), [
     { valore: 'aperto', etichetta: 'Aperti' },
     { valore: 'chiuso', etichetta: 'Chiusi' },
@@ -1196,10 +1287,12 @@ function disegnaPannelloFiltri() {
 
   // Le classi le mostriamo con il nome della materia accanto al codice:
   // "A027" da solo dice poco quando le scegli.
+  // Le classi sono dodici: se hai gia' scelto un ordine di scuola mostriamo
+  // solo le sue, altrimenti il pannello diventa un elenco infinito.
   gruppoDiChip($('filtroClassi'),
-    Object.entries(stato.dati.classi).map(([codice, nome]) => ({
-      valore: codice, etichetta: codice, descrizione: nome,
-    })),
+    Object.entries(stato.dati.classi)
+      .filter(([codice]) => !f.settore.length || f.settore.includes(settoreDiClasse(codice)))
+      .map(([codice, nome]) => ({ valore: codice, etichetta: codice, descrizione: nome })),
     f.classi, 'classi');
 
   const corsiPresenti = [...new Set(stato.dati.interpelli.map((i) => i.corso))].sort();

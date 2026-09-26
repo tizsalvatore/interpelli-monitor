@@ -247,6 +247,13 @@ def solo_coordinate(indirizzi):
         print("   coordinate: gia' tutte presenti")
         return cache["destinazioni"]
 
+    # Stesso tetto del percorso con Google: OpenStreetMap vuole una richiesta
+    # al secondo, quindi mille indirizzi sarebbero venti minuti filati.
+    tetto = getattr(config, "MAX_NUOVI_VIAGGI_PER_GIRO", 0)
+    if tetto and len(da_fare) > tetto:
+        print(f"   {len(da_fare)} sedi senza coordinate: ne faccio {tetto} ora")
+        da_fare = da_fare[:tetto]
+
     print(f"   cerco le coordinate di {len(da_fare)} sedi su OpenStreetMap "
           f"(circa {round(len(da_fare) * 1.2 / 60) + 1} minuti)")
     for numero, indirizzo in enumerate(da_fare, start=1):
@@ -474,8 +481,17 @@ def aggiorna_viaggi(indirizzi):
         print(f"   tempi di viaggio: tutti gia' in cache ({len(indirizzi)} sedi)")
         return cache["destinazioni"]
 
+    # A scaglioni: se ce ne sono troppi nuovi, ne facciamo un po' per volta.
+    tetto = getattr(config, "MAX_NUOVI_VIAGGI_PER_GIRO", 0)
+    rimandati = 0
+    if tetto and len(da_calcolare) > tetto:
+        rimandati = len(da_calcolare) - tetto
+        da_calcolare = da_calcolare[:tetto]
+
     arrivo = prossimo_arrivo_scolastico()
     print(f"   calcolo {len(da_calcolare)} percorsi (arrivo entro {arrivo} UTC)")
+    if rimandati:
+        print(f"   altri {rimandati} indirizzi li faremo nei prossimi giri")
 
     for numero, indirizzo in enumerate(da_calcolare, start=1):
         voce = dict(cache["destinazioni"].get(indirizzo) or {})

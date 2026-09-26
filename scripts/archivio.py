@@ -35,7 +35,26 @@ def carica():
     except json.JSONDecodeError:
         print("   ATTENZIONE: archivio illeggibile, riparto da quello che c'e' sul sito")
         return {}
-    return {i["id"]: i for i in dati.get("interpelli", [])}
+    return {i["id"]: _completa(i) for i in dati.get("interpelli", [])}
+
+
+def _completa(interpello):
+    """
+    Aggiunge a una voce vecchia i campi introdotti dopo che era stata salvata.
+
+    Succede ogni volta che il progetto impara qualcosa di nuovo: quando sono
+    arrivati gli ordini di scuola, le 218 voci gia' in archivio non avevano il
+    campo "settore" e sparivano da tutte le ricerche. Meglio ricalcolarlo che
+    riscrivere a mano l'archivio.
+    """
+    classe = interpello.get("classe", "")
+    interpello.setdefault(
+        "settore",
+        config.SETTORE_PER_CLASSE.get(classe, config.SETTORE_PER_CLASSE["_default"]),
+    )
+    interpello.setdefault("sostegno", classe in config.CLASSI_DI_SOSTEGNO)
+    interpello.setdefault("classe_nome", config.CLASSI_DI_CONCORSO.get(classe, classe))
+    return interpello
 
 
 def salva(per_id):

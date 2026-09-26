@@ -2,15 +2,16 @@
  "_come_si_usa": "Questo file dice al robot delle notifiche quali interpelli devono avvisarti. Puoi generarlo dalla app (sezione Ricerche > Sincronizza le notifiche) e incollarlo qui.",
  "ricerche": [
   {
-   "nome": "A027, qualsiasi",
+   "nome": "Desiderati",
    "notifiche": true,
    "filtri": {
+    "settore": [],
     "stato": ["aperto"],
     "classi": ["A027"],
-    "corso": [],
+    "corso": ["Diurno"],
     "tipo": [],
     "durata": [],
-    "maxMinuti": null
+    "maxMinuti": 45
    }
   }
  ]

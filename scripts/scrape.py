@@ -275,6 +275,11 @@ def analizza(html):
             "scuola": valori[COL_SCUOLA],
             "classe": classe,
             "classe_nome": config.CLASSI_DI_CONCORSO[classe],
+            # infanzia/primaria oppure medie/superiori: sono due ricerche di
+            # lavoro diverse e la app le tiene separate
+            "settore": config.SETTORE_PER_CLASSE.get(
+                classe, config.SETTORE_PER_CLASSE["_default"]),
+            "sostegno": classe in config.CLASSI_DI_SOSTEGNO,
             "tipo_cattedra": tipo_cattedra,
             "ore_spezzone": ore,
             "corso": valori[COL_CORSO] or "Non indicato",

@@ -3,7 +3,8 @@
 App per telefono (Android e iPhone) che mostra gli **interpelli della provincia di Torino**
 su **elenco e mappa**, ordinati per **quanto sono vicini a casa** con i mezzi pubblici.
 
-- Classi seguite: **A027, A020, A026, A040, A041, A042, A047, A060**
+- Classi seguite: infanzia e primaria (**AAAA, ADAA, EEEE, ADEE**, sostegno compreso)
+  e secondarie (**A027, A020, A026, A040, A041, A042, A047, A060**)
 - I minuti sono calcolati da casa, per arrivare a scuola **entro le 8:00** di un giorno feriale
   (l'indirizzo di casa resta privato: vedi §6)
 - Ricerche salvabili con nome, preferiti a stellina, notifiche Telegram per i nuovi interpelli
@@ -236,6 +237,13 @@ Interpelli Monitor/
 └── .github/workflows/  il robot che aggiorna tutto ogni 30 minuti
 ```
 
+**Ordini di scuola**
+
+Le classi sono divise in due mondi — *infanzia e primaria* e *medie e superiori* — perche' sono
+due ricerche di lavoro diverse. Il filtro "Ordine di scuola" le separa, e le ricerche predefinite
+della app sono gia' impostate cosi'. Il sostegno resta con un codice suo (ADAA, ADEE) ed e'
+segnalato con un'etichetta sulle schede.
+
 **L'archivio storico**
 
 Il sito ufficiale tiene gli interpelli di un anno scolastico e poi **azzera tutto**: il 28 agosto 2026
@@ -243,6 +251,15 @@ la tabella e' passata da circa 4000 righe a zero. Per questo il progetto tiene u
 `data/archivio_interpelli.json`: ogni interpello visto almeno una volta resta li' per sempre, e la app
 mostra l'unione fra quello che c'e' adesso sul sito e tutto lo storico. Gli interpelli spariti dal sito
 sono segnalati nel dettaglio con un avviso.
+
+Se una classe viene aggiunta quando il sito ha gia' azzerato tutto, il suo storico si puo' provare
+a ripescare dall'Archivio di Internet:
+
+```bash
+.venv\Scripts\python scriptsecupera_da_archivio_internet.py
+```
+
+E' cosi' che sono rientrati i 2589 interpelli di primaria e infanzia del 2025/26.
 
 **Da dove arrivano i dati**
 

@@ -108,6 +108,12 @@ FUSO_ORARIO = "Europe/Rome"
 # --------------------------------------------------------------------------
 # chiave = codice usato dal sito, valore = nome esteso mostrato nella app
 CLASSI_DI_CONCORSO = {
+    # --- infanzia e primaria (il sostegno e' tenuto separato, con un codice suo)
+    "AAAA": "Infanzia",
+    "ADAA": "Sostegno infanzia",
+    "EEEE": "Primaria",
+    "ADEE": "Sostegno primaria",
+    # --- medie e superiori
     "A027": "Matematica e Fisica",
     "A020": "Fisica",
     "A026": "Matematica",
@@ -134,11 +140,38 @@ DURATE_SUPPLENZA = {
     "altro": "Altro",
 }
 
+# --------------------------------------------------------------------------
+# Ordine di scuola
+# --------------------------------------------------------------------------
+# Serve a dividere il mondo in due: le classi del primo ciclo e quelle delle
+# secondarie. Sono due ricerche di lavoro diverse, e mescolarle renderebbe
+# l'elenco inutilizzabile ora che ci sono migliaia di interpelli di primaria.
+SETTORI = {
+    "infanzia_primaria": "Infanzia e primaria",
+    "secondaria": "Medie e superiori",
+}
+
+SETTORE_PER_CLASSE = {
+    "AAAA": "infanzia_primaria",
+    "ADAA": "infanzia_primaria",
+    "EEEE": "infanzia_primaria",
+    "ADEE": "infanzia_primaria",
+    "_default": "secondaria",
+}
+
+# Quali classi sono di sostegno: la app lo segnala con un'etichetta, cosi' si
+# distinguono a colpo d'occhio dai posti comuni.
+CLASSI_DI_SOSTEGNO = {"ADAA", "ADEE"}
+
 # In quale tipo di scuola si insegna ogni classe di concorso.
 # Serve per mostrare, nel dettaglio, solo i plessi sensati: per A060 (tecnologia
 # alle medie) non ha senso elencare il liceo, e viceversa.
 GRADO_PER_CLASSE = {
-    "A060": "I_GRADO",     # scuola secondaria di primo grado (medie)
+    "AAAA": "INFANZIA",
+    "ADAA": "INFANZIA",
+    "EEEE": "PRIMARIA",
+    "ADEE": "PRIMARIA",
+    "A060": "I_GRADO",       # scuola secondaria di primo grado (medie)
     "_default": "II_GRADO",  # tutte le altre: superiori
 }
 
@@ -148,13 +181,21 @@ GRADO_PER_CLASSE = {
 # Vieni avvisato solo per gli interpelli che rispettano QUESTI criteri.
 # Sono volutamente piu' larghi dei filtri della app: meglio una notifica in piu'
 # che perdere un'occasione.
-NOTIFICA_CLASSI = list(CLASSI_DI_CONCORSO.keys())  # tutte e 7
+NOTIFICA_CLASSI = [c for c in CLASSI_DI_CONCORSO
+                   if SETTORE_PER_CLASSE.get(c, "secondaria") == "secondaria"]
 NOTIFICA_CORSI = ["Diurno", "Serale"]              # metti [] per accettare qualsiasi corso
 NOTIFICA_MAX_MINUTI = 60                           # None = nessun limite di distanza
 
 # --------------------------------------------------------------------------
 # Varie
 # --------------------------------------------------------------------------
+# Quante scuole NUOVE calcolare al massimo in un solo giro.
+# Con l'aggiunta di primaria e infanzia sono arrivati ~1000 indirizzi tutti
+# insieme: farli in un colpo solo significherebbe 3000 chiamate a Google e
+# tre quarti d'ora di esecuzione. Meglio a scaglioni: dopo qualche giro il
+# lavoro e' finito e da li' in poi non si calcola quasi piu' niente.
+MAX_NUOVI_VIAGGI_PER_GIRO = 120
+
 # Ogni quanti giorni ricalcolare un tempo di viaggio gia' in cache.
 # I tempi cambiano poco (cambio orario GTT), 30 giorni e' un buon compromesso.
 GIORNI_VALIDITA_CACHE_VIAGGI = 30

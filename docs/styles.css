@@ -233,6 +233,7 @@ main {
 }
 
 .lista { display: flex; flex-direction: column; gap: 10px; }
+.mostra-altri { width: 100%; margin-top: 2px; }
 
 /* ---------- 5. SCHEDA INTERPELLO ---------- */
 .scheda {
@@ -301,6 +302,7 @@ main {
 .etichetta--cancellato { background: var(--rosso-tenue); color: var(--rosso); }
 .etichetta--scaduto { background: var(--ambra-tenue); color: var(--ambra); }
 .etichetta--nuovo   { background: var(--accento); color: #fff; }
+.etichetta--sostegno { background: var(--accento-tenue); color: var(--accento); }
 .etichetta--neutra  { background: transparent; border: 1px solid var(--bordo); text-transform: none; font-weight: 500; }
 
 .scheda__date {

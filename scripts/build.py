@@ -13,6 +13,7 @@ Si lancia cosi':
 Opzioni utili per fare prove:
     --cache        non riscarica la pagina del sito (usa l'ultima copia)
     --no-notifica  non manda notifiche
+    --senza-viaggi non chiama Google: usa solo i tempi gia' calcolati
 """
 
 import json
@@ -59,6 +60,19 @@ def _viaggio_da_cache(indirizzo, viaggi):
     }
 
 
+# Campi che nel file pubblicato non servono, o che la app ricava da sola.
+# Con quasi 3000 interpelli ogni campo inutile pesa: "classe_nome" ripetuto
+# 3000 volte sono un centinaio di KB che il telefono scarica per niente, visto
+# che i nomi delle classi stanno gia' nel dizionario "classi".
+def _alleggerisci(interpello):
+    magro = {k: v for k, v in interpello.items()
+             if k != "classe_nome" and v is not None and v != ""}
+    # questi due devono esserci sempre, anche vuoti: la app ci conta sopra
+    for campo in ("minuti", "km"):
+        magro[campo] = interpello.get(campo)
+    return magro
+
+
 def _casa_da_pubblicare():
     """
     Decide quanto della posizione di casa finisce nel file pubblicato.
@@ -97,7 +111,7 @@ def _casa_da_pubblicare():
     return pubblico
 
 
-def main(usa_cache=False, notifica=True):
+def main(usa_cache=False, notifica=True, senza_viaggi=False):
     print("\n1) Leggo la pagina degli interpelli")
     html = scrape.scarica_pagina(usa_cache=usa_cache)
     interpelli_sito = scrape.analizza(html)
@@ -141,8 +155,12 @@ def main(usa_cache=False, notifica=True):
         print(f"   {len(senza_anagrafica)} scuole non trovate in anagrafica: {sorted(senza_anagrafica)}")
 
     print("\n4) Calcolo i tempi di viaggio da casa")
-    viaggi = travel.aggiorna_viaggi(indirizzi)
-    travel.dimentica_indirizzi_non_piu_usati(indirizzi)
+    if senza_viaggi:
+        print("   saltato (--senza-viaggi): uso solo quello che c'e' gia' in cache")
+        viaggi = travel.carica_cache()["destinazioni"]
+    else:
+        viaggi = travel.aggiorna_viaggi(indirizzi)
+        travel.dimentica_indirizzi_non_piu_usati(indirizzi)
 
     print("\n5) Scrivo il file per la app")
     scuole_json = {}
@@ -176,6 +194,11 @@ def main(usa_cache=False, notifica=True):
     senza_tempo = 0
     for interpello in interpelli:
         scuola = scuole_json.get(interpello["codice_scuola"])
+        # Il nome scritto sul sito lo mettono le scuole a mano, e a volte e'
+        # il codice meccanografico in minuscolo ("tovc01000q") o una sigla
+        # diversa ogni volta. Quello dell'anagrafica e' sempre lo stesso.
+        if scuola and scuola.get("denominazione"):
+            interpello["scuola"] = scuola["denominazione"]
         viaggio = (scuola or {}).get("sede", {}).get("viaggio")
         interpello["minuti"] = (viaggio or {}).get("minuti")
         interpello["km"] = (viaggio or {}).get("km_strada") or (viaggio or {}).get("km")
@@ -201,12 +224,22 @@ def main(usa_cache=False, notifica=True):
         "github": {"repo": os.environ.get("GITHUB_REPOSITORY")},
         "classi": config.CLASSI_DI_CONCORSO,
         "durate": config.DURATE_SUPPLENZA,
+        "settori": config.SETTORI,
+        "settore_per_classe": {
+            classe: config.SETTORE_PER_CLASSE.get(
+                classe, config.SETTORE_PER_CLASSE["_default"])
+            for classe in config.CLASSI_DI_CONCORSO
+        },
         "grado_per_classe": config.GRADO_PER_CLASSE,
         "conteggi": {
             "totale": len(interpelli),
             "sul_sito": len(interpelli_sito),
             "archiviati": sum(1 for i in interpelli if i.get("archiviato")),
             "aperti": sum(1 for i in interpelli if i["stato"] == "aperto"),
+            "per_settore": {
+                settore: sum(1 for i in interpelli if i.get("settore") == settore)
+                for settore in config.SETTORI
+            },
             "senza_tempo_di_viaggio": senza_tempo,
         },
         # Serve alla app per spiegarti PERCHE' mancano i tempi di viaggio,
@@ -217,12 +250,12 @@ def main(usa_cache=False, notifica=True):
             "chiave_google": bool(travel.chiave_api()),
         },
         "scuole": scuole_json,
-        "interpelli": interpelli,
+        "interpelli": [_alleggerisci(i) for i in interpelli],
     }
 
     config.DOCS_DATA_DIR.mkdir(parents=True, exist_ok=True)
     config.FILE_APP_DATI.write_text(
-        json.dumps(dati_app, ensure_ascii=False, indent=1), encoding="utf-8"
+        json.dumps(dati_app, ensure_ascii=False, separators=(",", ":")), encoding="utf-8"
     )
     peso_kb = config.FILE_APP_DATI.stat().st_size / 1024
     print(f"   scritto {config.FILE_APP_DATI} ({peso_kb:.0f} KB)")
@@ -243,4 +276,6 @@ def main(usa_cache=False, notifica=True):
 
 
 if __name__ == "__main__":
-    main(usa_cache="--cache" in sys.argv, notifica="--no-notifica" not in sys.argv)
+    main(usa_cache="--cache" in sys.argv,
+         notifica="--no-notifica" not in sys.argv,
+         senza_viaggi="--senza-viaggi" in sys.argv)
