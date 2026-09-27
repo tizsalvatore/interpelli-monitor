@@ -29493,6 +29493,746 @@
    },
    "errore": null,
    "aggiornato": "2026-09-27"
+  },
+  "Viale IV Novembre 10, 10050 Sant'Antonino Di Susa, Italia": {
+   "lat": 45.110177,
+   "lng": 7.276030299999999,
+   "indirizzo_google": "Viale IV Novembre, 10, 10050 Sant'Antonino di Susa TO, Italia",
+   "precisione": "GEOMETRIC_CENTER",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 69,
+    "km": 39.8,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 42,
+    "km": 51.0
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Viale IV Novembre 11, 10054 Cesana Torinese, Italia": {
+   "lat": 44.95147679999999,
+   "lng": 6.7944827,
+   "indirizzo_google": "Viale 4 Novembre, 11, 10054 Cesana Torinese TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 167,
+    "km": 96.7,
+    "cambi": 3,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "1510",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "285-275",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 78,
+    "km": 103.9
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Viale Kennedy 21, 10042 Nichelino, Italia": {
+   "lat": 44.9907929,
+   "lng": 7.6518211,
+   "indirizzo_google": "Via J. F. Kennedy, 21, 10042 Nichelino TO, Italia",
+   "precisione": "RANGE_INTERPOLATED",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 32,
+    "km": 4.4,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "35",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 11,
+    "km": 6.1
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Viale Kennedy 24, 10064 Pinerolo, Italia": {
+   "lat": 44.888473,
+   "lng": 7.344540200000001,
+   "indirizzo_google": "Viale Kennedy, 24, 10064 Pinerolo TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 69,
+    "km": 37.9,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "34",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "282",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 34,
+    "km": 36.3
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Viale Kennedy 40, 10042 Nichelino, Italia": {
+   "lat": 44.9893406,
+   "lng": 7.6558833,
+   "indirizzo_google": "Via J. F. Kennedy, 40, 10042 Nichelino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 25,
+    "km": 4.9,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "84",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 10,
+    "km": 5.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Viale Liberazione 5, 10015 Ivrea, Italia": {
+   "lat": 45.4505615,
+   "lng": 7.8775554,
+   "indirizzo_google": "Viale della Liberazione, 5, 10070 Ivrea TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 113,
+    "km": 79.0,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "2",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "265",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 58,
+    "km": 85.0
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Viale Nuvoli 12, 10098 Rivoli, Italia": {
+   "lat": 45.0773,
+   "lng": 7.5223801,
+   "indirizzo_google": "Viale Nuvoli, 12, 10098 Rivoli TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 79,
+    "km": 20.6,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "43",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "1432",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 24,
+    "km": 27.8
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Viale Nuvoli 12, 10198 Rivoli, Italia": {
+   "lat": 45.0773,
+   "lng": 7.5223801,
+   "indirizzo_google": "Viale Nuvoli, 12, 10098 Rivoli TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 79,
+    "km": 20.6,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "43",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "1432",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 24,
+    "km": 27.8
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Viale Piave 20, 10036 Settimo Torinese, Italia": {
+   "lat": 45.1326478,
+   "lng": 7.768357699999999,
+   "indirizzo_google": "Viale Piave, 20, 10036 Settimo Torinese TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 50,
+    "km": 20.1,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 39,
+    "km": 18.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Viale Primo Maggio, 10060 Villar Pellice, Italia": {
+   "lat": 44.8216611,
+   "lng": 7.304172,
+   "indirizzo_google": "Via I° Maggio, 10060 Bricherasio TO, Italia",
+   "precisione": "GEOMETRIC_CENTER",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 95,
+    "km": 46.8,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "43",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "284",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "284",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 40,
+    "km": 43.3
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Viale Radich 3, 10095 Grugliasco, Italia": {
+   "lat": 45.0688969,
+   "lng": 7.6050565,
+   "indirizzo_google": "Viale B. Radich, 3, 10095 Grugliasco TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 48,
+    "km": 13.3,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 20,
+    "km": 9.6
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Viale Resistenza 27, 10028 Trofarello, Italia": {
+   "lat": 44.9882345,
+   "lng": 7.741399299999999,
+   "indirizzo_google": "Viale della Resistenza, 27, 10028 Trofarello TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 40,
+    "km": 9.4,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "45",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 15,
+    "km": 10.2
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Viale Rimembranza 3, 10070 Viù, Italia": {
+   "lat": 45.2376029,
+   "lng": 7.3761392,
+   "indirizzo_google": "Viale Rimembranza, 3, 10070 Viu' TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": null,
+   "auto": {
+    "minuti": 66,
+    "km": 74.6
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Viale Rimembranza 4, 10070 Viù, Italia": {
+   "lat": 45.2378823,
+   "lng": 7.375813399999999,
+   "indirizzo_google": "Viale Rimembranza, 4, 10070 Viù TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": null,
+   "auto": {
+    "minuti": 66,
+    "km": 74.5
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Viale Rimembranza N. 9, 10066 Torre Pellice, Italia": {
+   "lat": 44.8221244,
+   "lng": 7.221462,
+   "indirizzo_google": "Viale della Rimembranza, 9, 10066 Torre Pellice TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 107,
+    "km": 52.3,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "901",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 52,
+    "km": 51.2
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Viale Roma 5, 10020 Cambiano, Italia": {
+   "lat": 44.9702012,
+   "lng": 7.777558999999999,
+   "indirizzo_google": "Viale Roma, 5, 10020 Cambiano TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 44,
+    "km": 13.0,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "45",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 16,
+    "km": 17.1
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Viale San Giorio 7, 10098 Rivoli, Italia": {
+   "lat": 45.0749803,
+   "lng": 7.5551217,
+   "indirizzo_google": "Viale S. Giorio, 7, 10098 Rivoli TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 63,
+    "km": 17.5,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     },
+     {
+      "nome": "1068",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 22,
+    "km": 27.0
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Viale Signorini N.11, 10029 Villastellone, Italia": {
+   "lat": 44.9195915,
+   "lng": 7.742377899999998,
+   "indirizzo_google": "Viale V. Signorini, 11, 10029 Villastellone TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 61,
+    "km": 19.6,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "45",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "2073",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 17,
+    "km": 14.7
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Viale Stazione 7, 10070 Ceres, Italia": {
+   "lat": 45.312593,
+   "lng": 7.388851999999999,
+   "indirizzo_google": "Viale Stazione, 7, 10070 Ceres TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 127,
+    "km": 54.4,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "3971",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 62,
+    "km": 72.1
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Viale Stazione Sangone 15, 10024 Moncalieri, Italia": {
+   "lat": 45.0012845,
+   "lng": 7.668929,
+   "indirizzo_google": "Viale Stazione Sangone, 15, 10024 Moncalieri TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 25,
+    "km": 3.9,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "81",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 7,
+    "km": 3.6
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Vicolo Bianchetti 17, 10090 San Giorgio Canavese, Italia": {
+   "lat": 45.33634319999999,
+   "lng": 7.794572199999998,
+   "indirizzo_google": "Vicolo Bianchetti, 17, 10090 San Giorgio Canavese TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 116,
+    "km": 63.9,
+    "cambi": 3,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "3316",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "4108",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 47,
+    "km": 68.1
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Vicolo Caterina Cortina 1, 10070 Levone, Italia": {
+   "lat": 45.31746769999999,
+   "lng": 7.606640199999999,
+   "indirizzo_google": "Vicolo Caterina Cortina, 10070 Levone TO, Italia",
+   "precisione": "GEOMETRIC_CENTER",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 138,
+    "km": 50.5,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
+     },
+     {
+      "nome": "234",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 58,
+    "km": 69.5
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Vicolo Cotta 2, 10024 Moncalieri, Italia": {
+   "lat": 45.0013495,
+   "lng": 7.685210499999999,
+   "indirizzo_google": "Vicolo Cotta, 2, 10024 Moncalieri TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 25,
+    "km": 4.0,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "45/",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 10,
+    "km": 4.0
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Vicolo Cottolengo, 10060 Garzigliana, Italia": {
+   "lat": 44.9458682,
+   "lng": 7.2254608,
+   "indirizzo_google": "Via S. Giuseppe Cottolengo, 10060 Pinasca TO, Italia",
+   "precisione": "GEOMETRIC_CENTER",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 107,
+    "km": 52.6,
+    "cambi": 3,
+    "linee": [
+     {
+      "nome": "43",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "284",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "275",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "281",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 46,
+    "km": 51.8
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Vicolo Peretto 8, 10010 Mercenasco, Italia": {
+   "lat": 45.3568656,
+   "lng": 7.8819288,
+   "indirizzo_google": "Vicolo Peretto, 8, 10010 Mercenasco TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 101,
+    "km": 67.5,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "2",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "265",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 53,
+    "km": 78.6
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Vicolo Scuole 1, 10070 Front, Italia": {
+   "lat": 45.2794882,
+   "lng": 7.665062900000001,
+   "indirizzo_google": "Vicolo Scuole, 1, 10070 Front TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 93,
+    "km": 36.1,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "3092",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 49,
+    "km": 61.9
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
+  },
+  "Vicolo Scuole 8, 10070 Front, Italia": {
+   "lat": 45.2795814,
+   "lng": 7.6650353,
+   "indirizzo_google": "Vicolo Scuole, 8, 10070 Front TO, Italia",
+   "precisione": "RANGE_INTERPOLATED",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 93,
+    "km": 36.1,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "18",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "3092",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 49,
+    "km": 61.9
+   },
+   "errore": null,
+   "aggiornato": "2026-09-27"
   }
  }
 }
