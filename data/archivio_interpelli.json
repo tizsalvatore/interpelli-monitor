@@ -1,6 +1,6 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-09-27T01:58:04+02:00",
+ "aggiornato": "2026-09-27T02:09:10+02:00",
  "quanti": 3543,
  "interpelli": [
   {
@@ -199,7 +199,7 @@
    "data_scadenza_testo": "2026-09-26",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": false
+   "scaduto": true
   },
   {
    "id": "1bd3bf6572d0",
@@ -243,7 +243,7 @@
    "data_scadenza_testo": "2026-09-26",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": false
+   "scaduto": true
   },
   {
    "id": "a18c34ec65d7",
@@ -265,7 +265,7 @@
    "data_scadenza_testo": "2026-09-26",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": false
+   "scaduto": true
   },
   {
    "id": "acf2fc9e1828",
@@ -309,7 +309,7 @@
    "data_scadenza_testo": "2026-09-26",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": false
+   "scaduto": true
   },
   {
    "id": "6314bc7ab906",
@@ -331,7 +331,7 @@
    "data_scadenza_testo": "2026-09-26",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": false
+   "scaduto": true
   },
   {
    "id": "ab19b74d8c75",
@@ -441,7 +441,7 @@
    "data_scadenza_testo": "2026-09-26",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": false
+   "scaduto": true
   },
   {
    "id": "84d73a264082",
@@ -507,7 +507,7 @@
    "data_scadenza_testo": "2026-09-26",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": false
+   "scaduto": true
   },
   {
    "id": "8b28dece6457",
@@ -529,7 +529,7 @@
    "data_scadenza_testo": "2026-09-26",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": false
+   "scaduto": true
   },
   {
    "id": "75f4cddc787f",
@@ -639,7 +639,7 @@
    "data_scadenza_testo": "2026-09-26",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": false
+   "scaduto": true
   },
   {
    "id": "0930020b7f6e",
@@ -661,7 +661,7 @@
    "data_scadenza_testo": "2026-09-26",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": false
+   "scaduto": true
   },
   {
    "id": "972ba08b09e6",
@@ -705,7 +705,7 @@
    "data_scadenza_testo": "2026-09-26",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": false
+   "scaduto": true
   },
   {
    "id": "1c1892092185",
@@ -771,7 +771,7 @@
    "data_scadenza_testo": "2026-09-26",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": false
+   "scaduto": true
   },
   {
    "id": "b50426e329f9",
@@ -793,7 +793,7 @@
    "data_scadenza_testo": "2026-09-26",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": false
+   "scaduto": true
   },
   {
    "id": "ea3bfec3130f",
@@ -6073,7 +6073,7 @@
    "data_scadenza_testo": "2026-09-26",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": false
+   "scaduto": true
   },
   {
    "id": "6e2a59a91c84",
@@ -55617,7 +55617,7 @@
    "data_scadenza_testo": "2026-09-26",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": false
+   "scaduto": true
   },
   {
    "id": "3df9a74e8b88",
