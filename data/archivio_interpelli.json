@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-09-27T17:45:27+02:00",
- "quanti": 3543,
+ "aggiornato": "2026-09-27T17:55:34+02:00",
+ "quanti": 3544,
  "interpelli": [
   {
    "id": "887831df5829",
@@ -156,6 +156,28 @@
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": true
+  },
+  {
+   "id": "1d84030d591d",
+   "codice_scuola": "TOIC895002",
+   "scuola": "IC BORGARETTO BEINASCO",
+   "classe": "ADEE",
+   "classe_nome": "Sostegno primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": true,
+   "tipo_cattedra": "Interna Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2026-09-27",
+   "data_interpello_testo": "27/09/2026",
+   "stato": "aperto",
+   "data_scadenza": "2028-09-26",
+   "data_scadenza_testo": "2026-09-28",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
   },
   {
    "id": "5ffe635a60c8",
