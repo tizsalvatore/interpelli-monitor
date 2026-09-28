@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-09-28T09:26:17+02:00",
- "quanti": 3546,
+ "aggiornato": "2026-09-28T09:36:46+02:00",
+ "quanti": 3547,
  "interpelli": [
   {
    "id": "887831df5829",
@@ -156,6 +156,28 @@
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": true
+  },
+  {
+   "id": "6ab84ef46640",
+   "codice_scuola": "TOIC836006",
+   "scuola": "IC NONE",
+   "classe": "ADEE",
+   "classe_nome": "Sostegno primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": true,
+   "tipo_cattedra": "Interna Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 2026-12-22",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-10-28",
+   "data_interpello_testo": "28/10/2026",
+   "stato": "aperto",
+   "data_scadenza": "2029-09-26",
+   "data_scadenza_testo": "2026-09-29",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
   },
   {
    "id": "b4afb3d96e80",
