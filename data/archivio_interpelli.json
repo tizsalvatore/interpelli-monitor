@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-09-28T09:36:46+02:00",
- "quanti": 3547,
+ "aggiornato": "2026-09-28T09:46:51+02:00",
+ "quanti": 3548,
  "interpelli": [
   {
    "id": "887831df5829",
@@ -172,11 +172,11 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2026-10-28",
    "data_interpello_testo": "28/10/2026",
-   "stato": "aperto",
+   "stato": "cancellato",
    "data_scadenza": "2029-09-26",
    "data_scadenza_testo": "2026-09-29",
-   "note_cancellazione": "",
-   "data_cancellazione": null,
+   "note_cancellazione": "errore periodo assenza",
+   "data_cancellazione": "2026-09-28",
    "scaduto": false
   },
   {
@@ -194,6 +194,28 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2026-09-29",
    "data_interpello_testo": "29/09/2026",
+   "stato": "aperto",
+   "data_scadenza": "2029-09-26",
+   "data_scadenza_testo": "2026-09-29",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "eab7015a9f5f",
+   "codice_scuola": "TOIC8AB00N",
+   "scuola": "IC IVREA II",
+   "classe": "ADAA",
+   "classe_nome": "Sostegno infanzia",
+   "settore": "infanzia_primaria",
+   "sostegno": true,
+   "tipo_cattedra": "Interna Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Disponibile fino a 10 giorni",
+   "durata_tipo": "dieci_giorni",
+   "data_interpello": "2026-09-28",
+   "data_interpello_testo": "28/09/2026",
    "stato": "aperto",
    "data_scadenza": "2029-09-26",
    "data_scadenza_testo": "2026-09-29",
