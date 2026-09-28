@@ -227,10 +227,13 @@ def main(usa_cache=False, notifica=True, senza_viaggi=False):
             senza_tempo += 1
 
     # Ordine: prima i piu' vicini; quelli senza tempo finiscono in fondo.
-    interpelli.sort(key=lambda i: (
-        i["minuti"] if i["minuti"] is not None else 10_000,
-        i["data_interpello"] or "",
-    ))
+    # Due ordinamenti in fila. Python ordina in modo "stabile" (non rimescola
+    # cio' che e' gia' a posto), quindi prima mettiamo tutto dal piu' recente
+    # al piu' vecchio, poi riordiniamo per distanza: il risultato e' "prima i
+    # piu' vicini, e a parita' di distanza prima i piu' recenti".
+    # Prima era il contrario e sembrava che le date andassero a caso.
+    interpelli.sort(key=lambda i: i.get("data_interpello") or "", reverse=True)
+    interpelli.sort(key=lambda i: i["minuti"] if i["minuti"] is not None else 10_000)
 
     adesso = datetime.now(ZoneInfo(config.FUSO_ORARIO))
     dati_app = {

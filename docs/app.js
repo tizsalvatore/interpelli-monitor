@@ -71,6 +71,7 @@ const CHIAVI = {
   visti: 'interpelli:visti',
   copiaDati: 'interpelli:copia-dati',
   ultimaVista: 'interpelli:ultima-vista',
+  ordine: 'interpelli:ordine',
 };
 
 const stato = {
@@ -82,6 +83,12 @@ const stato = {
   preferiti: new Set(),
   visti: new Set(),
   ricerca: '',              // testo cercato: sta nel pannello dei filtri
+  // Come sono ordinati i risultati: 'tempo' (i piu' vicini) o 'data'
+  // (i piu' recenti). NON fa parte delle ricerche salvate: e' una
+  // preferenza tua, che resta com'e' anche cambiando ricerca o
+  // riaprendo la app. Prima stava dentro i filtri e si riazzerava a
+  // ogni cambio di pillola, dando l'impressione di un ordine casuale.
+  ordine: 'tempo',
   vista: 'lista',           // 'lista' | 'ricerche' | 'preferiti' | 'info'
   modo: 'elenco',           // 'elenco' | 'mappa'
   mappa: null,
@@ -264,8 +271,10 @@ function interpelliFiltrati(filtri = stato.filtri, testoCercato = stato.ricerca)
     return true;
   });
 
-  if (filtri.ordine === 'data') {
-    elenco = elenco.slice().sort((a, b) => (b.data_interpello || '').localeCompare(a.data_interpello || ''));
+  // L'ordine arriva dalla preferenza, non dai filtri della ricerca.
+  if (stato.ordine === 'data') {
+    elenco = elenco.slice().sort(
+      (a, b) => (b.data_interpello || '').localeCompare(a.data_interpello || ''));
   }
   return elenco;
 }
@@ -330,7 +339,7 @@ function stessiFiltri(a, b) {
   return CAMPI_ELENCO.every(
     (campo) => JSON.stringify((a[campo] || []).slice().sort())
              === JSON.stringify((b[campo] || []).slice().sort())
-  ) && a.maxMinuti === b.maxMinuti && a.ordine === b.ordine;
+  ) && a.maxMinuti === b.maxMinuti;
 }
 
 function contaFiltriAttivi() {
@@ -495,7 +504,7 @@ function disegnaTutto() {
 
   // Se i filtri sono cambiati ripartiamo dal primo blocco, altrimenti
   // restiamo dove eravamo (e' il caso del pulsante "mostra altri").
-  const chiave = JSON.stringify([stato.filtri, stato.ricerca, stato.vista]);
+  const chiave = JSON.stringify([stato.filtri, stato.ricerca, stato.vista, stato.ordine]);
   if (chiave !== stato.ultimaChiaveElenco) {
     stato.ultimaChiaveElenco = chiave;
     stato.quanteSchede = SCHEDE_PER_BLOCCO;
@@ -534,10 +543,11 @@ function disegnaRiepilogo(elenco, mostrati = elenco.length) {
   // di continuo, non ha senso nasconderla dentro il pannello dei filtri.
   const ordina = nuovo('div', 'interruttore-vista interruttore-vista--piccolo');
   [['tempo', 'Più vicini'], ['data', 'Più recenti']].forEach(([valore, etichetta]) => {
-    const bottone = nuovo('button', stato.filtri.ordine === valore ? 'attiva' : null, etichetta);
+    const bottone = nuovo('button', stato.ordine === valore ? 'attiva' : null, etichetta);
     bottone.addEventListener('click', () => {
-      if (stato.filtri.ordine === valore) return;
-      stato.filtri = { ...stato.filtri, ordine: valore };
+      if (stato.ordine === valore) return;
+      stato.ordine = valore;
+      scriviMemoria(CHIAVI.ordine, valore);   // resta cosi' anche domani
       disegnaTutto();
     });
     ordina.appendChild(bottone);
@@ -659,7 +669,7 @@ function disegnaStatoVuoto() {
     // pillola giusta invece di ritrovarsi con nessuna ricerca attiva.
     const tutte = stato.ricerche.find((r) => r.id === 'tutte');
     if (tutte) return applicaRicerca(tutte);
-    stato.filtri = { ...FILTRI_VUOTI, ordine: stato.filtri.ordine };
+    stato.filtri = { ...FILTRI_VUOTI };
     stato.ricercaAttiva = null;
     disegnaTutto();
   });
@@ -1782,6 +1792,7 @@ async function avvia() {
   stato.preferiti = new Set(leggiMemoria(CHIAVI.preferiti, []));
   stato.visti = new Set(leggiMemoria(CHIAVI.visti, []));
   stato.modo = leggiMemoria(CHIAVI.ultimaVista, 'elenco');
+  stato.ordine = leggiMemoria(CHIAVI.ordine, 'tempo');
 
   // All'apertura applichiamo la prima ricerca salvata.
   const prima = stato.ricerche[0];
