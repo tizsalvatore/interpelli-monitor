@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-09-28T09:56:56+02:00",
- "quanti": 3549,
+ "aggiornato": "2026-09-28T10:07:01+02:00",
+ "quanti": 3550,
  "interpelli": [
   {
    "id": "887831df5829",
@@ -211,6 +211,28 @@
    "sostegno": false,
    "tipo_cattedra": "Spezzone",
    "ore_spezzone": "8 Spezzone",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2026-09-28",
+   "data_interpello_testo": "28/09/2026",
+   "stato": "aperto",
+   "data_scadenza": "2029-09-26",
+   "data_scadenza_testo": "2026-09-29",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "2d8ee89d08a8",
+   "codice_scuola": "TOIC81300D",
+   "scuola": "Istituto Comprensivo G. Rodari di Torre Pellice",
+   "classe": "ADEE",
+   "classe_nome": "Sostegno primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": true,
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "6 Spezzone",
    "corso": "Diurno",
    "durata": "Fino al 30 giugno",
    "durata_tipo": "fino_30_giugno",
