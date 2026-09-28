@@ -144,27 +144,114 @@ def _pulisci(testo):
     return "" if testo == "-" else testo        # il sito usa "-" per "vuoto"
 
 
+MESI_A_PAROLE = {
+    "gennaio": 1, "febbraio": 2, "marzo": 3, "aprile": 4, "maggio": 5, "giugno": 6,
+    "luglio": 7, "agosto": 8, "settembre": 9, "ottobre": 10, "novembre": 11,
+    "dicembre": 12,
+}
+
+
+def _data_valida(anno, mese, giorno):
+    """Controlla che la data abbia senso e la restituisce in formato ordinabile."""
+    if anno < 100:                      # "26" vuol dire 2026
+        anno += 2000
+    # Fuori da questa finestra e' sicuramente un errore di battitura della
+    # scuola: meglio nessuna data che una data sbagliata di quindici anni.
+    if not (2000 <= anno <= date.today().year + 5):
+        return None
+    try:
+        return date(anno, mese, giorno).isoformat()
+    except ValueError:                  # date impossibili tipo 31/02
+        return None
+
+
 def _leggi_data(testo):
     """
-    Trasforma una data scritta all'italiana in formato ordinabile (2026-05-13).
+    Trasforma una data scritta in un modo qualsiasi in formato ordinabile.
 
-    Il sito e' compilato a mano dalle scuole, quindi troviamo di tutto:
-    "13/05/2026", "09/09/25", "20/05/2026 ore 08:30", "25/05/2026 ENTRO LE 7.30".
-    Cerchiamo il primo pezzo che assomiglia a una data e ignoriamo il resto.
+    Il sito e' compilato a mano dalle scuole e nel 2026 ha pure cambiato
+    formato: la colonna della scadenza usa ora quello internazionale. In una
+    sola giornata si trovano tutti questi:
+
+        2026-10-08           <- internazionale (anno-mese-giorno)
+        28/09/2026           <- all'italiana
+        23.09.2026           <- con i punti
+        23/092026            <- separatore dimenticato
+        22/09/26             <- anno a due cifre
+        15 settembre 2026    <- mese scritto a parole
+        28/09/2/2026         <- refuso, con un pezzo di troppo in mezzo
+        20/05/2026 ore 08:30 <- con l'orario appiccicato
+
+    L'ordine dei tentativi conta parecchio:
+    - l'internazionale va per primo, se no "2026-10-08" letto all'italiana
+      diventerebbe "26 ottobre 2008";
+    - quelli ancorati all'inizio della cella vanno prima di quello che cerca
+      ovunque, se no in "28/09/2/2026" si aggancerebbe a "09/2/2026" e
+      leggerebbe 9 febbraio invece del 28 settembre.
     """
     if not testo:
         return None
-    # Accettiamo 13/05/2026, 13-05-2026 e anche 19.09.2025 (usato da qualche scuola).
+    testo = testo.strip()
+    tentativi = []
+
+    # 1) internazionale: anno-mese-giorno
+    trovato = re.search(r"(\d{4})-(\d{1,2})-(\d{1,2})", testo)
+    if trovato:
+        anno, mese, giorno = (int(x) for x in trovato.groups())
+        tentativi.append((anno, mese, giorno))
+
+    # 2) mese scritto a parole
+    trovato = re.search(r"(\d{1,2})\s+([a-zA-Zà-ü]+)\s+(\d{2,4})", testo)
+    if trovato and trovato.group(2).lower() in MESI_A_PAROLE:
+        tentativi.append((int(trovato.group(3)),
+                          MESI_A_PAROLE[trovato.group(2).lower()],
+                          int(trovato.group(1))))
+
+    # 3) all'italiana, ancorata all'inizio della cella
+    trovato = re.match(r"(\d{1,2})[/.\-](\d{1,2})[/.\-](\d{2,4})", testo)
+    if trovato:
+        giorno, mese, anno = (int(x) for x in trovato.groups())
+        tentativi.append((anno, mese, giorno))
+
+    # 4) separatore dimenticato fra mese e anno: "23/092026"
+    trovato = re.match(r"(\d{1,2})[/.\-](\d{2})(\d{4})", testo)
+    if trovato:
+        giorno, mese, anno = (int(x) for x in trovato.groups())
+        tentativi.append((anno, mese, giorno))
+
+    # 5) giorno e mese all'inizio, anno a quattro cifre pescato dove capita
+    inizio = re.match(r"(\d{1,2})[/.\-](\d{1,2})(?![0-9])", testo)
+    anno_intero = re.search(r"(?<![0-9])(\d{4})(?![0-9])", testo)
+    if inizio and anno_intero:
+        tentativi.append((int(anno_intero.group(1)),
+                          int(inizio.group(2)), int(inizio.group(1))))
+
+    # 6) ultima risorsa: una data all'italiana in mezzo al testo
     trovato = re.search(r"(\d{1,2})[/.\-](\d{1,2})[/.\-](\d{2,4})", testo)
-    if not trovato:
-        return None
-    giorno, mese, anno = (int(x) for x in trovato.groups())
-    if anno < 100:                 # "25" vuol dire 2025
-        anno += 2000
-    try:
-        return date(anno, mese, giorno).isoformat()
-    except ValueError:             # date impossibili tipo 31/02
-        return None
+    if trovato:
+        giorno, mese, anno = (int(x) for x in trovato.groups())
+        tentativi.append((anno, mese, giorno))
+
+    for anno, mese, giorno in tentativi:
+        risultato = _data_valida(anno, mese, giorno)
+        if risultato:
+            return risultato
+    return None
+
+
+def _senza_doppione(testo):
+    """
+    Dal 2026 il sito scrive il tipo di cattedra due volte, separato da una
+    tabulazione: "Interna\tInterna", "Spezzone per numero ore: 12\tSpezzone".
+    Teniamo solo la prima parte.
+    """
+    testo = (testo or "").split("\t")[0].strip()
+    # Nell'archivio la tabulazione e' gia' diventata uno spazio, quindi
+    # togliamo anche l'ultima parola quando ripete la prima.
+    parole = testo.split()
+    if len(parole) >= 2 and parole[-1] == parole[0]:
+        parole = parole[:-1]
+    return " ".join(parole)
 
 
 def _leggi_tipo_cattedra(testo):
@@ -245,7 +332,12 @@ def analizza(html):
         if classe not in config.CLASSI_DI_CONCORSO:
             continue  # non e' una delle tue 7 classi: la saltiamo
 
-        tipo_cattedra, ore = _leggi_tipo_cattedra(valori[COL_TIPO_CATTEDRA])
+        # Nota: l'impronta qui sotto resta calcolata sul testo grezzo. Se la
+        # ricavassimo dal valore ripulito, tutti gli interpelli letti nei
+        # giorni scorsi cambierebbero identificativo e finirebbero in archivio
+        # una seconda volta (portandosi via preferiti e notifiche gia' fatte).
+        tipo_cattedra, ore = _leggi_tipo_cattedra(
+            _senza_doppione(_pulisci(celle[COL_TIPO_CATTEDRA].get_text())))
         data_interpello = _leggi_data(valori[COL_DATA_INTERPELLO])
         data_scadenza = _leggi_data(valori[COL_SCADENZA])
         stato = (valori[COL_STATO] or "sconosciuto").lower()

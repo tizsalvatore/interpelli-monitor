@@ -141,6 +141,20 @@ DURATE_SUPPLENZA = {
 }
 
 # --------------------------------------------------------------------------
+# Stati di un interpello
+# --------------------------------------------------------------------------
+# "scaduto" non esiste sul sito: lo calcoliamo noi. Sono gli interpelli che il
+# sito continua a dare per aperti anche se il termine per candidarsi e' gia'
+# passato (le scuole spesso si dimenticano di chiuderli). Non sono ne' aperti
+# ne' chiusi: meritano una categoria a parte, per non illudere e non nascondere.
+STATI = {
+    "aperto": "Aperti",
+    "scaduto": "Termine passato",
+    "chiuso": "Chiusi",
+    "cancellato": "Cancellati",
+}
+
+# --------------------------------------------------------------------------
 # Ordine di scuola
 # --------------------------------------------------------------------------
 # Serve a dividere il mondo in due: le classi del primo ciclo e quelle delle

@@ -283,6 +283,19 @@ function nomeClasse(codice) {
   return (stato.dati.classi || {})[codice] || '';
 }
 
+// Come si legge uno stato sull'etichetta della scheda (minuscolo e singolare,
+// mentre nei filtri sono al plurale: "Aperti", "Termine passato"...).
+const ETICHETTA_STATO = {
+  aperto: 'aperto',
+  scaduto: 'termine passato',
+  chiuso: 'chiuso',
+  cancellato: 'cancellato',
+};
+
+function nomeStato(codice) {
+  return (stato.dati.stati || {})[codice] || primaMaiuscola(codice);
+}
+
 function nomeSettore(codice) {
   return (stato.dati.settori || {})[codice] || codice;
 }
@@ -332,7 +345,7 @@ function contaFiltriAttivi() {
 function descriviFiltri(filtri) {
   const pezzi = [];
   if (filtri.settore.length) pezzi.push(filtri.settore.map(nomeSettore).join('/'));
-  if (filtri.stato.length) pezzi.push(filtri.stato.map(primaMaiuscola).join('/'));
+  if (filtri.stato.length) pezzi.push(filtri.stato.map(nomeStato).join('/'));
   if (filtri.classi.length) {
     // Con una o due classi c'e' spazio per il nome della materia; con di piu'
     // restiamo ai codici, altrimenti la riga diventa illeggibile.
@@ -564,9 +577,9 @@ function creaScheda(interpello) {
   if (interpello.stato === 'aperto' && !stato.visti.has(interpello.id)) {
     etichette.appendChild(nuovo('span', 'etichetta etichetta--nuovo', 'nuovo'));
   }
-  etichette.appendChild(nuovo('span', `etichetta etichetta--${interpello.stato}`, interpello.stato));
+  etichette.appendChild(nuovo('span', `etichetta etichetta--${interpello.stato}`,
+    ETICHETTA_STATO[interpello.stato] || interpello.stato));
   if (interpello.sostegno) etichette.appendChild(nuovo('span', 'etichetta etichetta--sostegno', 'sostegno'));
-  if (interpello.scaduto) etichette.appendChild(nuovo('span', 'etichetta etichetta--scaduto', 'termine passato'));
   if (interpello.corso && interpello.corso !== 'Diurno') {
     etichette.appendChild(nuovo('span', 'etichetta etichetta--neutra', interpello.corso));
   }
@@ -731,7 +744,7 @@ function aggiornaBarraFiltri() {
   const f = stato.filtri;
   const attivi = [];
   if (f.settore.length) attivi.push({ campo: 'settore', testo: f.settore.map(nomeSettore).join(', ') });
-  if (f.stato.length) attivi.push({ campo: 'stato', testo: f.stato.map(primaMaiuscola).join(', ') });
+  if (f.stato.length) attivi.push({ campo: 'stato', testo: f.stato.map(nomeStato).join(', ') });
   if (f.classi.length) attivi.push({ campo: 'classi', testo: f.classi.join(', ') });
   if (f.corso.length) attivi.push({ campo: 'corso', testo: f.corso.join(', ') });
   if (f.tipo.length) attivi.push({ campo: 'tipo', testo: f.tipo.join(', ') });
@@ -1068,7 +1081,7 @@ function finestrellaMappa(gruppo) {
     voce.append(
       nuovo('strong', null, interpello.classe),
       nuovo('span', null, `${nomeClasse(interpello.classe)} · ${interpello.durata || ''}`),
-      nuovo('span', `etichetta etichetta--${interpello.stato}`, interpello.stato),
+      nuovo('span', `etichetta etichetta--${interpello.stato}`, ETICHETTA_STATO[interpello.stato] || interpello.stato),
     );
     voce.addEventListener('click', () => {
       stato.mappa.closePopup();
@@ -1095,8 +1108,9 @@ function apriDettaglio(interpello) {
 
   const etichette = nuovo('div', 'etichette');
   etichette.style.marginBottom = '12px';
-  etichette.appendChild(nuovo('span', `etichetta etichetta--${interpello.stato}`, interpello.stato));
-  if (interpello.scaduto) etichette.appendChild(nuovo('span', 'etichetta etichetta--scaduto', 'termine già passato'));
+  etichette.appendChild(nuovo('span', `etichetta etichetta--${interpello.stato}`,
+    ETICHETTA_STATO[interpello.stato] || interpello.stato));
+  if (interpello.sostegno) etichette.appendChild(nuovo('span', 'etichetta etichetta--sostegno', 'sostegno'));
   corpo.appendChild(etichette);
 
   if (interpello.archiviato) {
@@ -1279,11 +1293,11 @@ function disegnaPannelloFiltri() {
     })),
     f.settore, 'settore');
 
-  gruppoDiChip($('filtroStato'), [
-    { valore: 'aperto', etichetta: 'Aperti' },
-    { valore: 'chiuso', etichetta: 'Chiusi' },
-    { valore: 'cancellato', etichetta: 'Cancellati' },
-  ], f.stato, 'stato');
+  gruppoDiChip($('filtroStato'),
+    Object.entries(stato.dati.stati || {}).map(([codice, nome]) => ({
+      valore: codice, etichetta: nome,
+    })),
+    f.stato, 'stato');
 
   // Le classi le mostriamo con il nome della materia accanto al codice:
   // "A027" da solo dice poco quando le scegli.

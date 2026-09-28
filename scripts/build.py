@@ -18,8 +18,9 @@ Opzioni utili per fare prove:
 
 import json
 import os
+import re
 import sys
-from datetime import datetime
+from datetime import date, datetime
 from zoneinfo import ZoneInfo
 
 import archivio
@@ -73,6 +74,12 @@ def _alleggerisci(interpello):
     return magro
 
 
+def _date_italiane(testo):
+    """Riscrive "fino al 2027-06-30" come "fino al 30/06/2027"."""
+    return re.sub(r"(\d{4})-(\d{2})-(\d{2})",
+                  lambda t: f"{t.group(3)}/{t.group(2)}/{t.group(1)}", testo)
+
+
 def _casa_da_pubblicare():
     """
     Decide quanto della posizione di casa finisce nel file pubblicato.
@@ -120,6 +127,20 @@ def main(usa_cache=False, notifica=True, senza_viaggi=False):
     # Il sito cancella tutto a inizio anno scolastico: uniamo quello che c'e'
     # adesso con tutto quello che abbiamo gia' visto (vedi archivio.py).
     interpelli = archivio.unisci(interpelli_sito)
+
+    # "Aperto" ma col termine gia' passato non e' ne' aperto ne' chiuso:
+    # lo mettiamo in una categoria sua, cosi' non sporca i risultati e non
+    # fa scattare le notifiche.
+    oggi = date.today().isoformat()
+    for interpello in interpelli:
+        scadenza = interpello.get("data_scadenza")
+        if interpello.get("stato") == "aperto" and scadenza and scadenza < oggi:
+            interpello["stato"] = "scaduto"
+        # il vecchio campo non serve piu': ora lo dice lo stato
+        interpello.pop("scaduto", None)
+        # il sito scrive certe date all'americana dentro il testo della durata
+        if interpello.get("durata"):
+            interpello["durata"] = _date_italiane(interpello["durata"])
 
     print("\n2) Carico l'anagrafica delle scuole")
     anagrafica = schools.carica_scuole()
@@ -225,6 +246,7 @@ def main(usa_cache=False, notifica=True, senza_viaggi=False):
         "classi": config.CLASSI_DI_CONCORSO,
         "durate": config.DURATE_SUPPLENZA,
         "settori": config.SETTORI,
+        "stati": config.STATI,
         "settore_per_classe": {
             classe: config.SETTORE_PER_CLASSE.get(
                 classe, config.SETTORE_PER_CLASSE["_default"])
@@ -236,6 +258,7 @@ def main(usa_cache=False, notifica=True, senza_viaggi=False):
             "sul_sito": len(interpelli_sito),
             "archiviati": sum(1 for i in interpelli if i.get("archiviato")),
             "aperti": sum(1 for i in interpelli if i["stato"] == "aperto"),
+            "scaduti": sum(1 for i in interpelli if i["stato"] == "scaduto"),
             "per_settore": {
                 settore: sum(1 for i in interpelli if i.get("settore") == settore)
                 for settore in config.SETTORI

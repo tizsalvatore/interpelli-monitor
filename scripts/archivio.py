@@ -20,6 +20,7 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 import config
+import scrape
 
 # Campi calcolati a ogni giro (tempi di viaggio): non vanno salvati
 # nell'archivio, altrimenti ci restano dentro dei valori vecchi.
@@ -53,6 +54,23 @@ def _completa(interpello):
         config.SETTORE_PER_CLASSE.get(classe, config.SETTORE_PER_CLASSE["_default"]),
     )
     interpello.setdefault("sostegno", classe in config.CLASSI_DI_SOSTEGNO)
+
+    # Le date le rileggiamo SEMPRE dal testo originale, non solo se mancano:
+    # quando il lettore di date impara un formato nuovo (il sito ne ha
+    # cambiato uno a settembre 2026) l'archivio si corregge da solo.
+    for campo, sorgente in (("data_interpello", "data_interpello_testo"),
+                            ("data_scadenza", "data_scadenza_testo")):
+        letta = scrape._leggi_data(interpello.get(sorgente, ""))
+        if letta:
+            interpello[campo] = letta
+
+    # Stessa cosa per il tipo di cattedra, che per qualche giorno e' stato
+    # salvato doppio ("Interna Interna").
+    tipo, ore = scrape._leggi_tipo_cattedra(
+        scrape._senza_doppione(interpello.get("tipo_cattedra", "")))
+    interpello["tipo_cattedra"] = tipo
+    if ore:
+        interpello["ore_spezzone"] = ore
     interpello.setdefault("classe_nome", config.CLASSI_DI_CONCORSO.get(classe, classe))
     return interpello
 
