@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-09-28T17:48:45+02:00",
- "quanti": 3575,
+ "aggiornato": "2026-09-28T17:59:15+02:00",
+ "quanti": 3576,
  "interpelli": [
   {
    "id": "887831df5829",
@@ -346,6 +346,28 @@
    "corso": "Diurno",
    "durata": "Disponibile fino a 10 giorni",
    "durata_tipo": "dieci_giorni",
+   "data_interpello": "2026-09-28",
+   "data_interpello_testo": "28/09/2026",
+   "stato": "aperto",
+   "data_scadenza": "2029-09-26",
+   "data_scadenza_testo": "2026-09-29",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "e85cc7c95f34",
+   "codice_scuola": "TOIC8AJ00T",
+   "scuola": "IC ORBASSANO II",
+   "classe": "AAAA",
+   "classe_nome": "Infanzia",
+   "settore": "infanzia_primaria",
+   "sostegno": false,
+   "tipo_cattedra": "Interna Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 2026-10-30",
+   "durata_tipo": "temporanea",
    "data_interpello": "2026-09-28",
    "data_interpello_testo": "28/09/2026",
    "stato": "aperto",
