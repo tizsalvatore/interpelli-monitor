@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-09-29T10:40:01+02:00",
- "quanti": 3591,
+ "aggiornato": "2026-09-29T10:50:06+02:00",
+ "quanti": 3592,
  "interpelli": [
   {
    "id": "887831df5829",
@@ -307,6 +307,28 @@
    "stato": "chiuso",
    "data_scadenza": "2026-10-01",
    "data_scadenza_testo": "2026-10-01",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "2b674cb5fab6",
+   "codice_scuola": "TOIC836006",
+   "scuola": "IC NONE",
+   "classe": "AAAA",
+   "classe_nome": "Infanzia",
+   "settore": "infanzia_primaria",
+   "sostegno": false,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2026-09-29",
+   "data_interpello_testo": "29/09/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-09-30",
+   "data_scadenza_testo": "2026-09-30",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false
