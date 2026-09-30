@@ -30265,6 +30265,66 @@
    },
    "errore": null,
    "aggiornato": "2026-09-28"
+  },
+  "Via San Giorgio, 10090 Sangano, Italia": {
+   "lat": 45.0261181,
+   "lng": 7.4555166,
+   "indirizzo_google": "Via S. Giorgio, 10090 Sangano TO, Italia",
+   "precisione": "GEOMETRIC_CENTER",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 69,
+    "km": 20.7,
+    "cambi": 1,
+    "linee": [
+     {
+      "nome": "260",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "1511",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 32,
+    "km": 22.4
+   },
+   "errore": null,
+   "aggiornato": "2026-09-30"
+  },
+  "Viale Papa Giovanni XXIII N 25, 10098 Rivoli, Italia": {
+   "lat": 45.0667896,
+   "lng": 7.503059899999998,
+   "indirizzo_google": "Viale Papa Giovanni XXIII, 25, 10098 Rivoli TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 99,
+    "km": 24.3,
+    "cambi": 2,
+    "linee": [
+     {
+      "nome": "2014",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "17",
+      "tipo": "BUS"
+     },
+     {
+      "nome": "36 navetta",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 25,
+    "km": 29.6
+   },
+   "errore": null,
+   "aggiornato": "2026-09-30"
   }
  }
 }
