@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-09-30T19:27:30+02:00",
- "quanti": 4457,
+ "aggiornato": "2026-09-30T19:37:37+02:00",
+ "quanti": 4458,
  "interpelli": [
   {
    "id": "887831df5829",
@@ -525,6 +525,28 @@
    "data_interpello": "2026-09-30",
    "data_interpello_testo": "30/09/2026",
    "stato": "aperto",
+   "data_scadenza": "2026-10-01",
+   "data_scadenza_testo": "01/10/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "a5c224175fe2",
+   "codice_scuola": "TOIS023008",
+   "scuola": "IIS FEDERICO ALBERT",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "settore": "secondaria",
+   "sostegno": false,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2026-09-30",
+   "data_interpello_testo": "30/09/2026",
+   "stato": "chiuso",
    "data_scadenza": "2026-10-01",
    "data_scadenza_testo": "01/10/2026",
    "note_cancellazione": "",
