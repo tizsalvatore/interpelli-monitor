@@ -30325,6 +30325,54 @@
    },
    "errore": null,
    "aggiornato": "2026-09-30"
+  },
+  "Via Bianze' 7, 10143 Torino, Italia": {
+   "lat": 45.07799379999999,
+   "lng": 7.6547839,
+   "indirizzo_google": "Via Bianzè, 7, 10143 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 33,
+    "km": 8.5,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 22,
+    "km": 8.6
+   },
+   "errore": null,
+   "aggiornato": "2026-10-01"
+  },
+  "Via Talucchi 19, 10143 Torino, Italia": {
+   "lat": 45.0777592,
+   "lng": 7.660386099999999,
+   "indirizzo_google": "Via Giuseppe Talucchi, 19, 10143 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 33,
+    "km": 7.9,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "M1",
+      "tipo": "SUBWAY"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 23,
+    "km": 8.8
+   },
+   "errore": null,
+   "aggiornato": "2026-10-01"
   }
  }
 }
