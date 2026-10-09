@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-10-09T10:02:40+02:00",
- "quanti": 4662,
+ "aggiornato": "2026-10-09T10:12:46+02:00",
+ "quanti": 4663,
  "interpelli": [
   {
    "id": "b488f1355d12",
@@ -419,6 +419,28 @@
    "data_scadenza_testo": "29/09/2026",
    "note_cancellazione": "errore periodo assenza",
    "data_cancellazione": "2026-09-28",
+   "scaduto": false
+  },
+  {
+   "id": "b2f282ed4d58",
+   "codice_scuola": "TOIC86800N",
+   "scuola": "IC COAZZE",
+   "classe": "EEEE",
+   "classe_nome": "Primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": false,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 2026-10-23",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-10-09",
+   "data_interpello_testo": "09/10/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-10-12",
+   "data_scadenza_testo": "12/10/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
    "scaduto": false
   },
   {
