@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-10-09T22:56:47+02:00",
- "quanti": 4701,
+ "aggiornato": "2026-10-10T02:14:56+02:00",
+ "quanti": 4703,
  "interpelli": [
   {
    "id": "b488f1355d12",
@@ -419,6 +419,28 @@
    "data_scadenza_testo": "29/09/2026",
    "note_cancellazione": "errore periodo assenza",
    "data_cancellazione": "2026-09-28",
+   "scaduto": false
+  },
+  {
+   "id": "2b436b9f4cbd",
+   "codice_scuola": "TOIC895002",
+   "scuola": "IC BORGARETTO BEINASCO",
+   "classe": "EEEE",
+   "classe_nome": "Primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": false,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Disponibile fino a 10 giorni",
+   "durata_tipo": "dieci_giorni",
+   "data_interpello": "2026-10-10",
+   "data_interpello_testo": "10 ottobre 2026",
+   "stato": "chiuso",
+   "data_scadenza": "2026-10-11",
+   "data_scadenza_testo": "11/10/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
    "scaduto": false
   },
   {
@@ -103311,6 +103333,28 @@
    "stato": "chiuso",
    "data_scadenza": "2025-09-13",
    "data_scadenza_testo": "13/09/2025",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "062a35994eae",
+   "codice_scuola": "TOIC895002",
+   "scuola": "IC BORGARETTO BEINASCO",
+   "classe": "EEEE",
+   "classe_nome": "Primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": false,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Disponibile fino a 10 giorni",
+   "durata_tipo": "dieci_giorni",
+   "data_interpello": null,
+   "data_interpello_testo": "Panero Roberto",
+   "stato": "chiuso",
+   "data_scadenza": "2026-10-10",
+   "data_scadenza_testo": "10/10/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false
