@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-10-12T10:52:53+02:00",
- "quanti": 4719,
+ "aggiornato": "2026-10-12T11:03:26+02:00",
+ "quanti": 4720,
  "interpelli": [
   {
    "id": "b488f1355d12",
@@ -637,6 +637,28 @@
    "stato": "aperto",
    "data_scadenza": "2026-10-14",
    "data_scadenza_testo": "14/10/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "3d6c35fc0b61",
+   "codice_scuola": "TOIC8AV005",
+   "scuola": "IC CHIERI I",
+   "classe": "AAAA",
+   "classe_nome": "Infanzia",
+   "settore": "infanzia_primaria",
+   "sostegno": false,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Disponibile fino a 10 giorni",
+   "durata_tipo": "dieci_giorni",
+   "data_interpello": "2026-10-12",
+   "data_interpello_testo": "12/10/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-10-13",
+   "data_scadenza_testo": "13/10/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false
