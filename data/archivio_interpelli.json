@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-10-13T18:59:12+02:00",
- "quanti": 4802,
+ "aggiornato": "2026-10-13T23:27:13+02:00",
+ "quanti": 4803,
  "interpelli": [
   {
    "id": "b488f1355d12",
@@ -637,6 +637,28 @@
    "stato": "aperto",
    "data_scadenza": "2026-10-14",
    "data_scadenza_testo": "14/10/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "9b608d3cf907",
+   "codice_scuola": "TOIS067002",
+   "scuola": "IIS Curie Levi",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "settore": "secondaria",
+   "sostegno": false,
+   "tipo_cattedra": "Esterna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 2027-06-08",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-10-13",
+   "data_interpello_testo": "13/10/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-10-16",
+   "data_scadenza_testo": "16/10/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false
