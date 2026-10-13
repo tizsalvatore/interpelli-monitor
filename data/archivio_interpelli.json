@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-10-13T10:26:31+02:00",
- "quanti": 4769,
+ "aggiornato": "2026-10-13T10:36:37+02:00",
+ "quanti": 4770,
  "interpelli": [
   {
    "id": "b488f1355d12",
@@ -431,6 +431,28 @@
    "sostegno": true,
    "tipo_cattedra": "Interna",
    "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2026-10-13",
+   "data_interpello_testo": "13/10/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-10-14",
+   "data_scadenza_testo": "14/10/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "7cbb9ebed277",
+   "codice_scuola": "TOIS05100C",
+   "scuola": "I.I.S. A. AVOGADRO",
+   "classe": "A040",
+   "classe_nome": "Scienze e tecnologie elettriche ed elettroniche",
+   "settore": "secondaria",
+   "sostegno": false,
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "9",
    "corso": "Diurno",
    "durata": "Fino al 30 giugno",
    "durata_tipo": "fino_30_giugno",
