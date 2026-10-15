@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-10-15T16:30:21+02:00",
- "quanti": 4859,
+ "aggiornato": "2026-10-15T16:40:28+02:00",
+ "quanti": 4860,
  "interpelli": [
   {
    "id": "b488f1355d12",
@@ -717,6 +717,28 @@
    "sostegno": false,
    "tipo_cattedra": "Spezzone",
    "ore_spezzone": "16",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2026-10-15",
+   "data_interpello_testo": "15/10/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-10-16",
+   "data_scadenza_testo": "16/10/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "ec96a94bdff8",
+   "codice_scuola": "TOIC895002",
+   "scuola": "IC BORGARETTO BEINASCO",
+   "classe": "ADEE",
+   "classe_nome": "Sostegno primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": true,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
    "corso": "Diurno",
    "durata": "Fino al 30 giugno",
    "durata_tipo": "fino_30_giugno",
