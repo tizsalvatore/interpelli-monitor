@@ -30421,6 +30421,25 @@
    },
    "errore": null,
    "aggiornato": "2026-10-01"
+  },
+  "Via Valenza 71, Torino, Italia": {
+   "lat": 45.02468890000001,
+   "lng": 7.6678248,
+   "indirizzo_google": "Via Valenza, 71, 10127 Torino TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 7,
+    "km": 0.6,
+    "cambi": 0,
+    "linee": []
+   },
+   "auto": {
+    "minuti": 1,
+    "km": 0.6
+   },
+   "errore": null,
+   "aggiornato": "2026-10-16"
   }
  }
 }
