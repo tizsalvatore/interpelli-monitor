@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-10-16T13:03:12+02:00",
- "quanti": 4872,
+ "aggiornato": "2026-10-16T13:13:53+02:00",
+ "quanti": 4873,
  "interpelli": [
   {
    "id": "bccf8c0a8b29",
@@ -551,6 +551,28 @@
    "data_scadenza_testo": "20/10/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "05f810a6faa3-2",
+   "codice_scuola": "TOIS00100B",
+   "scuola": "IIS DES AMBROIS",
+   "classe": "A041",
+   "classe_nome": "Scienze e tecnologie informatiche",
+   "settore": "secondaria",
+   "sostegno": false,
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "5",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2026-10-16",
+   "data_interpello_testo": "16/10/2026",
+   "stato": "cancellato",
+   "data_scadenza": "2026-10-20",
+   "data_scadenza_testo": "20/10/2026",
+   "note_cancellazione": "link non valido",
+   "data_cancellazione": "2026-10-16",
    "scaduto": false
   },
   {
