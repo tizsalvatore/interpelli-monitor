@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-10-20T08:55:44+02:00",
- "quanti": 4923,
+ "aggiornato": "2026-10-20T09:05:49+02:00",
+ "quanti": 4924,
  "interpelli": [
   {
    "id": "bccf8c0a8b29",
@@ -456,6 +456,28 @@
    "corso": "Diurno",
    "durata": "Supplenza Temporanea fino al 2026-11-27",
    "durata_tipo": "temporanea",
+   "data_interpello": "2026-10-20",
+   "data_interpello_testo": "20/10/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-10-21",
+   "data_scadenza_testo": "21/10/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "e4d7167db5f7",
+   "codice_scuola": "TOIC8CD00E",
+   "scuola": "ISTITUTO COMPRENSIVO BARICCO",
+   "classe": "ADAA",
+   "classe_nome": "Sostegno infanzia",
+   "settore": "infanzia_primaria",
+   "sostegno": true,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Disponibile fino a 10 giorni",
+   "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-10-20",
    "data_interpello_testo": "20/10/2026",
    "stato": "aperto",
