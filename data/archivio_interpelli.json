@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-10-20T08:45:39+02:00",
- "quanti": 4922,
+ "aggiornato": "2026-10-20T08:55:44+02:00",
+ "quanti": 4923,
  "interpelli": [
   {
    "id": "bccf8c0a8b29",
@@ -441,6 +441,28 @@
    "data_scadenza_testo": "29/09/2026",
    "note_cancellazione": "errore periodo assenza",
    "data_cancellazione": "2026-09-28",
+   "scaduto": false
+  },
+  {
+   "id": "5d89b8581223",
+   "codice_scuola": "TOIC80500E",
+   "scuola": "toic80500e",
+   "classe": "EEEE",
+   "classe_nome": "Primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": false,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 2026-11-27",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-10-20",
+   "data_interpello_testo": "20/10/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-10-21",
+   "data_scadenza_testo": "21/10/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
    "scaduto": false
   },
   {
