@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-10-21T15:47:35+02:00",
- "quanti": 4967,
+ "aggiornato": "2026-10-21T20:11:37+02:00",
+ "quanti": 4968,
  "interpelli": [
   {
    "id": "bccf8c0a8b29",
@@ -521,6 +521,28 @@
    "ore_spezzone": null,
    "corso": "Diurno",
    "durata": "Supplenza Temporanea fino al 2026-11-23",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-10-21",
+   "data_interpello_testo": "21/10/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-10-22",
+   "data_scadenza_testo": "22/10/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "54e27a39ebb3",
+   "codice_scuola": "TOIC807006",
+   "scuola": "IC PEROSA ARGENTINA",
+   "classe": "AAAA",
+   "classe_nome": "Infanzia",
+   "settore": "infanzia_primaria",
+   "sostegno": false,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 2026-11-18",
    "durata_tipo": "temporanea",
    "data_interpello": "2026-10-21",
    "data_interpello_testo": "21/10/2026",
