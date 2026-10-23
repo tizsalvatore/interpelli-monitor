@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-10-23T09:24:25+02:00",
- "quanti": 4984,
+ "aggiornato": "2026-10-23T09:34:32+02:00",
+ "quanti": 4985,
  "interpelli": [
   {
    "id": "bccf8c0a8b29",
@@ -441,6 +441,28 @@
    "data_scadenza_testo": "29/09/2026",
    "note_cancellazione": "errore periodo assenza",
    "data_cancellazione": "2026-09-28",
+   "scaduto": false
+  },
+  {
+   "id": "2b5e0241975e",
+   "codice_scuola": "TOIC857007",
+   "scuola": "Istituto Comprensivo Poirino",
+   "classe": "AAAA",
+   "classe_nome": "Infanzia",
+   "settore": "infanzia_primaria",
+   "sostegno": false,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 2026-11-12",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-10-23",
+   "data_interpello_testo": "23/10/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-10-26",
+   "data_scadenza_testo": "26/10/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
    "scaduto": false
   },
   {
