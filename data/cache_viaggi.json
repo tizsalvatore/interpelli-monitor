@@ -30528,6 +30528,30 @@
    },
    "errore": null,
    "aggiornato": "2026-10-22"
+  },
+  "Via Giovanni Paolo II 15, 10040 La Loggia, Italia": {
+   "lat": 44.9588528,
+   "lng": 7.6649796,
+   "indirizzo_google": "Via Giovanni Paolo II, 15, 10040 La Loggia TO, Italia",
+   "precisione": "ROOFTOP",
+   "approssimativo": false,
+   "mezzi": {
+    "minuti": 32,
+    "km": 8.7,
+    "cambi": 0,
+    "linee": [
+     {
+      "nome": "259",
+      "tipo": "BUS"
+     }
+    ]
+   },
+   "auto": {
+    "minuti": 12,
+    "km": 12.0
+   },
+   "errore": null,
+   "aggiornato": "2026-10-23"
   }
  }
 }
