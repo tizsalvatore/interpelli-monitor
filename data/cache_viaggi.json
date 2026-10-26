@@ -26020,11 +26020,11 @@
     ]
    },
    "auto": {
-    "minuti": 19,
+    "minuti": 18,
     "km": 9.0
    },
    "errore": null,
-   "aggiornato": "2026-09-26"
+   "aggiornato": "2026-10-26"
   },
   "Via Sergio De Vitis 15, 10094 Giaveno, Italia": {
    "lat": 45.042062,
@@ -26038,7 +26038,7 @@
     "km": 51.1
    },
    "errore": null,
-   "aggiornato": "2026-09-26"
+   "aggiornato": "2026-10-26"
   },
   "Via Sestriere 60, 10098 Rivoli, Italia": {
    "lat": 45.07413469999999,
@@ -26047,8 +26047,8 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 64,
-    "km": 18.1,
+    "minuti": 63,
+    "km": 18.0,
     "cambi": 1,
     "linee": [
      {
@@ -26062,11 +26062,11 @@
     ]
    },
    "auto": {
-    "minuti": 20,
+    "minuti": 19,
     "km": 26.1
    },
    "errore": null,
-   "aggiornato": "2026-09-26"
+   "aggiornato": "2026-10-26"
   },
   "Via Sestriere 70, 10048 Vinovo, Italia": {
    "lat": 44.9754855,
