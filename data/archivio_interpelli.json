@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-10-26T16:11:20+01:00",
- "quanti": 5030,
+ "aggiornato": "2026-10-26T16:22:24+01:00",
+ "quanti": 5031,
  "interpelli": [
   {
    "id": "bccf8c0a8b29",
@@ -659,6 +659,28 @@
    "stato": "aperto",
    "data_scadenza": "2027-06-30",
    "data_scadenza_testo": "30/06/2027",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "0906e3f66592",
+   "codice_scuola": "TOIC8A0002",
+   "scuola": "IC NIGRA",
+   "classe": "ADEE",
+   "classe_nome": "Sostegno primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": true,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 2027-06-10",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-10-26",
+   "data_interpello_testo": "26/10/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-10-27",
+   "data_scadenza_testo": "27/10/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false
