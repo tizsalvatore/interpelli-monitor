@@ -30170,7 +30170,7 @@
    "approssimativo": false,
    "mezzi": {
     "minuti": 99,
-    "km": 24.3,
+    "km": 24.2,
     "cambi": 2,
     "linee": [
      {
@@ -30192,7 +30192,7 @@
     "km": 29.6
    },
    "errore": null,
-   "aggiornato": "2026-09-28"
+   "aggiornato": "2026-10-28"
   },
   "Via San Giorgio, 10090 Sangano, Italia": {
    "lat": 45.0261181,
