@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-10-30T16:34:06+01:00",
- "quanti": 5099,
+ "aggiornato": "2026-10-30T16:44:11+01:00",
+ "quanti": 5100,
  "interpelli": [
   {
    "id": "bccf8c0a8b29",
@@ -527,6 +527,28 @@
    "stato": "aperto",
    "data_scadenza": "2026-10-31",
    "data_scadenza_testo": "31/10/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "c405f34ff8c7",
+   "codice_scuola": "TOIC87700C",
+   "scuola": "I.C. REGIO PARCO",
+   "classe": "ADEE",
+   "classe_nome": "Sostegno primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": true,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 2027-06-10",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-10-30",
+   "data_interpello_testo": "30/10/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-11-02",
+   "data_scadenza_testo": "02/11/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false
