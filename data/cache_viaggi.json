@@ -30202,7 +30202,7 @@
    "approssimativo": false,
    "mezzi": {
     "minuti": 69,
-    "km": 20.7,
+    "km": 20.6,
     "cambi": 1,
     "linee": [
      {
@@ -30220,7 +30220,7 @@
     "km": 22.4
    },
    "errore": null,
-   "aggiornato": "2026-09-30"
+   "aggiornato": "2026-10-30"
   },
   "Viale Papa Giovanni XXIII N 25, 10098 Rivoli, Italia": {
    "lat": 45.0667896,
@@ -30229,20 +30229,16 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 99,
-    "km": 24.3,
-    "cambi": 2,
+    "minuti": 92,
+    "km": 21.2,
+    "cambi": 1,
     "linee": [
      {
-      "nome": "2014",
+      "nome": "43",
       "tipo": "BUS"
      },
      {
-      "nome": "17",
-      "tipo": "BUS"
-     },
-     {
-      "nome": "36 navetta",
+      "nome": "1432",
       "tipo": "BUS"
      }
     ]
@@ -30252,7 +30248,7 @@
     "km": 29.6
    },
    "errore": null,
-   "aggiornato": "2026-09-30"
+   "aggiornato": "2026-10-30"
   },
   "Via Bianze' 7, 10143 Torino, Italia": {
    "lat": 45.07799379999999,
