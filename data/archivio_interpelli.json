@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-10-30T03:25:52+01:00",
- "quanti": 5092,
+ "aggiornato": "2026-10-30T09:21:16+01:00",
+ "quanti": 5093,
  "interpelli": [
   {
    "id": "bccf8c0a8b29",
@@ -417,6 +417,28 @@
    "stato": "chiuso",
    "data_scadenza": "2026-09-14",
    "data_scadenza_testo": "14/09/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "16b6463028ed",
+   "codice_scuola": "TOIC8AV005",
+   "scuola": "IC CHIERI I",
+   "classe": "ADEE",
+   "classe_nome": "Sostegno primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": true,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 2026-12-17",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-10-30",
+   "data_interpello_testo": "30/10/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-12-17",
+   "data_scadenza_testo": "17/12/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false
