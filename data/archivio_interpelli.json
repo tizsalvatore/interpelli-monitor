@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-11-02T09:04:02+01:00",
- "quanti": 5100,
+ "aggiornato": "2026-11-02T09:14:45+01:00",
+ "quanti": 5101,
  "interpelli": [
   {
    "id": "bccf8c0a8b29",
@@ -439,6 +439,28 @@
    "stato": "chiuso",
    "data_scadenza": "2026-10-31",
    "data_scadenza_testo": "31/10/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "2fb26c1beaa6",
+   "codice_scuola": "TOIC81300D",
+   "scuola": "Istituto Comprensivo G. Rodari di Torre Pellice",
+   "classe": "ADAA",
+   "classe_nome": "Sostegno infanzia",
+   "settore": "infanzia_primaria",
+   "sostegno": true,
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "12.5",
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 2027-06-30",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-11-02",
+   "data_interpello_testo": "02/11/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-11-03",
+   "data_scadenza_testo": "03/11/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false
