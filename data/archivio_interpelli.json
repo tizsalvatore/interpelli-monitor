@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-11-04T11:14:07+01:00",
- "quanti": 5136,
+ "aggiornato": "2026-11-04T11:24:13+01:00",
+ "quanti": 5137,
  "interpelli": [
   {
    "id": "bccf8c0a8b29",
@@ -499,6 +499,28 @@
    "ore_spezzone": null,
    "corso": "Diurno",
    "durata": "Supplenza Temporanea fino al 2026-11-06",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-11-04",
+   "data_interpello_testo": "04/11/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-11-05",
+   "data_scadenza_testo": "05/11/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "24af6f905e1a",
+   "codice_scuola": "TOIC8BA00C",
+   "scuola": "IC SETTIMO II",
+   "classe": "ADEE",
+   "classe_nome": "Sostegno primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": true,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 2026-11-15",
    "durata_tipo": "temporanea",
    "data_interpello": "2026-11-04",
    "data_interpello_testo": "04/11/2026",
