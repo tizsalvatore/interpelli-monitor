@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-11-09T09:07:06+01:00",
- "quanti": 5165,
+ "aggiornato": "2026-11-09T09:17:14+01:00",
+ "quanti": 5166,
  "interpelli": [
   {
    "id": "bccf8c0a8b29",
@@ -417,6 +417,28 @@
    "stato": "chiuso",
    "data_scadenza": "2026-09-14",
    "data_scadenza_testo": "14/09/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "23487d0b98ab",
+   "codice_scuola": "TOIC8BR003",
+   "scuola": "I.C. PARRI-VIAN",
+   "classe": "EEEE",
+   "classe_nome": "Primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": false,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 2026-11-13",
+   "durata_tipo": "temporanea",
+   "data_interpello": "2026-11-09",
+   "data_interpello_testo": "09/11/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-11-10",
+   "data_scadenza_testo": "10/11/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false
