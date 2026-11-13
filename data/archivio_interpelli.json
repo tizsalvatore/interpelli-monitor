@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-11-13T13:07:12+01:00",
- "quanti": 5209,
+ "aggiornato": "2026-11-13T19:41:52+01:00",
+ "quanti": 5210,
  "interpelli": [
   {
    "id": "bccf8c0a8b29",
@@ -373,6 +373,28 @@
    "stato": "chiuso",
    "data_scadenza": "2026-10-30",
    "data_scadenza_testo": "30/10/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "35f3cd33cd33",
+   "codice_scuola": "TOIC8B500Q",
+   "scuola": "I.C. Pacchiotti - via Revel",
+   "classe": "EEEE",
+   "classe_nome": "Primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": false,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2026-11-13",
+   "data_interpello_testo": "13/11/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-11-14",
+   "data_scadenza_testo": "14/11/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false
