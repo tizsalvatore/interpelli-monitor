@@ -72,6 +72,7 @@ const CHIAVI = {
   copiaDati: 'interpelli:copia-dati',
   ultimaVista: 'interpelli:ultima-vista',
   ordine: 'interpelli:ordine',
+  chiaveGithub: 'interpelli:chiave-github',
 };
 
 const stato = {
@@ -1586,6 +1587,181 @@ function riquadroSincronizzazione() {
   return riquadro;
 }
 
+/* ---------- CONTROLLO IMMEDIATO (il bottone ↻ che sveglia il robot) ---------- */
+
+// Senza chiave il bottone ↻ riscarica solo i dati gia' pubblicati. Con la
+// chiave chiede a GitHub di far partire subito il robot ("Run workflow"),
+// aspetta che abbia finito e che la pagina sia ripubblicata, poi ricarica.
+// La chiave vive solo su questo telefono: nel codice della app (pubblico)
+// non c'e' e non deve esserci.
+const FILE_WORKFLOW = 'aggiorna.yml';
+const ATTESA_MASSIMA = 6 * 60 * 1000;   // il robot ci mette 1-2 minuti, la pubblicazione ~1
+const OGNI_QUANTO = 15 * 1000;
+
+function chiaveGithub() {
+  return leggiMemoria(CHIAVI.chiaveGithub, '') || '';
+}
+
+function togliChiaveGithub() {
+  try { localStorage.removeItem(CHIAVI.chiaveGithub); } catch (errore) { /* niente */ }
+}
+
+function repoGithub() {
+  return (stato.dati && stato.dati.github && stato.dati.github.repo) || '';
+}
+
+async function chiamaGithub(percorso, opzioni = {}) {
+  return fetch(`https://api.github.com/repos/${repoGithub()}${percorso}`, {
+    ...opzioni,
+    headers: {
+      Accept: 'application/vnd.github+json',
+      Authorization: `Bearer ${chiaveGithub()}`,
+      'X-GitHub-Api-Version': '2022-11-28',
+      ...(opzioni.body ? { 'Content-Type': 'application/json' } : {}),
+    },
+    cache: 'no-store',
+  });
+}
+
+const aspetta = (ms) => new Promise((fatto) => setTimeout(fatto, ms));
+
+// Fa partire il robot e aspetta i dati nuovi. Restituisce il messaggio finale.
+async function controlloImmediato() {
+  const primaDi = stato.dati ? new Date(stato.dati.aggiornato).getTime() : 0;
+  const partenza = Date.now();
+
+  let risposta;
+  try {
+    risposta = await chiamaGithub(`/actions/workflows/${FILE_WORKFLOW}/dispatches`, {
+      method: 'POST',
+      body: JSON.stringify({ ref: 'main' }),
+    });
+  } catch (errore) {
+    return 'Sei offline: controllo non avviato';
+  }
+  if ([401, 403, 404].includes(risposta.status)) {
+    return 'Chiave GitHub non valida o senza permessi: controllala in Info';
+  }
+  if (!risposta.ok) return `GitHub non ha avviato il controllo (errore ${risposta.status})`;
+
+  mostraMessaggio('Controllo avviato: ci vogliono un paio di minuti…');
+  elementi.sottotitolo.textContent = 'controllo sul sito in corso…';
+
+  while (Date.now() - partenza < ATTESA_MASSIMA) {
+    await aspetta(OGNI_QUANTO);
+
+    // Il robot e' andato storto? Inutile aspettare oltre.
+    try {
+      const giri = await chiamaGithub(
+        `/actions/workflows/${FILE_WORKFLOW}/runs?event=workflow_dispatch&per_page=1`);
+      if (giri.ok) {
+        const ultimo = (await giri.json()).workflow_runs[0];
+        if (ultimo && new Date(ultimo.created_at).getTime() >= partenza - 60 * 1000
+            && ultimo.status === 'completed' && ultimo.conclusion !== 'success') {
+          await caricaDati({ forzaRete: true });
+          return 'Il controllo su GitHub non è riuscito: riprova più tardi';
+        }
+      }
+    } catch (errore) { /* rete ballerina: riproviamo al prossimo giro */ }
+
+    // I dati nuovi sono gia' pubblicati? (l'orario del robot e' in UTC,
+    // quello del telefono puo' sbagliare di poco: un minuto di tolleranza)
+    try {
+      const dati = await fetch(`./data/interpelli.json?t=${Date.now()}`, { cache: 'reload' });
+      if (dati.ok) {
+        const nuovi = await dati.json();
+        const quando = new Date(nuovi.aggiornato).getTime();
+        if (quando > primaDi && quando >= partenza - 60 * 1000) {
+          stato.dati = nuovi;
+          scriviMemoria(CHIAVI.copiaDati, nuovi);
+          return 'Dati aggiornati: controllo appena fatto';
+        }
+      }
+    } catch (errore) { /* idem */ }
+  }
+
+  await caricaDati({ forzaRete: true });
+  return 'Il controllo è ancora in corso: riapri fra qualche minuto';
+}
+
+function riquadroControlloImmediato() {
+  const riquadro = nuovo('div', 'riquadro');
+  riquadro.appendChild(nuovo('h3', null, 'Controllo immediato ↻'));
+  const salvata = chiaveGithub();
+  riquadro.appendChild(nuovo('p', 'info-testo', salvata
+    ? 'Attivo: il bottone ↻ in alto fa controllare subito il sito al robot (1-3 minuti), poi ricarica i dati.'
+    : 'Il robot controlla il sito da solo. Per farlo controllare subito col bottone ↻ in alto, '
+      + 'incolla qui una chiave GitHub (si crea una volta sola, vedi sotto).'));
+
+  const campo = document.createElement('input');
+  if (!salvata) {
+    const passi = nuovo('ol', 'info-testo');
+    [
+      'Apri “Crea la chiave” qui sotto (accedi a GitHub se serve).',
+      'Dai un nome qualsiasi e come scadenza la più lunga che ti propone.',
+      `In “Repository access” scegli “Only select repositories” e seleziona ${repoGithub()}.`,
+      'In “Repository permissions” metti “Actions” su “Read and write”. Nient’altro.',
+      'Premi “Generate token”, copia la chiave e incollala qui sotto.',
+    ].forEach((passo) => passi.appendChild(nuovo('li', null, passo)));
+    riquadro.appendChild(passi);
+
+    campo.type = 'password';
+    campo.className = 'campo-testo';
+    campo.placeholder = 'github_pat_…';
+    campo.autocomplete = 'off';
+    campo.spellcheck = false;
+    riquadro.appendChild(campo);
+  }
+
+  riquadro.appendChild(nuovo('p', 'viaggio__dettagli',
+    'La chiave resta solo su questo telefono. Può solo far partire il controllo degli interpelli: '
+    + 'non legge né modifica nient’altro.'));
+
+  const azioni = nuovo('div', 'ricerca-salvata__azioni');
+  if (salvata) {
+    const togli = nuovo('button', 'bottone bottone--secondario bottone--piccolo', 'Togli la chiave');
+    togli.addEventListener('click', () => {
+      togliChiaveGithub();
+      mostraMessaggio('Chiave tolta');
+      disegnaInfo();
+    });
+    azioni.appendChild(togli);
+  } else {
+    const salva = nuovo('button', 'bottone bottone--primario bottone--piccolo', 'Salva e prova');
+    salva.addEventListener('click', async () => {
+      const valore = campo.value.trim();
+      if (!valore) { mostraMessaggio('Incolla prima la chiave'); return; }
+      scriviMemoria(CHIAVI.chiaveGithub, valore);
+      // Proviamo subito se la chiave vede il robot (solo lettura: non lo avvia).
+      try {
+        const prova = await chiamaGithub(`/actions/workflows/${FILE_WORKFLOW}`);
+        if (!prova.ok) {
+          togliChiaveGithub();
+          mostraMessaggio('Questa chiave non vede il progetto: ricontrolla i passi');
+          return;
+        }
+      } catch (errore) {
+        mostraMessaggio('Salvata, ma ora sei offline: non ho potuto provarla');
+        disegnaInfo();
+        return;
+      }
+      mostraMessaggio('Chiave salvata: ora ↻ controlla subito il sito');
+      disegnaInfo();
+    });
+    azioni.appendChild(salva);
+
+    const link = document.createElement('a');
+    link.className = 'bottone bottone--secondario bottone--piccolo';
+    link.href = 'https://github.com/settings/personal-access-tokens/new';
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent = 'Crea la chiave';
+    azioni.appendChild(link);
+  }
+  riquadro.appendChild(azioni);
+  return riquadro;
+}
+
 function disegnaInfo() {
   elementi.riepilogo.hidden = true;
   elementi.statoVuoto.hidden = true;
@@ -1626,6 +1802,8 @@ function disegnaInfo() {
   cambia.addEventListener('click', apriPannelloCasa);
   casa.appendChild(cambia);
   contenitore.appendChild(casa);
+
+  if (repoGithub()) contenitore.appendChild(riquadroControlloImmediato());
 
   const legenda = nuovo('div', 'riquadro');
   legenda.appendChild(nuovo('h3', null, 'Colori'));
@@ -1743,11 +1921,24 @@ function collegaEventi() {
   });
 
   elementi.bottoneAggiorna.addEventListener('click', async () => {
-    elementi.bottoneAggiorna.classList.add('gira');
-    await caricaDati({ forzaRete: true });
-    elementi.bottoneAggiorna.classList.remove('gira');
+    const bottone = elementi.bottoneAggiorna;
+    if (bottone.classList.contains('gira')) {
+      mostraMessaggio('Sto già aggiornando, un attimo…');
+      return;
+    }
+    bottone.classList.add('gira');
+    let messaggio = 'Dati aggiornati';
+    try {
+      if (chiaveGithub() && repoGithub()) {
+        messaggio = await controlloImmediato();   // fa controllare subito il sito
+      } else {
+        await caricaDati({ forzaRete: true });    // riscarica quello gia' pubblicato
+      }
+    } finally {
+      bottone.classList.remove('gira');
+    }
     disegnaTutto();
-    mostraMessaggio('Dati aggiornati');
+    mostraMessaggio(messaggio);
   });
 
   elementi.interruttoreVista.querySelectorAll('button').forEach((bottone) => {

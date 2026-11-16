@@ -36,9 +36,12 @@ on:
 permissions:
   contents: write
 
-# Se un giro e' ancora in corso, il successivo aspetta il suo turno.
+# Se un giro automatico e' ancora in corso, il successivo aspetta il suo turno.
+# Quelli lanciati a mano (dal bottone della app) hanno una fila tutta loro:
+# altrimenti aspetterebbero fino a 40 minuti la fine del giro automatico.
+# Se due giri salvano insieme, ci pensa la funzione "salva" qui sotto.
 concurrency:
-  group: aggiorna-interpelli
+  group: aggiorna-interpelli-${{ github.event_name == 'workflow_dispatch' && 'mano' || 'auto' }}
   cancel-in-progress: false
 
 jobs:
@@ -82,22 +85,45 @@ jobs:
           GIRI: ${{ github.event_name == 'workflow_dispatch' && '1' || '5' }}
           PAUSA: "600"
         run: |
+          # Salva e pubblica. Se nel frattempo un altro giro (o tu) ha gia'
+          # salvato e i file si scontrano, non proviamo a "fondere" i dati:
+          # ripartiamo dalla versione appena pubblicata e rifacciamo il
+          # controllo sopra quella (senza rimandare le notifiche, e tenendo
+          # in memoria quelle gia' mandate da questo giro).
+          salva() {
+            git add -A docs/data data
+            if git diff --staged --quiet; then
+              echo "niente di nuovo da salvare"
+              return 0
+            fi
+            git commit -q -m "Aggiornamento interpelli $(date -u '+%Y-%m-%d %H:%M UTC')"
+            for tentativo in 1 2 3; do
+              if git pull --rebase -q && git push -q; then
+                echo "salvato e pubblicato"
+                return 0
+              fi
+              echo "scontro con un altro salvataggio: rifaccio sopra la versione pubblicata"
+              git rebase --abort 2>/dev/null || true
+              cp data/gia_notificati.json /tmp/notificati_miei.json 2>/dev/null || true
+              git fetch -q origin main
+              git reset -q --hard origin/main
+              python scripts/build.py --no-notifica
+              if [ -f /tmp/notificati_miei.json ] && [ -f data/gia_notificati.json ]; then
+                python -c "import json,sys; a=json.load(open(sys.argv[1])); b=json.load(open(sys.argv[2])); a.update(b); json.dump(a, open(sys.argv[2],'w'), indent=1, ensure_ascii=False)" /tmp/notificati_miei.json data/gia_notificati.json
+              fi
+              git add -A docs/data data
+              git diff --staged --quiet || git commit -q -m "Aggiornamento interpelli $(date -u '+%Y-%m-%d %H:%M UTC')"
+            done
+            echo "push non riuscito: riprovo al prossimo controllo"
+          }
+
           for giro in $(seq 1 "$GIRI"); do
             echo "::group::Controllo $giro di $GIRI"
             python scripts/build.py
 
             # Salviamo dopo OGNI controllo: cosi' la app si aggiorna subito,
             # senza aspettare la fine di tutta l'esecuzione.
-            git add -A docs/data data
-            if git diff --staged --quiet; then
-              echo "niente di nuovo da salvare"
-            else
-              git commit -m "Aggiornamento interpelli $(date -u '+%Y-%m-%d %H:%M UTC')"
-              # Nel frattempo potrebbe aver spinto qualcun altro (tu, o un altro
-              # giro): ci riallineiamo prima di spingere.
-              git pull --rebase --autostash || true
-              git push || echo "push non riuscito: riprovo al prossimo controllo"
-            fi
+            salva
             echo "::endgroup::"
 
             if [ "$giro" -lt "$GIRI" ]; then
