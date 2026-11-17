@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-11-17T14:16:10+01:00",
- "quanti": 5237,
+ "aggiornato": "2026-11-17T14:26:16+01:00",
+ "quanti": 5238,
  "interpelli": [
   {
    "id": "bccf8c0a8b29",
@@ -395,6 +395,28 @@
    "stato": "aperto",
    "data_scadenza": "2026-11-17",
    "data_scadenza_testo": "17/11/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "e3c6ec66c862",
+   "codice_scuola": "TOIC881004",
+   "scuola": "IC PERTINI",
+   "classe": "ADEE",
+   "classe_nome": "Sostegno primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": true,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Annuale fino al 31 agosto",
+   "durata_tipo": "annuale_31_agosto",
+   "data_interpello": "2026-11-17",
+   "data_interpello_testo": "17/11/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-11-18",
+   "data_scadenza_testo": "18/11/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false
