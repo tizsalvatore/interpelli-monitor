@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-11-17T14:06:05+01:00",
- "quanti": 5236,
+ "aggiornato": "2026-11-17T14:16:10+01:00",
+ "quanti": 5237,
  "interpelli": [
   {
    "id": "bccf8c0a8b29",
@@ -373,6 +373,28 @@
    "stato": "chiuso",
    "data_scadenza": "2026-10-30",
    "data_scadenza_testo": "30/10/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "0f7d5a3e2243",
+   "codice_scuola": "TOIC8AM009",
+   "scuola": "ISTITUTO COMPRENSIVO CARMAGNOLA 3",
+   "classe": "ADEE",
+   "classe_nome": "Sostegno primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": true,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Disponibile fino a 10 giorni",
+   "durata_tipo": "dieci_giorni",
+   "data_interpello": "2026-11-17",
+   "data_interpello_testo": "17/11/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-11-17",
+   "data_scadenza_testo": "17/11/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false
