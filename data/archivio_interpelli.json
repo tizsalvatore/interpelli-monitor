@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-11-18T13:29:25+01:00",
- "quanti": 5251,
+ "aggiornato": "2026-11-18T13:39:31+01:00",
+ "quanti": 5252,
  "interpelli": [
   {
    "id": "bccf8c0a8b29",
@@ -427,6 +427,28 @@
    "scuola": "IC BALANGERO",
    "classe": "ADEE",
    "classe_nome": "Sostegno primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": true,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2026-11-18",
+   "data_interpello_testo": "18/11/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-11-19",
+   "data_scadenza_testo": "19/11/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "afe5b762ae78",
+   "codice_scuola": "TOIC829003",
+   "scuola": "IC BALANGERO",
+   "classe": "ADAA",
+   "classe_nome": "Sostegno infanzia",
    "settore": "infanzia_primaria",
    "sostegno": true,
    "tipo_cattedra": "Interna",
