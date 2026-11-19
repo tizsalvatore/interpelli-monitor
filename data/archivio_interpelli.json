@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-11-19T12:10:40+01:00",
- "quanti": 5276,
+ "aggiornato": "2026-11-19T12:20:45+01:00",
+ "quanti": 5277,
  "interpelli": [
   {
    "id": "bccf8c0a8b29",
@@ -478,6 +478,28 @@
    "corso": "Diurno",
    "durata": "Fino al 30 giugno",
    "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2026-11-19",
+   "data_interpello_testo": "19/11/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-11-20",
+   "data_scadenza_testo": "20/11/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "08b80ba7d47f",
+   "codice_scuola": "TOIC8BG00B",
+   "scuola": "IC SAN BENIGNO CANAVESE",
+   "classe": "EEEE",
+   "classe_nome": "Primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": false,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Supplenza Temporanea fino al 2026-11-30",
+   "durata_tipo": "temporanea",
    "data_interpello": "2026-11-19",
    "data_interpello_testo": "19/11/2026",
    "stato": "aperto",
