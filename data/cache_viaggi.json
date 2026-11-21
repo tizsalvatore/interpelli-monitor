@@ -30343,7 +30343,7 @@
     "km": 16.3
    },
    "errore": null,
-   "aggiornato": "2026-10-22"
+   "aggiornato": "2026-11-21"
   },
   "Via Lamarmora 4, 10040 Rivalta Di Torino, Italia": {
    "lat": 45.0033399,
@@ -30371,7 +30371,7 @@
     "km": 17.2
    },
    "errore": null,
-   "aggiornato": "2026-10-22"
+   "aggiornato": "2026-11-21"
   },
   "Via Leopardi 13, 10040 Rivalta Di Torino, Italia": {
    "lat": 45.0103669,
@@ -30381,7 +30381,7 @@
    "approssimativo": false,
    "mezzi": {
     "minuti": 49,
-    "km": 11.2,
+    "km": 11.3,
     "cambi": 2,
     "linee": [
      {
@@ -30403,7 +30403,7 @@
     "km": 12.4
    },
    "errore": null,
-   "aggiornato": "2026-10-22"
+   "aggiornato": "2026-11-21"
   },
   "Via Giovanni Paolo II 15, 10040 La Loggia, Italia": {
    "lat": 44.9588528,
