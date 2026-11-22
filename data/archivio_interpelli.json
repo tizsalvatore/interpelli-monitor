@@ -1,6 +1,6 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-11-22T09:38:53+01:00",
+ "aggiornato": "2026-11-22T09:49:40+01:00",
  "quanti": 5304,
  "interpelli": [
   {
@@ -4264,7 +4264,7 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-11-03",
    "data_interpello_testo": "03.11.2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2026-11-23",
    "data_scadenza_testo": "23/11/2026",
    "note_cancellazione": "",
@@ -4286,7 +4286,7 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-11-03",
    "data_interpello_testo": "03.11.2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2026-11-23",
    "data_scadenza_testo": "23/11/2026",
    "note_cancellazione": "",
