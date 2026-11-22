@@ -1,6 +1,6 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-11-22T09:59:47+01:00",
+ "aggiornato": "2026-11-22T10:09:54+01:00",
  "quanti": 5304,
  "interpelli": [
   {
@@ -392,7 +392,7 @@
    "durata_tipo": "fino_30_giugno",
    "data_interpello": "2026-11-20",
    "data_interpello_testo": "20/11/2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2026-11-23",
    "data_scadenza_testo": "23/11/2026",
    "note_cancellazione": "",
@@ -436,7 +436,7 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2026-11-20",
    "data_interpello_testo": "20/11/2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2026-11-23",
    "data_scadenza_testo": "23/11/2026",
    "note_cancellazione": "",
@@ -458,7 +458,7 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2026-11-20",
    "data_interpello_testo": "20/11/2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2026-11-23",
    "data_scadenza_testo": "23/11/2026",
    "note_cancellazione": "",
@@ -524,7 +524,7 @@
    "durata_tipo": "fino_30_giugno",
    "data_interpello": "2026-11-20",
    "data_interpello_testo": "20/11/2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2026-11-22",
    "data_scadenza_testo": "22/11/2026",
    "note_cancellazione": "",
@@ -678,7 +678,7 @@
    "durata_tipo": "fino_30_giugno",
    "data_interpello": "2026-11-20",
    "data_interpello_testo": "20/11/2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2026-11-23",
    "data_scadenza_testo": "23/11/2026",
    "note_cancellazione": "",
@@ -700,7 +700,7 @@
    "durata_tipo": "fino_30_giugno",
    "data_interpello": "2026-11-20",
    "data_interpello_testo": "20/11/2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2026-11-23",
    "data_scadenza_testo": "23/11/2026",
    "note_cancellazione": "",
@@ -810,7 +810,7 @@
    "durata_tipo": "fino_30_giugno",
    "data_interpello": "2026-11-20",
    "data_interpello_testo": "20/11/2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2026-11-23",
    "data_scadenza_testo": "23/11/2026",
    "note_cancellazione": "",
@@ -3032,7 +3032,7 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2026-11-10",
    "data_interpello_testo": "10/11/2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2026-12-04",
    "data_scadenza_testo": "04/12/2026",
    "note_cancellazione": "",
@@ -4264,7 +4264,7 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-11-03",
    "data_interpello_testo": "03.11.2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2026-11-23",
    "data_scadenza_testo": "23/11/2026",
    "note_cancellazione": "",
@@ -4286,7 +4286,7 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-11-03",
    "data_interpello_testo": "03.11.2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2026-11-23",
    "data_scadenza_testo": "23/11/2026",
    "note_cancellazione": "",
@@ -4308,7 +4308,7 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-11-03",
    "data_interpello_testo": "03.11.2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2026-11-23",
    "data_scadenza_testo": "23/11/2026",
    "note_cancellazione": "",
@@ -4330,7 +4330,7 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-11-03",
    "data_interpello_testo": "03.11.2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2026-11-23",
    "data_scadenza_testo": "23/11/2026",
    "note_cancellazione": "",
@@ -4968,7 +4968,7 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2026-10-30",
    "data_interpello_testo": "30/10/2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2026-12-17",
    "data_scadenza_testo": "17/12/2026",
    "note_cancellazione": "",
@@ -6046,7 +6046,7 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-10-27",
    "data_interpello_testo": "27/10/2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2027-01-27",
    "data_scadenza_testo": "27/01/2027",
    "note_cancellazione": "",
@@ -6068,7 +6068,7 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-10-27",
    "data_interpello_testo": "27/10/2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2027-01-27",
    "data_scadenza_testo": "27/01/2027",
    "note_cancellazione": "",
@@ -7410,7 +7410,7 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-10-22",
    "data_interpello_testo": "22/10/2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2026-12-20",
    "data_scadenza_testo": "20/12/2026",
    "note_cancellazione": "",
@@ -7432,7 +7432,7 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-10-22",
    "data_interpello_testo": "22/10/2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2026-12-10",
    "data_scadenza_testo": "10/12/2026",
    "note_cancellazione": "",
@@ -11568,7 +11568,7 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-10-13",
    "data_interpello_testo": "13/10/2026",
-   "stato": "chiuso",
+   "stato": "aperto",
    "data_scadenza": "2026-12-10",
    "data_scadenza_testo": "10/12/2026",
    "note_cancellazione": "",
@@ -17552,12 +17552,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-10-02",
    "data_interpello_testo": "02/10/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-28",
    "data_scadenza_testo": "28/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "9d0b83f98760",
@@ -18762,12 +18762,12 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2026-09-30",
    "data_interpello_testo": "30/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "de71a917dd9b",
@@ -18916,12 +18916,12 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2026-09-30",
    "data_interpello_testo": "30/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "3c222b13e27b",
@@ -19730,12 +19730,12 @@
    "durata_tipo": "fino_30_giugno",
    "data_interpello": "2026-09-29",
    "data_interpello_testo": "29/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "34d15ab4b841",
@@ -19818,12 +19818,12 @@
    "durata_tipo": "annuale_31_agosto",
    "data_interpello": "2026-09-29",
    "data_interpello_testo": "29/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "0c999fac0f1c",
@@ -19862,12 +19862,12 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2026-09-29",
    "data_interpello_testo": "29/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "d5976643e0d0",
@@ -19906,12 +19906,12 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2026-09-29",
    "data_interpello_testo": "29/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "1bfb994b9b6e",
@@ -19950,12 +19950,12 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2026-09-29",
    "data_interpello_testo": "29/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "86cc3d761765",
@@ -20126,12 +20126,12 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2026-09-29",
    "data_interpello_testo": "29/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "f4f9073c8acf",
@@ -20170,12 +20170,12 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2026-09-29",
    "data_interpello_testo": "29/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "2b674cb5fab6",
@@ -20214,12 +20214,12 @@
    "durata_tipo": "fino_30_giugno",
    "data_interpello": "2026-09-29",
    "data_interpello_testo": "29/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "47f0b539d829",
@@ -20302,12 +20302,12 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2026-09-29",
    "data_interpello_testo": "29/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "a91c1403fcfd",
@@ -20390,12 +20390,12 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2026-09-29",
    "data_interpello_testo": "29/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "436f2fbeb865",
@@ -20434,12 +20434,12 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2026-09-29",
    "data_interpello_testo": "29/09/26",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "adc66f60e9c1",
@@ -20522,12 +20522,12 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2026-09-29",
    "data_interpello_testo": "29/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "af7768185b95",
@@ -20566,12 +20566,12 @@
    "durata_tipo": "fino_30_giugno",
    "data_interpello": "2026-09-29",
    "data_interpello_testo": "29/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "5ffcd5c9d74e",
@@ -20698,12 +20698,12 @@
    "durata_tipo": "fino_30_giugno",
    "data_interpello": "2026-09-29",
    "data_interpello_testo": "29/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "e82e338346bd",
@@ -20918,12 +20918,12 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2026-09-29",
    "data_interpello_testo": "29/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "706c4817e122",
@@ -20962,12 +20962,12 @@
    "durata_tipo": "fino_30_giugno",
    "data_interpello": "2026-09-29",
    "data_interpello_testo": "29/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "3ab4c94daae6",
@@ -21248,12 +21248,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-28",
    "data_interpello_testo": "28/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-29",
    "data_scadenza_testo": "29/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "698e65074dea",
@@ -21336,12 +21336,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-28",
    "data_interpello_testo": "28/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-29",
    "data_scadenza_testo": "29/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "e85cc7c95f34",
@@ -21468,12 +21468,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-28",
    "data_interpello_testo": "28/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-29",
    "data_scadenza_testo": "29/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "f80bdc9f1f06",
@@ -21512,12 +21512,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-28",
    "data_interpello_testo": "28/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-29",
    "data_scadenza_testo": "29/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "5279f8fcdf4b",
@@ -21688,12 +21688,12 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2026-09-28",
    "data_interpello_testo": "28/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "ef961417e033",
@@ -21754,12 +21754,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-28",
    "data_interpello_testo": "28/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-29",
    "data_scadenza_testo": "29/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "b63ff14b80f1",
@@ -21776,12 +21776,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-28",
    "data_interpello_testo": "28/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-29",
    "data_scadenza_testo": "29/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "d76a3caf0303",
@@ -22392,12 +22392,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-28",
    "data_interpello_testo": "28/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "1d84030d591d",
@@ -22766,12 +22766,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-25",
    "data_interpello_testo": "25/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-26",
    "data_scadenza_testo": "26/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "83f3e94047d2",
@@ -22898,12 +22898,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-25",
    "data_interpello_testo": "25/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-28",
    "data_scadenza_testo": "28/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "6eaf4eaa3a5e",
@@ -22920,12 +22920,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-25",
    "data_interpello_testo": "25/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-28",
    "data_scadenza_testo": "28/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "7d4086d7a09f",
@@ -22942,12 +22942,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-25",
    "data_interpello_testo": "25/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-28",
    "data_scadenza_testo": "28/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "c80840e32380",
@@ -22964,12 +22964,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-25",
    "data_interpello_testo": "25/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-28",
    "data_scadenza_testo": "28/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "de42cd1ee730",
@@ -23074,12 +23074,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-25",
    "data_interpello_testo": "25/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-28",
    "data_scadenza_testo": "28/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "99ba1f811b6b",
@@ -23096,12 +23096,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-25",
    "data_interpello_testo": "25/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-28",
    "data_scadenza_testo": "28/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "e0e89a7221f3",
@@ -23624,12 +23624,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-25",
    "data_interpello_testo": "25/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-28",
    "data_scadenza_testo": "28/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "2b957df76f0e",
@@ -23800,12 +23800,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-25",
    "data_interpello_testo": "25/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-27",
    "data_scadenza_testo": "27/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "e437788dc300",
@@ -23910,12 +23910,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-25",
    "data_interpello_testo": "25/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-28",
    "data_scadenza_testo": "28/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "87bfd16db903",
@@ -25098,12 +25098,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-24",
    "data_interpello_testo": "24/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-27",
    "data_scadenza_testo": "27/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "c09a26bbae9c",
@@ -25362,12 +25362,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-24",
    "data_interpello_testo": "24/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-25",
    "data_scadenza_testo": "25/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "82897609bc25",
@@ -25384,12 +25384,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-24",
    "data_interpello_testo": "24/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-25",
    "data_scadenza_testo": "25/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "edcb62fa02ea",
@@ -25406,12 +25406,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-24",
    "data_interpello_testo": "24/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-25",
    "data_scadenza_testo": "25/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "e65d3a367bd2",
@@ -25428,12 +25428,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-24",
    "data_interpello_testo": "24/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-25",
    "data_scadenza_testo": "25/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "e65d3a367bd2-2",
@@ -25450,12 +25450,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-24",
    "data_interpello_testo": "24/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-25",
    "data_scadenza_testo": "25/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "f999d4cddd0d",
@@ -25736,12 +25736,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-24",
    "data_interpello_testo": "24/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-25",
    "data_scadenza_testo": "25/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "f4a4697fc878",
@@ -26044,12 +26044,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-23",
    "data_interpello_testo": "23/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-24",
    "data_scadenza_testo": "24/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "7917acb08535",
@@ -26132,12 +26132,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-23",
    "data_interpello_testo": "23/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-24",
    "data_scadenza_testo": "24/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "8470c7401543",
@@ -26418,12 +26418,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-23",
    "data_interpello_testo": "23/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-24",
    "data_scadenza_testo": "24/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "bdbeb591d2ba",
@@ -26792,12 +26792,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-23",
    "data_interpello_testo": "23.09.2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-24",
    "data_scadenza_testo": "24/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "9d3385d92260",
@@ -26814,12 +26814,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-23",
    "data_interpello_testo": "23/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-24",
    "data_scadenza_testo": "24/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "2beed53794c2",
@@ -27034,12 +27034,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-23",
    "data_interpello_testo": "23/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-28",
    "data_scadenza_testo": "28/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "c0310688431f",
@@ -27056,12 +27056,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-23",
    "data_interpello_testo": "23/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-28",
    "data_scadenza_testo": "28/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "b525d896a4c1",
@@ -27474,12 +27474,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-23",
    "data_interpello_testo": "23/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-24",
    "data_scadenza_testo": "24/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "a36562da9f9f",
@@ -27496,12 +27496,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-23",
    "data_interpello_testo": "23/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-24",
    "data_scadenza_testo": "24/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "bf0d43b3197f",
@@ -27518,12 +27518,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-23",
    "data_interpello_testo": "23/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-24",
    "data_scadenza_testo": "24/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "7f6667462c24",
@@ -27540,12 +27540,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-23",
    "data_interpello_testo": "23/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-24",
    "data_scadenza_testo": "24/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "7c27287ece18",
@@ -28508,12 +28508,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-22",
    "data_interpello_testo": "22/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-23",
    "data_scadenza_testo": "23/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "85448df832a3",
@@ -28530,12 +28530,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-22",
    "data_interpello_testo": "22/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-23",
    "data_scadenza_testo": "23/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "73e76ae64efc",
@@ -28992,12 +28992,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-22",
    "data_interpello_testo": "22/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-23",
    "data_scadenza_testo": "23/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "23315899c151",
@@ -29300,12 +29300,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-22",
    "data_interpello_testo": "22/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-23",
    "data_scadenza_testo": "23/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "e103255bf3f8",
@@ -29828,12 +29828,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-22",
    "data_interpello_testo": "22/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-23",
    "data_scadenza_testo": "23/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "e40372ab81cf",
@@ -30334,12 +30334,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-22",
    "data_interpello_testo": "22/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-23",
    "data_scadenza_testo": "23/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "a9c77a9c98c9",
@@ -30356,12 +30356,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-22",
    "data_interpello_testo": "22/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-23",
    "data_scadenza_testo": "23/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "8b6b144ee03e",
@@ -30532,12 +30532,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-21",
    "data_interpello_testo": "21/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-22",
    "data_scadenza_testo": "22/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "9e3557ce09c0",
@@ -30730,12 +30730,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-21",
    "data_interpello_testo": "21/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-22",
    "data_scadenza_testo": "22/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "d35633f423a3",
@@ -30752,12 +30752,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-21",
    "data_interpello_testo": "21/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-22",
    "data_scadenza_testo": "22/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "f9f921cb7c30",
@@ -30950,12 +30950,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-21",
    "data_interpello_testo": "21/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-24",
    "data_scadenza_testo": "24/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "d79db974a041",
@@ -30972,12 +30972,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-21",
    "data_interpello_testo": "21/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-22",
    "data_scadenza_testo": "22/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "829d9fc51d24",
@@ -30994,12 +30994,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-21",
    "data_interpello_testo": "21/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-22",
    "data_scadenza_testo": "22/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "caed2dac7628",
@@ -31016,12 +31016,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-21",
    "data_interpello_testo": "21/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-22",
    "data_scadenza_testo": "22/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "9c5820ec14c6",
@@ -31148,12 +31148,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-21",
    "data_interpello_testo": "21/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-22",
    "data_scadenza_testo": "22/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "ea3a02d92155",
@@ -31302,12 +31302,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-21",
    "data_interpello_testo": "21/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-23",
    "data_scadenza_testo": "23/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "ecc037ffb184",
@@ -31434,12 +31434,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-21",
    "data_interpello_testo": "21/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-23",
    "data_scadenza_testo": "23/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "371558b55f62",
@@ -31456,12 +31456,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-21",
    "data_interpello_testo": "21/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-23",
    "data_scadenza_testo": "23/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "a2187cb56fc1",
@@ -31522,12 +31522,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-21",
    "data_interpello_testo": "21/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-22",
    "data_scadenza_testo": "22/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "e0d296201194",
@@ -31654,12 +31654,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-21",
    "data_interpello_testo": "21/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-21",
    "data_scadenza_testo": "21/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "13eebf013975",
@@ -32094,12 +32094,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-21",
    "data_interpello_testo": "21/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-22",
    "data_scadenza_testo": "22/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "0e5585eecba0",
@@ -32314,12 +32314,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-18",
    "data_interpello_testo": "18/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-19",
    "data_scadenza_testo": "19/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "848cb1255ed3",
@@ -32644,12 +32644,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-18",
    "data_interpello_testo": "18/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-21",
    "data_scadenza_testo": "21/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "65f6036df13e",
@@ -33106,12 +33106,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-18",
    "data_interpello_testo": "18/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-20",
    "data_scadenza_testo": "20/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "1de68e766ddf",
@@ -33458,12 +33458,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-18",
    "data_interpello_testo": "18/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-19",
    "data_scadenza_testo": "19/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "c4a681de9e84",
@@ -33700,12 +33700,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-17",
    "data_interpello_testo": "17/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-21",
    "data_scadenza_testo": "21/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "7b001ad4476e",
@@ -33920,12 +33920,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-17",
    "data_interpello_testo": "17/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-18",
    "data_scadenza_testo": "18/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "c0bbedc74835",
@@ -34052,12 +34052,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-17",
    "data_interpello_testo": "17/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-18",
    "data_scadenza_testo": "18/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "22af8b33a304",
@@ -34074,12 +34074,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-17",
    "data_interpello_testo": "17/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-11",
    "data_scadenza_testo": "11/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "b78512817d83",
@@ -34294,12 +34294,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-17",
    "data_interpello_testo": "17/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-18",
    "data_scadenza_testo": "18/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "84335b73f64a",
@@ -34844,12 +34844,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-17",
    "data_interpello_testo": "17/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-18",
    "data_scadenza_testo": "18/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "59fd24683516",
@@ -35856,12 +35856,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-17",
    "data_interpello_testo": "17/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-23",
    "data_scadenza_testo": "23/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "e207e22742ed",
@@ -35878,12 +35878,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-17",
    "data_interpello_testo": "17/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-23",
    "data_scadenza_testo": "23/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "1e6b37acbbb3",
@@ -35900,12 +35900,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-17",
    "data_interpello_testo": "17/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-23",
    "data_scadenza_testo": "23/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "6d6a45a9f176",
@@ -35922,12 +35922,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-17",
    "data_interpello_testo": "17/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-23",
    "data_scadenza_testo": "23/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "5110feed1120",
@@ -35988,12 +35988,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-17",
    "data_interpello_testo": "17/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-18",
    "data_scadenza_testo": "18/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "c0b76b1de438",
@@ -36010,12 +36010,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-17",
    "data_interpello_testo": "17/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-18",
    "data_scadenza_testo": "18/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "f1038a0d075b",
@@ -36120,12 +36120,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-16",
    "data_interpello_testo": "16/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-18",
    "data_scadenza_testo": "18/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "de1a7006a885",
@@ -36142,12 +36142,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-16",
    "data_interpello_testo": "16/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-18",
    "data_scadenza_testo": "18/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "f16d864bfb88",
@@ -36164,12 +36164,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-16",
    "data_interpello_testo": "16/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-18",
    "data_scadenza_testo": "18/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "c9f27cdf7205",
@@ -36186,12 +36186,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-16",
    "data_interpello_testo": "16/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-18",
    "data_scadenza_testo": "18/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "ad5deec0f952",
@@ -36428,12 +36428,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-16",
    "data_interpello_testo": "16/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "b5401d50d216",
@@ -36450,12 +36450,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-16",
    "data_interpello_testo": "16/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "59ce1805da52",
@@ -36692,12 +36692,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-16",
    "data_interpello_testo": "16/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-22",
    "data_scadenza_testo": "22/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "96a92ff8528f",
@@ -36714,12 +36714,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-16",
    "data_interpello_testo": "16/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-22",
    "data_scadenza_testo": "22/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "c0b32bcf6185",
@@ -36736,12 +36736,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-16",
    "data_interpello_testo": "16/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-22",
    "data_scadenza_testo": "22/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "2fe20f73b0da",
@@ -36758,12 +36758,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-16",
    "data_interpello_testo": "16/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-22",
    "data_scadenza_testo": "22/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "6a51406ec6a9",
@@ -37462,12 +37462,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-16",
    "data_interpello_testo": "16/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-17",
    "data_scadenza_testo": "17/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "b27664a0c425",
@@ -38606,12 +38606,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-15",
    "data_interpello_testo": "15/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-15",
    "data_scadenza_testo": "15/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "57b7e88e7db6",
@@ -38628,12 +38628,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-15",
    "data_interpello_testo": "15/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-16",
    "data_scadenza_testo": "16/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "827544689f06",
@@ -38650,12 +38650,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-15",
    "data_interpello_testo": "15/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-16",
    "data_scadenza_testo": "16/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "10f3c046e7cc",
@@ -38672,12 +38672,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-15",
    "data_interpello_testo": "15/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-16",
    "data_scadenza_testo": "16/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "52d6bcf4e9b0",
@@ -39024,12 +39024,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-15",
    "data_interpello_testo": "15/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "034e090226b0",
@@ -39046,12 +39046,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-15",
    "data_interpello_testo": "15/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "1473f0d443ca",
@@ -39068,12 +39068,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-15",
    "data_interpello_testo": "15/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "3d02579f725b",
@@ -39090,12 +39090,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-15",
    "data_interpello_testo": "15/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "11b947c9c078",
@@ -39156,12 +39156,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-15",
    "data_interpello_testo": "15/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-15",
    "data_scadenza_testo": "15/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "8c3a9277e957",
@@ -39178,12 +39178,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-15",
    "data_interpello_testo": "15/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-15",
    "data_scadenza_testo": "15/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "86085aa3e8e1",
@@ -39530,12 +39530,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-15",
    "data_interpello_testo": "15/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-16",
    "data_scadenza_testo": "16/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "2c306573f7c9",
@@ -40872,12 +40872,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-14",
    "data_interpello_testo": "14/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-15",
    "data_scadenza_testo": "15/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "275aa02ed713",
@@ -41224,12 +41224,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-14",
    "data_interpello_testo": "14.09.2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-16",
    "data_scadenza_testo": "16/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "612ae6ebe328",
@@ -41246,12 +41246,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-14",
    "data_interpello_testo": "14.09.2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-16",
    "data_scadenza_testo": "16/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "13f37259b866",
@@ -41268,12 +41268,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-14",
    "data_interpello_testo": "14.09.2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-16",
    "data_scadenza_testo": "16/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "660fc2f7ac56",
@@ -46988,12 +46988,12 @@
    "durata_tipo": "fino_30_giugno",
    "data_interpello": "2026-09-10",
    "data_interpello_testo": "10/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-11",
    "data_scadenza_testo": "11/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "045afeb5e7be",
@@ -51366,12 +51366,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2026-09-08",
    "data_interpello_testo": "08/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-11",
    "data_scadenza_testo": "11/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "18856d666eaf",
@@ -98182,12 +98182,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2025-09-18",
    "data_interpello_testo": "18/09/2025",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-21",
    "data_scadenza_testo": "21/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "e9d566360ee4",
@@ -98204,12 +98204,12 @@
    "durata_tipo": "dieci_giorni",
    "data_interpello": "2025-09-18",
    "data_interpello_testo": "18/09/2025",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-21",
    "data_scadenza_testo": "21/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "c1108afc71cb",
@@ -116310,12 +116310,12 @@
    "durata_tipo": "temporanea",
    "data_interpello": "2011-09-23",
    "data_interpello_testo": "23/09/2011",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-24",
    "data_scadenza_testo": "24/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "86232bc5d0aa",
@@ -116618,12 +116618,12 @@
    "durata_tipo": "fino_30_giugno",
    "data_interpello": null,
    "data_interpello_testo": "39/09/2026",
-   "stato": "aperto",
+   "stato": "chiuso",
    "data_scadenza": "2026-09-30",
    "data_scadenza_testo": "30/09/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
-   "scaduto": true
+   "scaduto": false
   },
   {
    "id": "d7bd200dd28a",
