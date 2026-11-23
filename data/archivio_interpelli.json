@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-11-23T13:25:10+01:00",
- "quanti": 5320,
+ "aggiornato": "2026-11-23T13:35:16+01:00",
+ "quanti": 5321,
  "interpelli": [
   {
    "id": "bccf8c0a8b29",
@@ -469,6 +469,28 @@
    "id": "77bb1e6eb34e",
    "codice_scuola": "TOIC8AC00D",
    "scuola": "IC GOZZANO RIVAROLO CSE",
+   "classe": "ADEE",
+   "classe_nome": "Sostegno primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": true,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2026-11-23",
+   "data_interpello_testo": "23/11/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-11-25",
+   "data_scadenza_testo": "25/11/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "5b76176c4dc7",
+   "codice_scuola": "TOIC84800C",
+   "scuola": "IC FORNO CANAVESE",
    "classe": "ADEE",
    "classe_nome": "Sostegno primaria",
    "settore": "infanzia_primaria",
