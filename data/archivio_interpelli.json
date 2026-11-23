@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-11-23T13:35:16+01:00",
- "quanti": 5321,
+ "aggiornato": "2026-11-23T13:45:21+01:00",
+ "quanti": 5322,
  "interpelli": [
   {
    "id": "bccf8c0a8b29",
@@ -505,6 +505,28 @@
    "stato": "aperto",
    "data_scadenza": "2026-11-25",
    "data_scadenza_testo": "25/11/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "298aaf95e944",
+   "codice_scuola": "TOIC8B700B",
+   "scuola": "IC ENNIO MORRICONE",
+   "classe": "ADEE",
+   "classe_nome": "Sostegno primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": true,
+   "tipo_cattedra": "Interna",
+   "ore_spezzone": null,
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2026-11-23",
+   "data_interpello_testo": "23/11/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-11-24",
+   "data_scadenza_testo": "24/11/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false
