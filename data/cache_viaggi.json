@@ -26049,16 +26049,12 @@
    "precisione": "GEOMETRIC_CENTER",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 42,
-    "km": 8.9,
-    "cambi": 2,
+    "minuti": 52,
+    "km": 10.4,
+    "cambi": 1,
     "linee": [
      {
       "nome": "2",
-      "tipo": "BUS"
-     },
-     {
-      "nome": "95/",
       "tipo": "BUS"
      },
      {
@@ -26072,7 +26068,7 @@
     "km": 9.0
    },
    "errore": null,
-   "aggiornato": "2026-10-26"
+   "aggiornato": "2026-11-25"
   },
   "Via Sergio De Vitis 15, 10094 Giaveno, Italia": {
    "lat": 45.042062,
@@ -26086,7 +26082,7 @@
     "km": 51.1
    },
    "errore": null,
-   "aggiornato": "2026-10-26"
+   "aggiornato": "2026-11-25"
   },
   "Via Sestriere 60, 10098 Rivoli, Italia": {
    "lat": 45.07413469999999,
@@ -26114,7 +26110,7 @@
     "km": 26.1
    },
    "errore": null,
-   "aggiornato": "2026-10-26"
+   "aggiornato": "2026-11-25"
   },
   "Via Sestriere 70, 10048 Vinovo, Italia": {
    "lat": 44.9754855,
