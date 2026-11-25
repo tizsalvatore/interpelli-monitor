@@ -1,7 +1,7 @@
 {
  "_cos_e": "Tutti gli interpelli che questo progetto ha visto sul sito, anche quelli che il sito ha poi cancellato. Lo aggiorna il robot da solo.",
- "aggiornato": "2026-11-25T05:44:49+01:00",
- "quanti": 5350,
+ "aggiornato": "2026-11-25T09:49:08+01:00",
+ "quanti": 5351,
  "interpelli": [
   {
    "id": "bccf8c0a8b29",
@@ -373,6 +373,28 @@
    "stato": "chiuso",
    "data_scadenza": "2026-10-30",
    "data_scadenza_testo": "30/10/2026",
+   "note_cancellazione": "",
+   "data_cancellazione": null,
+   "scaduto": false
+  },
+  {
+   "id": "3436c9381728",
+   "codice_scuola": "TOIC8CK00V",
+   "scuola": "ISTITUTO COMPRENSIVO GIULIA CECCHETTIN",
+   "classe": "ADEE",
+   "classe_nome": "Sostegno primaria",
+   "settore": "infanzia_primaria",
+   "sostegno": true,
+   "tipo_cattedra": "Spezzone",
+   "ore_spezzone": "12",
+   "corso": "Diurno",
+   "durata": "Fino al 30 giugno",
+   "durata_tipo": "fino_30_giugno",
+   "data_interpello": "2026-11-25",
+   "data_interpello_testo": "25/11/2026",
+   "stato": "aperto",
+   "data_scadenza": "2026-11-26",
+   "data_scadenza_testo": "26/11/2026",
    "note_cancellazione": "",
    "data_cancellazione": null,
    "scaduto": false
