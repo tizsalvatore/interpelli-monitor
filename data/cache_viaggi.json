@@ -26134,7 +26134,7 @@
     "km": 9.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Sestriere 72, 10048 Vinovo, Italia": {
    "lat": 44.9752039,
@@ -26158,7 +26158,7 @@
     "km": 9.2
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Sidoli 10, 10135 Torino, Italia": {
    "lat": 45.0275962,
@@ -26179,10 +26179,10 @@
    },
    "auto": {
     "minuti": 6,
-    "km": 2.5
+    "km": 3.1
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Silvio Pellico 6, 10092 Beinasco, Italia": {
    "lat": 45.0246402,
@@ -26206,7 +26206,7 @@
     "km": 9.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Somalia 1/A, 10095 Grugliasco, Italia": {
    "lat": 45.0577046,
@@ -26234,7 +26234,7 @@
     "km": 7.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Somalia 2, 10095 Grugliasco, Italia": {
    "lat": 45.05683610000001,
@@ -26262,7 +26262,7 @@
     "km": 7.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Sospello 64, 10147 Torino, Italia": {
    "lat": 45.10287,
@@ -26286,7 +26286,7 @@
     "km": 12.5
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Sotti 2, 10090 Rivalba, Italia": {
    "lat": 45.12037180000001,
@@ -26295,17 +26295,17 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 151,
-    "km": 52.9,
+    "minuti": 206,
+    "km": 36.1,
     "cambi": 4,
     "linee": [
      {
-      "nome": "24",
-      "tipo": "BUS"
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
      },
      {
-      "nome": "RV",
-      "tipo": "HEAVY_RAIL"
+      "nome": "8",
+      "tipo": "BUS"
      },
      {
       "nome": "3107",
@@ -26326,7 +26326,7 @@
     "km": 39.7
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Speranza 72, 10099 San Mauro Torinese, Italia": {
    "lat": 45.1063303,
@@ -26354,7 +26354,7 @@
     "km": 15.1
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Speranza N 40, 10099 San Mauro Torinese, Italia": {
    "lat": 45.1071844,
@@ -26382,7 +26382,7 @@
     "km": 15.4
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Stazione 12, 10060 Pinerolo, Italia": {
    "lat": 44.8941475,
@@ -26410,7 +26410,7 @@
     "km": 32.4
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Stazione 12, 10064 Pinerolo, Italia": {
    "lat": 44.8941475,
@@ -26438,7 +26438,7 @@
     "km": 32.4
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Stazione 26, 10060 Airasca, Italia": {
    "lat": 44.9198715,
@@ -26459,10 +26459,10 @@
    },
    "auto": {
     "minuti": 27,
-    "km": 24.6
+    "km": 25.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Stazione 37, 10060 Airasca, Italia": {
    "lat": 44.9198597,
@@ -26483,10 +26483,10 @@
    },
    "auto": {
     "minuti": 27,
-    "km": 24.6
+    "km": 25.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Stelvio 45, Torino, Italia": {
    "lat": 45.0653094,
@@ -26496,7 +26496,7 @@
    "approssimativo": false,
    "mezzi": {
     "minuti": 48,
-    "km": 8.1,
+    "km": 8.0,
     "cambi": 0,
     "linee": [
      {
@@ -26510,7 +26510,7 @@
     "km": 7.3
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via T. Piatti 109 (B.Ta Tagliaferro), 10024 Moncalieri, Italia": {
    "lat": 44.9782715,
@@ -26534,7 +26534,7 @@
     "km": 6.5
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Taneschie 21, 10073 Ciriè, Italia": {
    "lat": 45.231944,
@@ -26558,7 +26558,7 @@
     "km": 56.3
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Tappi 40, Carignano, Italia": {
    "lat": 44.9069633,
@@ -26582,7 +26582,7 @@
     "km": 18.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Tegas 2, 10062 Luserna San Giovanni, Italia": {
    "lat": 44.8152331,
@@ -26614,7 +26614,7 @@
     "km": 49.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Terraneo 1, 10151 Torino, Italia": {
    "lat": 45.09792909999999,
@@ -26623,7 +26623,7 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 51,
+    "minuti": 52,
     "km": 11.8,
     "cambi": 1,
     "linee": [
@@ -26642,7 +26642,7 @@
     "km": 11.2
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Tesso 4, 10074 Lanzo Torinese, Italia": {
    "lat": 45.2760283,
@@ -26662,11 +26662,11 @@
     ]
    },
    "auto": {
-    "minuti": 49,
+    "minuti": 50,
     "km": 61.1
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Tetti Agostino 31, 10026 Santena, Italia": {
    "lat": 44.9499153,
@@ -26690,7 +26690,7 @@
     "km": 15.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Thaon Di Revel 9, 10038 Verolengo, Italia": {
    "lat": 45.1908487,
@@ -26718,7 +26718,7 @@
     "km": 68.6
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Thouar 2, 10149 Torino, Italia": {
    "lat": 45.092132,
@@ -26728,7 +26728,7 @@
    "approssimativo": false,
    "mezzi": {
     "minuti": 56,
-    "km": 11.0,
+    "km": 10.9,
     "cambi": 0,
     "linee": [
      {
@@ -26742,7 +26742,7 @@
     "km": 10.3
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Thures 11, 10142 Torino, Italia": {
    "lat": 45.0727657,
@@ -26766,7 +26766,7 @@
     "km": 10.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Tibaldi 70, 10079 Mappano, Italia": {
    "lat": 45.1460253,
@@ -26794,7 +26794,7 @@
     "km": 44.2
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Tibaldo Niero 1, 10063 Perosa Argentina, Italia": {
    "lat": 44.95493,
@@ -26804,7 +26804,7 @@
    "approssimativo": false,
    "mezzi": {
     "minuti": 107,
-    "km": 54.0,
+    "km": 53.9,
     "cambi": 3,
     "linee": [
      {
@@ -26827,10 +26827,10 @@
    },
    "auto": {
     "minuti": 50,
-    "km": 55.0
+    "km": 55.4
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Ticino 1, 10098 Rivoli, Italia": {
    "lat": 45.0699745,
@@ -26839,8 +26839,8 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 72,
-    "km": 17.6,
+    "minuti": 73,
+    "km": 17.8,
     "cambi": 1,
     "linee": [
      {
@@ -26855,10 +26855,10 @@
    },
    "auto": {
     "minuti": 20,
-    "km": 26.2
+    "km": 26.1
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Tofane 28, 10141 Torino, Italia": {
    "lat": 45.0663426,
@@ -26882,7 +26882,7 @@
     "km": 7.2
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Tolmino 30, Torino, Italia": {
    "lat": 45.0576923,
@@ -26891,13 +26891,13 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 36,
-    "km": 6.1,
+    "minuti": 40,
+    "km": 6.4,
     "cambi": 1,
     "linee": [
      {
-      "nome": "M1",
-      "tipo": "SUBWAY"
+      "nome": "2014",
+      "tipo": "BUS"
      },
      {
       "nome": "66",
@@ -26907,10 +26907,10 @@
    },
    "auto": {
     "minuti": 15,
-    "km": 5.9
+    "km": 6.4
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Tolmino 40, 10141 Torino, Italia": {
    "lat": 45.0572053,
@@ -26919,13 +26919,13 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 38,
-    "km": 6.2,
+    "minuti": 42,
+    "km": 6.6,
     "cambi": 1,
     "linee": [
      {
-      "nome": "M1",
-      "tipo": "SUBWAY"
+      "nome": "2014",
+      "tipo": "BUS"
      },
      {
       "nome": "66",
@@ -26935,10 +26935,10 @@
    },
    "auto": {
     "minuti": 15,
-    "km": 6.1
+    "km": 6.6
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Torino 1, 10060 Scalenghe, Italia": {
    "lat": 44.89153959999999,
@@ -26958,11 +26958,11 @@
     ]
    },
    "auto": {
-    "minuti": 29,
-    "km": 27.3
+    "minuti": 28,
+    "km": 31.5
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Torino 1, 10090 Bruino, Italia": {
    "lat": 45.0217852,
@@ -26990,7 +26990,7 @@
     "km": 21.7
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Torino 13, 10060 Castagnole Piemonte, Italia": {
    "lat": 44.900393,
@@ -27014,7 +27014,7 @@
     "km": 29.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Torino 16, 10060 Castagnole Piemonte, Italia": {
    "lat": 44.9004734,
@@ -27038,7 +27038,7 @@
     "km": 29.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Torino 20, 10067 Vigone, Italia": {
    "lat": 44.8453869,
@@ -27058,11 +27058,11 @@
     ]
    },
    "auto": {
-    "minuti": 35,
-    "km": 36.5
+    "minuti": 36,
+    "km": 36.8
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Torino 25, 10080 Locana, Italia": {
    "lat": 45.4164561,
@@ -27098,7 +27098,7 @@
     "km": 99.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Torino 29, 10076 Nole, Italia": {
    "lat": 45.2414439,
@@ -27122,7 +27122,7 @@
     "km": 57.8
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Torino 5, 10070 Cafasse, Italia": {
    "lat": 45.2443482,
@@ -27131,7 +27131,7 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 83,
+    "minuti": 85,
     "km": 37.1,
     "cambi": 1,
     "linee": [
@@ -27150,7 +27150,7 @@
     "km": 55.7
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Torino N. 33, 10080 Locana, Italia": {
    "lat": 45.4171469,
@@ -27186,7 +27186,7 @@
     "km": 99.2
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Torino, 10040 Leini, Italia": {
    "lat": 45.1698555,
@@ -27210,11 +27210,11 @@
     ]
    },
    "auto": {
-    "minuti": 35,
+    "minuti": 36,
     "km": 47.5
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Torrazza Piemonte 10, 10127 Torino, Italia": {
    "lat": 45.01655179999999,
@@ -27238,7 +27238,7 @@
     "km": 2.2
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Torretta 20, 10010 Banchette, Italia": {
    "lat": 45.45182339999999,
@@ -27266,7 +27266,7 @@
     "km": 82.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Toti 14, 10042 Nichelino, Italia": {
    "lat": 44.9963523,
@@ -27290,7 +27290,7 @@
     "km": 3.7
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Trabucco 15, 10081 Castellamonte, Italia": {
    "lat": 45.3786504,
@@ -27326,7 +27326,7 @@
     "km": 76.4
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Trento 24, 10092 Beinasco, Italia": {
    "lat": 45.0050166,
@@ -27350,11 +27350,11 @@
     ]
    },
    "auto": {
-    "minuti": 15,
+    "minuti": 16,
     "km": 7.5
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Trento 34, 10042 Nichelino, Italia": {
    "lat": 44.9965176,
@@ -27375,10 +27375,10 @@
    },
    "auto": {
     "minuti": 12,
-    "km": 5.1
+    "km": 5.2
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Trento 44, 10080 San Benigno Canavese, Italia": {
    "lat": 45.2258603,
@@ -27406,7 +27406,7 @@
     "km": 54.7
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Trieste 1, 10088 Volpiano, Italia": {
    "lat": 45.19932790000001,
@@ -27434,7 +27434,7 @@
     "km": 51.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Trieste 2, 10017 Montanaro, Italia": {
    "lat": 45.2337012,
@@ -27443,7 +27443,7 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 60,
+    "minuti": 61,
     "km": 37.9,
     "cambi": 2,
     "linee": [
@@ -27466,7 +27466,7 @@
     "km": 63.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Trieste 7, 10088 Volpiano, Italia": {
    "lat": 45.1988983,
@@ -27494,7 +27494,7 @@
     "km": 51.8
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Tripoli, 10010 Samone, Italia": {
    "lat": 45.4496635,
@@ -27522,11 +27522,11 @@
     ]
    },
    "auto": {
-    "minuti": 53,
+    "minuti": 54,
     "km": 82.2
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Ubertini 2, 10017 Montanaro, Italia": {
    "lat": 45.235096,
@@ -27535,7 +27535,7 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 65,
+    "minuti": 66,
     "km": 38.2,
     "cambi": 2,
     "linee": [
@@ -27554,11 +27554,11 @@
     ]
    },
    "auto": {
-    "minuti": 47,
-    "km": 65.8
+    "minuti": 46,
+    "km": 64.2
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Umberto I 10, 10051 Avigliana, Italia": {
    "lat": 45.0782243,
@@ -27583,10 +27583,10 @@
    },
    "auto": {
     "minuti": 33,
-    "km": 41.1
+    "km": 41.8
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Unita' D'Italia 7, 10014 Caluso, Italia": {
    "lat": 45.3063387,
@@ -27595,7 +27595,7 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 86,
+    "minuti": 88,
     "km": 48.6,
     "cambi": 3,
     "linee": [
@@ -27622,7 +27622,7 @@
     "km": 70.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via V.Veneto 2, 10074 Lanzo Torinese, Italia": {
    "lat": 45.2749324,
@@ -27646,7 +27646,7 @@
     "km": 60.8
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Valenza 71, 10127 Torino, Italia": {
    "lat": 45.02468890000001,
@@ -27665,7 +27665,7 @@
     "km": 0.6
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Valfre' 8, 10121 Torino, Italia": {
    "lat": 45.0705229,
@@ -27685,11 +27685,11 @@
     ]
    },
    "auto": {
-    "minuti": 18,
-    "km": 7.9
+    "minuti": 19,
+    "km": 7.8
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Valgioie 72, 10146 Torino, Italia": {
    "lat": 45.0771469,
@@ -27713,7 +27713,7 @@
     "km": 8.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Vallauri 24, 10155 Torino, Italia": {
    "lat": 45.1045934,
@@ -27722,17 +27722,13 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 56,
-    "km": 10.8,
-    "cambi": 1,
+    "minuti": 74,
+    "km": 15.1,
+    "cambi": 0,
     "linee": [
      {
-      "nome": "M1",
-      "tipo": "SUBWAY"
-     },
-     {
-      "nome": "4",
-      "tipo": "TRAM"
+      "nome": "2",
+      "tipo": "BUS"
      }
     ]
    },
@@ -27741,7 +27737,7 @@
     "km": 13.1
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Vandalino 3, 10093 Collegno, Italia": {
    "lat": 45.07126969999999,
@@ -27765,7 +27761,7 @@
     "km": 10.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Varallo 33, 10132 Torino, Italia": {
    "lat": 45.0713952,
@@ -27774,7 +27770,7 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 51,
+    "minuti": 53,
     "km": 10.1,
     "cambi": 1,
     "linee": [
@@ -27793,7 +27789,7 @@
     "km": 8.1
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Varisella 32, 10070 Vallo Torinese, Italia": {
    "lat": 45.2227553,
@@ -27821,7 +27817,7 @@
     "km": 56.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Ventimiglia 128, 10127 Torino, Italia": {
    "lat": 45.0253518,
@@ -27840,7 +27836,7 @@
     "km": 0.7
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Verdi 12, 10060 Candiolo, Italia": {
    "lat": 44.9579512,
@@ -27865,10 +27861,10 @@
    },
    "auto": {
     "minuti": 19,
-    "km": 21.4
+    "km": 19.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Verdi 7, 10060 Candiolo, Italia": {
    "lat": 44.9576025,
@@ -27893,10 +27889,10 @@
    },
    "auto": {
     "minuti": 19,
-    "km": 19.6
+    "km": 19.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Verolengo 29, 10149 Torino, Italia": {
    "lat": 45.0944372,
@@ -27905,7 +27901,7 @@
    "precisione": "GEOMETRIC_CENTER",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 48,
+    "minuti": 50,
     "km": 10.7,
     "cambi": 1,
     "linee": [
@@ -27924,7 +27920,7 @@
     "km": 11.7
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Verrua 4, 10040 Osasio, Italia": {
    "lat": 44.87010970000001,
@@ -27960,7 +27956,7 @@
     "km": 26.7
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Vespucci 4, 10042 Nichelino, Italia": {
    "lat": 45.0009113,
@@ -27984,7 +27980,7 @@
     "km": 4.4
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Vezzolano 20, 10153 Torino, Italia": {
    "lat": 45.07229479999999,
@@ -27993,8 +27989,8 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 55,
-    "km": 10.8,
+    "minuti": 53,
+    "km": 9.4,
     "cambi": 1,
     "linee": [
      {
@@ -28002,7 +27998,7 @@
       "tipo": "BUS"
      },
      {
-      "nome": "68",
+      "nome": "61",
       "tipo": "BUS"
      }
     ]
@@ -28012,7 +28008,7 @@
     "km": 8.8
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Vibo' 62, 10147 Torino, Italia": {
    "lat": 45.0962008,
@@ -28021,8 +28017,8 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 50,
-    "km": 10.8,
+    "minuti": 47,
+    "km": 11.0,
     "cambi": 1,
     "linee": [
      {
@@ -28030,17 +28026,17 @@
       "tipo": "SUBWAY"
      },
      {
-      "nome": "72/",
+      "nome": "226",
       "tipo": "BUS"
      }
     ]
    },
    "auto": {
-    "minuti": 29,
-    "km": 11.3
+    "minuti": 28,
+    "km": 11.2
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Vidua 1, 10144 Torino, Italia": {
    "lat": 45.081067,
@@ -28050,12 +28046,16 @@
    "approssimativo": false,
    "mezzi": {
     "minuti": 38,
-    "km": 8.2,
-    "cambi": 0,
+    "km": 8.4,
+    "cambi": 1,
     "linee": [
      {
       "nome": "M1",
       "tipo": "SUBWAY"
+     },
+     {
+      "nome": "13",
+      "tipo": "TRAM"
      }
     ]
    },
@@ -28064,7 +28064,7 @@
     "km": 9.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Vigada 15, 10041 Carignano, Italia": {
    "lat": 44.9079817,
@@ -28088,7 +28088,7 @@
     "km": 18.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Vigna 90, 10073 Ciriè, Italia": {
    "lat": 45.2365037,
@@ -28112,7 +28112,7 @@
     "km": 56.5
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Vignale 2, 10018 Pavone Canavese, Italia": {
    "lat": 45.434331,
@@ -28144,7 +28144,7 @@
     "km": 80.7
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Vignale, 10018 Pavone Canavese, Italia": {
    "lat": 45.4340142,
@@ -28176,7 +28176,7 @@
     "km": 80.8
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Villa 1, 10080 Prascorsano, Italia": {
    "lat": 45.3676287,
@@ -28208,11 +28208,11 @@
     ]
    },
    "auto": {
-    "minuti": 68,
-    "km": 87.5
+    "minuti": 69,
+    "km": 81.5
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Villa Cristina 3, 10093 Collegno, Italia": {
    "lat": 45.1149671,
@@ -28221,7 +28221,7 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 64,
+    "minuti": 66,
     "km": 15.7,
     "cambi": 1,
     "linee": [
@@ -28240,7 +28240,7 @@
     "km": 34.2
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Villa Cristina 6, 10093 Collegno, Italia": {
    "lat": 45.1141924,
@@ -28249,7 +28249,7 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 65,
+    "minuti": 67,
     "km": 15.8,
     "cambi": 1,
     "linee": [
@@ -28268,7 +28268,7 @@
     "km": 34.2
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Villa Inferiore 97, 10070 Mezzenile, Italia": {
    "lat": 45.2940183,
@@ -28300,7 +28300,7 @@
     "km": 70.8
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Vittorio Emanuele 5/A, 10060 Pancalieri, Italia": {
    "lat": 44.8605667,
@@ -28324,7 +28324,7 @@
     "km": 34.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Vittorio Emanuele 81, 10060 Bricherasio, Italia": {
    "lat": 44.8235536,
@@ -28334,7 +28334,7 @@
    "approssimativo": false,
    "mezzi": {
     "minuti": 88,
-    "km": 45.0,
+    "km": 44.9,
     "cambi": 2,
     "linee": [
      {
@@ -28356,7 +28356,7 @@
     "km": 42.8
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Vittorio Veneto 2, 10074 Lanzo Torinese, Italia": {
    "lat": 45.2749324,
@@ -28380,7 +28380,7 @@
     "km": 60.8
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Vittorio Veneto 25, 10026 Santena, Italia": {
    "lat": 44.9500611,
@@ -28400,11 +28400,11 @@
     ]
    },
    "auto": {
-    "minuti": 16,
-    "km": 16.4
+    "minuti": 17,
+    "km": 16.6
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Vivaldi N. 2, 10036 Settimo Torinese, Italia": {
    "lat": 45.1433457,
@@ -28432,7 +28432,7 @@
     "km": 48.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Volvera 14, 10045 Piossasco, Italia": {
    "lat": 44.9880472,
@@ -28441,20 +28441,16 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 56,
-    "km": 21.4,
-    "cambi": 2,
+    "minuti": 66,
+    "km": 23.4,
+    "cambi": 1,
     "linee": [
      {
-      "nome": "2",
+      "nome": "74",
       "tipo": "BUS"
      },
      {
       "nome": "1085",
-      "tipo": "BUS"
-     },
-     {
-      "nome": "1510",
       "tipo": "BUS"
      }
     ]
@@ -28464,7 +28460,7 @@
     "km": 23.5
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Volvera, 10090 Bruino, Italia": {
    "lat": 45.0162634,
@@ -28489,10 +28485,10 @@
    },
    "auto": {
     "minuti": 29,
-    "km": 21.0
+    "km": 21.1
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via W. Fontan 8, 10050 San Giorio Di Susa, Italia": {
    "lat": 45.1288876,
@@ -28501,7 +28497,7 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 126,
+    "minuti": 124,
     "km": 54.2,
     "cambi": 2,
     "linee": [
@@ -28524,7 +28520,7 @@
     "km": 59.4
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via XX Settembre 23, 10090 Cuceglio, Italia": {
    "lat": 45.36058310000001,
@@ -28560,7 +28556,7 @@
     "km": 72.1
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via XX Settembre 28, 10060 Cercenasco, Italia": {
    "lat": 44.86182549999999,
@@ -28581,10 +28577,10 @@
    },
    "auto": {
     "minuti": 33,
-    "km": 31.0
+    "km": 35.2
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via XX Settembre 31Bis, 10010 Azeglio, Italia": {
    "lat": 45.4245601,
@@ -28593,16 +28589,16 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 540,
-    "km": 76.0,
+    "minuti": 173,
+    "km": 75.9,
     "cambi": 4,
     "linee": [
      {
-      "nome": "18",
-      "tipo": "BUS"
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
      },
      {
-      "nome": "SFM",
+      "nome": "RV",
       "tipo": "HEAVY_RAIL"
      },
      {
@@ -28624,7 +28620,7 @@
     "km": 90.4
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via XX Settembre 33, 10010 Azeglio, Italia": {
    "lat": 45.42497969999999,
@@ -28633,16 +28629,16 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 543,
-    "km": 76.2,
+    "minuti": 175,
+    "km": 76.0,
     "cambi": 4,
     "linee": [
      {
-      "nome": "18",
-      "tipo": "BUS"
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
      },
      {
-      "nome": "SFM",
+      "nome": "RV",
       "tipo": "HEAVY_RAIL"
      },
      {
@@ -28664,7 +28660,7 @@
     "km": 90.3
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via XX Settembre 5, 10030 Rondissone, Italia": {
    "lat": 45.2468671,
@@ -28673,7 +28669,7 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 82,
+    "minuti": 83,
     "km": 41.5,
     "cambi": 2,
     "linee": [
@@ -28696,7 +28692,7 @@
     "km": 66.2
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via XX Settembre N.33, 10010 Azeglio, Italia": {
    "lat": 45.42497969999999,
@@ -28705,16 +28701,16 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 543,
-    "km": 76.2,
+    "minuti": 175,
+    "km": 76.0,
     "cambi": 4,
     "linee": [
      {
-      "nome": "18",
-      "tipo": "BUS"
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
      },
      {
-      "nome": "SFM",
+      "nome": "RV",
       "tipo": "HEAVY_RAIL"
      },
      {
@@ -28736,7 +28732,7 @@
     "km": 90.3
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via XXIV Maggio 3, 10082 Cuorgnè, Italia": {
    "lat": 45.3894288,
@@ -28746,7 +28742,7 @@
    "approssimativo": false,
    "mezzi": {
     "minuti": 133,
-    "km": 52.3,
+    "km": 52.2,
     "cambi": 2,
     "linee": [
      {
@@ -28768,7 +28764,7 @@
     "km": 82.4
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via XXIV Maggio 48, 10028 Trofarello, Italia": {
    "lat": 44.9818495,
@@ -28796,7 +28792,7 @@
     "km": 10.5
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via XXV Aprile 10, 10065 San Germano Chisone, Italia": {
    "lat": 44.897612,
@@ -28806,7 +28802,7 @@
    "approssimativo": false,
    "mezzi": {
     "minuti": 95,
-    "km": 44.9,
+    "km": 44.8,
     "cambi": 2,
     "linee": [
      {
@@ -28828,7 +28824,7 @@
     "km": 45.8
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via XXV Aprile 109, 10042 Nichelino, Italia": {
    "lat": 45.0016232,
@@ -28852,7 +28848,7 @@
     "km": 4.6
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via XXV Aprile 111, 10042 Nichelino, Italia": {
    "lat": 45.00147279999999,
@@ -28876,7 +28872,7 @@
     "km": 4.8
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via XXV Aprile 18, 10040 Piobesi Torinese, Italia": {
    "lat": 44.932248,
@@ -28896,11 +28892,11 @@
     ]
    },
    "auto": {
-    "minuti": 18,
-    "km": 17.7
+    "minuti": 19,
+    "km": 17.5
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via Zumaglia 41, 10146 Torino, Italia": {
    "lat": 45.0802723,
@@ -28924,7 +28920,7 @@
     "km": 9.1
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Via.Le 24 Maggio 46, 10093 Collegno, Italia": {
    "lat": 45.0764131,
@@ -28933,7 +28929,7 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 58,
+    "minuti": 59,
     "km": 16.1,
     "cambi": 1,
     "linee": [
@@ -28948,11 +28944,11 @@
     ]
    },
    "auto": {
-    "minuti": 25,
-    "km": 11.6
+    "minuti": 26,
+    "km": 11.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Beltramo, 10098 Rivoli, Italia": {
    "lat": 45.0783954,
@@ -28980,11 +28976,11 @@
     ]
    },
    "auto": {
-    "minuti": 24,
+    "minuti": 25,
     "km": 28.3
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Biella 6, 10015 Ivrea, Italia": {
    "lat": 45.4626161,
@@ -28994,7 +28990,7 @@
    "approssimativo": false,
    "mezzi": {
     "minuti": 120,
-    "km": 66.9,
+    "km": 66.8,
     "cambi": 1,
     "linee": [
      {
@@ -29008,11 +29004,11 @@
     ]
    },
    "auto": {
-    "minuti": 59,
+    "minuti": 60,
     "km": 85.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Bona 33, 10072 Caselle Torinese, Italia": {
    "lat": 45.17715099999999,
@@ -29032,11 +29028,11 @@
     ]
    },
    "auto": {
-    "minuti": 34,
+    "minuti": 35,
     "km": 44.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Bramafam 17, 10052 Bardonecchia, Italia": {
    "lat": 45.0772169,
@@ -29060,11 +29056,11 @@
     ]
    },
    "auto": {
-    "minuti": 81,
+    "minuti": 76,
     "km": 104.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale C.A. Dalla Chiesa 1, 10088 Volpiano, Italia": {
    "lat": 45.2049025,
@@ -29092,7 +29088,7 @@
     "km": 53.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Cavour 18, 10034 Chivasso, Italia": {
    "lat": 45.1881235,
@@ -29120,7 +29116,7 @@
     "km": 60.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Cesare Torazzi 3, 10030 Vestignè, Italia": {
    "lat": 45.3916501,
@@ -29129,28 +29125,24 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 146,
-    "km": 73.2,
-    "cambi": 5,
+    "minuti": 163,
+    "km": 94.3,
+    "cambi": 4,
     "linee": [
      {
-      "nome": "24",
-      "tipo": "BUS"
+      "nome": "SFM",
+      "tipo": "HEAVY_RAIL"
      },
      {
       "nome": "RV",
       "tipo": "HEAVY_RAIL"
      },
      {
-      "nome": "4108",
-      "tipo": "BUS"
+      "nome": "REG",
+      "tipo": "HEAVY_RAIL"
      },
      {
-      "nome": "4108",
-      "tipo": "BUS"
-     },
-     {
-      "nome": "345",
+      "nome": "67",
       "tipo": "BUS"
      },
      {
@@ -29164,7 +29156,7 @@
     "km": 82.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Colli 75/A, 10098 Rivoli, Italia": {
    "lat": 45.06405119999999,
@@ -29192,7 +29184,7 @@
     "km": 27.5
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Dante 11/13, 10066 Torre Pellice, Italia": {
    "lat": 44.822532,
@@ -29221,10 +29213,10 @@
    },
    "auto": {
     "minuti": 51,
-    "km": 51.2
+    "km": 51.4
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Dante N. 11/13, 10066 Torre Pellice, Italia": {
    "lat": 44.822532,
@@ -29253,10 +29245,10 @@
    },
    "auto": {
     "minuti": 51,
-    "km": 51.2
+    "km": 51.4
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Dei Cipressi 30, 10090 Bruino, Italia": {
    "lat": 45.0222688,
@@ -29284,7 +29276,7 @@
     "km": 20.4
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Dei Partigiani 36, 10093 Collegno, Italia": {
    "lat": 45.0915236,
@@ -29312,7 +29304,7 @@
     "km": 30.8
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Della Liberazione 14, 10015 Ivrea, Italia": {
    "lat": 45.447425,
@@ -29340,7 +29332,7 @@
     "km": 82.5
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Della Rimembranza, 10060 Bibiana, Italia": {
    "lat": 44.8437754,
@@ -29354,7 +29346,7 @@
     "km": 55.5
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Duca D'Aosta 1, 10063 Perosa Argentina, Italia": {
    "lat": 44.95854569999999,
@@ -29390,7 +29382,7 @@
     "km": 54.8
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Europa, 10060 Campiglione Fenile, Italia": {
    "lat": 44.8025521,
@@ -29400,11 +29392,11 @@
    "approssimativo": false,
    "mezzi": null,
    "auto": {
-    "minuti": 45,
-    "km": 48.4
+    "minuti": 46,
+    "km": 48.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Giuliano 1, 10098 Rivoli, Italia": {
    "lat": 45.07325530000001,
@@ -29436,7 +29428,7 @@
     "km": 27.7
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale I Maggio 23, 10060 Villar Pellice, Italia": {
    "lat": 44.8086835,
@@ -29468,7 +29460,7 @@
     "km": 56.8
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale IV Novembre 10, 10050 Sant'Antonino Di Susa, Italia": {
    "lat": 45.110177,
