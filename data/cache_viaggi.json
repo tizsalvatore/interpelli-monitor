@@ -29469,7 +29469,7 @@
    "precisione": "GEOMETRIC_CENTER",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 70,
+    "minuti": 69,
     "km": 39.8,
     "cambi": 1,
     "linee": [
@@ -29484,11 +29484,11 @@
     ]
    },
    "auto": {
-    "minuti": 42,
-    "km": 50.9
+    "minuti": 41,
+    "km": 51.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale IV Novembre 11, 10054 Cesana Torinese, Italia": {
    "lat": 44.95147679999999,
@@ -29498,7 +29498,7 @@
    "approssimativo": false,
    "mezzi": {
     "minuti": 142,
-    "km": 92.2,
+    "km": 92.8,
     "cambi": 2,
     "linee": [
      {
@@ -29510,17 +29510,17 @@
       "tipo": "HEAVY_RAIL"
      },
      {
-      "nome": "285-275",
+      "nome": "285",
       "tipo": "BUS"
      }
     ]
    },
    "auto": {
-    "minuti": 82,
+    "minuti": 77,
     "km": 103.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Kennedy 21, 10042 Nichelino, Italia": {
    "lat": 44.9907929,
@@ -29529,8 +29529,8 @@
    "precisione": "RANGE_INTERPOLATED",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 38,
-    "km": 4.6,
+    "minuti": 36,
+    "km": 4.7,
     "cambi": 0,
     "linee": [
      {
@@ -29544,7 +29544,7 @@
     "km": 6.1
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Kennedy 24, 10064 Pinerolo, Italia": {
    "lat": 44.888473,
@@ -29572,7 +29572,7 @@
     "km": 36.3
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Kennedy 40, 10042 Nichelino, Italia": {
    "lat": 44.9893406,
@@ -29596,7 +29596,7 @@
     "km": 5.7
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Liberazione 5, 10015 Ivrea, Italia": {
    "lat": 45.4505615,
@@ -29620,11 +29620,11 @@
     ]
    },
    "auto": {
-    "minuti": 58,
+    "minuti": 59,
     "km": 85.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Nuvoli 12, 10098 Rivoli, Italia": {
    "lat": 45.0773,
@@ -29648,11 +29648,11 @@
     ]
    },
    "auto": {
-    "minuti": 23,
+    "minuti": 24,
     "km": 27.8
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Nuvoli 12, 10198 Rivoli, Italia": {
    "lat": 45.0773,
@@ -29676,11 +29676,11 @@
     ]
    },
    "auto": {
-    "minuti": 23,
+    "minuti": 24,
     "km": 27.8
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Piave 20, 10036 Settimo Torinese, Italia": {
    "lat": 45.1326478,
@@ -29689,7 +29689,7 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 48,
+    "minuti": 49,
     "km": 20.1,
     "cambi": 1,
     "linee": [
@@ -29705,10 +29705,10 @@
    },
    "auto": {
     "minuti": 38,
-    "km": 18.7
+    "km": 18.6
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Primo Maggio, 10060 Villar Pellice, Italia": {
    "lat": 44.8216611,
@@ -29740,7 +29740,7 @@
     "km": 43.1
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Radich 3, 10095 Grugliasco, Italia": {
    "lat": 45.0688969,
@@ -29764,7 +29764,7 @@
     "km": 9.6
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Resistenza 27, 10028 Trofarello, Italia": {
    "lat": 44.9882345,
@@ -29788,7 +29788,7 @@
     "km": 10.2
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Rimembranza 3, 10070 Viù, Italia": {
    "lat": 45.2376029,
@@ -29802,7 +29802,7 @@
     "km": 74.6
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Rimembranza 4, 10070 Viù, Italia": {
    "lat": 45.2378823,
@@ -29816,7 +29816,7 @@
     "km": 74.5
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Rimembranza N. 9, 10066 Torre Pellice, Italia": {
    "lat": 44.8221244,
@@ -29848,7 +29848,7 @@
     "km": 51.2
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Roma 5, 10020 Cambiano, Italia": {
    "lat": 44.9702012,
@@ -29872,7 +29872,7 @@
     "km": 17.1
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale San Giorio 7, 10098 Rivoli, Italia": {
    "lat": 45.0749803,
@@ -29881,7 +29881,7 @@
    "precisione": "ROOFTOP",
    "approssimativo": false,
    "mezzi": {
-    "minuti": 62,
+    "minuti": 63,
     "km": 17.4,
     "cambi": 1,
     "linee": [
@@ -29900,7 +29900,7 @@
     "km": 27.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Signorini N.11, 10029 Villastellone, Italia": {
    "lat": 44.9195915,
@@ -29924,11 +29924,11 @@
     ]
    },
    "auto": {
-    "minuti": 16,
+    "minuti": 17,
     "km": 14.7
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Stazione 7, 10070 Ceres, Italia": {
    "lat": 45.312593,
@@ -29956,11 +29956,11 @@
     ]
    },
    "auto": {
-    "minuti": 62,
+    "minuti": 63,
     "km": 72.1
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Stazione Sangone 15, 10024 Moncalieri, Italia": {
    "lat": 45.0012845,
@@ -29980,11 +29980,11 @@
     ]
    },
    "auto": {
-    "minuti": 7,
-    "km": 3.6
+    "minuti": 8,
+    "km": 3.3
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Vicolo Bianchetti 17, 10090 San Giorgio Canavese, Italia": {
    "lat": 45.33634319999999,
@@ -30016,11 +30016,11 @@
     ]
    },
    "auto": {
-    "minuti": 46,
+    "minuti": 47,
     "km": 68.0
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Vicolo Caterina Cortina 1, 10070 Levone, Italia": {
    "lat": 45.31746769999999,
@@ -30030,7 +30030,7 @@
    "approssimativo": false,
    "mezzi": {
     "minuti": 138,
-    "km": 50.5,
+    "km": 50.6,
     "cambi": 2,
     "linee": [
      {
@@ -30052,7 +30052,7 @@
     "km": 69.4
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Vicolo Cotta 2, 10024 Moncalieri, Italia": {
    "lat": 45.0013495,
@@ -30076,7 +30076,7 @@
     "km": 3.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Vicolo Cottolengo, 10060 Garzigliana, Italia": {
    "lat": 44.9458682,
@@ -30086,7 +30086,7 @@
    "approssimativo": false,
    "mezzi": {
     "minuti": 103,
-    "km": 50.8,
+    "km": 50.7,
     "cambi": 3,
     "linee": [
      {
@@ -30108,11 +30108,11 @@
     ]
    },
    "auto": {
-    "minuti": 46,
-    "km": 51.8
+    "minuti": 47,
+    "km": 51.5
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Vicolo Peretto 8, 10010 Mercenasco, Italia": {
    "lat": 45.3568656,
@@ -30137,10 +30137,10 @@
    },
    "auto": {
     "minuti": 53,
-    "km": 78.6
+    "km": 73.5
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Vicolo Scuole 1, 10070 Front, Italia": {
    "lat": 45.2794882,
@@ -30164,11 +30164,11 @@
     ]
    },
    "auto": {
-    "minuti": 48,
+    "minuti": 49,
     "km": 61.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Vicolo Scuole 8, 10070 Front, Italia": {
    "lat": 45.2795814,
@@ -30196,7 +30196,7 @@
     "km": 61.9
    },
    "errore": null,
-   "aggiornato": "2026-10-27"
+   "aggiornato": "2026-11-26"
   },
   "Viale Papa Giovanni XXIII 25, 10098 Rivoli, Italia": {
    "lat": 45.0667896,
